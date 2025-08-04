@@ -1,0 +1,7 @@
+# AWS Region
+aws_region = "us-east-1"
+
+# Slack Configuration
+# Get these values from your Slack App configuration
+slack_bot_token = "xoxb-your-slack-bot-token-here"
+slack_signing_secret = "your-slack-signing-secret-here"
