@@ -1,0 +1,176 @@
+[
+{
+	"uri": "http://localhost:52606/1-introduction/",
+	"title": "Introduction",
+	"tags": [],
+	"description": "",
+	"content": "The main goal of this workshop is to show you how to use Slack and some AWS services to create A chatbot can respond to previously provided internal information.\nThroughout the session, you will have hands-on experience configuring and testing the chatbot, learning the configuration step by step.\n"
+},
+{
+	"uri": "http://localhost:52606/1-introduction/1.1-overview/",
+	"title": "Solution overview",
+	"tags": [],
+	"description": "",
+	"content": "This solution integrates Slack with Amazon Bedrock and its Knowledge base to enable business users to interact with a generative AI assistant directly within Slack. The system processes user queries asynchronously, performs safety checks using Amazon Bedrock Guardrails, and retrieves relevant knowledge from a vectorized database built on Amazon OpenSearch, populated from documents stored in Amazon S3.\nThe backend is fully serverless, using AWS Lambda and API Gateway to manage Slack interactions, and relies on Amazon Bedrock for prompt handling and intelligent responses. This architecture enables secure, scalable, and compliant AI-powered support for enterprise users in real time.\n"
+},
+{
+	"uri": "http://localhost:52606/",
+	"title": "Building Trustworthy AI with Amazon Bedrock Guardrails",
+	"tags": [],
+	"description": "",
+	"content": "Building Trustworthy AI with Amazon Bedrock Guardrails Workshop Overview Guardrails for Amazon Bedrock "
+},
+{
+	"uri": "http://localhost:52606/2-prerequisites/",
+	"title": "Prerequisites",
+	"tags": [],
+	"description": "",
+	"content": " To get started, go to Slack.com. Click to Create a new workspace. Enter your email to sign in Click Create a Workspace Finally create a slack workspace. "
+},
+{
+	"uri": "http://localhost:52606/3-slack_app/3.1-create_slackapp/",
+	"title": "Create slack app",
+	"tags": [],
+	"description": "",
+	"content": "Create slack app Access to api.slack.com/apps. Click Create new app -\u0026gt; From scratch Enter your App name, Pick a workspace to develop your app in and click Create App. "
+},
+{
+	"uri": "http://localhost:52606/3-slack_app/3.2-oauthpermissions/",
+	"title": "Create slash commands",
+	"tags": [],
+	"description": "",
+	"content": "Create slash commands Choose Slash Commands. Then click Create new command. Enter your information: command name, Request URL, Short Decription.\nNote: The current URL is only temporary, when deployed, we will use the API URL to replace it.\nCreate slash commands successfully.\n"
+},
+{
+	"uri": "http://localhost:52606/3-slack_app/",
+	"title": "Slack App Setup",
+	"tags": [],
+	"description": "",
+	"content": "A Slack app is a tool or integration that extends the functionality of Slack: it adds new features, automates tasks, integrates with external services, or enhances the user experience. A Slack app allows you to do more within Slack than just chat. With the Slack platform, individual and enterprise developers alike can create apps that integrate directly with the tools teams already use, whether that\u0026rsquo;s connecting a CRM, managing project boards, or sending automated alerts.\nWe know our platform is deep and wide, and possibly a little intimidating as a result. It\u0026rsquo;s okay to not know where to start.\nIf you want to take it slow, this guide on designing your app is a little light reading on how to define the look and feel of your app.\nIf you\u0026rsquo;d rather stop the chitchat and get into it, build an app with the Quickstart guide. If you\u0026rsquo;re just looking to get a token to call the Web API methods, completing the first three steps of the Quickstart will get you there.\n"
+},
+{
+	"uri": "http://localhost:52606/4-opensearch/4.1-collection/",
+	"title": "collection",
+	"tags": [],
+	"description": "",
+	"content": " Access to Amazon Opensearch Service Console. Scroll down and select Data access policies and click create access policy Enter Access policy name -\u0026gt; choose JSON Enter the following code\n[ { \u0026#34;Rules\u0026#34;: [ { \u0026#34;ResourceType\u0026#34;: \u0026#34;index\u0026#34;, \u0026#34;Resource\u0026#34;: [\u0026#34;index/\u0026lt;YOUR-OPENSEARCH-COLLECTION-NAME\u0026gt;/*\u0026#34;], \u0026#34;Permission\u0026#34;: [\u0026#34;aoss:*\u0026#34;] }, { \u0026#34;ResourceType\u0026#34;: \u0026#34;collection\u0026#34;, \u0026#34;Resource\u0026#34;: [\u0026#34;collection/\u0026lt;YOUR-OPENSEARCH-COLLECTION-NAME\u0026gt;\u0026#34;], \u0026#34;Permission\u0026#34;: [\u0026#34;aoss:*\u0026#34;] } ], \u0026#34;Principal\u0026#34;: [\u0026#34;arn:aws:iam::\u0026lt;YOUR-ACCOUNT-ID\u0026gt;:root\u0026#34;] } ] Create networks policy Name Network policy name Enter the following code\n[ { \u0026#34;Rules\u0026#34;: [ { \u0026#34;ResourceType\u0026#34;: \u0026#34;collection\u0026#34;, \u0026#34;Resource\u0026#34;: [\u0026#34;collection/\u0026lt;YOUR-OPENSEARCH-COLLECTION-NAME\u0026gt;\u0026#34;] }, { \u0026#34;ResourceType\u0026#34;: \u0026#34;dashboard\u0026#34;, \u0026#34;Resource\u0026#34;: [\u0026#34;collection/\u0026lt;YOUR-OPENSEARCH-COLLECTION-NAME\u0026gt;\u0026#34;] } ], \u0026#34;AllowFromPublic\u0026#34;: true } ] Create Collection Select Collections Select Create Collection Enter Collection name and select Collection type: Vector search Default and create. Note:\nCollection ARN Opensearch endpoint "
+},
+{
+	"uri": "http://localhost:52606/3-slack_app/3.3-slash_commands/",
+	"title": "Get OAuth Tokens",
+	"tags": [],
+	"description": "",
+	"content": " Choose OAuth \u0026amp; Permissions, choose install to Your-workspace. You will see OAuth Tokens. "
+},
+{
+	"uri": "http://localhost:52606/4-opensearch/",
+	"title": "Set up opensearch",
+	"tags": [],
+	"description": "",
+	"content": "In Amazon OpenSearch Serverless, a collection is a logical unit that organizes and manages a set of related indices. It replaces the concept of domains in the traditional OpenSearch model, but operates in a serverless manner—that is, without the need for users to configure or manage specific infrastructure. Each collection is designed to automatically scale resources on demand and supports different types of data, including text and vector data.\nCollections in OpenSearch Serverless perform many important functions such as storing search data, supporting real-time analytics, and processing text and vector queries (KNN search). It allows users to separate data and access policies according to each specific application or use case. In addition, collections automatically handle scaling, performance optimization, and security at the infrastructure level without requiring manual user intervention, simplifying the process of deploying and operating search systems.\n"
+},
+{
+	"uri": "http://localhost:52606/4-opensearch/4.2-vector_index/",
+	"title": "Vector index",
+	"tags": [],
+	"description": "",
+	"content": "Create user Create a user bedrock-chatbot-deployer with policy AdministratorAccess Create a tag with Key and Value are access key Create index Access to Postman with: URL is Collection endpoint/\u0026lt;Index_name\u0026gt;\nAuth type: AWS Signature\nAccessKey and SecretKey\nRegion: us-east-1\nService name: aoss Header:\nContent type: Application/json Body:\nraw Enter code following { \u0026#34;settings\u0026#34;: { \u0026#34;index\u0026#34;: { \u0026#34;knn\u0026#34;: true, \u0026#34;knn.algo_param.ef_search\u0026#34;: 512 } }, \u0026#34;mappings\u0026#34;: { \u0026#34;properties\u0026#34;: { \u0026#34;bedrock-knowledge-base-default-vector\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;knn_vector\u0026#34;, \u0026#34;dimension\u0026#34;: 1024, \u0026#34;method\u0026#34;: { \u0026#34;name\u0026#34;: \u0026#34;hnsw\u0026#34;, \u0026#34;engine\u0026#34;: \u0026#34;faiss\u0026#34;, \u0026#34;space_type\u0026#34;: \u0026#34;l2\u0026#34;, \u0026#34;parameters\u0026#34;: { \u0026#34;ef_construction\u0026#34;: 512, \u0026#34;m\u0026#34;: 16 } } }, \u0026#34;AMAZON_BEDROCK_METADATA\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;text\u0026#34;, \u0026#34;index\u0026#34;: false }, \u0026#34;AMAZON_BEDROCK_TEXT_CHUNK\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;text\u0026#34;, \u0026#34;index\u0026#34;: true }, \u0026#34;id\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;text\u0026#34;, \u0026#34;index\u0026#34;: true }, \u0026#34;x-amz-bedrock-kb-data-source-id\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;text\u0026#34;, \u0026#34;index\u0026#34;: true }, \u0026#34;x-amz-bedrock-kb-document-page-number\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;long\u0026#34;, \u0026#34;index\u0026#34;: true }, \u0026#34;x-amz-bedrock-kb-source-uri\u0026#34;: { \u0026#34;type\u0026#34;: \u0026#34;text\u0026#34;, \u0026#34;index\u0026#34;: true } } } } Click Send. Correct configuration will get response An index will be created with Vector field name and Metadata "
+},
+{
+	"uri": "http://localhost:52606/5-bedrock_setup/",
+	"title": "Bedrock setup",
+	"tags": [],
+	"description": "",
+	"content": "In this workshop, we use a knowledge base to retrieve information provided from S3. The data from S3 is split into smaller segments (document chunks) and converted into vectors using an embeddings model. These vectors are then stored in a vector store, specifically Amazon OpenSearch Serverless.\nWhen a user submits a question, the system performs semantic search against the vector store to retrieve relevant text segments (context). This contextual information is incorporated into prompt augmentation to provide the necessary background for the Large Language Model (LLM). Finally, the LLM generates an accurate and contextually appropriate response based on the knowledge base.\n"
+},
+{
+	"uri": "http://localhost:52606/5-bedrock_setup/5.1-model_access/",
+	"title": "Set up model access",
+	"tags": [],
+	"description": "",
+	"content": " Access to Amazon Bedrock Console.\nScroll down to the bottom of the navigation sidebar and choose Model access. Choose Modify model access. Tick into the box of the Models, what you want to enable. In this workshop, i use Titan Text Embeddings V2 and Claude 3 sonnet. Scroll down to the bottom and choose Next Because Titan Text Embeddings V2 was access granted before, there is only Claude 3 sonnet left. Choose Submit and after a few minutes model access will be enabled. Finally, both Titan Text Embeddings V2 and Claude 3 sonnet are access granted. "
+},
+{
+	"uri": "http://localhost:52606/6-secret/",
+	"title": "Secrets Manager",
+	"tags": [],
+	"description": "",
+	"content": " Access to Secret console Get token: Create bot-token Get Signing secret Create "
+},
+{
+	"uri": "http://localhost:52606/5-bedrock_setup/5.2-knowledge_base/",
+	"title": "Set up knowledge base",
+	"tags": [],
+	"description": "",
+	"content": "S3 configuration Create a new bucket. Configure on Bedrock Access to Amazon Bedrock Console.\nScroll down to the bottom of the navigation sidebar and choose Knowledge base. Choose Create and choose Knowledge Base with vector store. Set up knowledge base with vector store.\nEnter knowledge base name and create a new role Data source type will be S3 Select S3 to store data Select Embeddings model Vector store is Amazon Opensearch Serverless Configuring the Vector Store with what was created in the previous steps is the set up opensearch preparation step Knowledge Base will be created successfully. Role for knowledge base will have policies "
+},
+{
+	"uri": "http://localhost:52606/7-ssm/",
+	"title": "Systems Manager",
+	"tags": [],
+	"description": "",
+	"content": " Access to SSM console Create new Parameter for bot-token5 Create new Parameter for signing-secret5 ARN "
+},
+{
+	"uri": "http://localhost:52606/5-bedrock_setup/5.3-guardrails/",
+	"title": "Set up guardrails",
+	"tags": [],
+	"description": "",
+	"content": " "
+},
+{
+	"uri": "http://localhost:52606/8-lambda_implementation/",
+	"title": "Lambda implementation",
+	"tags": [],
+	"description": "",
+	"content": "The Lambda function in this code acts as an intermediary between Slack and Amazon Bedrock Knowledge Base. When a user enters a Slash command in Slack (e.g., /ask-ai), the event is sent to the Lambda function. Within the first 3 seconds, the Lambda must acknowledge the command using the ack function to avoid a timeout error from Slack—this is handled by the respond_to_slack_within_3_seconds function. After that, the Lambda proceeds to process the main logic by calling Bedrock\u0026rsquo;s RetrieveAndGenerate API to retrieve relevant information and generate a response from the Knowledge Base, which is then sent back to the user in Slack.\nIn addition to responding to user queries, the Lambda function is responsible for securely initializing and managing required AWS services such as retrieving secrets from AWS Secrets Manager and parameters from SSM Parameter Store. It also sets up configuration values like model ID, knowledge base ID, and guardrail settings. This ensures that the connection between Slack and Bedrock is correctly established and that user queries are processed safely and accurately. In short, this Lambda function acts both as an orchestrator and executor of the entire interaction flow between Slack and AWS\u0026rsquo;s intelligent answering system.\n"
+},
+{
+	"uri": "http://localhost:52606/8-lambda_implementation/8.1-lambda_role/",
+	"title": "Lambda role",
+	"tags": [],
+	"description": "",
+	"content": "Create a role named BedrockExecutionRole8888: Policy AWSLambdaBasicExecutionRole: Add a custom policy named BedrockExecutionPolicy:\n{ \u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;, \u0026#34;Statement\u0026#34;: [ { \u0026#34;Action\u0026#34;: [ \u0026#34;bedrock:InvokeModel\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-haiku-20240307-v1:0\u0026#34; }, { \u0026#34;Action\u0026#34;: [ \u0026#34;bedrock:Retrieve\u0026#34;, \u0026#34;bedrock:RetrieveAndGenerate\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;\u0026lt;YOUR-KNOWLEDGEBASE-ARN\u0026gt;\u0026#34; }, { \u0026#34;Action\u0026#34;: [ \u0026#34;ssm:GetParameter\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: [ \u0026#34;\u0026lt;YOUR-SSM-ARN-1\u0026gt;\u0026#34;, \u0026#34;\u0026lt;YOUR-SSM-ARN-1\u0026gt;\u0026#34; ] }, { \u0026#34;Action\u0026#34;: [ \u0026#34;lambda:InvokeFunction\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;\u0026lt;YOUR-LAMBDA-FUNCTION-ARN\u0026gt;\u0026#34; }, { \u0026#34;Action\u0026#34;: [ \u0026#34;bedrock:ApplyGuardrail\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:bedrock:us-east-1:\u0026lt;YOUR-ACCOUNT-ID\u0026gt;:guardrail/\u0026lt;YOUR-GUARDRAIL-ID\u0026gt;*\u0026#34; }, { \u0026#34;Action\u0026#34;: [ \u0026#34;secretsmanager:GetSecretValue\u0026#34; ], \u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;, \u0026#34;Resource\u0026#34;: [ \u0026#34;\u0026lt;YOUR-SECRET-BOT-TOKEN-ARN\u0026gt;\u0026#34;, \u0026#34;\u0026lt;YOUR-SECRET-SIGNING-SECRET-ARN\u0026gt;\u0026#34; ] } ] } "
+},
+{
+	"uri": "http://localhost:52606/8-lambda_implementation/8.2-config_code/",
+	"title": "Configuration and code",
+	"tags": [],
+	"description": "",
+	"content": " Create a lambda named BedrockKBSlackbotFunction5 Attach role named BedrockExecutionRole8888 and Create Up load a file .zip named BedrockKBSlackbotFunction.zip Change Hanlder: Change Memory and Timeout Add some Environment variables "
+},
+{
+	"uri": "http://localhost:52606/9-knowledge_base/",
+	"title": "Knowledge Base",
+	"tags": [],
+	"description": "",
+	"content": " Upload data that chatbot will use with s3. In this session, we use postgresql-16-US.pdf Access to data source in bedrock knowledge base and sync it "
+},
+{
+	"uri": "http://localhost:52606/10-api_gateway/",
+	"title": "API Gateway",
+	"tags": [],
+	"description": "",
+	"content": " Access to API console Create Rest API and name Create resource named slack Create another source named ask-ai Create method for ask-ai Settings with method:\nMethod: POST Lambda proxy integration: enable Lambda function: BedrockKbSlackbotFunction5 Deploy with new stage named prod Get the Invoke URL and replace it with the Request URL box in Slack. Choose Save Access to Slash commands again and replace Request URL. Finally, click Save "
+},
+{
+	"uri": "http://localhost:52606/11-test/",
+	"title": "Testing",
+	"tags": [],
+	"description": "",
+	"content": "Test chatbot with valid questions What is PostgreSQL? "
+},
+{
+	"uri": "http://localhost:52606/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://localhost:52606/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
