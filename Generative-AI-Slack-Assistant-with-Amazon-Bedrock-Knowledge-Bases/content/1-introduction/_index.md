@@ -12,3 +12,4 @@ A chatbot can respond to previously provided internal information.
 Throughout the session, you will have hands-on experience configuring and testing the chatbot, learning the configuration
 step by step.
 
+jsfbsdbfdsbfhdbsfhbds bshb dhbfdsbfsb df sfjsdnfjnd sjfdsj sfjdsnfj sdfjsd
