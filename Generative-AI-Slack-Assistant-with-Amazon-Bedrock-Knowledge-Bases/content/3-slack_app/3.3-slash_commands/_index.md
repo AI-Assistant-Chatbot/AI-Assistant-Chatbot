@@ -13,4 +13,4 @@ pre = "<b>3.3 </b>"
    ![getOAuth](/images/3/slack_OAuth1.png?width=90pc)
 
 2. You will see **OAuth Tokens**.
-   ![getOAuth](/images/3/slack_OAuth.png?width=90pc)
+   ![getOAuth](/images/4/getOAuth1.png?width=90pc)

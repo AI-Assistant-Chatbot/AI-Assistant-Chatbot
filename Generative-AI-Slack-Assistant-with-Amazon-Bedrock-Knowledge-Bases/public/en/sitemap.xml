@@ -53,92 +53,82 @@
     <loc>//localhost:1313/3-slack_app/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/4-opensearch/4.1-collection/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+    <loc>//localhost:1313/4-security/4.1-secret-manager/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/4-security/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/3-slack_app/3.3-slash_commands/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/4-opensearch/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/4-opensearch/4.2-vector_index/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/5-bedrock_setup/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/5-bedrock_setup/5.1-model_access/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/6-secret/</loc>
+    <loc>//localhost:1313/4-security/4.2-systems-manager/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/5-bedrock_setup/5.2-knowledge_base/</loc>
+    <loc>//localhost:1313/5-opensearch/5.1-collection/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/7-ssm/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/5-bedrock_setup/5.3-guardrails/</loc>
+    <loc>//localhost:1313/5-opensearch/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/8-lambda_implementation/</loc>
+    <loc>//localhost:1313/5-opensearch/5.2-vector_index/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/6-bedrock_setup/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/6-bedrock_setup/6.2-guardrails/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/6-bedrock_setup/6.1-model_access/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/7-lambda_implementation/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/8-lambda_implementation/"
+                href="//localhost:1313/vi/7-lambda_implementation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/8-lambda_implementation/"
+                href="//localhost:1313/7-lambda_implementation/"
                 />
   </url><url>
-    <loc>//localhost:1313/8-lambda_implementation/8.1-lambda_role/</loc>
+    <loc>//localhost:1313/7-lambda_implementation/7.1-lambda_role/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/8-lambda_implementation/8.2-config_code/</loc>
+    <loc>//localhost:1313/6-bedrock_setup/6.3-knowledge_base/</loc>
+    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/7-lambda_implementation/7.2-config_code/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/9-knowledge_base/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/9-knowledge_base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/9-knowledge_base/"
-                />
-  </url><url>
-    <loc>//localhost:1313/10-api_gateway/</loc>
+    <loc>//localhost:1313/8-api_gateway/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/10-api_gateway/"
+                href="//localhost:1313/vi/8-api_gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/10-api_gateway/"
+                href="//localhost:1313/8-api_gateway/"
                 />
   </url><url>
-    <loc>//localhost:1313/11-test/</loc>
+    <loc>//localhost:1313/9-clear-resources/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/11-test/"
+                href="//localhost:1313/vi/9-clear-resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/11-test/"
+                href="//localhost:1313/9-clear-resources/"
                 />
   </url><url>
     <loc>//localhost:1313/categories/</loc>

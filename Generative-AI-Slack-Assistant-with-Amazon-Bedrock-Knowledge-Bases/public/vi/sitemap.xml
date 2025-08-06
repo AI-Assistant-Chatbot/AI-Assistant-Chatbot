@@ -41,56 +41,43 @@
                 href="//localhost:1313/vi/2-prerequisites/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/8-lambda_implementation/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/8-lambda_implementation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/8-lambda_implementation/"
-                />
-  </url><url>
-    <loc>//localhost:1313/vi/9-knowledge_base/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/9-knowledge_base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/9-knowledge_base/"
-                />
-  </url><url>
-    <loc>//localhost:1313/vi/10-api_gateway/</loc>
+    <loc>//localhost:1313/vi/8-api_gateway/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/10-api_gateway/"
+                href="//localhost:1313/8-api_gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/10-api_gateway/"
+                href="//localhost:1313/vi/8-api_gateway/"
                 />
   </url><url>
-    <loc>//localhost:1313/vi/11-test/</loc>
+    <loc>//localhost:1313/vi/7-lambda_implementation/</loc>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-lambda_implementation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-lambda_implementation/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/9-clear-resources/</loc>
     <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/11-test/"
+                href="//localhost:1313/9-clear-resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:1313/vi/11-test/"
+                href="//localhost:1313/vi/9-clear-resources/"
                 />
   </url><url>
     <loc>//localhost:1313/vi/categories/</loc>
