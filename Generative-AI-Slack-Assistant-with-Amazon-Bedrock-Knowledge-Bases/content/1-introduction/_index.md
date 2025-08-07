@@ -10,7 +10,7 @@ This project introduces an AI-powered assistant chatbot designed for integration
 
 Once a user submits a question in Slack, the request is routed to an AWS Lambda function via API Gateway. This Lambda function interacts directly with the Amazon Bedrock Knowledge Base service, which orchestrates the entire RAG pipeline. The chatbot retrieves relevant content from the knowledge base through vector similarity search powered by Amazon OpenSearch Serverless, which stores and indexes document embeddings that were generated using Amazon Titan Text Embeddings v2. These embeddings support multilingual processing, particularly optimized for Vietnamese and English, allowing users to interact naturally in both languages.
 
-After the appropriate content is retrieved from the vector store, it is passed along with the original user query to Claude 3 Haiku, a lightweight and cost-effective large language model hosted within Amazon Bedrock. This model generates the final response that is returned to the Slack user.
+After the appropriate content is retrieved from the vector store, it is passed along with the original user query to Claude 3 Sonnet, a lightweight and cost-effective large language model hosted within Amazon Bedrock. This model generates the final response that is returned to the Slack user.
 
 The entire system is built using a serverless architecture, leveraging AWS Lambda for compute, API Gateway for routing, S3 for document storage, and Bedrock for managed AI services. All components are defined and deployed using the AWS Cloud Development Kit (CDK), which allows infrastructure to be managed as code. This enables full automation, scalability, and maintainability while keeping operational overhead low.
 

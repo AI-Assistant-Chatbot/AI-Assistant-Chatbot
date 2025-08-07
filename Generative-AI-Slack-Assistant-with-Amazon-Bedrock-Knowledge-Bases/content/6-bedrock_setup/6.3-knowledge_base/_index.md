@@ -7,9 +7,9 @@ pre = "<b>6.3 </b>"
 +++
 #### S3 configuration
 1. Create a new bucket.
-    ![s3_1](/images/5/s3_1.png?width=90pc)
-    ![s3_2](/images/5/s3_2.png?width=90pc)
-    ![s3_3](/images/5/s3-3.png?width=90pc)
+    ![s3_1](/images/6/s3_1.png?width=90pc)
+    ![s3_2](/images/6/s3_2.png?width=90pc)
+    ![s3_3](/images/6/s3-3.png?width=90pc)
   
 
 #### Configure on Bedrock
