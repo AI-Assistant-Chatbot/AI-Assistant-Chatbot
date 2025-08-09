@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Building Trustworthy AI with Amazon Bedrock Guardrails :: Amazon Q Developer Series</title>
+    <title>Building a Generative AI Slackbot Assistant with Amazon Bedrock :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754746934" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754746934" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754746934" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556290"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754746934"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556290"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754746934"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754746934"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754746934"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -870,9 +830,163 @@
 </span>
 
  
-<h1 id="building-trustworthy-ai-with-amazon-bedrock-guardrails">Building Trustworthy AI with Amazon Bedrock Guardrails</h1>
-<h3 id="workshop-overview">Workshop Overview</h3>
-<h4 id="guardrails-for-amazon-bedrock">Guardrails for Amazon Bedrock</h4>
+<h1 id="building-a-generative-ai-slackbot-assistant-with-amazon-bedrock">Building a Generative AI Slackbot Assistant with Amazon Bedrock</h1>
+<h4 id="quick-summary">Quick Summary</h4>
+<p>Build a production-ready Slack bot powered by Amazon Bedrock Knowledge Bases that intelligently answers questions about your organization&rsquo;s documents using advanced AI and Retrieval-Augmented Generation (RAG).</p>
+<p><strong>What you&rsquo;ll create:</strong></p>
+<ul>
+<li>AI-powered Slack bot with <code>/ask-aws</code> commands</li>
+<li>Enterprise-grade RAG system using Amazon Bedrock</li>
+<li>Secure content filtering with Bedrock Guardrails</li>
+<li>Scalable serverless architecture on AWS</li>
+</ul>
+<h4 id="duration">Duration</h4>
+<p><strong>Total Workshop Time:</strong> 3-4 hours</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Duration</th>
+<th>Focus Area</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setup &amp; Environment</td>
+<td>45 min</td>
+<td>AWS configuration, Slack app creation</td>
+</tr>
+<tr>
+<td>Knowledge Base</td>
+<td>75 min</td>
+<td>Document ingestion, vector database setup</td>
+</tr>
+<tr>
+<td>Bot Development</td>
+<td>90 min</td>
+<td>Lambda functions, API Gateway integration</td>
+</tr>
+<tr>
+<td>Security &amp; Testing</td>
+<td>30 min</td>
+<td>Guardrails, validation, monitoring</td>
+</tr>
+</tbody>
+</table>
+<h4 id="target-audience">Target Audience</h4>
+<p><strong>1. Primary Audience</strong></p>
+<ul>
+<li><strong>Solutions Architects</strong> looking to implement AI-powered assistants</li>
+<li><strong>Developers</strong> interested in serverless AI applications</li>
+<li><strong>DevOps Engineers</strong> deploying production AI systems</li>
+<li><strong>Technical Leaders</strong> evaluating enterprise AI solutions</li>
+</ul>
+<p><strong>2. Secondary Audience</strong></p>
+<ul>
+<li><strong>Product Managers</strong> understanding AI integration possibilities</li>
+<li><strong>IT Professionals</strong> implementing workplace productivity tools</li>
+<li><strong>Data Engineers</strong> working with unstructured data processing</li>
+</ul>
+<h4 id="prerequisite-knowledge">Prerequisite Knowledge</h4>
+<p><strong>1. Required Skills</strong></p>
+<ul>
+<li><strong>AWS Fundamentals</strong>: Basic understanding of Lambda, S3, IAM, API Gateway</li>
+<li><strong>Python Programming</strong>: Intermediate level (functions, APIs, error handling)</li>
+<li><strong>REST APIs</strong>: Understanding of HTTP methods and JSON responses</li>
+<li><strong>Command Line</strong>: Comfortable with terminal/command prompt operations</li>
+</ul>
+<p><strong>2. Helpful Background</strong></p>
+<ul>
+<li><strong>Serverless Architecture</strong>: Experience with event-driven computing</li>
+<li><strong>AI/ML Concepts</strong>: Basic understanding of embeddings and vector search</li>
+<li><strong>Slack Development</strong>: Familiarity with Slack apps and webhooks</li>
+<li><strong>Infrastructure as Code</strong>: Experience with CloudFormation or CDK</li>
+</ul>
+<p><strong>3. Technical Requirements</strong></p>
+<ul>
+<li><strong>AWS Account</strong> with administrative access</li>
+<li><strong>Slack Workspace</strong> with app installation permissions</li>
+<li><strong>Development Environment</strong>: Python 3.12+, AWS CLI, code editor</li>
+<li><strong>Internet Connection</strong>: For downloading dependencies and accessing AWS services</li>
+</ul>
+<h4 id="cost-breakdown">Cost Breakdown</h4>
+<p><strong>1. Workshop Completion Cost: ~$5-10</strong></p>
+<table>
+<thead>
+<tr>
+<th>AWS Service</th>
+<th>Usage During Workshop</th>
+<th>Estimated Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AWS Lambda</strong></td>
+<td>1,000 invocations</td>
+<td>$0.20</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>1,000 requests</td>
+<td>$3.50</td>
+</tr>
+<tr>
+<td><strong>Amazon Bedrock</strong></td>
+<td>100K tokens (Claude 3 + Titan)</td>
+<td>$3.00</td>
+</tr>
+<tr>
+<td><strong>OpenSearch Serverless</strong></td>
+<td>1 OCU × 4 hours</td>
+<td>$0.96</td>
+</tr>
+<tr>
+<td><strong>S3 Storage</strong></td>
+<td>10GB document storage</td>
+<td>$0.23</td>
+</tr>
+<tr>
+<td><strong>CloudWatch Logs</strong></td>
+<td>Basic logging</td>
+<td>$0.50</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Production Monthly Estimates</strong></p>
+<p><strong>Small Team (10 users, 500 queries/month):</strong> ~$45<br>
+<strong>Medium Team (50 users, 2,500 queries/month):</strong> ~$175<br>
+<strong>Large Team (200 users, 10,000 queries/month):</strong> ~$650</p>
+<p><strong>3. Cost Optimization Tips</strong></p>
+<ul>
+<li>Use OpenSearch Serverless auto-scaling</li>
+<li>Implement Lambda provisioned concurrency only if needed</li>
+<li>Monitor Bedrock token usage with CloudWatch</li>
+<li>Set up billing alerts for cost control</li>
+</ul>
+<h4 id="workshop-value-proposition">Workshop Value Proposition</h4>
+<p><strong>1. Immediate Benefits</strong></p>
+<ul>
+<li><strong>Hands-on Experience</strong> with cutting-edge AWS AI services</li>
+<li><strong>Production-Ready Code</strong> you can deploy in your organization</li>
+<li><strong>Best Practices</strong> for enterprise AI implementation</li>
+<li><strong>Security Patterns</strong> for responsible AI deployment</li>
+</ul>
+<p><strong>2. Long-term Skills</strong></p>
+<ul>
+<li><strong>RAG Architecture</strong> design and implementation</li>
+<li><strong>Serverless AI</strong> application development</li>
+<li><strong>Enterprise Integration</strong> patterns for AI systems</li>
+<li><strong>Cost Optimization</strong> strategies for AI workloads</li>
+</ul>
+<p><strong>3. Business Impact</strong></p>
+<ul>
+<li><strong>Reduced Support Tickets</strong> through self-service knowledge access</li>
+<li><strong>Improved Productivity</strong> with instant information retrieval</li>
+<li><strong>Enhanced Collaboration</strong> through intelligent Slack integration</li>
+<li><strong>Scalable Foundation</strong> for additional AI use cases</li>
+</ul>
+<hr>
+<p><strong>Ready to begin?</strong> Ensure you meet the prerequisites above, then proceed to the <a href="introduction.md">1. Introduction to Slackbot Assistant with Amazon Bedrock</a> for detailed learning objectives and architecture overview.</p>
 	
   
         
@@ -914,26 +1028,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1277,10 +1373,8 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/9-clear-resources/" title="Clear resources"> <i class="fa fa-chevron-left"></i></a>
 		
-		
-			<a class="nav nav-next" href="//localhost:1313/1-introduction/" title="Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1290,19 +1384,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556290"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556290"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754746934"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754746934"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754746934"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754746934"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754746934"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754746934"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556290"></script>
-    <script src="//localhost:1313/js/learn.js?1754556290"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556290"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754746934"></script>
+    <script src="//localhost:1313/js/learn.js?1754746934"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754746934"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556290" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556290"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754746934" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754746934"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

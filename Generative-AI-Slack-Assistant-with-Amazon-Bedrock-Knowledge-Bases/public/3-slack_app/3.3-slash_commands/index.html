@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Get OAuth Tokens :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754757814" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754757814" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556290"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754757814"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556290"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754757814"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754757814"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754757814"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -871,7 +831,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > <a href='//localhost:1313/3-slack_app/'>Slack App Setup</a> > Get OAuth Tokens
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > <a href='//localhost:1313/3-slack_app/'>Slack App Setup</a> > Get OAuth Tokens
           
         
           
@@ -884,7 +844,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#whats-next">What&rsquo;s Next</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -908,17 +877,42 @@
 
 
 
-	<ol>
-<li>
-<p>Choose <strong>OAuth &amp; Permissions</strong>, choose <strong>install to Your-workspace</strong>.<br>
-<img src="//localhost:1313/images/3/slack_OAuth0.png?width=90pc" alt="getOAuth1"></p>
-<p><img src="//localhost:1313/images/3/slack_OAuth1.png?width=90pc" alt="getOAuth"></p>
-</li>
-<li>
-<p>You will see <strong>OAuth Tokens</strong>.<br>
-<img src="//localhost:1313/images/4/getOAuth1.png?width=90pc" alt="getOAuth"></p>
+	<h4 id="configure-bot-permissions">Configure Bot Permissions</h4>
+<ol>
+<li>Navigate to <strong>OAuth &amp; Permissions</strong> in your app settings</li>
+<li>Scroll down to <strong>Scopes</strong> → <strong>Bot Token Scopes</strong> and add:
+<ul>
+<li><code>commands</code> - Enable slash commands</li>
+<li><code>chat:write</code> - Send messages as bot</li>
+<li><code>incoming-webhook</code> - Receive webhook events</li>
+</ul>
 </li>
 </ol>
+<h4 id="install-app-to-workspace">Install App to Workspace</h4>
+<ol start="3">
+<li>Scroll up and click <strong>Install to Workspace</strong></li>
+</ol>
+<p><img alt="getOAuth1" src="//localhost:1313/images/3/slack_OAuth0.png?width=90pc"></p>
+<ol start="4">
+<li>Review permissions and click <strong>Allow</strong></li>
+</ol>
+<p><img alt="getOAuth" src="//localhost:1313/images/3/slack_OAuth1.png?width=90pc"></p>
+<h4 id="copy-oauth-tokens">Copy OAuth Tokens</h4>
+<ol start="5">
+<li>After installation, you&rsquo;ll see the <strong>Bot User OAuth Token</strong> (starts with <code>xoxb-</code>)</li>
+</ol>
+<p><img alt="getOAuth" src="//localhost:1313/images/4/getOAuth1.png?width=90pc"></p>
+<ol start="6">
+<li><strong>Copy and save this token securely</strong> - you&rsquo;ll need it for AWS Lambda configuration</li>
+</ol>
+
+<div class="notices warning" ><p><strong>Important:</strong> Keep your OAuth token secure and never commit it to version control. We&rsquo;ll store it in AWS Secrets Manager later.</p>
+</div>
+
+<h3 id="whats-next">What&rsquo;s Next</h3>
+<p>Your Slack app is now fully configured with the necessary permissions and tokens. Next, we&rsquo;ll move on to building the AWS infrastructure that will power your AI assistant.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../../4-knowledge-base/">Module 4 - Knowledge Base Foundation</a></p>
 
 
 
@@ -967,26 +961,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1341,7 +1317,7 @@
 			<a class="nav nav-prev" href="//localhost:1313/3-slack_app/3.2-oauthpermissions/" title="Create slash commands"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/4-security/" title="Security" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/4-security/" title="Configure Security" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1351,19 +1327,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556290"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556290"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754757814"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754757814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556290"></script>
-    <script src="//localhost:1313/js/learn.js?1754556290"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556290"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754757814"></script>
+    <script src="//localhost:1313/js/learn.js?1754757814"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754757814"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556290" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556290"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754757814" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754757814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,28 +1,63 @@
 +++
-title = "Secrets Manager"
+title = "Configure AWS Secrets Manager"
 date = 2024-05-14T00:38:32+07:00
-weight = 4
+weight = 1
 chapter = false
 pre = "<b>4.1 </b>"
 +++
 
-1. Access to [Secret console]()
+AWS Secrets Manager securely stores and manages your Slack bot credentials with encryption at rest and automatic rotation capabilities.
+
+#### Access Secrets Manager Console
+
+1. Navigate to [AWS Secrets Manager Console](https://console.aws.amazon.com/secretsmanager/)
    ![secret0](/images/4/secret1.png?width=91pc)
 
-2. Get token:
+#### Prepare Slack Credentials
+
+2. Copy your **Bot User OAuth Token** from Slack (from Module 3.3):
    ![slack_OAuth](/images/4/getOAuth1.png?width=90pc)
 
-3. Create **bot-token5**
+#### Create Bot Token Secret
+
+3. Create a new secret for **bot-token**:
+
+   - Click **Store a new secret**
+   - Select **Other type of secret**
+   - Enter key-value pair: `SLACK_BOT_TOKEN` = `your-bot-token-value`
+   - Name: `bot-token5`
+
    ![secret1](/images/4/secret2.png?width=91pc)
    ![secret2](/images/4/secret3.png?width=91pc)
    ![secret3](/images/4/secret3-.png?width=91pc)
    ![secret8](/images/4/secret4.png?width=91pc)
 
-4. Get **Signing secret**
+#### Get Signing Secret
+
+4. Copy your **Signing Secret** from Slack app settings:
    ![slack_secret](/images/4/secret5-.png?width=90pc)
 
-5. Create **signing-secret5**
+#### Create Signing Secret
+
+5. Create a new secret for **signing-secret**:
+
+   - Click **Store a new secret**
+   - Select **Other type of secret**
+   - Enter key-value pair: `SLACK_SIGNING_SECRET` = `your-signing-secret-value`
+   - Name: `signing-secret5`
+
    ![secret4](/images/4/secret6-.png?width=90pc)
    ![secret6](/images/4/secret6.png?width=90pc)
    ![secret7](/images/4/secret7-.png?width=90pc)
-   
+
+{{% notice tip %}}
+**Tip:** Keep the secret names consistent (`bot-token5` and `signing-secret5`) as they will be referenced in Parameter Store configuration.
+{{% /notice %}}
+
+#### What's Next
+
+Your Slack credentials are now securely stored in AWS Secrets Manager. Next, we'll configure Parameter Store to enable runtime access to these secrets.
+
+---
+
+**Continue to**: [4.2 - Parameter Store Configuration](../4.2-parameter_store/)

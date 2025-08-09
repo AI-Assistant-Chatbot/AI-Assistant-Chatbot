@@ -6,12 +6,37 @@ chapter = false
 pre = "<b>3. </b>"
 +++
 
-A Slack app is a tool or integration that extends the functionality of Slack: it adds new features, automates tasks, integrates with external services, or enhances the user experience. A Slack app allows you to do more within Slack than just chat. With the Slack platform, individual and enterprise developers alike can create apps that integrate directly with the tools teams already use, whether that's connecting a CRM, managing project boards, or sending automated alerts.
+#### Overview
 
-We know our platform is deep and wide, and possibly a little intimidating as a result. It's okay to not know where to start.
+A Slack app extends Slack's functionality by adding new features, automating tasks, and integrating with external services. For our AI assistant, the Slack app serves as the interface between users and our Amazon Bedrock-powered knowledge base, enabling natural language queries through slash commands.
 
-- If you want to take it slow, this guide on designing your app is a little light reading on how to define the look and feel of your app.
+#### What You'll Accomplish
 
-- If you'd rather stop the chitchat and get into it, build an app with the Quickstart guide. If you're just looking to get a token to call the Web API methods, completing the first three steps of the Quickstart will get you there.
+In this module, you will:
 
+- Create a new Slack app in your workspace
+- Configure OAuth permissions and slash commands
+- Generate authentication tokens for AWS integration
+- Test the basic app installation
 
+#### Key Components
+
+**1. Slack App Configuration**
+
+- **App Name**: AWS AI Assistant
+- **Slash Command**: `/ask-aws`
+- **Required Permissions**: `commands`, `chat:write`, `incoming-webhook`
+
+**2. Authentication Credentials**
+
+- **Bot Token**: For API communication (starts with `xoxb-`)
+- **Signing Secret**: For request verification
+- **Request URL**: Will connect to AWS API Gateway
+
+#### Expected Outcome
+
+By the end of this module, you'll have a configured Slack app ready to connect with the AWS backend infrastructure we'll build in subsequent modules. The slash command will be visible in your workspace but won't function until we deploy the complete solution.
+
+---
+
+**Continue to**: [Module 4 - Knowledge Base Foundation](../4-knowledge-base/)

@@ -1,18 +1,95 @@
 +++
-title = "Security"
+title = "Configure Security"
 date = 2024-05-14T00:38:32+07:00
 weight = 4
 chapter = false
 pre = "<b>4. </b>"
 +++
 
-Security is a foundational element of this chatbot system, and it is implemented through a dual-layered approach that combines the strengths of AWS Secrets Manager and AWS Systems Manager Parameter Store to ensure the secure handling of sensitive credentials and configurations throughout the application lifecycle.
+#### Security Overview
 
-The primary function of AWS Secrets Manager in this project is to securely store and manage confidential credentials, particularly those required for the Slack bot's authentication. These include the Slack Bot User OAuth Token, which is essential for programmatic access to the Slack API, and the Slack Signing Secret, which is used to validate that incoming requests to the application originate from Slack. Secrets Manager ensures these values are encrypted at rest using AWS-managed keys and supports automatic secret rotation, which enhances long-term security and reduces the risk of credential exposure. Furthermore, all access to stored secrets is tightly controlled through IAM policies, allowing only explicitly authorized roles and services to retrieve them.
+Security is a foundational element of our AI chatbot system, implemented through a dual-layered approach combining AWS Secrets Manager and AWS Systems Manager Parameter Store for secure credential management throughout the application lifecycle.
 
-Complementing Secrets Manager is the AWS Systems Manager Parameter Store, which plays a key role in configuration management and runtime secret resolution. Instead of Lambda functions directly accessing secrets, the architecture leverages Parameter Store to create references to the secrets stored in Secrets Manager. Using the native {{resolve:secretsmanager:...}} syntax, Lambda functions can dynamically fetch the latest values at execution time. This approach avoids hardcoding sensitive data in source code or environment variables, and makes deployments cleaner and safer. The use of Standard-tier parameters within SSM also ensures that the configuration layer remains cost-effective.
+#### What You'll Learn
 
-This design provides several security benefits. First, it enables a separation of concerns, where Secrets Manager handles encryption and storage, while Parameter Store manages controlled distribution. Second, credentials are never exposed in plain text or stored within the codebase, reducing attack vectors. Third, this setup supports dynamic runtime resolution, meaning credentials are always up to date when Lambda functions run. Fourth, auditing and monitoring are enabled for both Secrets Manager and Parameter Store, providing complete traceability for compliance. Lastly, it follows the principle of least privilege access, as Lambda functions require permission to read from SSM, but do not need direct access to Secrets Manager.
+In this module, you will understand:
 
-Together, these services establish a robust security architecture that ensures sensitive Slack credentials remain protected while still being seamlessly accessible to the AI chatbot application at runtime.
+- **Dual-layer security architecture** using AWS Secrets Manager and Parameter Store
+- **Secure credential management** for Slack authentication tokens
+- **IAM best practices** for least privilege access
+- **Runtime secret resolution** without hardcoded values
 
+#### Security Architecture
+
+**1. Key Components**
+
+| Component               | Purpose                           | Security Benefit                       |
+| ----------------------- | --------------------------------- | -------------------------------------- |
+| **AWS Secrets Manager** | Store encrypted Slack credentials | Automatic rotation, encryption at rest |
+| **Parameter Store**     | Runtime secret resolution         | Dynamic fetching, no hardcoded values  |
+| **IAM Policies**        | Access control                    | Least privilege principle              |
+
+**2. Security Flow**
+
+```mermaid
+graph TB
+    A[Lambda Function] --> B[Parameter Store]
+    B --> C[Secrets Manager]
+    C --> D[Encrypted Slack Credentials]
+
+    E[IAM Policies] --> A
+    E --> B
+    E --> C
+
+    style C fill:#ffebee
+    style D fill:#f3e5f5
+    style E fill:#e8f5e8
+```
+
+#### Security Benefits
+
+**1. Separation of Concerns**
+
+- **Secrets Manager**: Handles encryption and secure storage
+- **Parameter Store**: Manages controlled distribution
+- **IAM**: Controls access permissions
+
+**2. Dynamic Resolution**
+
+- Credentials fetched at runtime using `{{resolve:secretsmanager:...}}` syntax
+- Always up-to-date values without application restarts
+- No hardcoded secrets in source code or environment variables
+
+**3. Audit and Compliance**
+
+- Complete access traceability through CloudTrail
+- Compliance-ready logging for security audits
+- Monitoring capabilities for unauthorized access attempts
+
+**4. Cost Optimization**
+
+- Standard-tier Parameter Store parameters
+- Pay-per-use model with no upfront costs
+- No additional encryption charges
+
+#### Implementation Approach
+
+The security implementation follows these principles:
+
+- **Least Privilege Access**: Lambda functions only access required parameters
+- **No Direct Secrets Access**: Parameter Store acts as an intermediary layer
+- **Encryption at Rest**: All secrets encrypted using AWS-managed keys
+- **Runtime Resolution**: Credentials dynamically resolved during execution
+
+#### Expected Outcomes
+
+After implementing this security architecture:
+
+- ✅ Slack credentials securely stored and encrypted
+- ✅ Lambda functions access secrets without direct exposure
+- ✅ Complete audit trail for compliance requirements
+- ✅ Production-ready security posture established
+
+---
+
+**Continue to**: [Module 5 - Knowledge Base Foundation](../5-knowledge-base/)

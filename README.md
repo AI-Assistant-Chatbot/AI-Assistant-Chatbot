@@ -12,7 +12,7 @@ Learn to build a production-ready Slack bot powered by Amazon Bedrock Knowledge 
 **What you'll build:**
 - A Slack bot that responds to `/ask-aws` commands
 - RAG (Retrieval-Augmented Generation) system using Amazon Bedrock
-- Enterprise-grade security with content filtering
+- Enterprise-grade security with content filtering and guardrails
 - Scalable serverless architecture on AWS
 
 ## 🎯 Learning Objectives
@@ -28,15 +28,20 @@ By the end of this workshop, you will:
 ## 🏗️ Architecture
 
 ```mermaid
-graph LR
-    A[Slack User] --> B[API Gateway]
+graph TB
+    A[Slack User] -->|/ask-aws command| B[API Gateway]
     B --> C[Lambda Function]
     C --> D[Bedrock Knowledge Base]
     D --> E[OpenSearch Serverless]
     D --> F[Claude 3 Sonnet]
-    G[S3 Documents] --> D
-    F --> H[Guardrails]
-    H --> I[Response to Slack]
+    G[S3 Documents] -->|Ingestion| D
+    F --> H[Bedrock Guardrails]
+    H -->|Filtered Response| I[Slack Channel]
+    
+    style A fill:#e1f5fe
+    style D fill:#f3e5f5
+    style F fill:#fff3e0
+    style H fill:#ffebee
 ```
 
 **Key Components:**
@@ -75,80 +80,74 @@ graph LR
 
 | Module | Duration | Topic |
 |--------|----------|-------|
-| **0** | 15 min | Workshop Introduction |
-| **1** | 30 min | Environment Setup |
-| **2** | 45 min | Knowledge Base Foundation |
-| **3** | 30 min | Amazon Bedrock Knowledge Base |
-| **4** | 45 min | Slack Bot Development |
-| **5** | 20 min | API Gateway Integration |
-| **6** | 15 min | Slack Configuration |
-| **7** | 30 min | Advanced Features |
-| **8** | 25 min | Monitoring & Operations |
-| **9** | 20 min | Testing & Validation |
-| **10** | 15 min | Cleanup & Next Steps |
+| **1** | 15 min | Introduction |
+| **2** | 30 min | Environment Setup |
+| **3** | 45 min | Slack App Configuration |
+| **4** | 30 min | Security Setup |
+| **5** | 45 min | OpenSearch Serverless |
+| **6** | 30 min | Bedrock Knowledge Base |
+| **7** | 45 min | Lambda Implementation |
+| **8** | 20 min | API Gateway & Testing |
+| **9** | 15 min | Resource Cleanup |
+| **10** | 15 min | Conclusion |
 
-**Total Duration:** 3-4 hours
+**Total Duration:** 4-5 hours
 
 ## 🛠️ Quick Start
 
-### 1. Clone the Repository
+### 1. Prerequisites Setup
 ```bash
-git clone https://github.com/aws-samples/bedrock-slack-bot-workshop.git
-cd bedrock-slack-bot-workshop
+# Ensure you have:
+# - AWS Account with Bedrock access
+# - Slack workspace with admin permissions
+# - Python 3.12+ installed
+# - AWS CLI configured
 ```
 
-### 2. Set Up Environment
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate   # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### 3. Configure AWS CLI
-```bash
-aws configure
-# Enter your AWS Access Key ID, Secret Access Key, and region (us-east-1)
-```
-
-### 4. Enable Bedrock Models
+### 2. Enable Bedrock Models
 1. Go to [Amazon Bedrock Console](https://console.aws.amazon.com/bedrock/)
 2. Navigate to "Model access"
 3. Enable:
-   - Amazon Titan Text Embeddings V2
-   - Anthropic Claude 3 Sonnet
+   - **Amazon Titan Text Embeddings V2**
+   - **Anthropic Claude 3 Sonnet**
 
-### 5. Create Slack App
+### 3. Create Slack App
 1. Visit [Slack API](https://api.slack.com/apps)
 2. Create new app "From scratch"
-3. Add OAuth scopes: `calls:write`, `commands`, `incoming-webhook`
+3. Add OAuth scopes: `commands`, `chat:write`, `incoming-webhook`
 4. Install to your workspace
 
-## 📁 Repository Structure
+### 4. Follow Workshop Modules
+Start with [Module 1 - Introduction](content/1-introduction/) and follow the step-by-step guide.
+
+## 📁 Workshop Structure
 
 ```
-bedrock-slack-bot-workshop/
-├── modules/                    # Workshop modules
-│   ├── module-01-setup/
-│   ├── module-02-knowledge-base/
-│   ├── module-03-bedrock/
-│   └── ...
-├── src/                       # Source code
-│   ├── lambda/
-│   │   ├── slack_bot.py      # Main bot logic
-│   │   └── requirements.txt
-│   └── templates/
-│       └── cloudformation.yaml
-├── docs/                      # Documentation
-│   ├── architecture.md
-│   └── troubleshooting.md
-├── sample-data/              # Sample documents
-│   ├── well-architected-framework.pdf
-│   └── security-pillar.pdf
-└── README.md
+Bedrock-Slackbot-AI-Workshop/
+├── content/                           # Workshop modules
+│   ├── 1-introduction/               # Workshop overview
+│   ├── 2-environment-setup/          # AWS and development setup
+│   ├── 3-slack_app/                  # Slack app configuration
+│   │   ├── 3.1-create_slackapp/      # Create Slack app
+│   │   ├── 3.2-OAuth&Permissions/    # Configure permissions
+│   │   └── 3.3-slash_commands/       # Set up slash commands
+│   ├── 4-security/                   # Security configuration
+│   │   ├── 4.1-secret manager/       # AWS Secrets Manager
+│   │   └── 4.2-systems manager/      # Parameter Store
+│   ├── 5-opensearch/                 # Vector database setup
+│   │   ├── 5.1-collection/           # OpenSearch collection
+│   │   └── 5.2-vector_index/         # Vector index creation
+│   ├── 6-bedrock_setup/              # Bedrock configuration
+│   │   ├── 6.1-model_access/         # Enable foundation models
+│   │   └── 6.3-knowledge_base/       # Create Knowledge Base
+│   ├── 7-lambda_implementation/      # Lambda function
+│   │   ├── 7.1-lambda_role/          # IAM role creation
+│   │   └── 7.2-config_code/          # Function configuration
+│   ├── 8-api_gateway/                # API Gateway and testing
+│   ├── 9-clear resources/            # Resource cleanup
+│   └── 10-conclusion/                # Workshop conclusion
+├── images/                           # Workshop screenshots
+└── README.md                         # This file
 ```
 
 ## 🔧 Key Features
@@ -162,6 +161,7 @@ bedrock-slack-bot-workshop/
 - **Content Filtering**: Bedrock Guardrails block inappropriate content
 - **PII Protection**: Automatic detection and anonymization
 - **Access Control**: IAM-based permissions and Slack workspace restrictions
+- **Secure Credential Management**: AWS Secrets Manager and Parameter Store
 
 ### 📊 Production Ready
 - **Monitoring**: CloudWatch logs and custom metrics
@@ -193,8 +193,8 @@ bedrock-slack-bot-workshop/
 
 ### Module Highlights
 
-**🏗️ Infrastructure as Code**
-- Deploy AWS resources using CloudFormation/CDK
+**🏗️ Infrastructure Setup**
+- Deploy AWS resources with proper security
 - Configure OpenSearch Serverless for vector search
 - Set up secure IAM roles and policies
 
@@ -205,24 +205,13 @@ bedrock-slack-bot-workshop/
 
 **⚡ Serverless Development**
 - Build event-driven Lambda functions
-- Integrate with Slack using Bolt framework
+- Integrate with Slack using proper authentication
 - Handle async processing and error management
 
 **📊 Operations & Monitoring**
 - Set up CloudWatch logging and metrics
 - Configure alerts and troubleshooting
 - Implement performance optimization
-
-## 🚦 Getting Started
-
-### Option 1: Self-Paced Learning
-Follow the [Workshop Guide](docs/workshop-guide.md) at your own pace.
-
-### Option 2: Instructor-Led Workshop
-Join our live workshops at AWS events and summits.
-
-### Option 3: AWS Workshop Studio
-Access the interactive version on [AWS Workshop Studio](https://catalog.workshops.aws/).
 
 ## 📚 Additional Resources
 
@@ -260,9 +249,8 @@ This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) fil
 ## 🆘 Support
 
 ### Getting Help
-- 📖 Check the [Troubleshooting Guide](docs/troubleshooting.md)
-- 💬 Join our [Slack Community](https://join.slack.com/t/aws-bedrock-community)
-- 🎫 Open an [Issue](https://github.com/aws-samples/bedrock-slack-bot-workshop/issues)
+- 📖 Check the workshop modules for detailed instructions
+- 🎫 Open an [Issue](https://github.com/your-repo/bedrock-slack-bot-workshop/issues)
 - 📧 Contact the workshop team
 
 ### Common Issues
@@ -282,13 +270,26 @@ This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) fil
 > *"Great hands-on experience with Amazon Bedrock. The security features are exactly what we needed for enterprise deployment."*  
 > — **DevOps Engineer**
 
+## 👥 Credits
+
+This workshop was developed and maintained by:
+
+**Le Hong Anh**  
+*AI Solutions Architect*  
+[LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
+
+**Tran Doan Cong Ly**  
+*Cloud Solutions Engineer*  
+[LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
+
 ## 🔄 Updates & Changelog
 
 ### Latest Version: v1.0.0
 - ✨ Initial workshop release
 - 🤖 Support for Claude 3 Sonnet and Titan Embeddings V2
 - 🛡️ Bedrock Guardrails integration
-- 📊 Comprehensive monitoring setup
+- 📊 Comprehensive security setup
+- 🔧 Complete resource cleanup guide
 
 ### Upcoming Features
 - 🌐 Multi-language support
@@ -300,7 +301,7 @@ This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) fil
 
 **Ready to build your AI-powered Slack assistant?** 🚀
 
-[**Start the Workshop →**](docs/workshop-guide.md)
+[**Start the Workshop →**](content/1-introduction/)
 
 ---
 
@@ -308,6 +309,6 @@ This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) fil
 
 **Built with ❤️ by the AWS Community**
 
-[🌟 Star this repo](https://github.com/aws-samples/bedrock-slack-bot-workshop) | [🍴 Fork it](https://github.com/aws-samples/bedrock-slack-bot-workshop/fork) | [📢 Share it](https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20AWS%20Bedrock%20Slack%20Bot%20workshop!)
+[🌟 Star this repo](https://github.com/your-repo/bedrock-slack-bot-workshop) | [🍴 Fork it](https://github.com/your-repo/bedrock-slack-bot-workshop/fork) | [📢 Share it](https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20AWS%20Bedrock%20Slack%20Bot%20workshop!)
 
 </div>

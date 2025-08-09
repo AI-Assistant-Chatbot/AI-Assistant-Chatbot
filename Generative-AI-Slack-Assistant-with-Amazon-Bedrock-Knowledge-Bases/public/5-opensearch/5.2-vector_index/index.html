@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Vector index :: Amazon Q Developer Series</title>
+    <title>Create Vector Index :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556022" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754757814" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556022" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754757814" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556022"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754757814"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556022"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556022"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754757814"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754757814"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556022"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754757814"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         parent
         
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -871,7 +831,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > <a href='//localhost:1313/5-opensearch/'>Set up opensearch</a> > Vector index
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > <a href='//localhost:1313/5-opensearch/'>OpenSearch Serverless</a> > Create Vector Index
           
         
           
@@ -888,7 +848,10 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li><a href="#create-iam-user">Create IAM User</a></li>
+        <li><a href="#configure-postman-request">Configure Postman Request</a></li>
+        <li><a href="#create-the-index">Create the Index</a></li>
+        <li><a href="#index-configuration-explained">Index Configuration Explained</a></li>
       </ul>
     </li>
   </ul>
@@ -908,7 +871,7 @@
           
             <h1>
               
-              Vector index
+              Create Vector Index
             </h1>
           
 
@@ -916,116 +879,156 @@
 
 
 
-	<h4 id="create-user">Create user</h4>
+	<p>This section guides you through creating a vector index in OpenSearch Serverless using Postman to enable k-NN similarity searches for your AI assistant.</p>
+<h3 id="create-iam-user">Create IAM User</h3>
+<h4 id="create-deployment-user">Create Deployment User</h4>
 <ol>
-<li>
-<p>Create a user <strong>bedrock-chatbot-deployer</strong> with policy <strong>AdministratorAccess</strong><br>
-<img src="//localhost:1313/images/5/user1.png?width=91pc" alt="user1"></p>
-</li>
-<li>
-<p>Create a <strong>tag</strong> with <strong>Key</strong> and <strong>Value</strong> are <strong>access key</strong><br>
-<img src="//localhost:1313/images/5/user2.png?width=91pc" alt="userAccesskey"><br>
-<img src="//localhost:1313/images/5/user3.png?width=91pc" alt="user2"></p>
+<li>Create an IAM user <strong>bedrock-chatbot-deployer</strong> with <strong>AdministratorAccess</strong> policy<br>
+<img alt="user1" src="//localhost:1313/images/5/user1.png?width=91pc"></li>
+</ol>
+<h4 id="generate-access-keys">Generate Access Keys</h4>
+<ol start="2">
+<li>Create <strong>Access Keys</strong> for programmatic access:
+<ul>
+<li>Add a <strong>tag</strong> with <strong>Key</strong> and <strong>Value</strong> as <strong>access key</strong><br>
+<img alt="userAccesskey" src="//localhost:1313/images/5/user2.png?width=91pc"><br>
+<img alt="user2" src="//localhost:1313/images/5/user3.png?width=91pc"></li>
+</ul>
 </li>
 </ol>
-<h4 id="create-index">Create index</h4>
+
+<div class="notices warning" ><p><strong>Important:</strong> Save the Access Key ID and Secret Access Key securely - they will be needed for Postman authentication.</p>
+</div>
+
+<h3 id="configure-postman-request">Configure Postman Request</h3>
+<h4 id="set-up-authentication">Set Up Authentication</h4>
 <ol>
-<li>Access to <strong>Postman</strong> with:</li>
+<li>
+<p>Open <strong>Postman</strong> and configure the request:</p>
+<ul>
+<li><strong>Method</strong>: PUT</li>
+<li><strong>URL</strong>: <code>&lt;Collection-Endpoint&gt;/slack-bedrock-os-index</code></li>
+<li><strong>Auth Type</strong>: AWS Signature</li>
+<li><strong>Access Key</strong>: Your IAM user access key</li>
+<li><strong>Secret Key</strong>: Your IAM user secret key</li>
+<li><strong>Region</strong>: us-east-1</li>
+<li><strong>Service Name</strong>: aoss</li>
+</ul>
+<p><img alt="postman1" src="//localhost:1313/images/5/postman1.png?width=91pc"></p>
+</li>
 </ol>
+<h4 id="set-headers">Set Headers</h4>
+<ol start="2">
+<li>Configure request headers:
 <ul>
-<li>
-<p>URL is <strong>Collection endpoint</strong>/&lt;Index_name&gt;</p>
-</li>
-<li>
-<p>Auth type: <strong>AWS Signature</strong></p>
-</li>
-<li>
-<p><strong>AccessKey</strong> and <strong>SecretKey</strong></p>
-</li>
-<li>
-<p>Region: <strong>us-east-1</strong></p>
-</li>
-<li>
-<p>Service name: <strong>aoss</strong><br>
-<img src="//localhost:1313/images/5/postman1.png?width=91pc" alt="postman1"></p>
-</li>
-<li>
-<p>Header:</p>
-<ul>
-<li>Content type: <strong>Application/json</strong><br>
-<img src="//localhost:1313/images/5/postman2.png?width=91pc" alt="postman2"></li>
+<li><strong>Content-Type</strong>: application/json<br>
+<img alt="postman2" src="//localhost:1313/images/5/postman2.png?width=91pc"></li>
 </ul>
 </li>
+</ol>
+<h4 id="configure-request-body">Configure Request Body</h4>
+<ol start="3">
 <li>
-<p>Body:</p>
-<ul>
-<li><strong>raw</strong><br>
-<img src="//localhost:1313/images/5/postman3.png?width=91pc" alt="postman3"></li>
-<li>Enter code following</li>
-</ul>
-</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;settings&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;knn&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;knn.algo_param.ef_search&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">512</span>
-</span></span><span style="display:flex;"><span>   }
-</span></span><span style="display:flex;"><span> },
-</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;mappings&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;properties&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;bedrock-knowledge-base-default-vector&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;knn_vector&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;dimension&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1024</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;method&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;name&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;hnsw&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;engine&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;faiss&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;space_type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;l2&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;parameters&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;ef_construction&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">512</span>,
-</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;m&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">16</span>
-</span></span><span style="display:flex;"><span>         }
-</span></span><span style="display:flex;"><span>       }
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;AMAZON_BEDROCK_METADATA&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;AMAZON_BEDROCK_TEXT_CHUNK&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;x-amz-bedrock-kb-data-source-id&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;x-amz-bedrock-kb-document-page-number&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;long&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     <span style="color:#e6db74">&#34;x-amz-bedrock-kb-source-uri&#34;</span><span style="color:#f92672">:</span> {
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;text&#34;</span>,
-</span></span><span style="display:flex;"><span>       <span style="color:#e6db74">&#34;index&#34;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>     }
-</span></span><span style="display:flex;"><span>   }
-</span></span><span style="display:flex;"><span> }
+<p>Set body type to <strong>raw</strong> and enter the following JSON:<br>
+<img alt="postman3" src="//localhost:1313/images/5/postman3.png?width=91pc"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;settings&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;index&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;knn&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;knn.algo_param.ef_search&#34;</span>: <span style="color:#ae81ff">512</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;mappings&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;bedrock-knowledge-base-default-vector&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;knn_vector&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;dimension&#34;</span>: <span style="color:#ae81ff">1024</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;method&#34;</span>: {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;hnsw&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;engine&#34;</span>: <span style="color:#e6db74">&#34;faiss&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;space_type&#34;</span>: <span style="color:#e6db74">&#34;l2&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;ef_construction&#34;</span>: <span style="color:#ae81ff">512</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;m&#34;</span>: <span style="color:#ae81ff">16</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;AMAZON_BEDROCK_METADATA&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;AMAZON_BEDROCK_TEXT_CHUNK&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;x-amz-bedrock-kb-data-source-id&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;x-amz-bedrock-kb-document-page-number&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;long&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;x-amz-bedrock-kb-source-uri&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;index&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ol start="2">
-<li>
-<p>Click <strong>Send</strong>. Correct configuration will get response<br>
-<img src="//localhost:1313/images/5/postman4.png?width=91pc" alt="postman4"></p>
-</li>
-<li>
-<p>An index will be created with <strong>Vector field name</strong> and <strong>Metadata</strong><br>
-<img src="//localhost:1313/images/5/opensearch17.png?width=90pc" alt="opensearch17"></p>
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="create-the-index">Create the Index</h3>
+<h4 id="send-request">Send Request</h4>
+<ol start="4">
+<li>Click <strong>Send</strong> to create the vector index
+<ul>
+<li>A successful response indicates the index was created<br>
+<img alt="postman4" src="//localhost:1313/images/5/postman4.png?width=91pc"></li>
+</ul>
 </li>
 </ol>
-<p><img src="//localhost:1313/images/5/opensearch18.png?width=90pc" alt="opensearch18"></p>
-<p><img src="//localhost:1313/images/5/opensearch19.png?width=90pc" alt="opensearch19"></p>
+<h4 id="verify-index-creation">Verify Index Creation</h4>
+<ol start="5">
+<li>
+<p>Verify the index was created successfully in OpenSearch console:</p>
+<ul>
+<li><strong>Index Name</strong>: slack-bedrock-os-index</li>
+<li><strong>Vector Field</strong>: bedrock-knowledge-base-default-vector</li>
+<li><strong>Metadata Fields</strong>: Available for document tracking</li>
+</ul>
+<p><img alt="opensearch17" src="//localhost:1313/images/5/opensearch17.png?width=90pc"><br>
+<img alt="opensearch18" src="//localhost:1313/images/5/opensearch18.png?width=90pc"><br>
+<img alt="opensearch19" src="//localhost:1313/images/5/opensearch19.png?width=90pc"></p>
+</li>
+</ol>
+
+<div class="notices info" ><p><strong>Note:</strong> The vector index is configured with 1024 dimensions to match Amazon Titan Text Embeddings V2 model output and uses HNSW algorithm for efficient similarity search.</p>
+</div>
+
+<h3 id="index-configuration-explained">Index Configuration Explained</h3>
+<h4 id="vector-settings">Vector Settings</h4>
+<ul>
+<li><strong>Dimension</strong>: 1024 (matches Titan Embeddings V2)</li>
+<li><strong>Algorithm</strong>: HNSW (Hierarchical Navigable Small World)</li>
+<li><strong>Engine</strong>: FAISS (Facebook AI Similarity Search)</li>
+<li><strong>Space Type</strong>: L2 (Euclidean distance)</li>
+</ul>
+<h4 id="metadata-fields">Metadata Fields</h4>
+<ul>
+<li><strong>AMAZON_BEDROCK_TEXT_CHUNK</strong>: Searchable document text</li>
+<li><strong>AMAZON_BEDROCK_METADATA</strong>: Document metadata (not indexed)</li>
+<li><strong>x-amz-bedrock-kb-source-uri</strong>: Document source tracking</li>
+<li><strong>x-amz-bedrock-kb-document-page-number</strong>: Page reference</li>
+</ul>
+<h4 id="whats-next">What&rsquo;s Next</h4>
+<p>Your vector index is now ready to store and search document embeddings. Next, we&rsquo;ll create the Bedrock Knowledge Base that will use this OpenSearch collection.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../../6-bedrock-kb/">Module 6 - Bedrock Knowledge Base</a></p>
 
 
 
@@ -1074,26 +1077,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1445,10 +1430,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/5-opensearch/5.1-collection/" title="collection"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="//localhost:1313/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/6-bedrock_setup/" title="Bedrock setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/6-bedrock_setup/" title="Bedrock Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1458,19 +1443,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556022"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556022"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754757814"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754757814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556022"></script>
-    <script src="//localhost:1313/js/learn.js?1754556022"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556022"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754757814"></script>
+    <script src="//localhost:1313/js/learn.js?1754757814"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754757814"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556022" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556022"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754757814" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754757814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

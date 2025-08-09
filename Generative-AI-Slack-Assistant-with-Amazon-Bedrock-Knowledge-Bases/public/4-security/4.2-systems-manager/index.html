@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Systems Manager :: Amazon Q Developer Series</title>
+    <title>Configure Systems Manager Parameter Store :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556022" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556022" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754757814" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754757814" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556022" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754757814" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556022"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754757814"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556022"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556022"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754757814"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754757814"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556022"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754757814"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         parent
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -871,7 +831,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > <a href='//localhost:1313/4-security/'>Security</a> > Systems Manager
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > <a href='//localhost:1313/4-security/'>Configure Security</a> > Configure Systems Manager Parameter Store
           
         
           
@@ -884,7 +844,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -900,7 +868,7 @@
           
             <h1>
               
-              Systems Manager
+              Configure Systems Manager Parameter Store
             </h1>
           
 
@@ -908,30 +876,63 @@
 
 
 
-	<ol>
+	<p>AWS Systems Manager Parameter Store provides runtime secret resolution by creating references to Secrets Manager, enabling Lambda functions to dynamically fetch credentials without direct access to secrets.</p>
+<h4 id="access-parameter-store">Access Parameter Store</h4>
+<ol>
+<li>Navigate to <a href="https://console.aws.amazon.com/systems-manager/">AWS Systems Manager Console</a><br>
+<img alt="ssm1" src="//localhost:1313/images/4/ssm1.png?width=90pc"></li>
+</ol>
+<h4 id="create-bot-token-parameter">Create Bot Token Parameter</h4>
+<ol start="2">
 <li>
-<p>Access to <a href="https://console.aws.amazon.com/systems-manager/">SSM console</a><br>
-<img src="//localhost:1313/images/4/ssm1.png?width=90pc" alt="ssm1"></p>
-</li>
-<li>
-<p>Create new <strong>Parameter</strong> for bot-token5<br>
-<img src="//localhost:1313/images/4/ssm2.png?width=91pc" alt="ssm2"><br>
-<img src="//localhost:1313/images/4/ssm3.png?width=91pc" alt="ssm3"><br>
-<img src="//localhost:1313/images/4/ssm4.png?width=91pc" alt="ssm4"><br>
-<img src="//localhost:1313/images/4/ssm5.png?width=91pc" alt="ssm5"></p>
-</li>
-<li>
-<p>Create new <strong>Parameter</strong> for signing-secret5<br>
-<img src="//localhost:1313/images/4/ssm6.png?width=91pc" alt="ssm6"><br>
-<img src="//localhost:1313/images/4/ssm7.png?width=91pc" alt="ssm7"><br>
-<img src="//localhost:1313/images/4/ssm8.png?width=91pc" alt="ssm8"></p>
-</li>
-<li>
-<p>ARN<br>
-<img src="//localhost:1313/images/4/ssm9.png?width=91pc" alt="ssm9"><br>
-<img src="//localhost:1313/images/4/ssm10.png?width=91pc" alt="ssm10"></p>
+<p>Create a parameter for <strong>bot-token5</strong>:</p>
+<ul>
+<li>Click <strong>Create parameter</strong></li>
+<li><strong>Name</strong>: <code>/slack-bot/token</code></li>
+<li><strong>Type</strong>: String</li>
+<li><strong>Value</strong>: <code>{{resolve:secretsmanager:bot-token5:SecretString:SLACK_BOT_TOKEN}}</code></li>
+</ul>
+<p><img alt="ssm2" src="//localhost:1313/images/4/ssm2.png?width=91pc"><br>
+<img alt="ssm3" src="//localhost:1313/images/4/ssm3.png?width=91pc"><br>
+<img alt="ssm4" src="//localhost:1313/images/4/ssm4.png?width=91pc"><br>
+<img alt="ssm5" src="//localhost:1313/images/4/ssm5.png?width=91pc"></p>
 </li>
 </ol>
+<h4 id="create-signing-secret-parameter">Create Signing Secret Parameter</h4>
+<ol start="3">
+<li>
+<p>Create a parameter for <strong>signing-secret5</strong>:</p>
+<ul>
+<li>Click <strong>Create parameter</strong></li>
+<li><strong>Name</strong>: <code>/slack-bot/signing-secret</code></li>
+<li><strong>Type</strong>: String</li>
+<li><strong>Value</strong>: <code>{{resolve:secretsmanager:signing-secret5:SecretString:SLACK_SIGNING_SECRET}}</code></li>
+</ul>
+<p><img alt="ssm6" src="//localhost:1313/images/4/ssm6.png?width=91pc"><br>
+<img alt="ssm7" src="//localhost:1313/images/4/ssm7.png?width=91pc"><br>
+<img alt="ssm8" src="//localhost:1313/images/4/ssm8.png?width=91pc"></p>
+</li>
+</ol>
+<h4 id="note-parameter-arns">Note Parameter ARNs</h4>
+<ol start="4">
+<li>
+<p>Copy the <strong>Parameter ARNs</strong> for IAM policy configuration:</p>
+<ul>
+<li>Bot token ARN: <code>arn:aws:ssm:region:account:parameter/slack-bot/token</code></li>
+<li>Signing secret ARN: <code>arn:aws:ssm:region:account:parameter/slack-bot/signing-secret</code></li>
+</ul>
+<p><img alt="ssm9" src="//localhost:1313/images/4/ssm9.png?width=91pc"><br>
+<img alt="ssm10" src="//localhost:1313/images/4/ssm10.png?width=91pc"></p>
+</li>
+</ol>
+
+<div class="notices info" ><p><strong>Note:</strong> The <code>{{resolve:secretsmanager:...}}</code> syntax enables dynamic resolution of secrets at runtime, ensuring Lambda functions always get the latest credential values.</p>
+</div>
+
+<h4 id="whats-next">What&rsquo;s Next</h4>
+<p>Your Parameter Store is now configured to securely reference Secrets Manager. These parameters will be used by Lambda functions to access Slack credentials without direct secret exposure.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../../5-knowledge-base/">Module 5 - Knowledge Base Foundation</a></p>
 
 
 
@@ -980,26 +981,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1351,10 +1334,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/4-security/4.1-secret-manager/" title="Secrets Manager"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="//localhost:1313/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/5-opensearch/" title="Set up opensearch" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/5-opensearch/" title="OpenSearch Serverless" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1364,19 +1347,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556022"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556022"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556022"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754757814"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754757814"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754757814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556022"></script>
-    <script src="//localhost:1313/js/learn.js?1754556022"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556022"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754757814"></script>
+    <script src="//localhost:1313/js/learn.js?1754757814"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754757814"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556022" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556022"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754757814" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754757814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

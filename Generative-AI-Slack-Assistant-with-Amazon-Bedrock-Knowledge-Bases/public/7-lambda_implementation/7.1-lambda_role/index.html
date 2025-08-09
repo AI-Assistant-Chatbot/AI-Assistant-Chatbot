@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Lambda role :: Amazon Q Developer Series</title>
+    <title>Create Lambda Execution Role :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754758702" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754758702" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556290"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754758702"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556290"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754758702"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754758702"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754758702"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -733,6 +693,32 @@
         ">
       <a href="//localhost:1313/9-clear-resources/">
           <b>9. </b>Clear resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/10-conclusion/">
+          <b>10. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -871,7 +857,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > <a href='//localhost:1313/7-lambda_implementation/'>Lambda implementation</a> > Lambda role
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > <a href='//localhost:1313/7-lambda_implementation/'>Lambda implementation</a> > Create Lambda Execution Role
           
         
           
@@ -886,11 +872,24 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#step-1-create-iam-role">Step 1: Create IAM Role</a>
       <ul>
-        <li></li>
+        <li><a href="#11-create-base-role">1.1 Create Base Role</a></li>
       </ul>
     </li>
+    <li><a href="#step-2-add-custom-policy">Step 2: Add Custom Policy</a>
+      <ul>
+        <li><a href="#21-create-bedrockexecutionpolicy">2.1 Create BedrockExecutionPolicy</a></li>
+        <li><a href="#22-policy-json-configuration">2.2 Policy JSON Configuration</a></li>
+      </ul>
+    </li>
+    <li><a href="#policy-permissions-explained">Policy Permissions Explained</a>
+      <ul>
+        <li><a href="#core-permissions">Core Permissions</a></li>
+        <li><a href="#required-replacements">Required Replacements</a></li>
+      </ul>
+    </li>
+    <li><a href="#whats-next">What&rsquo;s Next</a></li>
   </ul>
 </nav>
     </div>
@@ -908,7 +907,7 @@
           
             <h1>
               
-              Lambda role
+              Create Lambda Execution Role
             </h1>
           
 
@@ -916,73 +915,140 @@
 
 
 
-	<h4 id="create-a-role-named-bedrockexecutionrole8888">Create a role named <strong>BedrockExecutionRole8888</strong>:</h4>
+	<p>This section guides you through creating an IAM role with the necessary permissions for your Lambda function to interact with Bedrock, Secrets Manager, and other AWS services.</p>
+<h2 id="step-1-create-iam-role">Step 1: Create IAM Role</h2>
+<h3 id="11-create-base-role">1.1 Create Base Role</h3>
+<ol>
+<li>
+<p>Create a new IAM role named <strong>BedrockExecutionRole8888</strong>:</p>
 <ul>
-<li>
-<p>Policy <strong>AWSLambdaBasicExecutionRole</strong>:<br>
-<img src="//localhost:1313/images/7/lambda1-.png?width=90pc" alt="lambda1"></p>
-</li>
-<li>
-<p>Add a custom policy named <strong>BedrockExecutionPolicy</strong>:</p>
-<p><img src="//localhost:1313/images/7/lambda2-.png?width=90pc" alt="lambda2"></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;Version&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
-</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;Statement&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;bedrock:InvokeModel&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0&#34;</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;bedrock:Retrieve&#34;</span>,
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;bedrock:RetrieveAndGenerate&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&lt;YOUR-KNOWLEDGEBASE-ARN&gt;&#34;</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;ssm:GetParameter&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;&lt;YOUR-SSM-ARN-1&gt;&#34;</span>,
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;&lt;YOUR-SSM-ARN-1&gt;&#34;</span>
-</span></span><span style="display:flex;"><span>         ]
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;lambda:InvokeFunction&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&lt;YOUR-LAMBDA-FUNCTION-ARN&gt;&#34;</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;bedrock:ApplyGuardrail&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;arn:aws:bedrock:us-east-1:&lt;YOUR-ACCOUNT-ID&gt;:guardrail/&lt;YOUR-GUARDRAIL-ID&gt;*&#34;</span>
-</span></span><span style="display:flex;"><span>     },
-</span></span><span style="display:flex;"><span>     {
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Action&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;secretsmanager:GetSecretValue&#34;</span>
-</span></span><span style="display:flex;"><span>         ],
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Effect&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Allow&#34;</span>,
-</span></span><span style="display:flex;"><span>         <span style="color:#e6db74">&#34;Resource&#34;</span><span style="color:#f92672">:</span> [
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;&lt;YOUR-SECRET-BOT-TOKEN-ARN&gt;&#34;</span>,
-</span></span><span style="display:flex;"><span>             <span style="color:#e6db74">&#34;&lt;YOUR-SECRET-SIGNING-SECRET-ARN&gt;&#34;</span>
-</span></span><span style="display:flex;"><span>         ]
-</span></span><span style="display:flex;"><span>     }
-</span></span><span style="display:flex;"><span> ]
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><img src="//localhost:1313/images/7/lambda3.png?width=90pc" alt="lambda3"></p>
-<p><img src="//localhost:1313/images/7/lambda2.png?width=91pc" alt="lambda4"></p>
-</li>
+<li><strong>Trusted entity</strong>: AWS Lambda</li>
+<li><strong>Use case</strong>: Lambda</li>
+<li>Attach <strong>AWSLambdaBasicExecutionRole</strong> managed policy</li>
 </ul>
+<p><img alt="lambda1" src="//localhost:1313/images/7/lambda1-.png?width=90pc"></p>
+</li>
+</ol>
+<h2 id="step-2-add-custom-policy">Step 2: Add Custom Policy</h2>
+<h3 id="21-create-bedrockexecutionpolicy">2.1 Create BedrockExecutionPolicy</h3>
+<ol start="2">
+<li>
+<p>Add a custom inline policy named <strong>BedrockExecutionPolicy</strong>:</p>
+<p><img alt="lambda2" src="//localhost:1313/images/7/lambda2-.png?width=90pc"></p>
+</li>
+</ol>
+<h3 id="22-policy-json-configuration">2.2 Policy JSON Configuration</h3>
+<ol start="3">
+<li>
+<p>Use the following JSON policy (replace placeholder values with your actual ARNs):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Version&#34;</span>: <span style="color:#e6db74">&#34;2012-10-17&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Statement&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;bedrock:InvokeModel&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;bedrock:Retrieve&#34;</span>, <span style="color:#e6db74">&#34;bedrock:RetrieveAndGenerate&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:bedrock:us-east-1:YOUR-ACCOUNT-ID:knowledge-base/YOUR-KB-ID&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;ssm:GetParameter&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;arn:aws:ssm:us-east-1:YOUR-ACCOUNT-ID:parameter/slack-bot/token&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;arn:aws:ssm:us-east-1:YOUR-ACCOUNT-ID:parameter/slack-bot/signing-secret&#34;</span>
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;lambda:InvokeFunction&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:lambda:us-east-1:YOUR-ACCOUNT-ID:function:slack-bedrock-bot&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;bedrock:ApplyGuardrail&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: <span style="color:#e6db74">&#34;arn:aws:bedrock:us-east-1:YOUR-ACCOUNT-ID:guardrail/*&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Action&#34;</span>: [<span style="color:#e6db74">&#34;secretsmanager:GetSecretValue&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Effect&#34;</span>: <span style="color:#e6db74">&#34;Allow&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Resource&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;arn:aws:secretsmanager:us-east-1:YOUR-ACCOUNT-ID:secret:bot-token5-*&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;arn:aws:secretsmanager:us-east-1:YOUR-ACCOUNT-ID:secret:signing-secret5-*&#34;</span>
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img alt="lambda3" src="//localhost:1313/images/7/lambda3.png?width=90pc"><br>
+<img alt="lambda4" src="//localhost:1313/images/7/lambda2.png?width=91pc"></p>
+</li>
+</ol>
+<h2 id="policy-permissions-explained">Policy Permissions Explained</h2>
+<h3 id="core-permissions">Core Permissions</h3>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Purpose</th>
+<th>Resource</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>bedrock:InvokeModel</strong></td>
+<td>Call Claude 3 Sonnet</td>
+<td>Foundation model ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:Retrieve</strong></td>
+<td>Query Knowledge Base</td>
+<td>Knowledge Base ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:RetrieveAndGenerate</strong></td>
+<td>Full RAG workflow</td>
+<td>Knowledge Base ARN</td>
+</tr>
+<tr>
+<td><strong>ssm:GetParameter</strong></td>
+<td>Access configuration</td>
+<td>Parameter Store ARNs</td>
+</tr>
+<tr>
+<td><strong>lambda:InvokeFunction</strong></td>
+<td>Self-invocation</td>
+<td>Lambda function ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:ApplyGuardrail</strong></td>
+<td>Content filtering</td>
+<td>Guardrail ARNs</td>
+</tr>
+<tr>
+<td><strong>secretsmanager:GetSecretValue</strong></td>
+<td>Access Slack credentials</td>
+<td>Secrets Manager ARNs</td>
+</tr>
+</tbody>
+</table>
+<h3 id="required-replacements">Required Replacements</h3>
+<p>Before using the policy, replace these placeholders:</p>
+<ul>
+<li><code>YOUR-ACCOUNT-ID</code>: Your AWS account ID</li>
+<li><code>YOUR-KB-ID</code>: Your Knowledge Base ID from Module 6</li>
+<li>Update secret ARNs to match your actual secret names</li>
+</ul>
+
+<div class="notices warning" ><p><strong>Important:</strong> Replace all placeholder values with your actual ARNs before creating the policy. Incorrect ARNs will cause permission errors.</p>
+</div>
+
+<h2 id="whats-next">What&rsquo;s Next</h2>
+<p>Your Lambda execution role is now configured with the necessary permissions. Next, we&rsquo;ll create the Lambda function that will use this role.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../7.2-create_lambda/">7.2 - Create Lambda Function</a></p>
 
 
 
@@ -1031,26 +1097,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1354,6 +1402,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1402,7 +1466,7 @@
 			<a class="nav nav-prev" href="//localhost:1313/7-lambda_implementation/" title="Lambda implementation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/7-lambda_implementation/7.2-config_code/" title="Configuration and code" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1412,19 +1476,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556290"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556290"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754758702"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754758702"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556290"></script>
-    <script src="//localhost:1313/js/learn.js?1754556290"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556290"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754758702"></script>
+    <script src="//localhost:1313/js/learn.js?1754758702"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754758702"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556290" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556290"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754758702" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754758702"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

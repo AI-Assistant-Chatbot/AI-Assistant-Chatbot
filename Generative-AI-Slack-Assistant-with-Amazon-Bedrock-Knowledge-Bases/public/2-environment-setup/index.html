@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="description" content="">
+<meta name="author" content="congly.work@gmail.com">
+
+    <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
+
+    <title>Environment Setup :: Amazon Q Developer Series</title>
+
+    
+    <link href="//localhost:1313/css/nucleus.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754758702" rel="stylesheet">
+    
+    <link href="//localhost:1313/css/theme-workshop.css?1754758702" rel="stylesheet">
+    
+    
+
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754758702"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="//localhost:1313/2-environment-setup/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="//localhost:1313/">
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
+
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754758702"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754758702"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/\/localhost:1313\/";
+    
+</script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754758702"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/1-introduction/">
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
+        
+        active
+        
+        ">
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-slack_app/" title="Slack App Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-slack_app/">
+          <b>3. </b>Slack App Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-slack_app/3.1-create_slackapp/" title="Create slack app" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-slack_app/3.1-create_slackapp/">
+          <b>3.1 </b>Create slack app
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-slack_app/3.2-oauthpermissions/" title="Create slash commands" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-slack_app/3.2-oauthpermissions/">
+          <b>3.2 </b>Create slash commands
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/3-slack_app/3.3-slash_commands/" title="Get OAuth Tokens" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/3-slack_app/3.3-slash_commands/">
+          <b>3.3 </b>Get OAuth Tokens
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/4-security/">
+          <b>4. </b>Configure Security
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/4-security/4.1-secret-manager/">
+          <b>4.1 </b>Configure AWS Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/4-security/4.2-systems-manager/">
+          <b>4.2 </b>Configure Systems Manager Parameter Store
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/5-opensearch/">
+          <b>5. </b>OpenSearch Serverless
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/5-opensearch/5.1-collection/">
+          <b>5.1 </b>OpenSearch Serverless Collection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
+          <b>5.2 </b>Create Vector Index
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/">
+          <b>6. </b>Bedrock Setup
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.1-model_access/" title="Set up model access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
+          <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.3-knowledge_base/" title="Set up knowledge base" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.3-knowledge_base/">
+          <b>6.3 </b>Set up knowledge base
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-lambda_implementation/" title="Lambda implementation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/7-lambda_implementation/">
+          <b>7. </b>Lambda implementation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
+          <b>7.1 </b>Create Lambda Execution Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
+          <b>7.2 </b>Create and Configure Lambda Function
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/8-api_gateway/" title="Connect and chat" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/8-api_gateway/">
+          <b>8. </b>Connect and chat
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/9-clear-resources/" title="Clear resources" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/9-clear-resources/">
+          <b>9. </b>Clear resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/10-conclusion/">
+          <b>10. </b>Conclusion
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"><i class='fab fa-facebook'></i> AWS Study Group</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="//localhost:1313/2-environment-setup/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="//localhost:1313/vi/2-environment-setup/">Tiếng Việt</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <left>
+    
+     <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830891&style=0038&nbdigits=9&type=page&initCount=0" title="Migrate" Alt="web counter"   border="0" /></a>  <br>
+     <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
+     
+</left>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>17/01/2025</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+           
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Ly Tran</a>
+        </i>
+        </left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > Environment Setup
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Environment Setup
+            </h1>
+          
+
+        
+
+
+
+	<h4 id="environment-setup-overview">Environment Setup Overview</h4>
+<p>Before building your Generative AI Slack Assistant, you need to set up the required environments and tools. This module will guide you through creating a Slack workspace, configuring AWS services, and preparing your development environment.</p>
+<h4 id="prerequisites-checklist">Prerequisites Checklist</h4>
+<p>Ensure you have the following before proceeding:</p>
+<ul>
+<li>✅ <strong>AWS Account</strong> with administrative access</li>
+<li>✅ <strong>Email address</strong> for Slack workspace creation</li>
+<li>✅ <strong>Python 3.12+</strong> installed on your local machine</li>
+<li>✅ <strong>AWS CLI</strong> installed and configured</li>
+<li>✅ <strong>Code editor</strong> (VS Code recommended)</li>
+</ul>
+<h4 id="module-learning-objectives">Module Learning Objectives</h4>
+<p>By the end of this module, you will have:</p>
+<ol>
+<li><strong>Created a Slack workspace</strong> for testing the bot</li>
+<li><strong>Configured AWS CLI</strong> with proper credentials</li>
+<li><strong>Enabled Amazon Bedrock models</strong> in your AWS account</li>
+<li><strong>Set up your development environment</strong> with required dependencies</li>
+<li><strong>Verified all prerequisites</strong> for the workshop</li>
+</ol>
+<hr>
+<h4 id="create-slack-workspace">Create Slack Workspace</h4>
+<p><strong>1. Navigate to Slack</strong></p>
+<ul>
+<li>Go to <a href="https://slack.com/">Slack.com</a> and click <strong>Create a new workspace</strong>.</li>
+</ul>
+<p><img alt="slackWorkSpace1" src="//localhost:1313/images/2/slackWorkSpace1.png?width=90pc"></p>
+<p><strong>2. Sign Up Process</strong></p>
+<ul>
+<li><strong>Enter your email to sign in</strong></li>
+</ul>
+<p><img alt="slackWorkSpace2" src="//localhost:1313/images/2/slackWorkSpace2.png?width=90pc"></p>
+<p><strong>3. Click Create a Workspace</strong><br>
+<img alt="slackWorkSpace3" src="//localhost:1313/images/2/slackWorkSpace3.png?width=90pc"></p>
+<h4 id="complete-workspace-setup">Complete Workspace Setup</h4>
+<p><strong>1. Complete the workspace creation process by providing:</strong></p>
+<ul>
+<li><strong>Workspace name</strong> (e.g., &ldquo;AI-Assistant-Workshop&rdquo;)</li>
+<li><strong>Channel name</strong> (e.g., &ldquo;#ai-assistant&rdquo;)</li>
+<li><strong>Team member invitations</strong> (optional for workshop)</li>
+</ul>
+<p><img alt="slackWorkSpace4" src="//localhost:1313/images/2/slackWorkSpace4.png?width=91pc"></p>
+
+<div class="notices tip" ><p><strong>Tip:</strong> Keep your workspace name simple and related to the workshop. You&rsquo;ll use this workspace to test your AI assistant.</p>
+</div>
+
+<hr>
+<h4 id="aws-account-configuration">AWS Account Configuration</h4>
+<p><strong>1. Verify AWS Account Access</strong></p>
+<p><strong>Log in to AWS Console</strong></p>
+<ul>
+<li>Navigate to <a href="https://console.aws.amazon.com/">AWS Console</a></li>
+<li>Ensure you have administrative access or the following permissions:
+<ul>
+<li>Amazon Bedrock full access</li>
+<li>Lambda full access</li>
+<li>API Gateway full access</li>
+<li>S3 full access</li>
+<li>OpenSearch Serverless access</li>
+</ul>
+</li>
+</ul>
+<p><strong>2. Configure AWS CLI</strong></p>
+<p><strong>Install AWS CLI</strong> (if not already installed)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Windows</span>
+</span></span><span style="display:flex;"><span>msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># macOS</span>
+</span></span><span style="display:flex;"><span>curl <span style="color:#e6db74">&#34;https://awscli.amazonaws.com/AWSCLIV2.pkg&#34;</span> -o <span style="color:#e6db74">&#34;AWSCLIV2.pkg&#34;</span>
+</span></span><span style="display:flex;"><span>sudo installer -pkg AWSCLIV2.pkg -target /
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Linux</span>
+</span></span><span style="display:flex;"><span>curl <span style="color:#e6db74">&#34;https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip&#34;</span> -o <span style="color:#e6db74">&#34;awscliv2.zip&#34;</span>
+</span></span><span style="display:flex;"><span>unzip awscliv2.zip
+</span></span><span style="display:flex;"><span>sudo ./aws/install
+</span></span></code></pre></div><p><strong>3. Configure AWS credentials</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws configure
+</span></span></code></pre></div><p>Enter the following when prompted:</p>
+<ul>
+<li><strong>AWS Access Key ID</strong>: Your access key</li>
+<li><strong>AWS Secret Access Key</strong>: Your secret key</li>
+<li><strong>Default region name</strong>: <code>us-east-1</code> (recommended for Bedrock)</li>
+<li><strong>Default output format</strong>: <code>json</code></li>
+</ul>
+<p><strong>4. Verify configuration</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aws sts get-caller-identity
+</span></span></code></pre></div>
+<div class="notices warning" ><p><strong>Important:</strong> Use <code>us-east-1</code> region for this workshop as it has the best model availability for Amazon Bedrock.</p>
+</div>
+
+<hr>
+<h4 id="enable-amazon-bedrock-models">Enable Amazon Bedrock Models</h4>
+<p><strong>1. Access Bedrock Console</strong></p>
+<p><strong>Navigate to Amazon Bedrock</strong></p>
+<ul>
+<li>Go to <a href="https://console.aws.amazon.com/bedrock/">Amazon Bedrock Console</a></li>
+<li>Ensure you&rsquo;re in the <strong>us-east-1</strong> region</li>
+</ul>
+<p><strong>2. Request Model Access</strong></p>
+<p><strong>Enable required models</strong></p>
+<ul>
+<li>Click <strong>Model access</strong> in the left navigation</li>
+<li>Click <strong>Modify model access</strong> or <strong>Enable specific models</strong></li>
+</ul>
+<p><strong>Select the following models:</strong></p>
+<ul>
+<li>✅ <strong>Amazon Titan Text Embeddings V2</strong> (for vector embeddings)</li>
+<li>✅ <strong>Anthropic Claude 3 Sonnet</strong> (for text generation)</li>
+</ul>
+<p><strong>Submit access request</strong></p>
+<ul>
+<li>Click <strong>Next</strong> → <strong>Submit</strong></li>
+<li>Wait for approval (usually instant for these models)</li>
+</ul>
+<h4 id="verify-model-access">Verify Model Access</h4>
+<p><strong>Confirm access granted</strong></p>
+<ul>
+<li>Check that both models show <strong>Access granted</strong> status</li>
+<li>This may take a few minutes</li>
+</ul>
+
+<div class="notices info" ><p><strong>Note:</strong> Model access is typically granted immediately for Titan and Claude models. If you encounter issues, ensure your AWS account is in good standing.</p>
+</div>
+
+<hr>
+<h4 id="development-environment-setup">Development Environment Setup</h4>
+<p><strong>1. Python Environment</strong></p>
+<p><strong>Verify Python installation</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python --version
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Should show Python 3.12 or higher</span>
+</span></span></code></pre></div><p><strong>Create virtual environment</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python -m venv bedrock-slack-env
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate (Windows)</span>
+</span></span><span style="display:flex;"><span>bedrock-slack-env<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Activate (macOS/Linux)</span>
+</span></span><span style="display:flex;"><span>source bedrock-slack-env/bin/activate
+</span></span></code></pre></div><p><strong>2. Install Required Dependencies</strong></p>
+<p><strong>Install core packages</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install boto3 slack-bolt python-dotenv requests
+</span></span></code></pre></div><p><strong>Install AWS CDK (for infrastructure deployment)</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g aws-cdk
+</span></span><span style="display:flex;"><span>cdk --version
+</span></span></code></pre></div><p><strong>3. Verify Installation</strong></p>
+<p><strong>Test AWS SDK connection</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> boto3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Test Bedrock connection</span>
+</span></span><span style="display:flex;"><span>bedrock <span style="color:#f92672">=</span> boto3<span style="color:#f92672">.</span>client(<span style="color:#e6db74">&#39;bedrock&#39;</span>, region_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;us-east-1&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;AWS SDK configured successfully!&#34;</span>)
+</span></span></code></pre></div><hr>
+<h4 id="environment-verification">Environment Verification</h4>
+<p><strong>1. Complete Setup Checklist</strong></p>
+<p>Verify all components are properly configured:</p>
+<ul>
+<li>✅ <strong>Slack workspace created</strong> and accessible</li>
+<li>✅ <strong>AWS CLI configured</strong> with valid credentials</li>
+<li>✅ <strong>Bedrock models enabled</strong> (Titan + Claude 3)</li>
+<li>✅ <strong>Python environment</strong> set up with dependencies</li>
+<li>✅ <strong>AWS CDK installed</strong> and functional</li>
+</ul>
+<p><strong>2. Test Basic Connectivity</strong></p>
+<p>Run this verification script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> boto3
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">verify_setup</span>():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Test AWS connection</span>
+</span></span><span style="display:flex;"><span>        sts <span style="color:#f92672">=</span> boto3<span style="color:#f92672">.</span>client(<span style="color:#e6db74">&#39;sts&#39;</span>)
+</span></span><span style="display:flex;"><span>        identity <span style="color:#f92672">=</span> sts<span style="color:#f92672">.</span>get_caller_identity()
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;✅ AWS Account: </span><span style="color:#e6db74">{</span>identity[<span style="color:#e6db74">&#39;Account&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Test Bedrock access</span>
+</span></span><span style="display:flex;"><span>        bedrock <span style="color:#f92672">=</span> boto3<span style="color:#f92672">.</span>client(<span style="color:#e6db74">&#39;bedrock&#39;</span>, region_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;us-east-1&#39;</span>)
+</span></span><span style="display:flex;"><span>        models <span style="color:#f92672">=</span> bedrock<span style="color:#f92672">.</span>list_foundation_models()
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;✅ Bedrock access confirmed&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">🎉 Environment setup complete!&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;❌ Setup error: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    verify_setup()
+</span></span></code></pre></div><hr>
+<h4 id="troubleshooting-common-issues">Troubleshooting Common Issues</h4>
+<p><strong>1. AWS CLI Issues</strong></p>
+<ul>
+<li><strong>Problem</strong>: <code>aws: command not found</code></li>
+<li><strong>Solution</strong>: Restart terminal after installation or add AWS CLI to PATH</li>
+</ul>
+<p><strong>2. Bedrock Access Issues</strong></p>
+<ul>
+<li><strong>Problem</strong>: Model access denied</li>
+<li><strong>Solution</strong>: Ensure you&rsquo;re in us-east-1 region and have proper IAM permissions</li>
+</ul>
+<p><strong>3. Python Environment Issues</strong></p>
+<ul>
+<li><strong>Problem</strong>: Package installation fails</li>
+<li><strong>Solution</strong>: Ensure virtual environment is activated and pip is updated</li>
+</ul>
+
+<div class="notices tip" ><p><strong>Need Help?</strong> If you encounter issues, check the <a href="../troubleshooting/">Troubleshooting Guide</a> or ask the workshop instructor.</p>
+</div>
+
+<hr>
+<h4 id="next-steps">Next Steps</h4>
+<p>With your environment properly configured, you&rsquo;re ready to start building the knowledge base foundation for your AI assistant.</p>
+<p><strong>Continue to</strong>: <a href="../3-knowledge-base/">Module 3 - Knowledge Base Foundation</a></p>
+<hr>
+<h4 id="summary">Summary</h4>
+<p>In this module, you have:</p>
+<ul>
+<li>✅ Created a Slack workspace for testing</li>
+<li>✅ Configured AWS CLI and verified access</li>
+<li>✅ Enabled required Amazon Bedrock models</li>
+<li>✅ Set up Python development environment</li>
+<li>✅ Verified all components are working correctly</li>
+</ul>
+<p>Your development environment is now ready for building the Generative AI Slack Assistant!</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="//localhost:1313/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="//localhost:1313/3-slack_app/" title="Slack App Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="//localhost:1313/js/clipboard.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754758702"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754758702"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754758702"></script>
+    <script src="//localhost:1313/js/learn.js?1754758702"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754758702"></script>
+
+    <link href="//localhost:1313/mermaid/mermaid.css?1754758702" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754758702"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-158079754-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 +++
 title = "Apply Guardrails to Agent"
 date = 2020-05-14T00:38:32+07:00
-weight = 7
+weight = 9
 chapter = false
-pre = "<b>7. </b>"
+pre = "<b>9. </b>"
 +++
 
 Now that these guardrails has been tested, ABCD Bank can create agents and enforce these guardrails on the same.

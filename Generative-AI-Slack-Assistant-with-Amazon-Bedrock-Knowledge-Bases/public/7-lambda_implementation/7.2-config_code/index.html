@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Configuration and code :: Amazon Q Developer Series</title>
+    <title>Create and Configure Lambda Function :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754758702" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754758702" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556290"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754758702"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556290"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754758702"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754758702"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754758702"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -733,6 +693,32 @@
         ">
       <a href="//localhost:1313/9-clear-resources/">
           <b>9. </b>Clear resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/10-conclusion/">
+          <b>10. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -871,7 +857,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > <a href='//localhost:1313/7-lambda_implementation/'>Lambda implementation</a> > Configuration and code
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > <a href='//localhost:1313/7-lambda_implementation/'>Lambda implementation</a> > Create and Configure Lambda Function
           
         
           
@@ -884,7 +870,40 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-create-lambda-function">Step 1: Create Lambda Function</a>
+      <ul>
+        <li><a href="#11-basic-function-setup">1.1 Basic Function Setup</a></li>
+        <li><a href="#12-attach-iam-role">1.2 Attach IAM Role</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-2-upload-function-code">Step 2: Upload Function Code</a>
+      <ul>
+        <li><a href="#21-deploy-code-package">2.1 Deploy Code Package</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-3-configure-function-settings">Step 3: Configure Function Settings</a>
+      <ul>
+        <li><a href="#31-update-handler">3.1 Update Handler</a></li>
+        <li><a href="#32-adjust-performance-settings">3.2 Adjust Performance Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-4-environment-variables">Step 4: Environment Variables</a>
+      <ul>
+        <li><a href="#41-add-configuration-variables">4.1 Add Configuration Variables</a></li>
+        <li><a href="#42-required-values">4.2 Required Values</a></li>
+      </ul>
+    </li>
+    <li><a href="#function-configuration-summary">Function Configuration Summary</a>
+      <ul>
+        <li><a href="#runtime-settings">Runtime Settings</a></li>
+        <li><a href="#security-settings">Security Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#whats-next">What&rsquo;s Next</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -900,7 +919,7 @@
           
             <h1>
               
-              Configuration and code
+              Create and Configure Lambda Function
             </h1>
           
 
@@ -908,35 +927,140 @@
 
 
 
-	<ol>
+	<p>This section guides you through creating the Lambda function and configuring it with the necessary code, settings, and environment variables.</p>
+<h2 id="step-1-create-lambda-function">Step 1: Create Lambda Function</h2>
+<h3 id="11-basic-function-setup">1.1 Basic Function Setup</h3>
+<ol>
 <li>
-<p>Create a lambda named <strong>BedrockKBSlackbotFunction5</strong><br>
-<img src="//localhost:1313/images/7/lambda5.png?width=90pc" alt="lambda5"></p>
-</li>
-<li>
-<p>Attach role named <strong>BedrockExecutionRole8888</strong> and <strong>Create</strong><br>
-<img src="//localhost:1313/images/7/lambda6-.png?width=90pc" alt="lambda6"></p>
-</li>
-<li>
-<p>Up load a file .zip named <a href="https://github.com/honganh29122002/lambda_code_zip">BedrockKBSlackbotFunction.zip</a><br>
-<img src="//localhost:1313/images/7/lambda7-.png?width=90pc" alt="lambda7"><br>
-<img src="//localhost:1313/images/7/lambda8.png?width=90pc" alt="lambda8"><br>
-<img src="//localhost:1313/images/7/lambda9-.png?width=90pc" alt="lambda9"></p>
-</li>
-<li>
-<p>Change <strong>Hanlder</strong>:<br>
-<img src="//localhost:1313/images/7/lambda11-.png?width=91pc" alt="lambda11"></p>
-</li>
-<li>
-<p>Change <strong>Memory</strong> and <strong>Timeout</strong><br>
-<img src="//localhost:1313/images/7/lambda13-.png?width=90pc" alt="lambda13"></p>
-</li>
-<li>
-<p>Add some <strong>Environment variables</strong><br>
-<img src="//localhost:1313/images/7/lambda14-.png?width=90pc" alt="lambda14"><br>
-<img src="//localhost:1313/images/7/lambda15-.png?width=90pc" alt="lambda15"></p>
+<p>Create a new Lambda function named <strong>BedrockKBSlackbotFunction5</strong>:</p>
+<ul>
+<li><strong>Runtime</strong>: Python 3.12</li>
+<li><strong>Architecture</strong>: x86_64</li>
+</ul>
+<p><img alt="lambda5" src="//localhost:1313/images/7/lambda5.png?width=90pc"></p>
 </li>
 </ol>
+<h3 id="12-attach-iam-role">1.2 Attach IAM Role</h3>
+<ol start="2">
+<li>Attach the IAM role <strong>BedrockExecutionRole8888</strong> (created in section 7.1) and click <strong>Create</strong>:<br>
+<img alt="lambda6" src="//localhost:1313/images/7/lambda6-.png?width=90pc"></li>
+</ol>
+<h2 id="step-2-upload-function-code">Step 2: Upload Function Code</h2>
+<h3 id="21-deploy-code-package">2.1 Deploy Code Package</h3>
+<ol start="3">
+<li>
+<p>Upload the Lambda deployment package:</p>
+<ul>
+<li>Download: <a href="https://github.com/honganh29122002/lambda_code_zip">BedrockKBSlackbotFunction.zip</a></li>
+<li>Go to <strong>Code</strong> tab → <strong>Upload from</strong> → <strong>.zip file</strong></li>
+<li>Select and upload the downloaded zip file</li>
+</ul>
+<p><img alt="lambda7" src="//localhost:1313/images/7/lambda7-.png?width=90pc"><br>
+<img alt="lambda8" src="//localhost:1313/images/7/lambda8.png?width=90pc"><br>
+<img alt="lambda9" src="//localhost:1313/images/7/lambda9-.png?width=90pc"></p>
+</li>
+</ol>
+
+<div class="notices info" ><p><strong>Note:</strong> The zip file contains the Slack Bolt framework and all necessary dependencies for the bot functionality.</p>
+</div>
+
+<h2 id="step-3-configure-function-settings">Step 3: Configure Function Settings</h2>
+<h3 id="31-update-handler">3.1 Update Handler</h3>
+<ol start="4">
+<li>
+<p>Change the <strong>Handler</strong> to match your code entry point:</p>
+<ul>
+<li><strong>Handler</strong>: <code>lambda_function.lambda_handler</code></li>
+</ul>
+<p><img alt="lambda11" src="//localhost:1313/images/7/lambda11-.png?width=91pc"></p>
+</li>
+</ol>
+<h3 id="32-adjust-performance-settings">3.2 Adjust Performance Settings</h3>
+<ol start="5">
+<li>
+<p>Configure <strong>Memory</strong> and <strong>Timeout</strong> for optimal performance:</p>
+<ul>
+<li><strong>Memory</strong>: 512 MB (recommended for Bedrock API calls)</li>
+<li><strong>Timeout</strong>: 5 minutes (allows time for Knowledge Base queries)</li>
+</ul>
+<p><img alt="lambda13" src="//localhost:1313/images/7/lambda13-.png?width=90pc"></p>
+</li>
+</ol>
+<h2 id="step-4-environment-variables">Step 4: Environment Variables</h2>
+<h3 id="41-add-configuration-variables">4.1 Add Configuration Variables</h3>
+<ol start="6">
+<li>
+<p>Add the following <strong>Environment variables</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>KNOWLEDGE_BASE_ID</code></td>
+<td><code>your-kb-id-from-module-6</code></td>
+<td>References your Knowledge Base</td>
+</tr>
+<tr>
+<td><code>MODEL_ID</code></td>
+<td><code>anthropic.claude-3-sonnet-20240229-v1:0</code></td>
+<td>Specifies text generation model</td>
+</tr>
+<tr>
+<td><code>SLACK_BOT_TOKEN_PARAM</code></td>
+<td><code>/slack-bot/token</code></td>
+<td>Parameter Store path for bot token</td>
+</tr>
+<tr>
+<td><code>SLACK_SIGNING_SECRET_PARAM</code></td>
+<td><code>/slack-bot/signing-secret</code></td>
+<td>Parameter Store path for signing secret</td>
+</tr>
+<tr>
+<td><code>AWS_REGION</code></td>
+<td><code>us-east-1</code></td>
+<td>AWS region for service calls</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="lambda14" src="//localhost:1313/images/7/lambda14-.png?width=90pc"><br>
+<img alt="lambda15" src="//localhost:1313/images/7/lambda15-.png?width=90pc"></p>
+</li>
+</ol>
+<h3 id="42-required-values">4.2 Required Values</h3>
+<p>Replace these placeholder values with your actual configuration:</p>
+<ul>
+<li><strong>KNOWLEDGE_BASE_ID</strong>: Copy from your Bedrock Knowledge Base (Module 6.3)</li>
+<li><strong>MODEL_ID</strong>: Use the exact Claude 3 Sonnet model ID shown above</li>
+<li><strong>Parameter paths</strong>: Must match your Parameter Store configuration (Module 4.2)</li>
+</ul>
+
+<div class="notices warning" ><p><strong>Important:</strong> Ensure all environment variable values match your actual AWS resources. Incorrect values will cause runtime errors.</p>
+</div>
+
+<h2 id="function-configuration-summary">Function Configuration Summary</h2>
+<h3 id="runtime-settings">Runtime Settings</h3>
+<ul>
+<li>✅ <strong>Function name</strong>: BedrockKBSlackbotFunction5</li>
+<li>✅ <strong>Runtime</strong>: Python 3.12</li>
+<li>✅ <strong>Handler</strong>: lambda_function.lambda_handler</li>
+<li>✅ <strong>Memory</strong>: 512 MB</li>
+<li>✅ <strong>Timeout</strong>: 5 minutes</li>
+</ul>
+<h3 id="security-settings">Security Settings</h3>
+<ul>
+<li>✅ <strong>Execution role</strong>: BedrockExecutionRole8888</li>
+<li>✅ <strong>Environment variables</strong>: Configured with proper values</li>
+<li>✅ <strong>Code package</strong>: Uploaded with dependencies</li>
+</ul>
+<h2 id="whats-next">What&rsquo;s Next</h2>
+<p>Your Lambda function is now configured and ready to process Slack commands. Next, we&rsquo;ll create the API Gateway that will receive requests from Slack and trigger your Lambda function.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../../8-api-gateway/">Module 8 - API Gateway Setup</a></p>
 
 
 
@@ -985,26 +1109,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1319,6 +1425,22 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1356,7 +1478,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/" title="Lambda role"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="//localhost:1313/8-api_gateway/" title="Connect and chat" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1369,19 +1491,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556290"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556290"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754758702"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754758702"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556290"></script>
-    <script src="//localhost:1313/js/learn.js?1754556290"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556290"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754758702"></script>
+    <script src="//localhost:1313/js/learn.js?1754758702"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754758702"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556290" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556290"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754758702" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754758702"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,86 +1,120 @@
 +++
-title = "collection"
+title = "OpenSearch Serverless Collection"
 date = 2020-05-14T00:38:32+07:00
-weight = 5
+weight = 1
 chapter = false
 pre = "<b>5.1 </b>"
 +++
 
-1. Access to [Amazon Opensearch Service Console.](https://us-east-1.console.aws.amazon.com/aos/home?region=us-east-1#opensearch)
+#### Create OpenSearch Serverless Collection
+
+This section guides you through creating an OpenSearch Serverless collection for vector storage, including the necessary access and network policies.
+
+#### Access OpenSearch Console
+
+1. Navigate to [Amazon OpenSearch Service Console](https://us-east-1.console.aws.amazon.com/aos/home?region=us-east-1#opensearch)
    ![opensearch1](/images/5/opensearch1.png?width=90pc)
 
-2. Scroll down and select **Data access policies** and click **create access policy**
-    ![opensearch8](/images/5/opensearch8.png?width=90pc)
+#### Create Data Access Policy
 
-3. Enter **Access policy name** -> choose **JSON**
-    ![opensearch9](/images/5/opensearch9.png?width=90pc)
+2. Scroll down and select **Data access policies** → **Create access policy**
+   ![opensearch8](/images/5/opensearch8.png?width=90pc)
 
-4. Enter the following code and **Create**
-```json
-[
-  {
-    "Rules": [
-      {
-        "ResourceType": "index",
-        "Resource": ["index/<YOUR-OPENSEARCH-COLLECTION-NAME>/*"],
-        "Permission": ["aoss:*"]
-      },
-      {
-        "ResourceType": "collection",
-        "Resource": ["collection/<YOUR-OPENSEARCH-COLLECTION-NAME>"],
-        "Permission": ["aoss:*"]
-      }
-    ],
-    "Principal": ["arn:aws:iam::<YOUR-ACCOUNT-ID>:root"]
-  }
-]
-```
+3. Enter **Access policy name** → Choose **JSON**
+   ![opensearch9](/images/5/opensearch9.png?width=90pc)
 
-![opensearch10](/images/5/opensearch10.png?width=91pc)
+4. Enter the following JSON policy and click **Create**:
+   ```json
+   [
+     {
+       "Rules": [
+         {
+           "ResourceType": "index",
+           "Resource": ["index/slack-bedrock-vector-db/*"],
+           "Permission": ["aoss:*"]
+         },
+         {
+           "ResourceType": "collection",
+           "Resource": ["collection/slack-bedrock-vector-db"],
+           "Permission": ["aoss:*"]
+         }
+       ],
+       "Principal": ["arn:aws:iam::<YOUR-ACCOUNT-ID>:root"]
+     }
+   ]
+   ```
+   ![opensearch10](/images/5/opensearch10.png?width=91pc)
 
+{{% notice warning %}}
+**Important:** Replace `<YOUR-ACCOUNT-ID>` with your actual AWS account ID.
+{{% /notice %}}
 
-5. Create networks policy
-    ![opensearch11](/images/5/opensearch11.png?width=90pc)
+#### Create Network Policy
 
-6. Name **Network policy name**
-    ![opensearch12](/images/5/opensearch12.png?width=90pc)
+5. Create **Network policy** → **Create network policy**
+   ![opensearch11](/images/5/opensearch11.png?width=90pc)
 
-7. Enter the following code and **Create**
-```json
-[
-  {
-    "Rules": [
-      {
-        "ResourceType": "collection",
-        "Resource": ["collection/<YOUR-OPENSEARCH-COLLECTION-NAME>"]
-      },
-      {
-        "ResourceType": "dashboard",
-        "Resource": ["collection/<YOUR-OPENSEARCH-COLLECTION-NAME>"]
-      }
-    ],
-    "AllowFromPublic": true
-  }
-]
-```
-![opensearch13](/images/5/opensearch13.png?width=90pc)
+6. Enter **Network policy name**
+   ![opensearch12](/images/5/opensearch12.png?width=90pc)
 
+7. Enter the following JSON policy and click **Create**:
+   ```json
+   [
+     {
+       "Rules": [
+         {
+           "ResourceType": "collection",
+           "Resource": ["collection/slack-bedrock-vector-db"]
+         },
+         {
+           "ResourceType": "dashboard",
+           "Resource": ["collection/slack-bedrock-vector-db"]
+         }
+       ],
+       "AllowFromPublic": true
+     }
+   ]
+   ```
+   ![opensearch13](/images/5/opensearch13.png?width=90pc)
 
-8. Create **Collection**
-- Select **Collections**
-    ![opensearch2](/images/5/opensearch2.png?width=90pc)
+#### Create Vector Collection
 
-- Select **Create Collection**
-    ![opensearch3](/images/5/opensearch3.png?width=90pc)
+8. **Create the collection**:
 
-- Enter **Collection name** and select **Collection type**: Vector search
-    ![opensearch4](/images/5/opensearch4.png?width=91pc)
+   - Select **Collections**
+     ![opensearch2](/images/5/opensearch2.png?width=90pc)
 
-    ![opensearch5](/images/5/opensearch5.png?width=90pc)
+   - Click **Create Collection**
+     ![opensearch3](/images/5/opensearch3.png?width=90pc)
 
-- Default and create. **Note**:
-    - **Collection ARN**
-    - **Opensearch endpoint**
-    ![opensearch14](/images/5/opensearch14.png?width=91pc)
-    ![opensearch15](/images/5/opensearch15.png?width=91pc)
-    ![opensearch16](/images/5/opensearch16.png?width=90pc)
+   - Configure collection settings:
+
+     - **Collection name**: `slack-bedrock-vector-db`
+     - **Collection type**: Vector search
+       ![opensearch4](/images/5/opensearch4.png?width=91pc)
+       ![opensearch5](/images/5/opensearch5.png?width=90pc)
+
+   - Use default settings and click **Create**
+
+#### Note Important Information
+
+9. **Save the following details** for later configuration:
+
+   - **Collection ARN**: `arn:aws:aoss:us-east-1:account:collection/collection-id`
+   - **OpenSearch Endpoint**: `https://collection-id.us-east-1.aoss.amazonaws.com`
+
+   ![opensearch14](/images/5/opensearch14.png?width=91pc)
+   ![opensearch15](/images/5/opensearch15.png?width=91pc)
+   ![opensearch16](/images/5/opensearch16.png?width=90pc)
+
+{{% notice tip %}}
+**Tip:** Copy and save the Collection ARN and OpenSearch Endpoint as they will be needed for Bedrock Knowledge Base configuration.
+{{% /notice %}}
+
+#### What's Next
+
+Your OpenSearch Serverless collection is now ready to store vector embeddings. Next, we'll create the vector index for efficient similarity searches.
+
+---
+
+**Continue to**: [5.2 - Create Vector Index](../5.2-vector_index/)

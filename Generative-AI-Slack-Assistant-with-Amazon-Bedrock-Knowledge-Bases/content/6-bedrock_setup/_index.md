@@ -1,25 +1,95 @@
 +++
-title ="Bedrock setup"
+title = "Bedrock Setup"
 date = 2020-05-14T00:38:32+07:00
 weight = 6
 chapter = false
 pre = "<b>6. </b>"
 +++
 
-In this workshop, we use a **knowledge base** to retrieve information provided from **S3**. The data from S3 is split into smaller segments (**document chunks**) and converted into vectors using an **embeddings model**. These vectors are then stored in a vector store, specifically **Amazon OpenSearch Serverless.**
+#### Bedrock Setup Overview
 
-When a user submits a question, the system performs **semantic search** against the vector store to retrieve relevant text segments (**context**). This contextual information is incorporated into **prompt augmentation** to provide the necessary background for the **Large Language Model (LLM).** Finally, the LLM generates an accurate and contextually appropriate response based on the knowledge base.
+Amazon Bedrock serves as the core AI engine for our Slack assistant, providing both the foundation models for text generation and the managed Knowledge Base service for Retrieval-Augmented Generation (RAG). This module covers the essential setup required to enable and configure Bedrock services for your AI assistant.
 
-At the heart of this AI chatbot system lies Amazon Bedrock, which serves both as the foundation model hosting platform and the managed orchestration engine for the entire RAG (Retrieve-and-Generate) pipeline. Bedrock enables the seamless combination of foundation models, vector-based retrieval, and knowledge base indexing into a unified, scalable workflow.
+#### What You'll Learn
 
-The chatbot relies on two key models provided by Bedrock. For text embedding, it utilizes Amazon Titan Text Embeddings v2, a multilingual embedding model optimized for languages like Vietnamese and English, capable of generating rich semantic representations of documents and queries. For text generation, it employs Claude 3 Haiku, a lightweight and cost-efficient model that produces natural, fluent, and contextually appropriate responses.
+In this module, you will understand:
 
-The Amazon Bedrock Knowledge Base component acts as the central RAG orchestrator. It ingests documents stored in S3 (via a designated data source), generates vector embeddings using Titan v2, and stores them in OpenSearch Serverless. At runtime, when a user submits a query, the RetrieveAndGenerate API of Bedrock is invoked. This single API call handles all the complexity: embedding the query, retrieving the most relevant document chunks via vector similarity search, passing the content to Claude 3 Haiku, and returning the generated response.
+- **Foundation model access** for text generation and embeddings
+- **Knowledge Base creation** with RAG capabilities
+- **S3 integration** for document storage and processing
+- **IAM roles and permissions** for secure Bedrock operations
 
-A crucial layer of security and response control is handled by Bedrock Guardrails, configured under the name slack-bedrock-guardrail. This feature is responsible for content filtering, ensuring that responses do not contain sensitive, inappropriate, or harmful language, including topics related to violence, hate, or misconduct. It also offers protection against prompt injection attacks and enables custom error messaging, ensuring responses meet safety and compliance standards required in enterprise environments.
+#### Bedrock Architecture
 
-From a technical operations perspective, Bedrock requires no infrastructure provisioning, as it offers serverless access to foundation models with automatic scalability, maintenance, and updates. This significantly reduces the burden of managing ML infrastructure. The solution is also region-optimized for ap-southeast-1, ensuring latency and cost efficiency for users in Southeast Asia.
+**1. Core Components**
 
-Access to Bedrock is strictly controlled through IAM roles (e.g., bedrockExecutionRole), and all operations are logged to support auditing, governance, and enterprise-grade security compliance.
+```mermaid
+graph TB
+    A[Foundation Models] --> B[Knowledge Base]
+    C[S3 Documents] --> B
+    B --> D[OpenSearch Serverless]
+    B --> E[RAG Responses]
 
-In essence, Amazon Bedrock functions as the “brain” of the AI chatbot, coordinating embedding, retrieval, content generation, and moderation — all under a fully managed, secure, and scalable AI service platform.
+    F[IAM Roles] --> A
+    F --> B
+    F --> C
+
+    style A fill:#fff3e0
+    style B fill:#e8f5e8
+    style D fill:#e1f5fe
+```
+
+**2. Key Services**
+
+| Service                 | Purpose                       | Benefit                                     |
+| ----------------------- | ----------------------------- | ------------------------------------------- |
+| **Claude 3 Sonnet**     | Text generation and reasoning | High-quality natural language responses     |
+| **Titan Embeddings V2** | Document vectorization        | Semantic understanding and search           |
+| **Knowledge Base**      | RAG orchestration             | Automated retrieval and generation workflow |
+| **S3 Integration**      | Document storage              | Scalable, secure document management        |
+
+#### Foundation Models
+
+**1. Claude 3 Sonnet**
+
+- **Purpose**: Primary text generation model
+- **Capabilities**: Advanced reasoning, context understanding, multilingual support
+- **Use Case**: Generating intelligent responses based on retrieved knowledge
+
+**2. Amazon Titan Text Embeddings V2**
+
+- **Purpose**: Convert text to vector embeddings
+- **Dimensions**: 1024-dimensional vectors
+- **Languages**: Supports multiple languages including English and Vietnamese
+- **Use Case**: Creating searchable vector representations of documents
+
+#### Knowledge Base Service
+
+**1. Managed RAG Workflow**
+
+- **Document Ingestion**: Automatic processing of S3 documents
+- **Chunking Strategy**: Intelligent text segmentation for optimal retrieval
+- **Vector Storage**: Integration with OpenSearch Serverless
+- **Retrieval Logic**: Semantic similarity search with configurable parameters
+
+**2. Benefits**
+
+- **Fully Managed**: No infrastructure management required
+- **Auto-Scaling**: Handles varying document volumes and query loads
+- **Security**: Built-in encryption and access controls
+- **Cost-Effective**: Pay-per-use pricing model
+
+#### Expected Outcomes
+
+After completing this module setup:
+
+- ✅ Foundation models enabled for text generation and embeddings
+- ✅ Knowledge Base configured with S3 document source
+- ✅ RAG workflow operational for intelligent question answering
+- ✅ Secure integration with OpenSearch Serverless established
+
+This setup provides the AI intelligence layer that transforms your Slack bot from a simple interface into a knowledgeable assistant capable of understanding and responding to complex queries about your organizational documents.
+
+---
+
+**Continue to**: [6.1 - Model Access Setup](6.1-model_access/)

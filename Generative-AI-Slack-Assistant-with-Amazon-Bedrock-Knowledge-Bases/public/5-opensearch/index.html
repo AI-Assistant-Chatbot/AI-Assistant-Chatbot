@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="congly.work@gmail.com">
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Set up opensearch :: Amazon Q Developer Series</title>
+    <title>OpenSearch Serverless :: Amazon Q Developer Series</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754556290" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754758702" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754758702" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754556290" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754758702" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754556290"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754758702"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754556290"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754758702"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754758702"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754556290"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754758702"></script>
 
     
   </div>
@@ -82,58 +82,18 @@
  
   
     
-    <li data-nav-id="/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/1-introduction/" title="Introduction to Slackbot Assistant with Amazon Bedrock" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/1-introduction/">
-          <b>1. </b>Introduction
+          <b>1. </b>Introduction to Slackbot Assistant with Amazon Bedrock
           
             <i class="fas fa-check read-icon"></i>
           
       </a>
       
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/1-introduction/1.1-overview/" title="Solution overview" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/1-introduction/1.1-overview/">
-          <b>1.1 </b>Solution overview
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
               
     </li>
   
@@ -148,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequisites/" title="Prerequisites" class="dd-item 
+    <li data-nav-id="/2-environment-setup/" title="Environment Setup" class="dd-item 
         
         
         
         ">
-      <a href="//localhost:1313/2-prerequisites/">
-          <b>2. </b>Prerequisites
+      <a href="//localhost:1313/2-environment-setup/">
+          <b>2. </b>Environment Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -296,13 +256,13 @@
  
   
     
-    <li data-nav-id="/4-security/" title="Security" class="dd-item 
+    <li data-nav-id="/4-security/" title="Configure Security" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/">
-          <b>4. </b>Security
+          <b>4. </b>Configure Security
           
             <i class="fas fa-check read-icon"></i>
           
@@ -327,13 +287,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.1-secret-manager/" title="Secrets Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.1-secret-manager/" title="Configure AWS Secrets Manager" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.1-secret-manager/">
-          <b>4.1 </b>Secrets Manager
+          <b>4.1 </b>Configure AWS Secrets Manager
           
             <i class="fas fa-check read-icon"></i>
           
@@ -355,13 +315,13 @@
  
   
     
-    <li data-nav-id="/4-security/4.2-systems-manager/" title="Systems Manager" class="dd-item 
+    <li data-nav-id="/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/4-security/4.2-systems-manager/">
-          <b>4.2 </b>Systems Manager
+          <b>4.2 </b>Configure Systems Manager Parameter Store
           
             <i class="fas fa-check read-icon"></i>
           
@@ -390,13 +350,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/" title="Set up opensearch" class="dd-item 
+    <li data-nav-id="/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
         
         active
         
         ">
       <a href="//localhost:1313/5-opensearch/">
-          <b>5. </b>Set up opensearch
+          <b>5. </b>OpenSearch Serverless
           
             <i class="fas fa-check read-icon"></i>
           
@@ -421,13 +381,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.1-collection/" title="collection" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.1-collection/">
-          <b>5.1 </b>collection
+          <b>5.1 </b>OpenSearch Serverless Collection
           
             <i class="fas fa-check read-icon"></i>
           
@@ -449,13 +409,13 @@
  
   
     
-    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Vector index" class="dd-item 
+    <li data-nav-id="/5-opensearch/5.2-vector_index/" title="Create Vector Index" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/5-opensearch/5.2-vector_index/">
-          <b>5.2 </b>Vector index
+          <b>5.2 </b>Create Vector Index
           
             <i class="fas fa-check read-icon"></i>
           
@@ -484,13 +444,13 @@
  
   
     
-    <li data-nav-id="/6-bedrock_setup/" title="Bedrock setup" class="dd-item 
+    <li data-nav-id="/6-bedrock_setup/" title="Bedrock Setup" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/6-bedrock_setup/">
-          <b>6. </b>Bedrock setup
+          <b>6. </b>Bedrock Setup
           
             <i class="fas fa-check read-icon"></i>
           
@@ -505,34 +465,6 @@
           
           
         
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
-        
-        
-        
-        ">
-      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
-          <b>6.2 </b>Set up guardrails
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -550,6 +482,34 @@
         ">
       <a href="//localhost:1313/6-bedrock_setup/6.1-model_access/">
           <b>6.1 </b>Set up model access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-bedrock_setup/6.2-guardrails/" title="Set up guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/6-bedrock_setup/6.2-guardrails/">
+          <b>6.2 </b>Set up guardrails
           
             <i class="fas fa-check read-icon"></i>
           
@@ -637,13 +597,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Lambda role" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.1-lambda_role/" title="Create Lambda Execution Role" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/">
-          <b>7.1 </b>Lambda role
+          <b>7.1 </b>Create Lambda Execution Role
           
             <i class="fas fa-check read-icon"></i>
           
@@ -665,13 +625,13 @@
  
   
     
-    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Configuration and code" class="dd-item 
+    <li data-nav-id="/7-lambda_implementation/7.2-config_code/" title="Create and Configure Lambda Function" class="dd-item 
         
         
         
         ">
       <a href="//localhost:1313/7-lambda_implementation/7.2-config_code/">
-          <b>7.2 </b>Configuration and code
+          <b>7.2 </b>Create and Configure Lambda Function
           
             <i class="fas fa-check read-icon"></i>
           
@@ -733,6 +693,32 @@
         ">
       <a href="//localhost:1313/9-clear-resources/">
           <b>9. </b>Clear resources
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/10-conclusion/" title="Conclusion" class="dd-item 
+        
+        
+        
+        ">
+      <a href="//localhost:1313/10-conclusion/">
+          <b>10. </b>Conclusion
           
             <i class="fas fa-check read-icon"></i>
           
@@ -867,7 +853,7 @@
             
           
           
-            <a href='//localhost:1313/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > Set up opensearch
+            <a href='//localhost:1313/'>Building a Generative AI Slackbot Assistant with Amazon Bedrock</a> > OpenSearch Serverless
           
         
           
@@ -878,7 +864,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -894,7 +888,7 @@
           
             <h1>
               
-              Set up opensearch
+              OpenSearch Serverless
             </h1>
           
 
@@ -902,13 +896,135 @@
 
 
 
-	<p>In the context of this AI chatbot solution, Amazon OpenSearch Serverless functions as the centralized vector database, acting as the memory engine that drives the semantic retrieval capabilities of the Retrieval-Augmented Generation (RAG) workflow.</p>
-<p>When documents are first ingested into the system, they are processed and transformed into high-dimensional vector embeddings using the Amazon Titan Text Embeddings v2 model. These embeddings, which support semantic understanding across multiple languages including Vietnamese and English, are stored in a dedicated vector collection within OpenSearch Serverless. The vector collection, identified by the name slack-bedrock-vector-db, offers fully managed, serverless, and auto-scaling storage of embedding vectors, eliminating the need for manual cluster management.</p>
-<p>To facilitate efficient retrieval, these stored vectors are indexed using a vector index named slack-bedrock-os-index, which enables high-performance similarity search using k-nearest neighbor (k-NN) algorithms. The OpenSearch index also retains metadata associated with the original document chunks, such as file names or section titles, ensuring that retrieval results are both contextually accurate and traceable.</p>
-<p>During a typical query interaction, when a user submits a question via Slack, the input is embedded using the same Titan v2 model. This query embedding is sent to OpenSearch, where a vector similarity search is conducted against the stored embeddings. The most relevant chunks of documents are then retrieved and returned to the RAG system to serve as context for final response generation.</p>
-<p>The serverless nature of OpenSearch ensures that it scales automatically with traffic volume and operates on a pay-per-use pricing model, helping keep costs predictable and aligned with usage. The architecture requires no manual provisioning or maintenance of nodes, which significantly simplifies operations. With sub-second response times, the system supports real-time querying, providing users with instant, relevant information.</p>
-<p>Security is also embedded into the design. OpenSearch Serverless integrates with IAM-based access control and supports encryption both at rest and in transit. Through the BedrockOSSPolicyForKnowledgeBase policy, fine-grained access permissions are enforced, ensuring that only authorized components can access or query the vector database.</p>
-<p>Ultimately, OpenSearch Serverless functions as the persistent memory layer of the AI assistant, enabling it to recall and reference vast amounts of organizational knowledge with semantic precision.</p>
+	<h4 id="opensearch-serverless-overview">OpenSearch Serverless Overview</h4>
+<p>Amazon OpenSearch Serverless functions as the centralized vector database and memory engine that drives the semantic retrieval capabilities of our Retrieval-Augmented Generation (RAG) workflow. It stores document embeddings and enables high-performance similarity searches for intelligent question answering.</p>
+<h4 id="what-youll-learn">What You&rsquo;ll Learn</h4>
+<p>In this module, you will understand:</p>
+<ul>
+<li><strong>Vector database architecture</strong> using OpenSearch Serverless</li>
+<li><strong>Document embedding storage</strong> with Amazon Titan Text Embeddings V2</li>
+<li><strong>Semantic search capabilities</strong> using k-nearest neighbor algorithms</li>
+<li><strong>Serverless scaling and cost optimization</strong> benefits</li>
+</ul>
+<h4 id="opensearch-architecture">OpenSearch Architecture</h4>
+<p><strong>1. Vector Storage Flow</strong></p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB
+    A[Documents] --&gt; B[Titan Embeddings V2]
+    B --&gt; C[Vector Embeddings]
+    C --&gt; D[OpenSearch Collection]
+    D --&gt; E[Vector Index]
+
+    F[User Query] --&gt; G[Query Embedding]
+    G --&gt; H[Similarity Search]
+    H --&gt; I[Relevant Chunks]
+
+    style D fill:#e8f5e8
+    style E fill:#fff3e0
+    style H fill:#e1f5fe
+</code></pre><p><strong>2. Key Components</strong></p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vector Collection</strong></td>
+<td>Store document embeddings</td>
+<td>Serverless, auto-scaling storage</td>
+</tr>
+<tr>
+<td><strong>Vector Index</strong></td>
+<td>Enable similarity search</td>
+<td>High-performance k-NN algorithms</td>
+</tr>
+<tr>
+<td><strong>Metadata Storage</strong></td>
+<td>Preserve document context</td>
+<td>Traceable retrieval results</td>
+</tr>
+<tr>
+<td><strong>IAM Integration</strong></td>
+<td>Security and access control</td>
+<td>Fine-grained permissions</td>
+</tr>
+</tbody>
+</table>
+<h4 id="how-it-works">How It Works</h4>
+<p><strong>1. Document Ingestion</strong></p>
+<ul>
+<li>Documents processed into high-dimensional vector embeddings</li>
+<li>Amazon Titan Text Embeddings V2 model creates semantic representations</li>
+<li>Supports multiple languages including Vietnamese and English</li>
+<li>Vectors stored in <code>slack-bedrock-vector-db</code> collection</li>
+</ul>
+<p><strong>2. Vector Indexing</strong></p>
+<ul>
+<li>Embeddings indexed using <code>slack-bedrock-os-index</code></li>
+<li>k-nearest neighbor (k-NN) algorithms enable similarity search</li>
+<li>Metadata preserved for document traceability</li>
+<li>Sub-second query response times</li>
+</ul>
+<p><strong>3. Query Processing</strong></p>
+<ul>
+<li>User questions embedded using same Titan V2 model</li>
+<li>Query embedding compared against stored vectors</li>
+<li>Most relevant document chunks retrieved</li>
+<li>Context provided to RAG system for response generation</li>
+</ul>
+<h4 id="serverless-benefits">Serverless Benefits</h4>
+<p><strong>1. Auto-Scaling</strong></p>
+<ul>
+<li>Automatically scales with traffic volume</li>
+<li>No manual cluster management required</li>
+<li>Handles varying workloads seamlessly</li>
+</ul>
+<p><strong>2. Cost Optimization</strong></p>
+<ul>
+<li>Pay-per-use pricing model</li>
+<li>Predictable costs aligned with usage</li>
+<li>No upfront infrastructure investment</li>
+</ul>
+<p><strong>3. Operational Simplicity</strong></p>
+<ul>
+<li>No node provisioning or maintenance</li>
+<li>Fully managed service</li>
+<li>Built-in high availability</li>
+</ul>
+<h4 id="security-features">Security Features</h4>
+<p><strong>1. Access Control</strong></p>
+<ul>
+<li>IAM-based permissions with <code>BedrockOSSPolicyForKnowledgeBase</code></li>
+<li>Fine-grained access control for authorized components</li>
+<li>Integration with AWS security services</li>
+</ul>
+<p><strong>2. Data Protection</strong></p>
+<ul>
+<li>Encryption at rest and in transit</li>
+<li>Secure vector storage and retrieval</li>
+<li>Compliance with enterprise security standards</li>
+</ul>
+<h4 id="performance-characteristics">Performance Characteristics</h4>
+<ul>
+<li><strong>Response Time</strong>: Sub-second similarity searches</li>
+<li><strong>Scalability</strong>: Automatic scaling based on demand</li>
+<li><strong>Accuracy</strong>: Semantic understanding across languages</li>
+<li><strong>Reliability</strong>: Built-in redundancy and fault tolerance</li>
+</ul>
+<h4 id="expected-outcomes">Expected Outcomes</h4>
+<p>After understanding OpenSearch Serverless architecture:</p>
+<ul>
+<li>✅ Vector database serves as persistent memory layer</li>
+<li>✅ Semantic search enables intelligent document retrieval</li>
+<li>✅ Serverless architecture provides cost-effective scaling</li>
+<li>✅ Enterprise security ensures data protection</li>
+</ul>
+<p>OpenSearch Serverless acts as the intelligent memory of your AI assistant, enabling it to recall and reference organizational knowledge with semantic precision.</p>
+<hr>
+<p><strong>Continue to</strong>: <a href="../6-knowledge-base/">Module 6 - Knowledge Base Foundation</a></p>
 
 
 
@@ -957,26 +1073,8 @@
 
                     
                     
-                        
-                    
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -1279,6 +1377,22 @@
                     
             
         
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1324,10 +1438,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="//localhost:1313/4-security/4.2-systems-manager/" title="Systems Manager"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="//localhost:1313/4-security/4.2-systems-manager/" title="Configure Systems Manager Parameter Store"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="//localhost:1313/5-opensearch/5.1-collection/" title="collection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="//localhost:1313/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1337,19 +1451,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754556290"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754556290"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754556290"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754758702"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754758702"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754758702"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754556290"></script>
-    <script src="//localhost:1313/js/learn.js?1754556290"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754556290"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754758702"></script>
+    <script src="//localhost:1313/js/learn.js?1754758702"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754758702"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754556290" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754556290"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754758702" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754758702"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
