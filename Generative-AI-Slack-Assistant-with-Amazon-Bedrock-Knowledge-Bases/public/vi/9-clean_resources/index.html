@@ -9,24 +9,24 @@
 
     <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/png">
 
-    <title> :: Amazon Q Developer Series</title>
+    <title>Dọn dẹp tài nguyên :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754822570" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754822570" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754823006" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754823006" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754822570" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754823006" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754822570"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754823006"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754822570"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754822570"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754823006"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754823006"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754822570"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754823006"></script>
 
     
   </div>
@@ -686,13 +686,13 @@
  
   
     
-    <li data-nav-id="/vi/10-conclusion/" title="" class="dd-item 
+    <li data-nav-id="/vi/9-clean_resources/" title="Dọn dẹp tài nguyên" class="dd-item 
         
-        
+        active
         
         ">
-      <a href="http://localhost:1313/vi/10-conclusion/">
-          
+      <a href="http://localhost:1313/vi/9-clean_resources/">
+           <b> 9. </b> Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -712,13 +712,13 @@
  
   
     
-    <li data-nav-id="/vi/9-clean_resources/" title="" class="dd-item 
+    <li data-nav-id="/vi/10-conclusion/" title="Kết luận" class="dd-item 
         
-        active
+        
         
         ">
-      <a href="http://localhost:1313/vi/9-clean_resources/">
-          
+      <a href="http://localhost:1313/vi/10-conclusion/">
+           <b> 10. </b> Kết luận
           
             <i class="fas fa-check read-icon"></i>
           
@@ -865,7 +865,7 @@
             
           
           
-            <a href='http://localhost:1313/vi/'>Xây dựng Trợ lý Slackbot AI Tạo sinh với Amazon Bedrock</a> > 
+            <a href='http://localhost:1313/vi/'>Xây dựng Trợ lý Slackbot AI Tạo sinh với Amazon Bedrock</a> > Dọn dẹp tài nguyên
           
         
           
@@ -876,7 +876,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -892,7 +900,7 @@
           
             <h1>
               
-              
+              Dọn dẹp tài nguyên
             </h1>
           
 
@@ -900,7 +908,188 @@
 
 
 
-	
+	<h4 id="dọn-dẹp-resource">Dọn dẹp Resource</h4>
+<p>Module này hướng dẫn bạn dọn dẹp đúng cách tất cả AWS resources đã tạo trong workshop để tránh phí phát sinh. Tuân theo thứ tự xóa cẩn thận để ngăn chặn dependency errors.</p>
+
+<div class="notices warning" ><p><strong>Quan trọng:</strong> Xóa các resources này là không thể hoàn tác. Đảm bảo bạn đã lưu bất kỳ dữ liệu hoặc cấu hình quan trọng nào trước khi tiến hành.</p>
+</div>
+
+<h4 id="thứ-tự-cleanup">Thứ tự Cleanup</h4>
+<p>Tuân theo thứ tự cụ thể này để tránh dependency conflicts:</p>
+<p><strong>Xóa API Gateway</strong></p>
+<ol>
+<li>
+<p><strong>Xóa API Gateway</strong>:</p>
+<ul>
+<li>Điều hướng đến API Gateway Console</li>
+<li>Chọn <code>slack-bedrock-api5</code> của bạn</li>
+<li>Nhấp <strong>Actions</strong> → <strong>Delete API</strong></li>
+<li>Xác nhận deletion</li>
+</ul>
+<p><img alt="test13" src="http://localhost:1313/images/9/clear13.png?width=91pc"></p>
+</li>
+</ol>
+<p><strong>Xóa Lambda Function</strong></p>
+<ol start="2">
+<li>
+<p><strong>Xóa Lambda Function</strong>:</p>
+<ul>
+<li>Điều hướng đến Lambda Console</li>
+<li>Chọn <code>BedrockKBSlackbotFunction5</code></li>
+<li>Nhấp <strong>Actions</strong> → <strong>Delete</strong></li>
+<li>Xác nhận deletion</li>
+</ul>
+<p><img alt="test12" src="http://localhost:1313/images/9/clear12.png?width=91pc"></p>
+</li>
+</ol>
+<p><strong>Xóa Bedrock Knowledge Base</strong></p>
+<ol start="3">
+<li>
+<p><strong>Xóa Knowledge Base</strong>:</p>
+<ul>
+<li>Điều hướng đến S3 Console</li>
+<li><strong>Đầu tiên</strong>: Xóa tất cả objects trong bucket</li>
+<li><strong>Sau đó</strong>: Xóa chính bucket</li>
+<li>Xác nhận deletion<br>
+<img alt="clear1" src="http://localhost:1313/images/9/clear1.png?width=91pc"><br>
+<img alt="clear2" src="http://localhost:1313/images/9/clear2.png?width=91pc"></li>
+<li>Điều hướng đến Bedrock Console</li>
+<li>Truy cập <strong>Knowledge bases</strong></li>
+<li>Chọn knowledge base của bạn</li>
+<li>Nhấp <strong>Delete</strong></li>
+<li>Xác nhận deletion<br>
+<img alt="clear3" src="http://localhost:1313/images/9/clear3.png?width=91pc"></li>
+</ul>
+</li>
+</ol>
+
+<div class="notices info" ><p><strong>Lưu ý:</strong> Đợi Knowledge Base deletion hoàn thành trước khi tiến hành OpenSearch cleanup.</p>
+</div>
+
+<p><strong>Xóa OpenSearch Serverless Resources</strong></p>
+<ol start="4">
+<li>
+<p><strong>Xóa OpenSearch Components</strong> (theo thứ tự này):</p>
+<p><strong>a) Xóa Vector Index:</strong></p>
+<ul>
+<li>Sử dụng Postman hoặc AWS CLI để xóa index</li>
+<li>DELETE request đến: <code>https://your-collection-endpoint/slack-bedrock-os-index5</code></li>
+</ul>
+<p><img alt="clear7" src="http://localhost:1313/images/9/clear4.png?width=91pc"></p>
+<p><strong>b) Xóa Collection:</strong></p>
+<ul>
+<li>Điều hướng đến OpenSearch Console</li>
+<li>Chọn <strong>Collections</strong></li>
+<li>Xóa <code>slack-bedrock-vector-db5</code></li>
+</ul>
+<p><img alt="clear7" src="http://localhost:1313/images/9/clear5.png?width=91pc"></p>
+<p><strong>c) Xóa Data Access Policy:</strong></p>
+<ul>
+<li>Truy cập <strong>Data access policies</strong></li>
+<li>Xóa access policy của bạn</li>
+</ul>
+<p><img alt="clear7" src="http://localhost:1313/images/9/clear6.png?width=91pc"></p>
+<p><strong>d) Xóa Network Policy:</strong></p>
+<ul>
+<li>Truy cập <strong>Network policies</strong></li>
+<li>Xóa network policy của bạn</li>
+</ul>
+<p><img alt="clear7" src="http://localhost:1313/images/9/clear7.png?width=91pc"></p>
+</li>
+</ol>
+<p><strong>Xóa Security Resources</strong></p>
+<ol start="5">
+<li>
+<p><strong>Xóa AWS Secrets Manager Secrets</strong>:</p>
+<ul>
+<li>Điều hướng đến Secrets Manager Console</li>
+<li>Xóa <code>slack/bot-token5</code></li>
+<li>Xóa <code>slack/signing-secret5</code></li>
+<li>Xác nhận immediate deletion (bỏ qua recovery period)</li>
+</ul>
+<p><img alt="clear8" src="http://localhost:1313/images/9/clear8.png?width=91pc"><br>
+<img alt="clear9" src="http://localhost:1313/images/9/clear9.png?width=91pc"></p>
+</li>
+<li>
+<p><strong>Xóa Systems Manager Parameters</strong>:</p>
+<ul>
+<li>Điều hướng đến Systems Manager Console</li>
+<li>Truy cập <strong>Parameter Store</strong></li>
+<li>Xóa <code>/slack/bot-token5/parameter5</code></li>
+<li>Xóa <code>/slack/signing-secret5/parameter5</code></li>
+</ul>
+<p><img alt="clear10" src="http://localhost:1313/images/9/clear10.png?width=91pc"><br>
+<img alt="clear11" src="http://localhost:1313/images/9/clear11.png?width=91pc"></p>
+</li>
+</ol>
+<p><strong>Dọn dẹp IAM Resources</strong></p>
+<ol start="8">
+<li><strong>Xóa IAM Role</strong> (Tùy chọn):
+<ul>
+<li>Điều hướng đến IAM Console</li>
+<li>Xóa <code>BedrockExecutionRole8888</code></li>
+<li>Xóa <code>bedrock-chatbot-deployer</code> user</li>
+<li>Loại bỏ bất kỳ custom policies đã tạo</li>
+</ul>
+</li>
+</ol>
+<h4 id="xác-minh-chi-phí">Xác minh Chi phí</h4>
+<p>Sau cleanup, xác minh không có phí phát sinh:</p>
+<p><strong>Kiểm tra các Services này:</strong></p>
+<ul>
+<li>✅ <strong>Lambda</strong>: Không còn functions nào</li>
+<li>✅ <strong>API Gateway</strong>: Không còn APIs nào</li>
+<li>✅ <strong>OpenSearch Serverless</strong>: Không còn collections hoặc policies</li>
+<li>✅ <strong>S3</strong>: Không còn buckets với workshop data</li>
+<li>✅ <strong>Secrets Manager</strong>: Không còn secrets nào</li>
+<li>✅ <strong>Bedrock</strong>: Knowledge Base đã xóa (models vẫn enabled)</li>
+</ul>
+
+<div class="notices tip" ><p><strong>Mẹo:</strong> Bedrock model access vẫn enabled nhưng không phát sinh phí trừ khi actively sử dụng. Bạn có thể để enabled cho các dự án tương lai.</p>
+</div>
+
+<h4 id="cleanup-checklist">Cleanup Checklist</h4>
+<p>Xác nhận tất cả resources đã được xóa:</p>
+<ul>
+<li>✅ API Gateway đã xóa</li>
+<li>✅ Lambda function đã xóa</li>
+<li>✅ Bedrock Knowledge Base đã xóa</li>
+<li>✅ OpenSearch collection và policies đã xóa</li>
+<li>✅ Secrets Manager secrets đã xóa</li>
+<li>✅ Parameter Store parameters đã xóa</li>
+<li>✅ S3 bucket và contents đã xóa</li>
+<li>✅ IAM roles và users đã xóa (tùy chọn)</li>
+</ul>
+<h4 id="xác-minh-cuối-cùng">Xác minh Cuối cùng</h4>
+<ol>
+<li>
+<p><strong>Kiểm tra AWS Billing Dashboard</strong>:</p>
+<ul>
+<li>Xác minh không có unexpected charges</li>
+<li>Giám sát trong 24-48 giờ sau cleanup</li>
+</ul>
+</li>
+<li>
+<p><strong>Review CloudWatch Logs</strong>:</p>
+<ul>
+<li>Log groups có thể còn lại nhưng không phát sinh chi phí đáng kể</li>
+<li>Xóa nếu muốn: <code>/aws/lambda/BedrockKBSlackbotFunction5</code></li>
+</ul>
+</li>
+</ol>
+<h4 id="tóm-tắt-workshop">Tóm tắt Workshop</h4>
+<p>Chúc mừng bạn đã hoàn thành workshop Generative AI Slack Assistant! Bạn đã thành công:</p>
+<ul>
+<li>✅ Xây dựng AI assistant cấp enterprise</li>
+<li>✅ Triển khai RAG architecture với Amazon Bedrock</li>
+<li>✅ Cấu hình secure credential management</li>
+<li>✅ Deploy serverless infrastructure</li>
+<li>✅ Tích hợp với Slack cho real-world usage</li>
+<li>✅ Dọn dẹp resources đúng cách</li>
+</ul>
+<hr>
+<p><strong>Workshop Hoàn thành</strong> - Tất cả resources đã được dọn dẹp thành công!</p>
+
 
 
 
@@ -1273,6 +1462,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1289,6 +1479,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -1310,10 +1502,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="http://localhost:1313/vi/10-conclusion/" title=""> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="http://localhost:1313/vi/8-api_gateway/" title="Tích hợp API Gateway và Kiểm thử"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="http://localhost:1313/vi/1-introduction/" title="Giới thiệu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="http://localhost:1313/vi/10-conclusion/" title="Kết luận" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1323,19 +1515,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754822570"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754822570"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754822570"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754822570"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754822570"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754822570"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754823006"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754823006"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754823006"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754823006"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754823006"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754823006"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754822570"></script>
-    <script src="http://localhost:1313/js/learn.js?1754822570"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754822570"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754823006"></script>
+    <script src="http://localhost:1313/js/learn.js?1754823006"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754823006"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754822570" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754822570"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754823006" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754823006"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
