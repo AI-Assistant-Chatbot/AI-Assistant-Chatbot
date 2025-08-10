@@ -1,7 +1,7 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 canonifyURLs = true
-baseURL = "http://localhost:1313"
+
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -12,19 +12,14 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "nghialm2603@gmail.com"
+  author = "journeyoftheaverageguy@gmail.com"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      hardWraps = true
   
 [Languages]
 [Languages.en]
-title = "Amazon Q Developer Series"
+title = "AWS Account Setup"
 weight = 1
 languageName = "English"
 
@@ -35,7 +30,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "Amazon Q Developer Series"
+title = "Thiết lập AWS Account"
 weight = 2
 languageName = "Tiếng Việt"
 
@@ -44,4 +39,3 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
-
