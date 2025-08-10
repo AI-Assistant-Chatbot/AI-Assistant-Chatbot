@@ -2,7 +2,6 @@
 theme = "hugo-theme-learn"
 canonifyURLs = true
 baseURL = "http://localhost:1313"
-
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -13,7 +12,7 @@ home = [ "HTML", "RSS", "JSON"]
   # Git hub repo link
   editURL = ""
   description = ""
-  author = "congly.work@gmail.com"
+  author = "nghialm2603@gmail.com"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -25,7 +24,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Bedrock Slackbot AI Workshop"
+title = "Amazon Q Developer Series"
 weight = 1
 languageName = "English"
 
@@ -36,7 +35,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "Bedrock Slackbot AI Workshop"
+title = "Amazon Q Developer Series"
 weight = 2
 languageName = "Tiếng Việt"
 
@@ -45,3 +44,4 @@ name = "<i class='fab fa-facebook'></i> AWS Study Group"
 identifier = "AWS Study Group FB"
 url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
+
