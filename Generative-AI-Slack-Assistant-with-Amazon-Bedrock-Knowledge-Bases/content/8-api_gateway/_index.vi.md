@@ -15,7 +15,7 @@ Module cuối cùng này kết nối tất cả các thành phần lại với n
 **Tạo REST API**
 
 1. Điều hướng đến [API Gateway Console](https://us-east-1.console.aws.amazon.com/apigateway)
-   ![api0](/images/8/api0.png?width=90pc)
+   ![api0](/images/8/api00.png?width=90pc)
 
 2. Tạo **REST API** mới:
 

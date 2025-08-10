@@ -15,7 +15,7 @@ This final module connects all components together by creating an API Gateway en
 **Create REST API**
 
 1. Navigate to [API Gateway Console](https://us-east-1.console.aws.amazon.com/apigateway)
-   ![api0](/images/8/api0.png?width=90pc)
+   ![api0](/images/8/api00.png?width=90pc)
 
 2. Create a new **REST API**:
 
