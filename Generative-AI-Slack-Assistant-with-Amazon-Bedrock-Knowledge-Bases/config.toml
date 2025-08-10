@@ -1,6 +1,7 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 canonifyURLs = true
+baseURL = "https://ai-assistant-chatbot.github.io/Bedrock-Slackbot-AI-Workshop"
 
 # For search functionality
 [outputs]
@@ -24,7 +25,7 @@ home = [ "HTML", "RSS", "JSON"]
   
 [Languages]
 [Languages.en]
-title = "Amazon Q Developer Series"
+title = "Bedrock Slackbot AI Workshop"
 weight = 1
 languageName = "English"
 
@@ -35,7 +36,7 @@ url = "https://www.facebook.com/groups/awsstudygroupfcj/"
 weight = 20
 
 [Languages.vi]
-title = "Amazon Q Developer Series"
+title = "Bedrock Slackbot AI Workshop"
 weight = 2
 languageName = "Tiếng Việt"
 

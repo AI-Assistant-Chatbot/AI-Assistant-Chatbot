@@ -42,26 +42,18 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
-      # Loop through all project directories and build them
-      - name: Build All Projects
+      - name: Build Hugo Site
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
         run: |
-          mkdir -p public
-          for dir in */; do
-            if [ -f "$dir/config.toml" ]; then  # Check if it's a Hugo project
-              echo "Building $dir..."
-              hugo --source "$dir" --minify --baseURL "${{ steps.pages.outputs.base_url }}/$dir"
-              mkdir -p "public/$dir"
-              cp -r "$dir/public/"* "public/$dir/"
-            fi
-          done
+          cd Generative-AI-Slack-Assistant-with-Amazon-Bedrock-Knowledge-Bases
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public # Upload the entire public folder
+          path: ./Generative-AI-Slack-Assistant-with-Amazon-Bedrock-Knowledge-Bases/public
 
   deploy:
     runs-on: ubuntu-latest
