@@ -1,10 +1,10 @@
-+++
-title = "Bedrock Setup"
-date = 2020-05-14T00:38:32+07:00
-weight = 6
-chapter = false
-pre = "<b>6. </b>"
-+++
+---
+title: "Bedrock Setup"
+date: "`r Sys.Date()`"
+weight: 6
+chapter: false
+pre: " <b> 6. </b> "
+---
 
 #### Bedrock Setup Overview
 
@@ -92,4 +92,8 @@ This setup provides the AI intelligence layer that transforms your Slack bot fro
 
 ---
 
-**Continue to**: [6.1 - Model Access Setup](./6.1-model_access/)
+**Continue to**:
+
+- [6.1 Model Access Setup](./6.1-model_access/)
+- [6.2 Set up guardrails](./6.2-guardrails/)
+- [6.3 Set up knowledge base](./6.3-knowledge_base/)

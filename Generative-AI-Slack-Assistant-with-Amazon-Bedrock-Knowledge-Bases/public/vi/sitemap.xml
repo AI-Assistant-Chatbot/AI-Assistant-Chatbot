@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/vi/1-introduction/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/1-introduction/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/vi/1-introduction/"
-                />
-  </url><url>
     <loc>http://localhost:1313/vi/</loc>
-    <lastmod>1970-01-01T07:33:44+07:00</lastmod>
+    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,8 +15,31 @@
                 href="http://localhost:1313/vi/"
                 />
   </url><url>
+    <loc>http://localhost:1313/vi/1-introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/1-introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/1-introduction/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/3-slack_app/3.1-create_slack_app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/3-slack_app/3.1-create_slack_app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/3-slack_app/3.1-create_slack_app/"
+                />
+  </url><url>
     <loc>http://localhost:1313/vi/2-environment-setup/</loc>
-    <lastmod>2020-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,6 +49,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/2-environment-setup/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/3-slack_app/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/3-slack_app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/3-slack_app/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/8-api_gateway/</loc>
@@ -78,6 +100,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://localhost:1313/vi/9-clear-resources/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/vi/3-slack_app/3.2-create_slash_commands/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/3-slack_app/3.2-create_slash_commands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/vi/3-slack_app/3.2-create_slash_commands/"
                 />
   </url><url>
     <loc>http://localhost:1313/vi/categories/</loc>

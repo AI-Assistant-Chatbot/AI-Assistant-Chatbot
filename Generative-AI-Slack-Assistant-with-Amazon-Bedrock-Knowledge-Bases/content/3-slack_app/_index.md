@@ -1,10 +1,10 @@
-+++
-title = "Slack App Setup"
-date = 2020-05-14T00:38:32+07:00
-weight = 3
-chapter = false
-pre = "<b>3. </b>"
-+++
+---
+title: "Slack App Setup"
+date: "`r Sys.Date()`"
+weight: 3
+chapter: false
+pre: " <b> 3. </b> "
+---
 
 #### Overview
 
@@ -39,4 +39,8 @@ By the end of this module, you'll have a configured Slack app ready to connect w
 
 ---
 
-**Continue to**: [3.1 Create slack app](../3-slack_app/3.1-create_slackapp//)
+**Continue to**:
+
+- [3.1 Create slack app](../3-slack_app/3.1-create_slackapp)
+- [3.2 Create slash commands](../3-slack_app/3.2-OAuth&Permissions)
+- [3.3 Get OAuth Tokens](../3-slack_app/3.3-slash_commands)

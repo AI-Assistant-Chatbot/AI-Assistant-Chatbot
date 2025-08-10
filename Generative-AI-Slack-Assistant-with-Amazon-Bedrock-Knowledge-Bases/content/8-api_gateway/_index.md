@@ -1,83 +1,92 @@
-+++
-title = "Connect and chat"
-date = 2020-05-14T00:38:32+07:00
-weight = 8
-chapter = false
-pre = "<b>8. </b>"
-+++
+---
+title: "API Gateway Integration and Complete Testing"
+date: "`r Sys.Date()`"
+weight: 8
+chapter: false
+pre: " <b> 8. </b> "
+---
 
-## API Gateway Setup and Testing
+#### API Gateway Setup and Testing
 
 This final module connects all components together by creating an API Gateway endpoint that receives Slack requests and triggers your Lambda function, then tests the complete AI assistant functionality.
 
-## Part 1: Create API Gateway
+#### Create API Gateway
 
-### Step 1: Create REST API
+**Create REST API**
 
 1. Navigate to [API Gateway Console](https://us-east-1.console.aws.amazon.com/apigateway)
    ![api0](/images/8/api0.png?width=90pc)
 
 2. Create a new **REST API**:
+
    - **API Type**: REST API
 
    ![api1](/images/8/api1.png?width=91pc)
+
    - **API Name**: `slack-bedrock-api5`
    - **Description**: API for Slack AI Assistant
-   ![api2](/images/8/api2.png?width=91pc)
+     ![api2](/images/8/api2.png?width=91pc)
    - Create successfully
-   ![api2](/images/8/api2-.png?width=91pc)
+     ![api2](/images/8/api2-.png?width=91pc)
 
-### Step 2: Create Resource Structure
+**Create Resource Structure**
 
 3. Create a resource named **slack**:
+
    - **Resource Name**: slack
    - **Resource Path**: /
 
    ![api3](/images/8/api3.png?width=91pc)
 
 4. Create a sub-resource named **ask-aws**:
+
    - **Parent Resource**: /slack
    - **Resource Name**: ask-ai
    - **Resource Path**: /slack/ask-ai
 
    ![api4](/images/8/api4.png?width=91pc)
 
-### Step 3: Configure Method
+**Configure Method**
 
 5. Create a **POST** method for the **ask-ai** resource:
    ![api4](/images/8/api4-.png?width=91pc)
 
 6. Configure method settings:
+
    - **Integration Type**: Lambda Function
    - **Use Lambda Proxy Integration**: ✅ **Enabled**
    - **Lambda Function**: `BedrockKBSlackbotFunction5`
    - **Use Default Timeout**: ✅ **Enabled**
 
    ![api5](/images/8/api5.png?width=91pc)
+
    - Method **POST** created successfully
-   ![api6](/images/8/api6.png?width=90pc)
+     ![api6](/images/8/api6.png?width=90pc)
 
 {{% notice info %}}
 **Note:** Lambda Proxy Integration passes the entire request to Lambda and expects a properly formatted response.
 {{% /notice %}}
 
-### Step 4: Deploy API
+**Deploy API**
 
 7. Deploy the API to a new stage:
+
    - **Deployment Stage**: New Stage
    - **Stage Name**: `prod`
    - **Stage Description**: Production deployment
 
    ![api7](/images/8/api7.png?width=90pc)
 
-### Step 5: Update Slack Configuration
+**Update Slack Configuration**
 
 8. Copy the **Invoke URL** from the deployed API:
+
    - Format: `https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/slack/ask-ai`
 
    ![api8](/images/8/api8.png?width=90pc)
 
 9. Update your Slack app's **Slash Commands** configuration:
+
    - Navigate to your Slack app settings
    - Go to **Slash Commands**
    - Update **Request URL** with the API Gateway invoke URL
@@ -89,36 +98,39 @@ This final module connects all components together by creating an API Gateway en
 **Important:** The Request URL must exactly match your API Gateway endpoint including the `/slack/ask-aws` path.
 {{% /notice %}}
 
-## Part 2: Testing Your AI Assistant
+#### Testing Your AI Assistant
 
-### Test Case 1: Successful Knowledge Retrieval
+**Successful Knowledge Retrieval**
 
 1. **Test Query**: Ask a question about content in your uploaded PDF
+
    - Command: `/ask-ai How do i create an index in PostgreSQL and when should i use one?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
 
    ![test1](/images/8/test1.png?width=91pc)
+
    - Command: `/ask-aws What are the main data types used in PostgreSQL?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
-   ![test2](/images/8/test2.png?width=91pc)
+     ![test2](/images/8/test2.png?width=91pc)
 
-### Test Case 2: Guardrails Protection
+**Guardrails Protection**
 
 2. **Test Query**: Attempt to trigger content filtering
    - Command: `/ask-aws How can i hack into a PostgreSQL system?`
    - **Expected Result**: Bedrock Guardrails block the request and return a safety message
-   ![test3](/images/8/test3.png?width=91pc)
+     ![test3](/images/8/test3.png?width=91pc)
 
-### Test Case 3: Information Not Available
+**Information Not Available**
 
 3. **Test Query**: AI assistant politely indicates the information is not available in the knowledge base
+
    - Command: `/ask-aws Tell me something inappropriate`
    - **Expected Result**: Ask about content not in your Knowledge Base
 
    ![test4](/images/8/test4.png?width=91pc)
    ![test5](/images/8/test5.png?width=91pc)
 
-## Testing Checklist
+#### Testing Checklist
 
 Verify your AI assistant handles these scenarios correctly:
 
@@ -129,24 +141,27 @@ Verify your AI assistant handles these scenarios correctly:
 - ✅ **Response Time**: Acknowledges commands within 3 seconds
 - ✅ **Error Handling**: Provides helpful error messages when issues occur
 
-## Troubleshooting Common Issues
+#### Troubleshooting Common Issues
 
-### API Gateway Issues
+**1. API Gateway Issues**
+
 - **403 Forbidden**: Check Lambda function permissions
 - **502 Bad Gateway**: Verify Lambda function response format
 - **Timeout**: Increase Lambda timeout or check Knowledge Base sync
 
-### Slack Integration Issues
+**2. Slack Integration Issues**
+
 - **Command Not Found**: Verify Request URL matches API Gateway endpoint
 - **No Response**: Check CloudWatch logs for Lambda errors
 - **Permission Denied**: Verify Slack app has proper OAuth scopes
 
-### Knowledge Base Issues
+**3. Knowledge Base Issues**
+
 - **No Relevant Results**: Ensure documents are properly synced
 - **Incorrect Answers**: Check document quality and chunking strategy
 - **Slow Responses**: Monitor OpenSearch Serverless performance
 
-## Congratulations! 🎉
+#### Congratulations! 🎉
 
 You have successfully built and deployed a production-ready Generative AI Slack Assistant with:
 
@@ -159,7 +174,8 @@ Your AI assistant is now ready to help users access organizational knowledge thr
 
 ---
 
-## Next Steps: 
+#### Next Steps:
+
 **Continue to**: [9. Clear resources](../9-clear%20resources/)
 
 Consider these enhancements for production deployment:

@@ -1,16 +1,16 @@
-+++
-title = "Create Lambda Execution Role"
-date = 2024-05-14T00:38:32+07:00
-weight = 7
-chapter = false
-pre = "<b>7.1 </b>"
-+++
+---
+title: "Create Lambda Execution Role"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 7.1 </b> "
+---
 
 This section guides you through creating an IAM role with the necessary permissions for your Lambda function to interact with Bedrock, Secrets Manager, and other AWS services.
 
-## Step 1: Create IAM Role
+#### Create IAM Role
 
-### 1.1 Create Base Role
+**Create Base Role**
 
 1. Create a new IAM role named **BedrockExecutionRole8888**:
 
@@ -20,15 +20,15 @@ This section guides you through creating an IAM role with the necessary permissi
 
    ![lambda1](/images/7/lambda1-.png?width=90pc)
 
-## Step 2: Add Custom Policy
+#### Add Custom Policy
 
-### 2.1 Create BedrockExecutionPolicy
+**Create BedrockExecutionPolicy**
 
 2. Add a custom inline policy named **BedrockExecutionPolicy**:
 
    ![lambda2](/images/7/lambda2-.png?width=90pc)
 
-### 2.2 Policy JSON Configuration
+**Policy JSON Configuration**
 
 3. Use the following JSON policy (replace placeholder values with your actual ARNs):
 
@@ -79,9 +79,9 @@ This section guides you through creating an IAM role with the necessary permissi
    ![lambda3](/images/7/lambda3.png?width=90pc)
    ![lambda4](/images/7/lambda2.png?width=91pc)
 
-## Policy Permissions Explained
+#### Policy Permissions Explained
 
-### Core Permissions
+**1. Core Permissions**
 
 | Permission                        | Purpose                  | Resource             |
 | --------------------------------- | ------------------------ | -------------------- |
@@ -93,7 +93,7 @@ This section guides you through creating an IAM role with the necessary permissi
 | **bedrock:ApplyGuardrail**        | Content filtering        | Guardrail ARNs       |
 | **secretsmanager:GetSecretValue** | Access Slack credentials | Secrets Manager ARNs |
 
-### Required Replacements
+**2. Required Replacements**
 
 Before using the policy, replace these placeholders:
 
@@ -105,10 +105,10 @@ Before using the policy, replace these placeholders:
 **Important:** Replace all placeholder values with your actual ARNs before creating the policy. Incorrect ARNs will cause permission errors.
 {{% /notice %}}
 
-## What's Next
+#### What's Next
 
 Your Lambda execution role is now configured with the necessary permissions. Next, we'll create the Lambda function that will use this role.
 
 ---
 
-**Continue to**: [7.2 - Configure Lambda Code](../7.2-config_code/)
+**Continue to**: [7.2 Create and Configure Lambda Function](../7.2-config_code/)

@@ -1,9 +1,9 @@
-+++
-title = "Building a Generative AI Slackbot Assistant with Amazon Bedrock"
-date = 2024
-weight = 1
-chapter = false
-+++
+---
+title: "Building a Generative AI Slackbot Assistant with Amazon Bedrock"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+---
 
 # Building a Generative AI Slackbot Assistant with Amazon Bedrock
 
@@ -13,7 +13,7 @@ Build a production-ready Slack bot powered by Amazon Bedrock Knowledge Bases tha
 
 **What you'll create:**
 
-- AI-powered Slack bot with `/ask-aws` commands
+- AI-powered Slack bot with `/ask-ai` commands
 - Enterprise-grade RAG system using Amazon Bedrock
 - Secure content filtering with Bedrock Guardrails
 - Scalable serverless architecture on AWS
@@ -115,7 +115,3 @@ Build a production-ready Slack bot powered by Amazon Bedrock Knowledge Bases tha
 - **Improved Productivity** with instant information retrieval
 - **Enhanced Collaboration** through intelligent Slack integration
 - **Scalable Foundation** for additional AI use cases
-
----
-
-**Ready to begin?** Ensure you meet the prerequisites above, then proceed to the [1. Introduction to Slackbot Assistant with Amazon Bedrock](introduction.md) for detailed learning objectives and architecture overview.

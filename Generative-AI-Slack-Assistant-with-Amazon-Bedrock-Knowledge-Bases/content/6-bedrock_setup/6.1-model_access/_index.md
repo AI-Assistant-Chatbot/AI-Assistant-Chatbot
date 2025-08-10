@@ -1,10 +1,10 @@
-+++
-title ="Set up model access"
-date = 2020-05-14T00:38:32+07:00
-weight = 1
-chapter = false
-pre = "<b>6.1 </b>"
-+++
+---
+title: "Setup Model Access"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 6.1 </b> "
+---
 
 #### Enable Foundation Model Access
 
@@ -74,4 +74,4 @@ With foundation model access enabled, you're ready to create the Knowledge Base 
 
 ---
 
-**Continue to**: [6.2 - Setup Guardrails](../6.2-guardrails/)
+**Continue to**: [6.2 Setup Guardrails](../6.2-guardrails/)

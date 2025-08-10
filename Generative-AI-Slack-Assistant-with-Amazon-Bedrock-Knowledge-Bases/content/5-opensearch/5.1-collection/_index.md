@@ -1,10 +1,10 @@
-+++
-title = "OpenSearch Serverless Collection"
-date = 2020-05-14T00:38:32+07:00
-weight = 1
-chapter = false
-pre = "<b>5.1 </b>"
-+++
+---
+title: "OpenSearch Serverless Collection"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 5.1 </b> "
+---
 
 #### Create OpenSearch Serverless Collection
 
@@ -92,7 +92,7 @@ This section guides you through creating an OpenSearch Serverless collection for
      - **Collection name**: `slack-bedrock-vector-db5`
      - **Collection type**: Vector search
        ![opensearch4](/images/5/opensearch4.png?width=91pc)
-      - **Security**: Standard create
+     - **Security**: Standard create
        ![opensearch5](/images/5/opensearch5.png?width=90pc)
 
    - Use default settings and click **Create**
@@ -106,8 +106,9 @@ This section guides you through creating an OpenSearch Serverless collection for
 
    ![opensearch14](/images/5/opensearch14.png?width=91pc)
    ![opensearch15](/images/5/opensearch15.png?width=91pc)
+
    - The next step is to create an index table.
-   ![opensearch16](/images/5/opensearch16.png?width=90pc)
+     ![opensearch16](/images/5/opensearch16.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Copy and save the Collection ARN and OpenSearch Endpoint as they will be needed for Bedrock Knowledge Base configuration.

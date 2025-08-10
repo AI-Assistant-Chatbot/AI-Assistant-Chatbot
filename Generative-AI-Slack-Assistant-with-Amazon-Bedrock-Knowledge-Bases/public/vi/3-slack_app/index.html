@@ -3,30 +3,30 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
-    <meta name="description" content="Slackbot Assistant with Amazon Bedrock Knowledge Bases">
-<meta name="author" content="journeyoftheaverageguy@gmail.com">
+    <meta name="generator" content="Hugo 0.131.0">
+    <meta name="description" content="">
+<meta name="author" content="nghialm2603@gmail.com">
 
-    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Amazon Bedrock Guardrails :: Amazon Bedrock Guardrails</title>
+    <title>Thiết lập Slack App :: Amazon Q Developer Series</title>
 
     
-    <link href="/css/nucleus.css?1754276723" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754276723" rel="stylesheet">
-    <link href="/css/hybrid.css?1754276723" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754276723" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754276723" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754276723" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754276723" rel="stylesheet">
-    <link href="/css/theme.css?1754276723" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754276723" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754822569" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754822569" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754276723" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754822569" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754276723"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754822569"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,14 +36,14 @@
     </style>
     
   </head>
-  <body class="" data-url="/vi/3-slack_app/">
+  <body class="" data-url="http://localhost:1313/vi/3-slack_app/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
 
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="/">
+      <a id="logo" href="http://localhost:1313/">
 
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754276723"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754276723"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754822569"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754822569"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754276723"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754822569"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/vi/1-introduction/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduction/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="/vi/1-introduction/">
-          <b>1. </b>Introduction
+      <a href="http://localhost:1313/vi/1-introduction/">
+           <b> 1. </b> Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/vi/2-prerequisites/" title="Getting Started" class="dd-item 
+    <li data-nav-id="/vi/2-environment-setup/" title="Thiết lập Môi trường" class="dd-item 
         
         
         
         ">
-      <a href="/vi/2-prerequisites/">
-          <b>2. </b>Getting Started
+      <a href="http://localhost:1313/vi/2-environment-setup/">
+           <b> 2. </b> Thiết lập Môi trường
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,539 @@
  
   
     
-    <li data-nav-id="/vi/3-slack_app/" title="Amazon Bedrock Guardrails" class="dd-item 
+    <li data-nav-id="/vi/3-slack_app/" title="Thiết lập Slack App" class="dd-item 
         
         active
         
         ">
-      <a href="/vi/3-slack_app/">
-          <b>3. </b>Amazon Bedrock Guardrails
+      <a href="http://localhost:1313/vi/3-slack_app/">
+           <b> 3. </b> Thiết lập Slack App
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-slack_app/3.1-create_slack_app/" title="Tạo slack app" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/3-slack_app/3.1-create_slack_app/">
+           <b> 3.1 </b> Tạo slack app
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-slack_app/3.2-create_slash_commands/" title="Tạo slash commands" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/3-slack_app/3.2-create_slash_commands/">
+           <b> 3.2 </b> Tạo slash commands
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/3-slack_app/3.3-oauth_permissions/" title="Lấy OAuth Tokens" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/3-slack_app/3.3-oauth_permissions/">
+           <b> 3.3 </b> Lấy OAuth Tokens
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-security/" title="Cấu hình Bảo mật" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/4-security/">
+           <b> 4. </b> Cấu hình Bảo mật
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-security/4.1-secret_manager/" title="Cấu hình AWS Secrets Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/4-security/4.1-secret_manager/">
+           <b> 4.1 </b> Cấu hình AWS Secrets Manager
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/4-security/4.2-systems_manager/" title="Cấu hình Systems Manager Parameter Store" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/4-security/4.2-systems_manager/">
+          <b>4.2 </b>Cấu hình Systems Manager Parameter Store
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-opensearch/" title="OpenSearch Serverless" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/5-opensearch/">
+           <b> 5. </b> OpenSearch Serverless
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-opensearch/5.1-collection/" title="OpenSearch Serverless Collection" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/5-opensearch/5.1-collection/">
+           <b> 5.1 </b> OpenSearch Serverless Collection
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/5-opensearch/5.2-vector_index/" title="Tạo Vector Index" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/5-opensearch/5.2-vector_index/">
+           <b> 5.2 </b> Tạo Vector Index
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-bedrock_setup/" title="Thiết lập Bedrock" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/6-bedrock_setup/">
+           <b> 6. </b> Thiết lập Bedrock
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-bedrock_setup/6.1-model_access/" title="Thiết lập Model Access" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/6-bedrock_setup/6.1-model_access/">
+           <b> 6.1 </b> Thiết lập Model Access
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-bedrock_setup/6.2-guardrails/" title="Thiết lập Guardrails" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/6-bedrock_setup/6.2-guardrails/">
+           <b> 6.2 </b> Thiết lập Guardrails
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/6-bedrock_setup/6.3-knowledge_base/" title="Thiết lập knowledge base" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/6-bedrock_setup/6.3-knowledge_base/">
+           <b> 6.3 </b> Thiết lập knowledge base
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-lambda_implementation/" title="Triển khai Lambda" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/7-lambda_implementation/">
+           <b> 7. </b> Triển khai Lambda
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-lambda_implementation/7.1-lambda_role/" title="Tạo Lambda Execution Role" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/7-lambda_implementation/7.1-lambda_role/">
+           <b> 7.1 </b> Tạo Lambda Execution Role
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/7-lambda_implementation/7.2-config_code/" title="Tạo và Cấu hình Lambda Function" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/7-lambda_implementation/7.2-config_code/">
+           <b> 7.2 </b> Tạo và Cấu hình Lambda Function
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/vi/8-api_gateway/" title="Tích hợp API Gateway và Kiểm thử" class="dd-item 
+        
+        
+        
+        ">
+      <a href="http://localhost:1313/vi/8-api_gateway/">
+           <b> 8. </b> Tích hợp API Gateway và Kiểm thử
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +686,13 @@
  
   
     
-    <li data-nav-id="/vi/8-lambda_implementation/" title="Creating Denied Topics" class="dd-item 
+    <li data-nav-id="/vi/10-conclusion/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/vi/8-lambda_implementation/">
-          <b>4. </b>Creating Denied Topics
+      <a href="http://localhost:1313/vi/10-conclusion/">
+          
           
             <i class="fas fa-check read-icon"></i>
           
@@ -186,65 +712,13 @@
  
   
     
-    <li data-nav-id="/vi/9-knowledge_base/" title="Add filters to Guardrail" class="dd-item 
+    <li data-nav-id="/vi/9-clean_resources/" title="" class="dd-item 
         
         
         
         ">
-      <a href="/vi/9-knowledge_base/">
-          <b>5. </b>Add filters to Guardrail
+      <a href="http://localhost:1313/vi/9-clean_resources/">
           
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/10-api_gateway/" title="Testing Guardrail" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/10-api_gateway/">
-          <b>6. </b>Testing Guardrail
-          
-            <i class="fas fa-check read-icon"></i>
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/vi/11-test/" title="Apply Guardrails to Agent" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/vi/11-test/">
-          <b>7. </b>Apply Guardrails to Agent
           
             <i class="fas fa-check read-icon"></i>
           
@@ -391,7 +865,7 @@
             
           
           
-            <a href='/vi/'>Building Trustworthy AI with Amazon Bedrock Guardrails</a> > Amazon Bedrock Guardrails
+            <a href='http://localhost:1313/vi/'>Xây dựng Trợ lý Slackbot AI Tạo sinh với Amazon Bedrock</a> > Thiết lập Slack App
           
         
           
@@ -406,8 +880,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#what-is-amazon-bedrock">What is Amazon Bedrock?</a></li>
-        <li><a href="#what-is-guardrails-for-amazon-bedrock">What is Guardrails for Amazon Bedrock?</a></li>
+        <li></li>
       </ul>
     </li>
   </ul>
@@ -427,7 +900,7 @@
           
             <h1>
               
-              Amazon Bedrock Guardrails
+              Thiết lập Slack App
             </h1>
           
 
@@ -435,23 +908,38 @@
 
 
 
-	<h3 id="what-is-amazon-bedrock">What is Amazon Bedrock?</h3>
-<p>Amazon Bedrock is a fully managed service that enables you to build and scale generative AI applications quickly and securely, starting with a foundation model (FM) of your choice. It provides access to a variety of leading FMs from top AI providers through a simple API, without the need to manage infrastructure.</p>
-<p>A key feature of Amazon Bedrock is Guardrails, which allows organizations to implement safeguards—referred to as guardrails—that monitor and control both user inputs and AI-generated outputs. These safeguards help ensure that the AI behavior aligns with your organization’s policies and ethical standards. Guardrails are model-agnostic and can be integrated across various use cases and applications.</p>
-<h3 id="what-is-guardrails-for-amazon-bedrock">What is Guardrails for Amazon Bedrock?</h3>
-<p>Guardrails for Amazon Bedrock is a powerful feature that enables you to establish safety controls within your generative AI applications. Guardrails help filter, block, or manage content that may be considered harmful, inappropriate, or misaligned with your organization’s policies.</p>
-<p>These safeguards work across different foundation models and are designed to ensure responsible use of AI by checking both user inputs and AI outputs. In future updates, Guardrails will also support automatic redaction of personally identifiable information (PII)—further enhancing content safety and privacy.</p>
-<p>With Guardrails, you can configure and enforce policies such as:</p>
+	<h4 id="tổng-quan">Tổng quan</h4>
+<p>Slack app mở rộng chức năng của Slack bằng cách thêm các tính năng mới, tự động hóa tác vụ và tích hợp với các dịch vụ bên ngoài. Đối với trợ lý AI của chúng ta, Slack app đóng vai trò là giao diện giữa người dùng và knowledge base được hỗ trợ bởi Amazon Bedrock, cho phép truy vấn ngôn ngữ tự nhiên thông qua slash commands.</p>
+<h4 id="những-gì-bạn-sẽ-hoàn-thành">Những gì bạn sẽ hoàn thành</h4>
+<p>Trong module này, bạn sẽ:</p>
 <ul>
-<li>
-<p><strong>Denied Topics:</strong> Specify topics that are not allowed within your application.
-Example: A virtual banking assistant can be restricted from giving investment advice.</p>
-</li>
-<li>
-<p><strong>Content Filters:</strong> Set thresholds to detect and filter content related to: Hate speech, Insults, Sexual content, Violence,&hellip;</p>
-</li>
+<li>Tạo Slack app mới trong workspace của bạn</li>
+<li>Cấu hình OAuth permissions và slash commands</li>
+<li>Tạo authentication tokens cho tích hợp AWS</li>
+<li>Kiểm thử cài đặt app cơ bản</li>
 </ul>
-<p><img src="/images/2/Guardrails.png?width=90pc" alt="Guardrails"></p>
+<h4 id="các-thành-phần-chính">Các thành phần chính</h4>
+<p><strong>1. Cấu hình Slack App</strong></p>
+<ul>
+<li><strong>Tên App</strong>: AWS AI Assistant</li>
+<li><strong>Slash Command</strong>: <code>/ask-ai</code></li>
+<li><strong>Quyền cần thiết</strong>: <code>commands</code>, <code>chat:write</code>, <code>channels:read</code></li>
+</ul>
+<p><strong>2. Thông tin đăng nhập Authentication</strong></p>
+<ul>
+<li><strong>Bot Token</strong>: Cho giao tiếp API (bắt đầu với <code>xoxb-</code>)</li>
+<li><strong>Signing Secret</strong>: Cho xác minh request</li>
+<li><strong>Request URL</strong>: Sẽ kết nối với AWS API Gateway</li>
+</ul>
+<h4 id="kết-quả-mong-đợi">Kết quả mong đợi</h4>
+<p>Kết thúc module này, bạn sẽ có một Slack app được cấu hình sẵn sàng kết nối với cơ sở hạ tầng backend AWS mà chúng ta sẽ xây dựng trong các module tiếp theo. Slash command sẽ hiển thị trong workspace của bạn nhưng sẽ không hoạt động cho đến khi chúng ta triển khai giải pháp hoàn chỉnh.</p>
+<hr>
+<p><strong>Tiếp tục đến</strong>:</p>
+<ul>
+<li><a href="../3-slack_app/3.1-create_slackapp">3.1 Tạo slack app</a></li>
+<li><a href="../3-slack_app/3.2-OAuth&Permissions">3.2 Tạo slash commands</a></li>
+<li><a href="../3-slack_app/3.3-slash_commands">3.3 Lấy OAuth Tokens</a></li>
+</ul>
 
 
 
@@ -533,6 +1021,24 @@ Example: A virtual banking assistant can be restricted from giving investment ad
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -544,8 +1050,21 @@ Example: A virtual banking assistant can be restricted from giving investment ad
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -554,6 +1073,225 @@ Example: A virtual banking assistant can be restricted from giving investment ad
                     
                     
 
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -615,10 +1353,10 @@ Example: A virtual banking assistant can be restricted from giving investment ad
 	 
 	 
 		
-			<a class="nav nav-prev" href="/vi/2-prerequisites/" title="Getting Started"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="http://localhost:1313/vi/2-environment-setup/" title="Thiết lập Môi trường"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/8-lambda_implementation/" title="Creating Denied Topics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="http://localhost:1313/vi/3-slack_app/3.1-create_slack_app/" title="Tạo slack app" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -628,19 +1366,19 @@ Example: A virtual banking assistant can be restricted from giving investment ad
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754276723"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754276723"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754276723"></script>
-    <script src="/js/jquery.sticky.js?1754276723"></script>
-    <script src="/js/featherlight.min.js?1754276723"></script>
-    <script src="/js/highlight.pack.js?1754276723"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754822570"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754822570"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754822570"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754822570"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754822570"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754822570"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754276723"></script>
-    <script src="/js/learn.js?1754276723"></script>
-    <script src="/js/hugo-learn.js?1754276723"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754822570"></script>
+    <script src="http://localhost:1313/js/learn.js?1754822570"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754822570"></script>
 
-    <link href="/mermaid/mermaid.css?1754276723" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754276723"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754822570" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754822570"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

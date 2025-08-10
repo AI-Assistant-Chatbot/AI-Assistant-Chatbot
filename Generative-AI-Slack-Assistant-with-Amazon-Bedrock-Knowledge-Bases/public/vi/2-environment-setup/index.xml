@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Started on Amazon Q Developer Series</title>
+    <title>Thiết lập Môi trường on Amazon Q Developer Series</title>
     <link>http://localhost:1313/vi/2-environment-setup/</link>
-    <description>Recent content in Getting Started on Amazon Q Developer Series</description>
+    <description>Recent content in Thiết lập Môi trường on Amazon Q Developer Series</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <lastBuildDate></lastBuildDate>
     <atom:link href="http://localhost:1313/vi/2-environment-setup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

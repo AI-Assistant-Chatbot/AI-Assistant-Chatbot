@@ -1,12 +1,12 @@
-+++
-title = "Introduction to Slackbot Assistant with Amazon Bedrock"
-date = 2020-05-14T00:38:32+07:00
-weight = 1
-chapter = false
-pre = "<b>1. </b>"
-+++
+---
+title: "Introduction"
+date: "`r Sys.Date()`"
+weight: 1
+chapter: false
+pre: " <b> 1. </b> "
+---
 
-#### Introduction
+#### Introduction to Slackbot Assistant with Amazon Bedrock
 
 Welcome to this comprehensive workshop on building a Generative AI Slack Assistant with Amazon Bedrock Knowledge Bases! In this hands-on experience, you'll learn to create an intelligent AI assistant that transforms how your organization accesses and utilizes knowledge, making information instantly available through natural language conversations in Slack.
 
@@ -211,8 +211,8 @@ Upon workshop completion, you'll have achieved:
 
 Now that you understand the workshop objectives and architecture, you're ready to begin the hands-on implementation. The journey ahead will transform you from an AI curious professional to someone capable of deploying production-grade generative AI solutions.
 
-**Let's start building the future of workplace productivity!** 🚀
+**Let's start building the future of workplace productivity!**
 
 ---
 
-**Continue to**: [Module 2 - Environment Setup](../2-environment-setup/)
+**Continue to**: [Environment Setup](../2-environment-setup/)

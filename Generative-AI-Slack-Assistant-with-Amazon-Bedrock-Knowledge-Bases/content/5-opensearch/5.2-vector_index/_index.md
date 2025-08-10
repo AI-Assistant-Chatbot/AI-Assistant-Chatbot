@@ -1,10 +1,10 @@
-+++
-title = "Create Vector Index"
-date = 2020-05-14T00:38:32+07:00
-weight = 2
-chapter = false
-pre = "<b>5.2 </b>"
-+++
+---
+title: "Create Vector Index"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 5.2 </b> "
+---
 
 This section guides you through creating a vector index in OpenSearch Serverless using Postman to enable k-NN similarity searches for your AI assistant.
 
@@ -18,10 +18,11 @@ This section guides you through creating a vector index in OpenSearch Serverless
 #### Generate Access Keys
 
 2. Create **Access Keys** for programmatic access:
+
 - Get the access key information of the newly created user
-     ![userAccesskey](/images/5/user2.png?width=91pc)
+  ![userAccesskey](/images/5/user2.png?width=91pc)
 - Add a **tag** with **Key** and **Value** as an **access key**
-     ![user2](/images/5/user3.png?width=91pc)
+  ![user2](/images/5/user3.png?width=91pc)
 
 {{% notice warning %}}
 **Important:** Save the Access Key ID and Secret Access Key securely - they will be needed for Postman authentication.
@@ -119,11 +120,11 @@ This section guides you through creating a vector index in OpenSearch Serverless
 5. Verify the index was created successfully in OpenSearch console:
 
    - **Index Name**: slack-bedrock-os-index5
-   ![opensearch17](/images/5/opensearch17.png?width=90pc)
+     ![opensearch17](/images/5/opensearch17.png?width=90pc)
    - **Vector Field**: bedrock-knowledge-base-default-vector
-   ![opensearch18](/images/5/opensearch18.png?width=90pc)
+     ![opensearch18](/images/5/opensearch18.png?width=90pc)
    - **Metadata Fields**: Available for document tracking
-   ![opensearch19](/images/5/opensearch19.png?width=90pc)
+     ![opensearch19](/images/5/opensearch19.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The vector index is configured with 1024 dimensions to match Amazon Titan Text Embeddings V2 model output and uses HNSW algorithm for efficient similarity search.
@@ -151,4 +152,4 @@ Your vector index is now ready to store and search document embeddings. Next, we
 
 ---
 
-**Continue to**: [Module 6 - Bedrock Setup](../../6-bedrock_setup/)
+**Continue to**: [6 Bedrock Setup](../../6-bedrock_setup/)

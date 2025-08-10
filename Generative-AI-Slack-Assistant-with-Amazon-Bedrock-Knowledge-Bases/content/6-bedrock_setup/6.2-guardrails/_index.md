@@ -1,10 +1,10 @@
-+++
-title ="Set up guardrails"
-date = 2020-05-14T00:38:32+07:00
-weight = 2
-chapter = false
-pre = "<b>6.2 </b>"
-+++
+---
+title: "Setup Guardrails"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 6.2 </b> "
+---
 
 #### Amazon Bedrock Guardrails Overview
 
@@ -13,15 +13,17 @@ Amazon Bedrock Guardrails help you implement safeguards for your generative AI a
 #### Prerequisites
 
 Before setting up guardrails, ensure you have:
+
 - ✅ Access to Amazon Bedrock console
 - ✅ Appropriate IAM permissions for Bedrock Guardrails
 - ✅ Understanding of your content filtering requirements
 
 ---
 
-#### Step 1: Access Bedrock Guardrails Console
+#### Access Bedrock Guardrails Console
 
 **1. Navigate to Amazon Bedrock**
+
 - Go to [Amazon Bedrock Console](https://console.aws.amazon.com/bedrock/)
 - Ensure you're in the **us-east-1** region
 - Click **Guardrails** in the left navigation panel
@@ -31,6 +33,7 @@ Before setting up guardrails, ensure you have:
 ![guardrail1](/images/6/guardrail1.png?width=90pc)
 
 **2. Create New Guardrail**
+
 - **Name**: `slack-ai-assistant-guardrail`
 - **Description**: `Guardrail for Slack AI Assistant to filter harmful content and protect sensitive information`
 
@@ -38,7 +41,7 @@ Before setting up guardrails, ensure you have:
 
 ---
 
-#### Step 2: Configure Content Filters
+#### Configure Content Filters
 
 **1. Set Up Harmful Content Filters**
 
@@ -50,20 +53,18 @@ Configure filters for different types of harmful content:
 - **Violence**: `High` - Filter violent content
 - **Misconduct**: `Medium` - Block unethical behavior content
 
-
-
 ![guardrail3](/images/6/guardrail3.png?width=90pc)
 
 ---
 
 **2. Set Up Prompt Attacks**
-- **Prompt Attacks**: `High` - Prevent prompt injection attacks
-![guardrail4](/images/6/guardrail4.png?width=90pc)
 
+- **Prompt Attacks**: `High` - Prevent prompt injection attacks
+  ![guardrail4](/images/6/guardrail4.png?width=90pc)
 
 ---
 
-#### Step 3: Configure Word Filters (Optional)
+#### Configure Word Filters (Optional)
 
 **1. Set Up Profanity Filters**
 
@@ -75,7 +76,6 @@ Add specific words or phrases to block:
 
 ![guardrail5](/images/6/guardrail5.png?width=90pc)
 
-
 ![guardrail6](/images/6/guardrail6.png?width=90pc)
 
 ---
@@ -86,18 +86,20 @@ Add specific words or phrases to block:
 
 ---
 
-
 #### Troubleshooting Common Issues
 
 **1. Guardrail Creation Fails**
+
 - **Issue**: Permission denied
 - **Solution**: Verify IAM permissions for Bedrock Guardrails
 
 **2. Over-filtering Legitimate Content**
+
 - **Issue**: Too many false positives
 - **Solution**: Adjust filter levels from High to Medium
 
 **3. PII Not Being Detected**
+
 - **Issue**: Sensitive data passing through
 - **Solution**: Enable additional PII types or use custom regex patterns
 
@@ -111,13 +113,14 @@ Add specific words or phrases to block:
 
 With your guardrail configured, you're ready to integrate it with your Knowledge Base.
 
-**Continue to**: [6.3 - Knowledge Base Setup](../6.3-knowledge_base/)
+**Continue to**: [6.3 Knowledge Base Setup](../6.3-knowledge_base/)
 
 ---
 
 #### Summary
 
 In this section, you have:
+
 - ✅ Created an Amazon Bedrock Guardrail
 - ✅ Configured content filters for harmful content
 - ✅ Set up PII protection for sensitive information

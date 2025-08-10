@@ -1,35 +1,37 @@
-+++
-title ="Set up knowledge base"
-date = 2020-05-14T00:38:32+07:00
-weight = 3
-chapter = false
-pre = "<b>6.3 </b>"
-+++
+---
+title: "Setup Knowledge Base"
+date: "`r Sys.Date()`"
+weight: 3
+chapter: false
+pre: " <b> 6.3 </b> "
+---
 
-### Create Bedrock Knowledge Base
+#### Create Bedrock Knowledge Base
 
 This section guides you through creating a Bedrock Knowledge Base with S3 data source and OpenSearch Serverless integration for your AI assistant.
 
-### S3 Configuration
+#### S3 Configuration
 
 #### Create S3 Bucket
 
 1. Create a new S3 bucket for storing your documents:
 
 - **Region**: us-east-1
-   - Use default settings for other configurations
 
-   ![s3_1](/images/6/s3_1.png?width=90pc)
-   - **Bucket name**: `bucket-bedrock-document868686`
-   ![s3_2](/images/6/s3_2.png?width=90pc)
-   - Note **ARN**
-   ![s3_3](/images/6/s3-3.png?width=90pc)
+  - Use default settings for other configurations
+
+  ![s3_1](/images/6/s3_1.png?width=90pc)
+
+  - **Bucket name**: `bucket-bedrock-document868686`
+    ![s3_2](/images/6/s3_2.png?width=90pc)
+  - Note **ARN**
+    ![s3_3](/images/6/s3-3.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Use a unique bucket name by including your account ID to avoid naming conflicts.
 {{% /notice %}}
 
-### Configure Knowledge Base
+#### Configure Knowledge Base
 
 #### Access Bedrock Console
 
@@ -95,7 +97,7 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 6. Verify the automatically created IAM role has the necessary policies:
    ![kb13](/images/6/kb13.png?width=90pc)
 
-### Upload and Sync Documents
+#### Upload and Sync Documents
 
 #### Upload Sample Document
 
@@ -122,10 +124,10 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 **Note:** The sync process will chunk your documents, create embeddings using Titan V2, and store them in OpenSearch Serverless for semantic search.
 {{% /notice %}}
 
-### What's Next
+#### What's Next
 
 Your Bedrock Knowledge Base is now configured and ready to answer questions about your uploaded documents. Next, we'll create the Lambda function that will integrate this Knowledge Base with your Slack bot.
 
 ---
 
-**Continue to**: [Module 7 - Lambda Implementation](../../7-lambda_implementation/)
+**Continue to**: [7 Lambda Implementation](../../7-lambda_implementation/)

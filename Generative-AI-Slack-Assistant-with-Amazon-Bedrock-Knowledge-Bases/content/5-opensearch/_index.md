@@ -1,10 +1,10 @@
-+++
-title = "OpenSearch Serverless"
-date = 2020-05-14T00:38:32+07:00
-weight = 5
-chapter = false
-pre = "<b>5. </b>"
-+++
+---
+title: "OpenSearch Serverless"
+date: "`r Sys.Date()`"
+weight: 5
+chapter: false
+pre: " <b> 5. </b> "
+---
 
 #### OpenSearch Serverless Overview
 
@@ -125,4 +125,7 @@ OpenSearch Serverless acts as the intelligent memory of your AI assistant, enabl
 
 ---
 
-**Continue to**: [5.1 - Bedrock Setup](../5-opensearch/5.1-collection//)
+**Continue to**:
+
+- [5.1 OpenSearch Serverless Collection](../5-opensearch/5.1-collection)
+- [5.2 Create Vector Index](../5-opensearch/5.2-vector_index)

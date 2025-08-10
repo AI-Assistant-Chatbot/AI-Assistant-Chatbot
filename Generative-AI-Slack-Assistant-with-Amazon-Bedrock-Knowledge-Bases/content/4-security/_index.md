@@ -1,10 +1,10 @@
-+++
-title = "Configure Security"
-date = 2024-05-14T00:38:32+07:00
-weight = 4
-chapter = false
-pre = "<b>4. </b>"
-+++
+---
+title: "Configure Security"
+date: "`r Sys.Date()`"
+weight: 4
+chapter: false
+pre: " <b> 4. </b> "
+---
 
 #### Security Overview
 
@@ -92,4 +92,4 @@ After implementing this security architecture:
 
 ---
 
-**Continue to**: [4.1 - Secret manager](../4-security/4.1-secret%20manager/)
+**Continue to**: [4.1 Configure AWS Secrets Manager](../4-security/4.1-secret_manager/)

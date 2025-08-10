@@ -1,16 +1,16 @@
-+++
-title = "Create and Configure Lambda Function"
-date = 2024-05-14T00:38:32+07:00
-weight = 8
-chapter = false
-pre = "<b>7.2 </b>"
-+++
+---
+title: "Create and Configure Lambda Function"
+date: "`r Sys.Date()`"
+weight: 2
+chapter: false
+pre: " <b> 7.2 </b> "
+---
 
 This section guides you through creating the Lambda function and configuring it with the necessary code, settings, and environment variables.
 
-## Step 1: Create Lambda Function
+#### Create Lambda Function
 
-### 1.1 Basic Function Setup
+**Basic Function Setup**
 
 1. Create a new Lambda function named **BedrockKBSlackbotFunction5**:
 
@@ -19,14 +19,14 @@ This section guides you through creating the Lambda function and configuring it 
 
    ![lambda5](/images/7/lambda5.png?width=90pc)
 
-### 1.2 Attach IAM Role
+**Attach IAM Role**
 
 2. Attach the IAM role **BedrockExecutionRole8888** (created in section 7.1) and click **Create**:
    ![lambda6](/images/7/lambda6-.png?width=90pc)
 
-## Step 2: Upload Function Code
+#### Upload Function Code
 
-### 2.1 Deploy Code Package
+**Deploy Code Package**
 
 3. Upload the Lambda deployment package:
 
@@ -45,9 +45,9 @@ This section guides you through creating the Lambda function and configuring it 
 **Note:** The zip file contains the Slack Bolt framework and all necessary dependencies for the bot functionality.
 {{% /notice %}}
 
-## Step 3: Configure Function Settings
+#### Configure Function Settings
 
-### 3.1 Update Handler
+**Update Handler**
 
 4. Change the **Handler** to match your code entry point:
 
@@ -55,7 +55,7 @@ This section guides you through creating the Lambda function and configuring it 
 
    ![lambda11](/images/7/lambda11-.png?width=91pc)
 
-### 3.2 Adjust Performance Settings
+**Adjust Performance Settings**
 
 5. Configure **Memory** and **Timeout** for optimal performance:
 
@@ -64,9 +64,9 @@ This section guides you through creating the Lambda function and configuring it 
 
    ![lambda13](/images/7/lambda13-.png?width=90pc)
 
-## Step 4: Environment Variables
+#### Environment Variables
 
-### 4.1 Add Configuration Variables
+**Add Configuration Variables**
 
 6. Add the following **Environment variables**:
 
@@ -79,13 +79,11 @@ This section guides you through creating the Lambda function and configuring it 
    | `AWS_REGION`                     | `us-east-1`                               | AWS region for service calls            |
    | `GUARDRAIL_ID`                   | `your-guardrail-id `                      | References your guardrail               |
    | `SLACK_SLASH_COMMAND`            | `/ask-ai`                                 | slash command created at the beginning  |
-  
-  
-  
+
    ![lambda14](/images/7/lambda14-.png?width=90pc)
    ![lambda15](/images/7/lambda15-.png?width=90pc)
 
-### 4.2 Required Values
+**Required Values**
 
 Replace these placeholder values with your actual configuration:
 
@@ -97,9 +95,9 @@ Replace these placeholder values with your actual configuration:
 **Important:** Ensure all environment variable values match your actual AWS resources. Incorrect values will cause runtime errors.
 {{% /notice %}}
 
-## Function Configuration Summary
+#### Function Configuration Summary
 
-### Runtime Settings
+**1. Runtime Settings**
 
 - ✅ **Function name**: BedrockKBSlackbotFunction5
 - ✅ **Runtime**: Python 3.12
@@ -107,16 +105,16 @@ Replace these placeholder values with your actual configuration:
 - ✅ **Memory**: 512 MB
 - ✅ **Timeout**: 5 minutes
 
-### Security Settings
+**2. Security Settings**
 
 - ✅ **Execution role**: BedrockExecutionRole8888
 - ✅ **Environment variables**: Configured with proper values
 - ✅ **Code package**: Uploaded with dependencies
 
-## What's Next
+#### What's Next
 
 Your Lambda function is now configured and ready to process Slack commands. Next, we'll create the API Gateway that will receive requests from Slack and trigger your Lambda function.
 
 ---
 
-**Continue to**: [Module 8 - API Gateway](../../8-api_gateway/)
+**Continue to**: [8. API Gateway Integration and Complete Testing](../../8-api_gateway/)
