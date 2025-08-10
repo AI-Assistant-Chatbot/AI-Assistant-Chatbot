@@ -7,7 +7,7 @@
 .terraform.lock.hcl
 
 # Lambda deployment packages
-*.zip
+# zip
 
 # OS files
 .DS_Store
