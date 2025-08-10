@@ -48,7 +48,10 @@ jobs:
           HUGO_ENVIRONMENT: production
         run: |
           cd Generative-AI-Slack-Assistant-with-Amazon-Bedrock-Knowledge-Bases
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
+          echo "Base URL: ${{ steps.pages.outputs.base_url }}"
+          ls -la themes/
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/Bedrock-Slackbot-AI-Workshop"
+          ls -la public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
