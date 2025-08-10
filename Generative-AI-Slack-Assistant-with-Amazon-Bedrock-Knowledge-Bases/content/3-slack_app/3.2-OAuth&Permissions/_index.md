@@ -16,9 +16,9 @@ pre = "<b>3.2 </b>"
 
 2. Fill in the command configuration:
 
-   - **Command**: `/ask-aws`
-   - **Request URL**: `https://example.com/slack/ask-aws` (temporary)
-   - **Short Description**: `Ask questions about AWS documentation`
+   - **Command**: `/ask-ai`
+   - **Request URL**: `https://www.google.com/` (temporary)
+   - **Short Description**:`test bedrock`
    - **Usage Hint**: `[your question about AWS]`
 
 ![slackCommand2](/images/3/slashCommand2.png?width=90pc)

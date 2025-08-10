@@ -16,12 +16,13 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
 1. Create a new S3 bucket for storing your documents:
 
-   - **Bucket name**: `slack-bedrock-kb-documents-[your-account-id]`
-   - **Region**: us-east-1
+- **Region**: us-east-1
    - Use default settings for other configurations
 
    ![s3_1](/images/6/s3_1.png?width=90pc)
+   - **Bucket name**: `bucket-bedrock-document868686`
    ![s3_2](/images/6/s3_2.png?width=90pc)
+   - Note **ARN**
    ![s3_3](/images/6/s3-3.png?width=90pc)
 
 {{% notice tip %}}
@@ -49,8 +50,8 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
    **Basic Information:**
 
-   - **Knowledge base name**: `slack-bedrock-kb`
-   - **IAM Role**: Create a new service role
+   - **Knowledge base name**: `slack-bedrock-kb5`
+   - **IAM Role**: Create a new service role name `BedrockKnowledgeBaseRole5`
      ![kb3](/images/6/kb3.png?width=90pc)
 
    **Data Source:**
@@ -78,15 +79,17 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
    **OpenSearch Configuration:**
 
-   - **Collection**: `slack-bedrock-vector-db` (created in Module 5)
-   - **Vector index name**: `slack-bedrock-os-index`
+   - **Collection**: `slack-bedrock-vector-db5` (created in Module 5)
+   - **Vector index name**: `slack-bedrock-os-index5`
    - **Vector field name**: `bedrock-knowledge-base-default-vector`
      ![kb10](/images/6/kb10.png?width=90pc)
+   - **Text field name**: `AMAZON_BEDROCK_TEXT_CHUNK`
+   - **Metadata field name**:`AMAZON_BEDROCK_METADATA`
      ![kb11](/images/6/kb11.png?width=91pc)
 
 #### Complete Creation
 
-5. Review and create the Knowledge Base:
+5. Create and note the Knowledge Base ID:
    ![kb12](/images/6/kb12.png?width=90pc)
 
 6. Verify the automatically created IAM role has the necessary policies:

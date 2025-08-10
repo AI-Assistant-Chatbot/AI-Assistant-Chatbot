@@ -21,8 +21,9 @@ Follow this specific order to avoid dependency conflicts:
 ### Step 1: Delete API Gateway
 
 1. **Delete API Gateway**:
+
    - Navigate to API Gateway Console
-   - Select your `slack-bedrock-api`
+   - Select your `slack-bedrock-api5`
    - Click **Actions** → **Delete API**
    - Confirm deletion
 
@@ -31,6 +32,7 @@ Follow this specific order to avoid dependency conflicts:
 ### Step 2: Delete Lambda Function
 
 2. **Delete Lambda Function**:
+
    - Navigate to Lambda Console
    - Select `BedrockKBSlackbotFunction5`
    - Click **Actions** → **Delete**
@@ -41,14 +43,19 @@ Follow this specific order to avoid dependency conflicts:
 ### Step 3: Delete Bedrock Knowledge Base
 
 3. **Delete Knowledge Base**:
+
+   - Navigate to S3 Console
+   - **First**: Delete all objects in the bucket
+   - **Then**: Delete the bucket itself
+   - Confirm deletion
+     ![clear1](/images/9/clear1.png?width=91pc)
+     ![clear2](/images/9/clear2.png?width=91pc)
    - Navigate to Bedrock Console
    - Go to **Knowledge bases**
    - Select your knowledge base
    - Click **Delete**
    - Confirm deletion
-
-   ![clear2](/images/9/clear2.png?width=91pc)
-   ![clear3](/images/9/clear3.png?width=91pc)
+     ![clear3](/images/9/clear3.png?width=91pc)
 
 {{% notice info %}}
 **Note:** Wait for the Knowledge Base deletion to complete before proceeding to OpenSearch cleanup.
@@ -59,25 +66,29 @@ Follow this specific order to avoid dependency conflicts:
 4. **Delete OpenSearch Components** (in this order):
 
    **a) Delete Vector Index:**
+
    - Use Postman or AWS CLI to delete the index
-   - DELETE request to: `https://your-collection-endpoint/slack-bedrock-os-index`
+   - DELETE request to: `https://your-collection-endpoint/slack-bedrock-os-index5`
 
    ![clear7](/images/9/clear4.png?width=91pc)
 
    **b) Delete Collection:**
+
    - Navigate to OpenSearch Console
    - Select **Collections**
-   - Delete `slack-bedrock-vector-db`
+   - Delete `slack-bedrock-vector-db5`
 
    ![clear7](/images/9/clear5.png?width=91pc)
 
    **c) Delete Data Access Policy:**
+
    - Go to **Data access policies**
    - Delete your access policy
 
    ![clear7](/images/9/clear6.png?width=91pc)
 
    **d) Delete Network Policy:**
+
    - Go to **Network policies**
    - Delete your network policy
 
@@ -86,34 +97,26 @@ Follow this specific order to avoid dependency conflicts:
 ### Step 5: Delete Security Resources
 
 5. **Delete AWS Secrets Manager Secrets**:
+
    - Navigate to Secrets Manager Console
-   - Delete `bot-token5`
-   - Delete `signing-secret5`
+   - Delete `slack/bot-token5`
+   - Delete `slack/signing-secret5`
    - Confirm immediate deletion (skip recovery period)
 
    ![clear8](/images/9/clear8.png?width=91pc)
    ![clear9](/images/9/clear9.png?width=91pc)
 
 6. **Delete Systems Manager Parameters**:
+
    - Navigate to Systems Manager Console
    - Go to **Parameter Store**
-   - Delete `/slack-bot/token`
-   - Delete `/slack-bot/signing-secret`
+   - Delete `/slack/bot-token5/parameter5`
+   - Delete `/slack/signing-secret5/parameter5`
 
    ![clear10](/images/9/clear10.png?width=91pc)
    ![clear11](/images/9/clear11.png?width=91pc)
 
-### Step 6: Delete S3 Resources
-
-7. **Delete S3 Bucket**:
-   - Navigate to S3 Console
-   - **First**: Delete all objects in the bucket
-   - **Then**: Delete the bucket itself
-   - Confirm deletion
-
-   ![clear1](/images/9/clear1.png?width=91pc)
-
-### Step 7: Clean Up IAM Resources
+### Step 6: Clean Up IAM Resources
 
 8. **Delete IAM Role** (Optional):
    - Navigate to IAM Console
@@ -126,8 +129,9 @@ Follow this specific order to avoid dependency conflicts:
 After cleanup, verify no ongoing charges:
 
 ### Check These Services:
+
 - ✅ **Lambda**: No functions remaining
-- ✅ **API Gateway**: No APIs remaining  
+- ✅ **API Gateway**: No APIs remaining
 - ✅ **OpenSearch Serverless**: No collections or policies
 - ✅ **S3**: No buckets with workshop data
 - ✅ **Secrets Manager**: No secrets remaining
@@ -153,6 +157,7 @@ Confirm all resources are deleted:
 ## Final Verification
 
 1. **Check AWS Billing Dashboard**:
+
    - Verify no unexpected charges
    - Monitor for 24-48 hours after cleanup
 

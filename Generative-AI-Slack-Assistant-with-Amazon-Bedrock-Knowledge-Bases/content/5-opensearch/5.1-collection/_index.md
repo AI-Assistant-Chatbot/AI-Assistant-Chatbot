@@ -54,7 +54,7 @@ This section guides you through creating an OpenSearch Serverless collection for
 5. Create **Network policy** → **Create network policy**
    ![opensearch11](/images/5/opensearch11.png?width=90pc)
 
-6. Enter **Network policy name**
+6. Enter **Network policy name** -> select **JSON**
    ![opensearch12](/images/5/opensearch12.png?width=90pc)
 
 7. Enter the following JSON policy and click **Create**:
@@ -84,14 +84,15 @@ This section guides you through creating an OpenSearch Serverless collection for
    - Select **Collections**
      ![opensearch2](/images/5/opensearch2.png?width=90pc)
 
-   - Click **Create Collection**
+   - Select **Create Collection**
      ![opensearch3](/images/5/opensearch3.png?width=90pc)
 
    - Configure collection settings:
 
-     - **Collection name**: `slack-bedrock-vector-db`
+     - **Collection name**: `slack-bedrock-vector-db5`
      - **Collection type**: Vector search
        ![opensearch4](/images/5/opensearch4.png?width=91pc)
+      - **Security**: Standard create
        ![opensearch5](/images/5/opensearch5.png?width=90pc)
 
    - Use default settings and click **Create**
@@ -105,6 +106,7 @@ This section guides you through creating an OpenSearch Serverless collection for
 
    ![opensearch14](/images/5/opensearch14.png?width=91pc)
    ![opensearch15](/images/5/opensearch15.png?width=91pc)
+   - The next step is to create an index table.
    ![opensearch16](/images/5/opensearch16.png?width=90pc)
 
 {{% notice tip %}}

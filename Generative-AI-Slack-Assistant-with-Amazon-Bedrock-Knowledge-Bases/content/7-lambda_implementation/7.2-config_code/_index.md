@@ -35,8 +35,11 @@ This section guides you through creating the Lambda function and configuring it 
    - Select and upload the downloaded zip file
 
    ![lambda7](/images/7/lambda7-.png?width=90pc)
-   ![lambda8](/images/7/lambda8.png?width=90pc)
-   ![lambda9](/images/7/lambda9-.png?width=90pc)
+
+   - Select **Save**
+     ![lambda8](/images/7/lambda8.png?width=90pc)
+   - Upload successfully
+     ![lambda9](/images/7/lambda9-.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The zip file contains the Slack Bolt framework and all necessary dependencies for the bot functionality.
@@ -48,7 +51,7 @@ This section guides you through creating the Lambda function and configuring it 
 
 4. Change the **Handler** to match your code entry point:
 
-   - **Handler**: `lambda_function.lambda_handler`
+   - **Handler**: `index.handler`
 
    ![lambda11](/images/7/lambda11-.png?width=91pc)
 
@@ -67,14 +70,18 @@ This section guides you through creating the Lambda function and configuring it 
 
 6. Add the following **Environment variables**:
 
-   | Key                          | Value                                     | Purpose                                 |
-   | ---------------------------- | ----------------------------------------- | --------------------------------------- |
-   | `KNOWLEDGE_BASE_ID`          | `your-kb-id-from-module-6`                | References your Knowledge Base          |
-   | `MODEL_ID`                   | `anthropic.claude-3-sonnet-20240229-v1:0` | Specifies text generation model         |
-   | `SLACK_BOT_TOKEN_PARAM`      | `/slack-bot/token`                        | Parameter Store path for bot token      |
-   | `SLACK_SIGNING_SECRET_PARAM` | `/slack-bot/signing-secret`               | Parameter Store path for signing secret |
-   | `AWS_REGION`                 | `us-east-1`                               | AWS region for service calls            |
-
+   | Key                              | Value                                     | Purpose                                 |
+   | -------------------------------- | ----------------------------------------- | --------------------------------------- |
+   | `KNOWLEDGE_BASE_ID`              | `your-kb-id-from-module-6`                | References your Knowledge Base          |
+   | `MODEL_ID`                       | `anthropic.claude-3-sonnet-20240229-v1:0` | Specifies text generation model         |
+   | `SLACK_BOT_TOKEN_PARAMETER`      | `/slack/bot-token5/parameter5`            | Parameter Store path for bot token      |
+   | `SLACK_SIGNING_SECRET_PARAMETER` | `/slack-bot/signing-secret5/parameter5`   | Parameter Store path for signing secret |
+   | `AWS_REGION`                     | `us-east-1`                               | AWS region for service calls            |
+   | `GUARDRAIL_ID`                   | `your-guardrail-id `                      | References your guardrail               |
+   | `SLACK_SLASH_COMMAND`            | `/ask-ai`                                 | slash command created at the beginning  |
+  
+  
+  
    ![lambda14](/images/7/lambda14-.png?width=90pc)
    ![lambda15](/images/7/lambda15-.png?width=90pc)
 

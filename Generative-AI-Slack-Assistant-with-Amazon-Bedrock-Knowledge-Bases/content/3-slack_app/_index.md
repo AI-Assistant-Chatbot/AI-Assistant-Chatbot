@@ -24,8 +24,8 @@ In this module, you will:
 **1. Slack App Configuration**
 
 - **App Name**: AWS AI Assistant
-- **Slash Command**: `/ask-aws`
-- **Required Permissions**: `commands`, `chat:write`, `incoming-webhook`
+- **Slash Command**: `/ask-ai`
+- **Required Permissions**: `commands`, `chat:write`, `channels:read`
 
 **2. Authentication Credentials**
 

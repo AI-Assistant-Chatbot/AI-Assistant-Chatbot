@@ -25,11 +25,13 @@ AWS Secrets Manager securely stores and manages your Slack bot credentials with 
    - Click **Store a new secret**
    - Select **Other type of secret**
    - Enter key-value pair: `SLACK_BOT_TOKEN` = `your-bot-token-value`
-   - Name: `bot-token5`
 
    ![secret1](/images/4/secret2.png?width=91pc)
+   - Name: `bot-token5`
    ![secret2](/images/4/secret3.png?width=91pc)
+   - Created successfully
    ![secret3](/images/4/secret3-.png?width=91pc)
+   - Save the **ARN**
    ![secret8](/images/4/secret4.png?width=91pc)
 
 #### Get Signing Secret
@@ -44,10 +46,12 @@ AWS Secrets Manager securely stores and manages your Slack bot credentials with 
    - Click **Store a new secret**
    - Select **Other type of secret**
    - Enter key-value pair: `SLACK_SIGNING_SECRET` = `your-signing-secret-value`
-   - Name: `signing-secret5`
-
+   
    ![secret4](/images/4/secret6-.png?width=90pc)
+   - Name: `signing-secret5`
+   - Created successfully
    ![secret6](/images/4/secret6.png?width=90pc)
+   - Save the **ARN**
    ![secret7](/images/4/secret7-.png?width=90pc)
 
 {{% notice tip %}}

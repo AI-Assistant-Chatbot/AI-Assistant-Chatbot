@@ -55,11 +55,11 @@ graph TB
 - Documents processed into high-dimensional vector embeddings
 - Amazon Titan Text Embeddings V2 model creates semantic representations
 - Supports multiple languages including Vietnamese and English
-- Vectors stored in `slack-bedrock-vector-db` collection
+- Vectors stored in `slack-bedrock-vector-db5` collection
 
 **2. Vector Indexing**
 
-- Embeddings indexed using `slack-bedrock-os-index`
+- Embeddings indexed using `slack-bedrock-os-index5`
 - k-nearest neighbor (k-NN) algorithms enable similarity search
 - Metadata preserved for document traceability
 - Sub-second query response times

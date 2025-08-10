@@ -50,7 +50,7 @@ graph TB
 ## Core Functionality
 
 ### 1. **Slack Integration**
-- **Slash Command Processing**: Handles `/ask-aws` commands from users
+- **Slash Command Processing**: Handles `/ask-ai` commands from users
 - **3-Second Rule**: Acknowledges requests within Slack's timeout limit
 - **Asynchronous Response**: Processes queries and responds after acknowledgment
 

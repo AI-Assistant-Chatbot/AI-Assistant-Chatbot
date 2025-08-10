@@ -18,13 +18,14 @@ AWS Systems Manager Parameter Store provides runtime secret resolution by creati
 2. Create a parameter for **bot-token5**:
 
    - Click **Create parameter**
-   - **Name**: `/slack-bot/token`
-   - **Type**: String
-   - **Value**: `{{resolve:secretsmanager:bot-token5:SecretString:SLACK_BOT_TOKEN}}`
-
    ![ssm2](/images/4/ssm2.png?width=91pc)
+    - **Name**: `/slack/bot-token5/parameter5`
+
    ![ssm3](/images/4/ssm3.png?width=91pc)
+   - **Type**: String
+   - **Value**: `slack/bot-token5`
    ![ssm4](/images/4/ssm4.png?width=91pc)
+   - Create successfully
    ![ssm5](/images/4/ssm5.png?width=91pc)
 
 #### Create Signing Secret Parameter
@@ -32,27 +33,23 @@ AWS Systems Manager Parameter Store provides runtime secret resolution by creati
 3. Create a parameter for **signing-secret5**:
 
    - Click **Create parameter**
-   - **Name**: `/slack-bot/signing-secret`
-   - **Type**: String
-   - **Value**: `{{resolve:secretsmanager:signing-secret5:SecretString:SLACK_SIGNING_SECRET}}`
-
+   - **Name**: `/slack/signing-secret5/parameter5`
    ![ssm6](/images/4/ssm6.png?width=91pc)
+   - **Type**: String
+   - **Value**: `slack/signing-secret5`
    ![ssm7](/images/4/ssm7.png?width=91pc)
+   -Create successfully
    ![ssm8](/images/4/ssm8.png?width=91pc)
 
 #### Note Parameter ARNs
 
 4. Copy the **Parameter ARNs** for IAM policy configuration:
 
-   - Bot token ARN: `arn:aws:ssm:region:account:parameter/slack-bot/token`
-   - Signing secret ARN: `arn:aws:ssm:region:account:parameter/slack-bot/signing-secret`
+   - Signing secret ARN: `arn:aws:ssm:region:account:parameter/slack/signing-secret5/parameter5`
 
    ![ssm9](/images/4/ssm9.png?width=91pc)
+   - Bot token ARN: `arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5`
    ![ssm10](/images/4/ssm10.png?width=91pc)
-
-{{% notice info %}}
-**Note:** The `{{resolve:secretsmanager:...}}` syntax enables dynamic resolution of secrets at runtime, ensuring Lambda functions always get the latest credential values.
-{{% /notice %}}
 
 #### What's Next
 

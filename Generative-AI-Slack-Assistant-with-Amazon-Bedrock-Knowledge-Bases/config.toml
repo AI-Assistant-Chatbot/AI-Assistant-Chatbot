@@ -1,7 +1,7 @@
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 canonifyURLs = true
-baseURL = "/Bedrock-Slackbot-AI-Workshop"
+baseURL = "http://localhost:1313"
 
 # For search functionality
 [outputs]

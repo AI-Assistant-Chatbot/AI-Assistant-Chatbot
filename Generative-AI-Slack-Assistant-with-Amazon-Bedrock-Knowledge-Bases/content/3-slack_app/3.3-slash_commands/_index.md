@@ -12,7 +12,8 @@ pre = "<b>3.3 </b>"
 2. Scroll down to **Scopes** → **Bot Token Scopes** and add:
    - `commands` - Enable slash commands
    - `chat:write` - Send messages as bot
-   - `incoming-webhook` - Receive webhook events
+   - `channels:read` - Give the bot access to basic information of public channels in the Slack workspace
+  ![slack_scope](/images/3/slack_scope.png?width=90pc)
 
 #### Install App to Workspace
 

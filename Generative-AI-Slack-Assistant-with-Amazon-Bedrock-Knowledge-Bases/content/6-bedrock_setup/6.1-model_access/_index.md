@@ -39,10 +39,9 @@ For this workshop, you need access to:
    - ✅ **Amazon Titan Text Embeddings V2**
    - ✅ **Anthropic Claude 3 Sonnet**
 
-   Click **Next** to proceed
-
    ![modelAccess3](/images/6/modelAccess3.png?width=91pc)
    ![modelAccess4](/images/6/modelAccess4.png?width=91pc)
+   - Click **Next** to proceed
    ![modelAccess5](/images/6/modelAccess5.png?width=91pc)
 
 #### Submit Access Request

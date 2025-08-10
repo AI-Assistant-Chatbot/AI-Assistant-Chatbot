@@ -18,8 +18,9 @@ This section guides you through creating a vector index in OpenSearch Serverless
 #### Generate Access Keys
 
 2. Create **Access Keys** for programmatic access:
-   - Add a **tag** with **Key** and **Value** as **access key**
+- Get the access key information of the newly created user
      ![userAccesskey](/images/5/user2.png?width=91pc)
+- Add a **tag** with **Key** and **Value** as an **access key**
      ![user2](/images/5/user3.png?width=91pc)
 
 {{% notice warning %}}
@@ -33,7 +34,7 @@ This section guides you through creating a vector index in OpenSearch Serverless
 1. Open **Postman** and configure the request:
 
    - **Method**: PUT
-   - **URL**: `<Collection-Endpoint>/slack-bedrock-os-index`
+   - **URL**: `<Opensearch-Endpoint>/slack-bedrock-os-index5`
    - **Auth Type**: AWS Signature
    - **Access Key**: Your IAM user access key
    - **Secret Key**: Your IAM user secret key
@@ -117,12 +118,11 @@ This section guides you through creating a vector index in OpenSearch Serverless
 
 5. Verify the index was created successfully in OpenSearch console:
 
-   - **Index Name**: slack-bedrock-os-index
-   - **Vector Field**: bedrock-knowledge-base-default-vector
-   - **Metadata Fields**: Available for document tracking
-
+   - **Index Name**: slack-bedrock-os-index5
    ![opensearch17](/images/5/opensearch17.png?width=90pc)
+   - **Vector Field**: bedrock-knowledge-base-default-vector
    ![opensearch18](/images/5/opensearch18.png?width=90pc)
+   - **Metadata Fields**: Available for document tracking
    ![opensearch19](/images/5/opensearch19.png?width=90pc)
 
 {{% notice info %}}
