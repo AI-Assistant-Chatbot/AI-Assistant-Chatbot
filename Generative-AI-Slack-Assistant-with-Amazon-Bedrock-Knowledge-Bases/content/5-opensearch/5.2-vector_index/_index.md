@@ -151,4 +151,4 @@ Your vector index is now ready to store and search document embeddings. Next, we
 
 ---
 
-**Continue to**: [Module 6 - Bedrock Knowledge Base](../../6-bedrock-kb/)
+**Continue to**: [Module 6 - Bedrock Setup](../../6-bedrock_setup/)

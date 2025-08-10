@@ -119,4 +119,4 @@ Your Lambda function is now configured and ready to process Slack commands. Next
 
 ---
 
-**Continue to**: [Module 8 - API Gateway Setup](../../8-api-gateway/)
+**Continue to**: [Module 8 - API Gateway](../../8-api_gateway/)

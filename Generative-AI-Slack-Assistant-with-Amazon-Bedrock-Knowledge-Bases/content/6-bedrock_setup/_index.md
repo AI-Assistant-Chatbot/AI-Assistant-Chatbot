@@ -92,4 +92,4 @@ This setup provides the AI intelligence layer that transforms your Slack bot fro
 
 ---
 
-**Continue to**: [6.1 - Model Access Setup](6.1-model_access/)
+**Continue to**: [6.1 - Model Access Setup](./6.1-model_access/)

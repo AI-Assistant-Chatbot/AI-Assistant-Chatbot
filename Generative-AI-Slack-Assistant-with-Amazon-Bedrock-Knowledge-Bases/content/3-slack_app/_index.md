@@ -39,4 +39,4 @@ By the end of this module, you'll have a configured Slack app ready to connect w
 
 ---
 
-**Continue to**: [Module 4 - Knowledge Base Foundation](../4-knowledge-base/)
+**Continue to**: [3.1 Create slack app](../3-slack_app/3.1-create_slackapp//)

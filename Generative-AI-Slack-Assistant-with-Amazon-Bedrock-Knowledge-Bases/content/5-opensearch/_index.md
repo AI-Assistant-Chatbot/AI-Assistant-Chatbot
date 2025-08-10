@@ -125,4 +125,4 @@ OpenSearch Serverless acts as the intelligent memory of your AI assistant, enabl
 
 ---
 
-**Continue to**: [Module 6 - Knowledge Base Foundation](../6-knowledge-base/)
+**Continue to**: [5.1 - Bedrock Setup](../5-opensearch/5.1-collection//)

@@ -69,7 +69,7 @@ By completing this workshop, you will achieve the following learning outcomes:
 
 ```mermaid
 graph TB
-    A[Slack User] -->|/ask-aws command| B[API Gateway]
+    A[Slack User] -->|/ask-ai command| B[API Gateway]
     B --> C[Lambda Function]
     C --> D[Bedrock Knowledge Base]
     D --> E[OpenSearch Serverless]
@@ -215,4 +215,4 @@ Now that you understand the workshop objectives and architecture, you're ready t
 
 ---
 
-**Continue to**: [Module 2 - Environment Setup](../2-setup/)
+**Continue to**: [Module 2 - Environment Setup](../2-environment-setup/)

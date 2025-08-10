@@ -92,4 +92,4 @@ After implementing this security architecture:
 
 ---
 
-**Continue to**: [Module 5 - Knowledge Base Foundation](../5-knowledge-base/)
+**Continue to**: [4.1 - Secret manager](../4-security/4.1-secret%20manager/)

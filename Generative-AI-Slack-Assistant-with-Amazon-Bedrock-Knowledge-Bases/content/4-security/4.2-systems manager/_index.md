@@ -57,4 +57,4 @@ Your Parameter Store is now configured to securely reference Secrets Manager. Th
 
 ---
 
-**Continue to**: [Module 5 - Knowledge Base Foundation](../../5-knowledge-base/)
+**Continue to**: [Module 5 - OpenSearch Serverless](../../5-opensearch/)

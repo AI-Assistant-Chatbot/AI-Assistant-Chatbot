@@ -39,4 +39,4 @@ Your slash command is now configured! Next, we'll set up the necessary OAuth per
 
 ---
 
-**Continue to**: [3.3 - Configure OAuth Permissions](../3.3-oauth_permissions/)
+**Continue to**: [3.3 - Get OAuth Tokens](../3.3-slash_commands/)

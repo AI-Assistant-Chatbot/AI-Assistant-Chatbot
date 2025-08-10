@@ -111,7 +111,7 @@ Add specific words or phrases to block:
 
 With your guardrail configured, you're ready to integrate it with your Knowledge Base.
 
-**Continue to**: [Module 6.3 - Knowledge Base Setup](../6.3-knowledge_base/)
+**Continue to**: [6.3 - Knowledge Base Setup](../6.3-knowledge_base/)
 
 ---
 

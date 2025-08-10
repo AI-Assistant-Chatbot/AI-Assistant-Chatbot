@@ -128,4 +128,4 @@ Your Bedrock Knowledge Base is now configured and ready to answer questions abou
 
 ---
 
-**Continue to**: [Module 7 - Lambda Function](../../7-lambda-function/)
+**Continue to**: [Module 7 - Lambda Implementation](../../7-lambda_implementation/)

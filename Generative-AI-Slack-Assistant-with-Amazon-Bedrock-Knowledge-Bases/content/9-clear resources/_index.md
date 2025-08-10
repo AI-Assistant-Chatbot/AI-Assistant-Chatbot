@@ -177,7 +177,7 @@ Congratulations on completing the Generative AI Slack Assistant workshop! You ha
 - ✅ Properly cleaned up resources
 
 ## Next Steps
-
+**Continue to**: [10. Conclusion](../10-conclusion/)
 Consider these follow-up activities:
 
 - **Explore Advanced Features**: Guardrails customization, multi-modal inputs

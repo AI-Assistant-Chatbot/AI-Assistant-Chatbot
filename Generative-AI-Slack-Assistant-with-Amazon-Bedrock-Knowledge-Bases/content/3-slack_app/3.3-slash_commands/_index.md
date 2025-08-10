@@ -43,4 +43,4 @@ Your Slack app is now fully configured with the necessary permissions and tokens
 
 ---
 
-**Continue to**: [Module 4 - Knowledge Base Foundation](../../4-knowledge-base/)
+**Continue to**: [Module 4 - Security Configuration](../../4-security/)

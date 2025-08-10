@@ -38,7 +38,7 @@ By the end of this module, you will have:
 
 - Go to [Slack.com](https://slack.com/) and click **Create a new workspace**.
 
-![slackWorkSpace1](/images/2/slackWorkSpace1.png?width=90pc)
+    ![slackWorkSpace1](/images/2/slackWorkSpace1.png?width=90pc)
 
 **2. Sign Up Process**
 
@@ -285,7 +285,7 @@ if __name__ == "__main__":
 
 With your environment properly configured, you're ready to start building the knowledge base foundation for your AI assistant.
 
-**Continue to**: [Module 3 - Knowledge Base Foundation](../3-knowledge-base/)
+**Continue to**: [Module 3 - Slack App Setup](../3-slack_app/)
 
 ---
 

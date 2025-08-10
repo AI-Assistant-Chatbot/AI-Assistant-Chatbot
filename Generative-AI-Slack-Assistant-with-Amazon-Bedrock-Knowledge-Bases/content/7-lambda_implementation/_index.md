@@ -97,4 +97,4 @@ The Lambda function acts as both orchestrator and executor, ensuring seamless in
 
 ---
 
-**Continue to**: [7.1 - Create Lambda Function](7.1-create_lambda/)
+**Continue to**: [7.1 - Create Lambda Role](./7.1-lambda_role/)

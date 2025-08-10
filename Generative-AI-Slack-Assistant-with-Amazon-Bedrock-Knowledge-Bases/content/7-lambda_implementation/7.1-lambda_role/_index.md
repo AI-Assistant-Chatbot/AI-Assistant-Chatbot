@@ -111,4 +111,4 @@ Your Lambda execution role is now configured with the necessary permissions. Nex
 
 ---
 
-**Continue to**: [7.2 - Create Lambda Function](../7.2-create_lambda/)
+**Continue to**: [7.2 - Configure Lambda Code](../7.2-config_code/)

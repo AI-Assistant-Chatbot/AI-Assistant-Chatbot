@@ -64,4 +64,4 @@ Your Slack credentials are now securely stored in AWS Secrets Manager. Next, we'
 
 ---
 
-**Continue to**: [4.2 - Parameter Store Configuration](../4.2-parameter_store/)
+**Continue to**: [4.2-Systems Manager Parameter Store](../4.2-systems%20manager/)

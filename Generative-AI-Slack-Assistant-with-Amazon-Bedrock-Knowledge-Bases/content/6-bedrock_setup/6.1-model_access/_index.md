@@ -25,7 +25,7 @@ For this workshop, you need access to:
 #### Navigate to Model Access
 
 2. Scroll down to the bottom of the **navigation sidebar** and choose **Model access**
-   ![modelAccess1](/images/6/modelAccess1.png?width=91pc)
+   ![modelAccess1](/images/6/modelAccess1.png?width=90pc)
 
 #### Modify Model Access
 
@@ -73,4 +73,4 @@ With foundation model access enabled, you're ready to create the Knowledge Base 
 
 ---
 
-**Continue to**: [6.2 - Create Knowledge Base](../6.2-knowledge_base/)
+**Continue to**: [6.2 - Setup Guardrails](../6.2-guardrails/)

@@ -159,7 +159,8 @@ Your AI assistant is now ready to help users access organizational knowledge thr
 
 ---
 
-## Next Steps
+## Next Steps: 
+**Continue to**: [9. Clear resources](../9-clear%20resources/)
 
 Consider these enhancements for production deployment:
 

@@ -32,4 +32,4 @@ Your Slack app is now created! In the next section, we'll configure the necessar
 
 ---
 
-**Continue to**: [3.2 - Configure App Permissions](../3.2-configure_permissions/)
+**Continue to**: [3.2 - Configure App Permissions](../3.2-OAuth&Permissions/)
