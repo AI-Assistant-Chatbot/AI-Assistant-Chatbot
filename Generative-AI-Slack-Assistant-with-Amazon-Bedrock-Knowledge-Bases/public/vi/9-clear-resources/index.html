@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Apply Guardrails to Agent :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809192" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809192" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810736" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809192" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810736" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809192"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810736"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809192"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809192"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810736"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810736"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809192"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810736"></script>
 
     
   </div>
@@ -378,38 +378,38 @@
 <ol>
 <li>
 <p>Click on Agents under Builder tools from left of the Amazon Bedrock console page.<br>
-<img src="http://localhost:1313/images/7/img.png?width=90pc" alt="img"></p>
+<img alt="img" src="http://localhost:1313/images/7/img.png?width=90pc"></p>
 </li>
 <li>
 <p>Click on <strong>&ldquo;Create Agent&rdquo;</strong><br>
-<img src="http://localhost:1313/images/7/img_1.png?width=90pc" alt="img_1"></p>
+<img alt="img_1" src="http://localhost:1313/images/7/img_1.png?width=90pc"></p>
 </li>
 <li>
 <p>(Optional) Change the automatically generated Name for the agent and provide an optional Description for it. Choose <strong>Create</strong>. You will be taken to the Agent builder for your newly created agent, where you can configure your agent.<br>
-<img src="http://localhost:1313/images/7/Agent3.png?width=90pc" alt="Agent3"></p>
+<img alt="Agent3" src="http://localhost:1313/images/7/Agent3.png?width=90pc"></p>
 </li>
 <li>
 <p>For the Agent resource role, select <strong>&ldquo;Create and use a new service role&rdquo;</strong> to let Amazon Bedrock create the service role and set up the required permissions on your behalf.<br>
-<img src="http://localhost:1313/images/7/img_2.png?width=90pc" alt="img_2"></p>
+<img alt="img_2" src="http://localhost:1313/images/7/img_2.png?width=90pc"></p>
 </li>
 <li>
 <p>In the <strong>Select Model</strong> you can choose a model for the agent. Refer here to see the supported models for agents. Within the instructions for the agent, provide the following instructions.</p>
 </li>
 </ol>
 <p><em>&ldquo;You are a customer service representative at ABCD Bank, a leading financial institution. You are friendly, professional, and attentive. Your primary responsibilities include assisting customers with their needs, providing information about products and services, addressing customer inquiries, and ensuring a positive customer experience.&rdquo;</em></p>
-<p><img src="http://localhost:1313/images/7/Agent5.png?width=90pc" alt="Agent5"></p>
+<p><img alt="Agent5" src="http://localhost:1313/images/7/Agent5.png?width=90pc"></p>
 <ol start="6">
 <li>
 <p>Scroll down to the <strong>Guardrails details</strong> section, choose <strong>Edit</strong> to associate our guardrail with the agent.<br>
-<img src="http://localhost:1313/images/7/img_3.png?width=90pc" alt="img_3"></p>
+<img alt="img_3" src="http://localhost:1313/images/7/img_3.png?width=90pc"></p>
 </li>
 <li>
 <p>Select our Guardrail and Click on <strong>Save and Exit</strong> to associate our guardrail with the agent. <em>In case you recieve a message of &ldquo;You must save your agent with an Agent Resource Role defined before adding a guardrail&rdquo; then try saving the Agent first before associating the Guardrail</em><br>
-<img src="http://localhost:1313/images/7/img_4.png?width=90pc" alt="img_4"></p>
+<img alt="img_4" src="http://localhost:1313/images/7/img_4.png?width=90pc"></p>
 </li>
 <li>
 <p>Click on <strong>Prepare</strong> the agent in order to test it with our updated configurations in the test window.<br>
-<img src="http://localhost:1313/images/7/img_5.png?width=90pc" alt="img_5"></p>
+<img alt="img_5" src="http://localhost:1313/images/7/img_5.png?width=90pc"></p>
 </li>
 <li>
 <p>Now you can test the agent using the same scenarios we selected earlier in the right panel</p>
@@ -556,19 +556,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809192"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809192"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809192"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809192"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809192"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809192"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809192"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809192"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809192"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809192" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809192"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create Vector Index :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809402" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809402" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810736" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809402" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810736" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809402"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810736"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809402"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809402"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810736"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810736"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809402"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810736"></script>
 
     
   </div>
@@ -910,7 +910,7 @@
 <h4 id="create-deployment-user">Create Deployment User</h4>
 <ol>
 <li>Create an IAM user <strong>bedrock-chatbot-deployer</strong> with <strong>AdministratorAccess</strong> policy<br>
-<img src="http://localhost:1313/images/5/user1.png?width=91pc" alt="user1"></li>
+<img alt="user1" src="http://localhost:1313/images/5/user1.png?width=91pc"></li>
 </ol>
 <h4 id="generate-access-keys">Generate Access Keys</h4>
 <ol start="2">
@@ -918,9 +918,9 @@
 </ol>
 <ul>
 <li>Get the access key information of the newly created user<br>
-<img src="http://localhost:1313/images/5/user2.png?width=91pc" alt="userAccesskey"></li>
+<img alt="userAccesskey" src="http://localhost:1313/images/5/user2.png?width=91pc"></li>
 <li>Add a <strong>tag</strong> with <strong>Key</strong> and <strong>Value</strong> as an <strong>access key</strong><br>
-<img src="http://localhost:1313/images/5/user3.png?width=91pc" alt="user2"></li>
+<img alt="user2" src="http://localhost:1313/images/5/user3.png?width=91pc"></li>
 </ul>
 
 <div class="notices warning" ><p><strong>Important:</strong> Save the Access Key ID and Secret Access Key securely - they will be needed for Postman authentication.</p>
@@ -940,7 +940,7 @@
 <li><strong>Region</strong>: us-east-1</li>
 <li><strong>Service Name</strong>: aoss</li>
 </ul>
-<p><img src="http://localhost:1313/images/5/postman1.png?width=91pc" alt="postman1"></p>
+<p><img alt="postman1" src="http://localhost:1313/images/5/postman1.png?width=91pc"></p>
 </li>
 </ol>
 <h4 id="set-headers">Set Headers</h4>
@@ -948,7 +948,7 @@
 <li>Configure request headers:
 <ul>
 <li><strong>Content-Type</strong>: application/json<br>
-<img src="http://localhost:1313/images/5/postman2.png?width=91pc" alt="postman2"></li>
+<img alt="postman2" src="http://localhost:1313/images/5/postman2.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -956,7 +956,7 @@
 <ol start="3">
 <li>
 <p>Set body type to <strong>raw</strong> and enter the following JSON:<br>
-<img src="http://localhost:1313/images/5/postman3.png?width=91pc" alt="postman3"></p>
+<img alt="postman3" src="http://localhost:1313/images/5/postman3.png?width=91pc"></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;settings&#34;</span>: {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;index&#34;</span>: {
@@ -1014,7 +1014,7 @@
 <li>Click <strong>Send</strong> to create the vector index
 <ul>
 <li>A successful response indicates the index was created<br>
-<img src="http://localhost:1313/images/5/postman4.png?width=91pc" alt="postman4"></li>
+<img alt="postman4" src="http://localhost:1313/images/5/postman4.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -1024,11 +1024,11 @@
 <p>Verify the index was created successfully in OpenSearch console:</p>
 <ul>
 <li><strong>Index Name</strong>: slack-bedrock-os-index5<br>
-<img src="http://localhost:1313/images/5/opensearch17.png?width=90pc" alt="opensearch17"></li>
+<img alt="opensearch17" src="http://localhost:1313/images/5/opensearch17.png?width=90pc"></li>
 <li><strong>Vector Field</strong>: bedrock-knowledge-base-default-vector<br>
-<img src="http://localhost:1313/images/5/opensearch18.png?width=90pc" alt="opensearch18"></li>
+<img alt="opensearch18" src="http://localhost:1313/images/5/opensearch18.png?width=90pc"></li>
 <li><strong>Metadata Fields</strong>: Available for document tracking<br>
-<img src="http://localhost:1313/images/5/opensearch19.png?width=90pc" alt="opensearch19"></li>
+<img alt="opensearch19" src="http://localhost:1313/images/5/opensearch19.png?width=90pc"></li>
 </ul>
 </li>
 </ol>
@@ -1485,19 +1485,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809402"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809402"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809402"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809402"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809402"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809402"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809402"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809402"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809402"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809402" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809402"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

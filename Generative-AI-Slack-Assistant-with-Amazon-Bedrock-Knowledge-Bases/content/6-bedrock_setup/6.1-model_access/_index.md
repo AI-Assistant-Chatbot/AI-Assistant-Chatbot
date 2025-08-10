@@ -25,12 +25,12 @@ For this workshop, you need access to:
 #### Navigate to Model Access
 
 2. Scroll down to the bottom of the **navigation sidebar** and choose **Model access**
-   ![modelAccess1](/images/6/modelAccess1.png?width=90pc)
+   ![modelAccess1](/images/6/modelAccess10.png?width=90pc)
 
 #### Modify Model Access
 
 3. Click **Modify model access**
-   ![modelAccess2](/images/6/modelAccess2.png?width=91pc)
+   ![modelAccess2](/images/6/modelAccess20.png?width=91pc)
 
 #### Select Required Models
 
@@ -39,10 +39,11 @@ For this workshop, you need access to:
    - ✅ **Amazon Titan Text Embeddings V2**
    - ✅ **Anthropic Claude 3 Sonnet**
 
-   ![modelAccess3](/images/6/modelAccess3.png?width=91pc)
-   ![modelAccess4](/images/6/modelAccess4.png?width=91pc)
+   ![modelAccess3](/images/6/modelAccess30.png?width=91pc)
+   ![modelAccess4](/images/6/modelAccess40.png?width=91pc)
+
    - Click **Next** to proceed
-   ![modelAccess5](/images/6/modelAccess5.png?width=91pc)
+     ![modelAccess5](/images/6/modelAccess50.png?width=91pc)
 
 #### Submit Access Request
 
@@ -51,7 +52,7 @@ For this workshop, you need access to:
    - Access requests are typically approved instantly for these models
    - Wait a few minutes for the access to be granted
 
-   ![modelAccess6](/images/6/modelAccess6.png?width=91pc)
+   ![modelAccess6](/images/6/modelAccess60.png?width=91pc)
 
 #### Verify Model Access
 
@@ -60,8 +61,8 @@ For this workshop, you need access to:
    - ✅ **Amazon Titan Text Embeddings V2**: Access granted
    - ✅ **Anthropic Claude 3 Sonnet**: Access granted
 
-   ![modelAccess7](/images/6/modelAccess7.png?width=91pc)
-   ![modelAccess3](/images/6/modelAccess8.png?width=90pc)
+   ![modelAccess7](/images/6/modelAccess70.png?width=91pc)
+   ![modelAccess8](/images/6/modelAccess80.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Model access is typically granted immediately for Titan and Claude models. If you encounter delays, ensure your AWS account is in good standing.
