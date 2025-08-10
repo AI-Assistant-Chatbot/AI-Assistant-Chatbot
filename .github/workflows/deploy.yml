@@ -50,7 +50,7 @@ jobs:
           cd Generative-AI-Slack-Assistant-with-Amazon-Bedrock-Knowledge-Bases
           echo "Base URL: ${{ steps.pages.outputs.base_url }}"
           ls -la themes/
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/Bedrock-Slackbot-AI-Workshop"
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}"
           ls -la public/
 
       - name: Upload artifact
