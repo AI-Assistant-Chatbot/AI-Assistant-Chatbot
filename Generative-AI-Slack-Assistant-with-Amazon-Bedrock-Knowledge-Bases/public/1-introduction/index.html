@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Introduction to Slackbot Assistant with Amazon Bedrock :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809363" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809363" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810735" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809363" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810735" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809363"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810735"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809363"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809363"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810735"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810735"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809363"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810735"></script>
 
     
   </div>
@@ -967,7 +967,7 @@
 <li><strong>Slack API</strong> development and webhook handling</li>
 </ul>
 <h4 id="slackbot-architecture">SlackBot Architecture</h4>
-<p><img src="http://localhost:1313/images/1/AI-Assistant.png?width=90pc" alt="AI-Assistant"></p>
+<p><img alt="AI-Assistant" src="http://localhost:1313/images/1/AI-Assistant.png?width=90pc"></p>
 <h4 id="architecture-flow-diagram">Architecture Flow Diagram</h4>
 <pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TB
     A[Slack User] --&gt;|/ask-ai command| B[API Gateway]
@@ -985,45 +985,45 @@
     style H fill:#ffebee
 </code></pre><h4 id="key-components-explained">Key Components Explained</h4>
 <table>
-  <thead>
-      <tr>
-          <th>Component</th>
-          <th>Purpose</th>
-          <th>Benefits</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Slack Interface</strong></td>
-          <td>User interaction layer</td>
-          <td>Familiar interface, no training required</td>
-      </tr>
-      <tr>
-          <td><strong>API Gateway</strong></td>
-          <td>HTTP endpoint management</td>
-          <td>Secure, scalable API access</td>
-      </tr>
-      <tr>
-          <td><strong>Lambda Function</strong></td>
-          <td>Business logic processing</td>
-          <td>Serverless, cost-effective compute</td>
-      </tr>
-      <tr>
-          <td><strong>Bedrock Knowledge Base</strong></td>
-          <td>RAG orchestration</td>
-          <td>Fully managed, no infrastructure</td>
-      </tr>
-      <tr>
-          <td><strong>OpenSearch Serverless</strong></td>
-          <td>Vector storage and search</td>
-          <td>Auto-scaling, semantic search</td>
-      </tr>
-      <tr>
-          <td><strong>Bedrock Guardrails</strong></td>
-          <td>Content safety and filtering</td>
-          <td>Enterprise-grade security</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+<th>Benefits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Slack Interface</strong></td>
+<td>User interaction layer</td>
+<td>Familiar interface, no training required</td>
+</tr>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>HTTP endpoint management</td>
+<td>Secure, scalable API access</td>
+</tr>
+<tr>
+<td><strong>Lambda Function</strong></td>
+<td>Business logic processing</td>
+<td>Serverless, cost-effective compute</td>
+</tr>
+<tr>
+<td><strong>Bedrock Knowledge Base</strong></td>
+<td>RAG orchestration</td>
+<td>Fully managed, no infrastructure</td>
+</tr>
+<tr>
+<td><strong>OpenSearch Serverless</strong></td>
+<td>Vector storage and search</td>
+<td>Auto-scaling, semantic search</td>
+</tr>
+<tr>
+<td><strong>Bedrock Guardrails</strong></td>
+<td>Content safety and filtering</td>
+<td>Enterprise-grade security</td>
+</tr>
+</tbody>
 </table>
 <h4 id="what-youll-build">What You&rsquo;ll Build</h4>
 <p><strong>1. Intelligent Slack Assistant</strong></p>
@@ -1555,19 +1555,19 @@ F --&gt; G[Testing &amp; Validation]
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809363"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809363"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809363"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809363"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809363"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809363"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810735"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810735"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810735"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810735"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810735"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810735"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809363"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809363"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809363"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810735"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810735"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810735"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809363" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809363"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810735" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810735"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

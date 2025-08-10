@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Create Lambda Execution Role :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810736" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810736" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809397"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810736"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809397"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810736"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810736"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810736"></script>
 
     
   </div>
@@ -926,7 +926,7 @@
 <li><strong>Use case</strong>: Lambda</li>
 <li>Attach <strong>AWSLambdaBasicExecutionRole</strong> managed policy</li>
 </ul>
-<p><img src="http://localhost:1313/images/7/lambda1-.png?width=90pc" alt="lambda1"></p>
+<p><img alt="lambda1" src="http://localhost:1313/images/7/lambda1-.png?width=90pc"></p>
 </li>
 </ol>
 <h2 id="step-2-add-custom-policy">Step 2: Add Custom Policy</h2>
@@ -934,7 +934,7 @@
 <ol start="2">
 <li>
 <p>Add a custom inline policy named <strong>BedrockExecutionPolicy</strong>:</p>
-<p><img src="http://localhost:1313/images/7/lambda2-.png?width=90pc" alt="lambda2"></p>
+<p><img alt="lambda2" src="http://localhost:1313/images/7/lambda2-.png?width=90pc"></p>
 </li>
 </ol>
 <h3 id="22-policy-json-configuration">2.2 Policy JSON Configuration</h3>
@@ -982,57 +982,57 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><img src="http://localhost:1313/images/7/lambda3.png?width=90pc" alt="lambda3"><br>
-<img src="http://localhost:1313/images/7/lambda2.png?width=91pc" alt="lambda4"></p>
+</span></span></code></pre></div><p><img alt="lambda3" src="http://localhost:1313/images/7/lambda3.png?width=90pc"><br>
+<img alt="lambda4" src="http://localhost:1313/images/7/lambda2.png?width=91pc"></p>
 </li>
 </ol>
 <h2 id="policy-permissions-explained">Policy Permissions Explained</h2>
 <h3 id="core-permissions">Core Permissions</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Permission</th>
-          <th>Purpose</th>
-          <th>Resource</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>bedrock:InvokeModel</strong></td>
-          <td>Call Claude 3 Sonnet</td>
-          <td>Foundation model ARN</td>
-      </tr>
-      <tr>
-          <td><strong>bedrock:Retrieve</strong></td>
-          <td>Query Knowledge Base</td>
-          <td>Knowledge Base ARN</td>
-      </tr>
-      <tr>
-          <td><strong>bedrock:RetrieveAndGenerate</strong></td>
-          <td>Full RAG workflow</td>
-          <td>Knowledge Base ARN</td>
-      </tr>
-      <tr>
-          <td><strong>ssm:GetParameter</strong></td>
-          <td>Access configuration</td>
-          <td>Parameter Store ARNs</td>
-      </tr>
-      <tr>
-          <td><strong>lambda:InvokeFunction</strong></td>
-          <td>Self-invocation</td>
-          <td>Lambda function ARN</td>
-      </tr>
-      <tr>
-          <td><strong>bedrock:ApplyGuardrail</strong></td>
-          <td>Content filtering</td>
-          <td>Guardrail ARNs</td>
-      </tr>
-      <tr>
-          <td><strong>secretsmanager:GetSecretValue</strong></td>
-          <td>Access Slack credentials</td>
-          <td>Secrets Manager ARNs</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Purpose</th>
+<th>Resource</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>bedrock:InvokeModel</strong></td>
+<td>Call Claude 3 Sonnet</td>
+<td>Foundation model ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:Retrieve</strong></td>
+<td>Query Knowledge Base</td>
+<td>Knowledge Base ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:RetrieveAndGenerate</strong></td>
+<td>Full RAG workflow</td>
+<td>Knowledge Base ARN</td>
+</tr>
+<tr>
+<td><strong>ssm:GetParameter</strong></td>
+<td>Access configuration</td>
+<td>Parameter Store ARNs</td>
+</tr>
+<tr>
+<td><strong>lambda:InvokeFunction</strong></td>
+<td>Self-invocation</td>
+<td>Lambda function ARN</td>
+</tr>
+<tr>
+<td><strong>bedrock:ApplyGuardrail</strong></td>
+<td>Content filtering</td>
+<td>Guardrail ARNs</td>
+</tr>
+<tr>
+<td><strong>secretsmanager:GetSecretValue</strong></td>
+<td>Access Slack credentials</td>
+<td>Secrets Manager ARNs</td>
+</tr>
+</tbody>
 </table>
 <h3 id="required-replacements">Required Replacements</h3>
 <p>Before using the policy, replace these placeholders:</p>
@@ -1476,19 +1476,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809397"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809397"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809397"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809397"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809397"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809397" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809397"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

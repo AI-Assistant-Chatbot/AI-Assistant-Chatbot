@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Configure Systems Manager Parameter Store :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810735" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810735" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810735" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809397"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810735"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809397"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810735"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810735"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810735"></script>
 
     
   </div>
@@ -906,7 +906,7 @@
 <h4 id="access-parameter-store">Access Parameter Store</h4>
 <ol>
 <li>Navigate to <a href="https://console.aws.amazon.com/systems-manager/">AWS Systems Manager Console</a><br>
-<img src="http://localhost:1313/images/4/ssm1.png?width=90pc" alt="ssm1"></li>
+<img alt="ssm1" src="http://localhost:1313/images/4/ssm1.png?width=90pc"></li>
 </ol>
 <h4 id="create-bot-token-parameter">Create Bot Token Parameter</h4>
 <ol start="2">
@@ -914,16 +914,16 @@
 <p>Create a parameter for <strong>bot-token5</strong>:</p>
 <ul>
 <li>Click <strong>Create parameter</strong><br>
-<img src="http://localhost:1313/images/4/ssm2.png?width=91pc" alt="ssm2"></li>
+<img alt="ssm2" src="http://localhost:1313/images/4/ssm2.png?width=91pc"></li>
 <li><strong>Name</strong>: <code>/slack/bot-token5/parameter5</code></li>
 </ul>
-<p><img src="http://localhost:1313/images/4/ssm3.png?width=91pc" alt="ssm3"></p>
+<p><img alt="ssm3" src="http://localhost:1313/images/4/ssm3.png?width=91pc"></p>
 <ul>
 <li><strong>Type</strong>: String</li>
 <li><strong>Value</strong>: <code>slack/bot-token5</code><br>
-<img src="http://localhost:1313/images/4/ssm4.png?width=91pc" alt="ssm4"></li>
+<img alt="ssm4" src="http://localhost:1313/images/4/ssm4.png?width=91pc"></li>
 <li>Create successfully<br>
-<img src="http://localhost:1313/images/4/ssm5.png?width=91pc" alt="ssm5"></li>
+<img alt="ssm5" src="http://localhost:1313/images/4/ssm5.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -934,12 +934,12 @@
 <ul>
 <li>Click <strong>Create parameter</strong></li>
 <li><strong>Name</strong>: <code>/slack/signing-secret5/parameter5</code><br>
-<img src="http://localhost:1313/images/4/ssm6.png?width=91pc" alt="ssm6"></li>
+<img alt="ssm6" src="http://localhost:1313/images/4/ssm6.png?width=91pc"></li>
 <li><strong>Type</strong>: String</li>
 <li><strong>Value</strong>: <code>slack/signing-secret5</code><br>
-<img src="http://localhost:1313/images/4/ssm7.png?width=91pc" alt="ssm7"><br>
+<img alt="ssm7" src="http://localhost:1313/images/4/ssm7.png?width=91pc"><br>
 -Create successfully<br>
-<img src="http://localhost:1313/images/4/ssm8.png?width=91pc" alt="ssm8"></li>
+<img alt="ssm8" src="http://localhost:1313/images/4/ssm8.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -950,10 +950,10 @@
 <ul>
 <li>Signing secret ARN: <code>arn:aws:ssm:region:account:parameter/slack/signing-secret5/parameter5</code></li>
 </ul>
-<p><img src="http://localhost:1313/images/4/ssm9.png?width=91pc" alt="ssm9"></p>
+<p><img alt="ssm9" src="http://localhost:1313/images/4/ssm9.png?width=91pc"></p>
 <ul>
 <li>Bot token ARN: <code>arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5</code><br>
-<img src="http://localhost:1313/images/4/ssm10.png?width=91pc" alt="ssm10"></li>
+<img alt="ssm10" src="http://localhost:1313/images/4/ssm10.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -1391,19 +1391,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809397"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809397"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809397"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809397"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809397"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809397" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809397"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Lambda implementation :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810736" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810736" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809397"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810736"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809397"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810736"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810736"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810736"></script>
 
     
   </div>
@@ -952,35 +952,35 @@
     style F fill:#e1f5fe
 </code></pre><h3 id="key-components">Key Components</h3>
 <table>
-  <thead>
-      <tr>
-          <th>Component</th>
-          <th>Purpose</th>
-          <th>Timing</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Slack Acknowledgment</strong></td>
-          <td>Prevent timeout errors</td>
-          <td>&lt; 3 seconds</td>
-      </tr>
-      <tr>
-          <td><strong>Credential Retrieval</strong></td>
-          <td>Secure access to AWS services</td>
-          <td>Initialization</td>
-      </tr>
-      <tr>
-          <td><strong>Bedrock Integration</strong></td>
-          <td>AI-powered response generation</td>
-          <td>Asynchronous</td>
-      </tr>
-      <tr>
-          <td><strong>Response Delivery</strong></td>
-          <td>Send results back to Slack</td>
-          <td>After processing</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Component</th>
+<th>Purpose</th>
+<th>Timing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Slack Acknowledgment</strong></td>
+<td>Prevent timeout errors</td>
+<td>&lt; 3 seconds</td>
+</tr>
+<tr>
+<td><strong>Credential Retrieval</strong></td>
+<td>Secure access to AWS services</td>
+<td>Initialization</td>
+</tr>
+<tr>
+<td><strong>Bedrock Integration</strong></td>
+<td>AI-powered response generation</td>
+<td>Asynchronous</td>
+</tr>
+<tr>
+<td><strong>Response Delivery</strong></td>
+<td>Send results back to Slack</td>
+<td>After processing</td>
+</tr>
+</tbody>
 </table>
 <h2 id="core-functionality">Core Functionality</h2>
 <h3 id="1-slack-integration">1. <strong>Slack Integration</strong></h3>
@@ -1460,19 +1460,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809397"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809397"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809397"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809397"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809397"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809397" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809397"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

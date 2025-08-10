@@ -3,7 +3,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.147.6">
+    <meta name="generator" content="Hugo 0.131.0">
     <meta name="description" content="">
 <meta name="author" content="nghialm2603@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Connect and chat :: Amazon Q Developer Series</title>
 
     
-    <link href="http://localhost:1313/css/nucleus.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hybrid.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/featherlight.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/auto-complete.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/theme.css?1754809397" rel="stylesheet">
-    <link href="http://localhost:1313/css/hugo-theme.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/nucleus.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome-all.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hybrid.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/featherlight.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/perfect-scrollbar.min.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/auto-complete.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/atom-one-dark-reasonable.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1754810736" rel="stylesheet">
+    <link href="http://localhost:1313/css/hugo-theme.css?1754810736" rel="stylesheet">
     
-    <link href="http://localhost:1313/css/theme-workshop.css?1754809397" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme-workshop.css?1754810736" rel="stylesheet">
     
     
 
-    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754809397"></script>
+    <script src="http://localhost:1313/js/jquery-3.3.1.min.js?1754810736"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754809397"></script>
-<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/lunr.min.js?1754810736"></script>
+<script type="text/javascript" src="http://localhost:1313/js/auto-complete.js?1754810736"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="http://localhost:1313/js/search.js?1754809397"></script>
+<script type="text/javascript" src="http://localhost:1313/js/search.js?1754810736"></script>
 
     
   </div>
@@ -937,20 +937,20 @@
 <ol>
 <li>
 <p>Navigate to <a href="https://us-east-1.console.aws.amazon.com/apigateway">API Gateway Console</a><br>
-<img src="http://localhost:1313/images/8/api0.png?width=90pc" alt="api0"></p>
+<img alt="api0" src="http://localhost:1313/images/8/api0.png?width=90pc"></p>
 </li>
 <li>
 <p>Create a new <strong>REST API</strong>:</p>
 <ul>
 <li><strong>API Type</strong>: REST API</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api1.png?width=91pc" alt="api1"></p>
+<p><img alt="api1" src="http://localhost:1313/images/8/api1.png?width=91pc"></p>
 <ul>
 <li><strong>API Name</strong>: <code>slack-bedrock-api5</code></li>
 <li><strong>Description</strong>: API for Slack AI Assistant<br>
-<img src="http://localhost:1313/images/8/api2.png?width=91pc" alt="api2"></li>
+<img alt="api2" src="http://localhost:1313/images/8/api2.png?width=91pc"></li>
 <li>Create successfully<br>
-<img src="http://localhost:1313/images/8/api2-.png?width=91pc" alt="api2"></li>
+<img alt="api2" src="http://localhost:1313/images/8/api2-.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -962,7 +962,7 @@
 <li><strong>Resource Name</strong>: slack</li>
 <li><strong>Resource Path</strong>: /</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api3.png?width=91pc" alt="api3"></p>
+<p><img alt="api3" src="http://localhost:1313/images/8/api3.png?width=91pc"></p>
 </li>
 <li>
 <p>Create a sub-resource named <strong>ask-aws</strong>:</p>
@@ -971,14 +971,14 @@
 <li><strong>Resource Name</strong>: ask-ai</li>
 <li><strong>Resource Path</strong>: /slack/ask-ai</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api4.png?width=91pc" alt="api4"></p>
+<p><img alt="api4" src="http://localhost:1313/images/8/api4.png?width=91pc"></p>
 </li>
 </ol>
 <h3 id="step-3-configure-method">Step 3: Configure Method</h3>
 <ol start="5">
 <li>
 <p>Create a <strong>POST</strong> method for the <strong>ask-ai</strong> resource:<br>
-<img src="http://localhost:1313/images/8/api4-.png?width=91pc" alt="api4"></p>
+<img alt="api4" src="http://localhost:1313/images/8/api4-.png?width=91pc"></p>
 </li>
 <li>
 <p>Configure method settings:</p>
@@ -988,10 +988,10 @@
 <li><strong>Lambda Function</strong>: <code>BedrockKBSlackbotFunction5</code></li>
 <li><strong>Use Default Timeout</strong>: ✅ <strong>Enabled</strong></li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api5.png?width=91pc" alt="api5"></p>
+<p><img alt="api5" src="http://localhost:1313/images/8/api5.png?width=91pc"></p>
 <ul>
 <li>Method <strong>POST</strong> created successfully<br>
-<img src="http://localhost:1313/images/8/api6.png?width=90pc" alt="api6"></li>
+<img alt="api6" src="http://localhost:1313/images/8/api6.png?width=90pc"></li>
 </ul>
 </li>
 </ol>
@@ -1008,7 +1008,7 @@
 <li><strong>Stage Name</strong>: <code>prod</code></li>
 <li><strong>Stage Description</strong>: Production deployment</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api7.png?width=90pc" alt="api7"></p>
+<p><img alt="api7" src="http://localhost:1313/images/8/api7.png?width=90pc"></p>
 </li>
 </ol>
 <h3 id="step-5-update-slack-configuration">Step 5: Update Slack Configuration</h3>
@@ -1018,7 +1018,7 @@
 <ul>
 <li>Format: <code>https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/slack/ask-ai</code></li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api8.png?width=90pc" alt="api8"></p>
+<p><img alt="api8" src="http://localhost:1313/images/8/api8.png?width=90pc"></p>
 </li>
 <li>
 <p>Update your Slack app&rsquo;s <strong>Slash Commands</strong> configuration:</p>
@@ -1028,7 +1028,7 @@
 <li>Update <strong>Request URL</strong> with the API Gateway invoke URL</li>
 <li>Click <strong>Save Changes</strong></li>
 </ul>
-<p><img src="http://localhost:1313/images/8/api9.png?width=90pc" alt="api9"></p>
+<p><img alt="api9" src="http://localhost:1313/images/8/api9.png?width=90pc"></p>
 </li>
 </ol>
 
@@ -1044,11 +1044,11 @@
 <li>Command: <code>/ask-ai How do i create an index in PostgreSQL and when should i use one?</code></li>
 <li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/test1.png?width=91pc" alt="test1"></p>
+<p><img alt="test1" src="http://localhost:1313/images/8/test1.png?width=91pc"></p>
 <ul>
 <li>Command: <code>/ask-aws What are the main data types used in PostgreSQL?</code></li>
 <li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer<br>
-<img src="http://localhost:1313/images/8/test2.png?width=91pc" alt="test2"></li>
+<img alt="test2" src="http://localhost:1313/images/8/test2.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -1058,7 +1058,7 @@
 <ul>
 <li>Command: <code>/ask-aws How can i hack into a PostgreSQL system?</code></li>
 <li><strong>Expected Result</strong>: Bedrock Guardrails block the request and return a safety message<br>
-<img src="http://localhost:1313/images/8/test3.png?width=91pc" alt="test3"></li>
+<img alt="test3" src="http://localhost:1313/images/8/test3.png?width=91pc"></li>
 </ul>
 </li>
 </ol>
@@ -1070,8 +1070,8 @@
 <li>Command: <code>/ask-aws Tell me something inappropriate</code></li>
 <li><strong>Expected Result</strong>: Ask about content not in your Knowledge Base</li>
 </ul>
-<p><img src="http://localhost:1313/images/8/test4.png?width=91pc" alt="test4"><br>
-<img src="http://localhost:1313/images/8/test5.png?width=91pc" alt="test5"></p>
+<p><img alt="test4" src="http://localhost:1313/images/8/test4.png?width=91pc"><br>
+<img alt="test5" src="http://localhost:1313/images/8/test5.png?width=91pc"></p>
 </li>
 </ol>
 <h2 id="testing-checklist">Testing Checklist</h2>
@@ -1550,19 +1550,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="http://localhost:1313/js/clipboard.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/jquery.sticky.js?1754809397"></script>
-    <script src="http://localhost:1313/js/featherlight.min.js?1754809397"></script>
-    <script src="http://localhost:1313/js/highlight.pack.js?1754809397"></script>
+    <script src="http://localhost:1313/js/clipboard.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/perfect-scrollbar.jquery.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/jquery.sticky.js?1754810736"></script>
+    <script src="http://localhost:1313/js/featherlight.min.js?1754810736"></script>
+    <script src="http://localhost:1313/js/highlight.pack.js?1754810736"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754809397"></script>
-    <script src="http://localhost:1313/js/learn.js?1754809397"></script>
-    <script src="http://localhost:1313/js/hugo-learn.js?1754809397"></script>
+    <script src="http://localhost:1313/js/modernizr.custom-3.6.0.js?1754810736"></script>
+    <script src="http://localhost:1313/js/learn.js?1754810736"></script>
+    <script src="http://localhost:1313/js/hugo-learn.js?1754810736"></script>
 
-    <link href="http://localhost:1313/mermaid/mermaid.css?1754809397" rel="stylesheet" />
-    <script src="http://localhost:1313/mermaid/mermaid.js?1754809397"></script>
+    <link href="http://localhost:1313/mermaid/mermaid.css?1754810736" rel="stylesheet" />
+    <script src="http://localhost:1313/mermaid/mermaid.js?1754810736"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
