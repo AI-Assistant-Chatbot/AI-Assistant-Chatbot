@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Cấu hình Systems Manager Parameter Store :: Thiết lập AWS Account</title>
+    <title>Cấu hình Systems Manager Parameter Store :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754888440" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754904519" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754888440" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754904519" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754888440"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754904519"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754888440"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754888440"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754904519"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754904519"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754888440"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754904519"></script>
 
     
   </div>
@@ -918,7 +918,7 @@
 	<p>AWS Systems Manager Parameter Store cung cấp runtime secret resolution bằng cách tạo tham chiếu đến Secrets Manager, cho phép Lambda functions fetch credentials động mà không cần truy cập trực tiếp đến secrets.</p>
 <h4 id="truy-cập-parameter-store">Truy cập Parameter Store</h4>
 <ol>
-<li>Điều hướng đến <a href="https://console.aws.amazon.com/systems-manager/">AWS Systems Manager Console</a>
+<li>Điều hướng đến <a href="https://console.aws.amazon.com/systems-manager/">AWS Systems Manager Console</a><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm1.png?width=90pc" alt="ssm1"></li>
 </ol>
 <h4 id="tạo-bot-token-parameter">Tạo Bot Token Parameter</h4>
@@ -926,16 +926,16 @@
 <li>
 <p>Tạo parameter cho <strong>bot-token5</strong>:</p>
 <ul>
-<li>Nhấp <strong>Create parameter</strong>
+<li>Nhấp <strong>Create parameter</strong><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm2.png?width=91pc" alt="ssm2"></li>
 <li><strong>Name</strong>: <code>/slack/bot-token5/parameter5</code></li>
 </ul>
 <p><img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm3.png?width=91pc" alt="ssm3"></p>
 <ul>
 <li><strong>Type</strong>: String</li>
-<li><strong>Value</strong>: <code>slack/bot-token5</code>
+<li><strong>Value</strong>: <code>slack/bot-token5</code><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm4.png?width=91pc" alt="ssm4"></li>
-<li>Tạo thành công
+<li>Tạo thành công<br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm5.png?width=91pc" alt="ssm5"></li>
 </ul>
 </li>
@@ -946,13 +946,13 @@
 <p>Tạo parameter cho <strong>signing-secret5</strong>:</p>
 <ul>
 <li>Nhấp <strong>Create parameter</strong></li>
-<li><strong>Name</strong>: <code>/slack/signing-secret5/parameter5</code>
+<li><strong>Name</strong>: <code>/slack/signing-secret5/parameter5</code><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm6.png?width=91pc" alt="ssm6"></li>
 <li><strong>Type</strong>: String</li>
-<li><strong>Value</strong>: <code>slack/signing-secret5</code>
+<li><strong>Value</strong>: <code>slack/signing-secret5</code><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm7.png?width=91pc" alt="ssm7">
 <ul>
-<li>Tạo thành công
+<li>Tạo thành công<br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm8.png?width=91pc" alt="ssm8"></li>
 </ul>
 </li>
@@ -968,7 +968,7 @@
 </ul>
 <p><img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm9.png?width=91pc" alt="ssm9"></p>
 <ul>
-<li>Bot token ARN: <code>arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5</code>
+<li>Bot token ARN: <code>arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5</code><br>
 <img src="//localhost:1313/images/4-security/4.2-systems_manager/ssm10.png?width=91pc" alt="ssm10"></li>
 </ul>
 </li>
@@ -1407,19 +1407,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754888440"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754888440"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754904519"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754904519"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754888440"></script>
-    <script src="//localhost:1313/js/learn.js?1754888440"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754888440"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754904519"></script>
+    <script src="//localhost:1313/js/learn.js?1754904519"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754904519"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754888440" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754888440"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754904519" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754904519"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

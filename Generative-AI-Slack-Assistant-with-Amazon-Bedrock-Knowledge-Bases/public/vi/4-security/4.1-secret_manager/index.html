@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Cấu hình AWS Secrets Manager :: Thiết lập AWS Account</title>
+    <title>Cấu hình AWS Secrets Manager :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754888440" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754888440" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754904519" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754888440" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754904519" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754888440"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754904519"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754888440"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754888440"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754904519"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754904519"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754888440"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754904519"></script>
 
     
   </div>
@@ -918,12 +918,12 @@
 	<p>AWS Secrets Manager lưu trữ và quản lý an toàn thông tin đăng nhập Slack bot với mã hóa at rest và khả năng rotation tự động.</p>
 <h4 id="truy-cập-secrets-manager-console">Truy cập Secrets Manager Console</h4>
 <ol>
-<li>Điều hướng đến <a href="https://console.aws.amazon.com/secretsmanager/">AWS Secrets Manager Console</a>
+<li>Điều hướng đến <a href="https://console.aws.amazon.com/secretsmanager/">AWS Secrets Manager Console</a><br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret1.png?width=91pc" alt="secret0"></li>
 </ol>
 <h4 id="chuẩn-bị-slack-credentials">Chuẩn bị Slack Credentials</h4>
 <ol start="2">
-<li>Sao chép <strong>Bot User OAuth Token</strong> từ Slack (từ Module 3.3):
+<li>Sao chép <strong>Bot User OAuth Token</strong> từ Slack (từ Module 3.3):<br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc" alt="slack_OAuth"></li>
 </ol>
 <h4 id="tạo-bot-token-secret">Tạo Bot Token Secret</h4>
@@ -937,18 +937,18 @@
 </ul>
 <p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret2.png?width=91pc" alt="secret1"></p>
 <ul>
-<li>Tên: <code>bot-token5</code>
+<li>Tên: <code>bot-token5</code><br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3.png?width=91pc" alt="secret2"></li>
-<li>Tạo thành công
+<li>Tạo thành công<br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3-.png?width=91pc" alt="secret3"></li>
-<li>Lưu <strong>ARN</strong>
+<li>Lưu <strong>ARN</strong><br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret4.png?width=91pc" alt="secret8"></li>
 </ul>
 </li>
 </ol>
 <h4 id="lấy-signing-secret">Lấy Signing Secret</h4>
 <ol start="4">
-<li>Sao chép <strong>Signing Secret</strong> từ cài đặt Slack app:
+<li>Sao chép <strong>Signing Secret</strong> từ cài đặt Slack app:<br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret5-.png?width=90pc" alt="slack_secret"></li>
 </ol>
 <h4 id="tạo-signing-secret">Tạo Signing Secret</h4>
@@ -963,9 +963,9 @@
 <p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret6-.png?width=90pc" alt="secret4"></p>
 <ul>
 <li>Tên: <code>signing-secret5</code></li>
-<li>Tạo thành công
+<li>Tạo thành công<br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret6.png?width=90pc" alt="secret6"></li>
-<li>Lưu <strong>ARN</strong>
+<li>Lưu <strong>ARN</strong><br>
 <img src="//localhost:1313/images/4-security/4.1-secret_manager/secret7-.png?width=90pc" alt="secret7"></li>
 </ul>
 </li>
@@ -1405,19 +1405,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754888440"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754888440"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754888440"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754904519"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754904519"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754888440"></script>
-    <script src="//localhost:1313/js/learn.js?1754888440"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754888440"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754904519"></script>
+    <script src="//localhost:1313/js/learn.js?1754904519"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754904519"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754888440" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754888440"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754904519" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754904519"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

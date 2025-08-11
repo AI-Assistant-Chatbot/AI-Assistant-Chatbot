@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>Tích hợp API Gateway và Kiểm thử :: Thiết lập AWS Account</title>
+    <title>Tích hợp API Gateway và Kiểm thử :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754904121" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754904121" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754904519" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754904121" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754904519" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754904121"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754904519"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754904121"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754904121"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754904519"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754904519"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754904121"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754904519"></script>
 
     
   </div>
@@ -915,7 +915,7 @@
 <p><strong>Tạo REST API</strong></p>
 <ol>
 <li>
-<p>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/apigateway">API Gateway Console</a>
+<p>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/apigateway">API Gateway Console</a><br>
 <img src="//localhost:1313/images/8-api_gateway/api00a.png?width=90pc" alt="api0"></p>
 </li>
 <li>
@@ -926,9 +926,9 @@
 <p><img src="//localhost:1313/images/8-api_gateway/api1.png?width=91pc" alt="api1"></p>
 <ul>
 <li><strong>API Name</strong>: <code>slack-bedrock-api5</code></li>
-<li><strong>Description</strong>: API for Slack AI Assistant
+<li><strong>Description</strong>: API for Slack AI Assistant<br>
 <img src="//localhost:1313/images/8-api_gateway/api2.png?width=91pc" alt="api2"></li>
-<li>Tạo thành công
+<li>Tạo thành công<br>
 <img src="//localhost:1313/images/8-api_gateway/api2-.png?width=91pc" alt="api2"></li>
 </ul>
 </li>
@@ -956,7 +956,7 @@
 <p><strong>Cấu hình Method</strong></p>
 <ol start="5">
 <li>
-<p>Tạo method <strong>POST</strong> cho resource <strong>ask-ai</strong>:
+<p>Tạo method <strong>POST</strong> cho resource <strong>ask-ai</strong>:<br>
 <img src="//localhost:1313/images/8-api_gateway/api4-.png?width=91pc" alt="api4"></p>
 </li>
 <li>
@@ -969,7 +969,7 @@
 </ul>
 <p><img src="//localhost:1313/images/8-api_gateway/api5.png?width=91pc" alt="api5"></p>
 <ul>
-<li>Method <strong>POST</strong> được tạo thành công
+<li>Method <strong>POST</strong> được tạo thành công<br>
 <img src="//localhost:1313/images/8-api_gateway/api6.png?width=90pc" alt="api6"></li>
 </ul>
 </li>
@@ -1026,7 +1026,7 @@
 <p><img src="//localhost:1313/images/8-api_gateway/test1.png?width=91pc" alt="test1"></p>
 <ul>
 <li>Command: <code>/ask-aws What are the main data types used in PostgreSQL?</code></li>
-<li><strong>Kết quả mong đợi</strong>: AI assistant retrieve thông tin liên quan từ Knowledge Base và cung cấp câu trả lời chính xác
+<li><strong>Kết quả mong đợi</strong>: AI assistant retrieve thông tin liên quan từ Knowledge Base và cung cấp câu trả lời chính xác<br>
 <img src="//localhost:1313/images/8-api_gateway/test2.png?width=91pc" alt="test2"></li>
 </ul>
 </li>
@@ -1036,7 +1036,7 @@
 <li><strong>Test Query</strong>: Cố gắng trigger content filtering
 <ul>
 <li>Command: <code>/ask-aws How can i hack into a PostgreSQL system?</code></li>
-<li><strong>Kết quả mong đợi</strong>: Bedrock Guardrails chặn request và trả về safety message
+<li><strong>Kết quả mong đợi</strong>: Bedrock Guardrails chặn request và trả về safety message<br>
 <img src="//localhost:1313/images/8-api_gateway/test3.png?width=91pc" alt="test3"></li>
 </ul>
 </li>
@@ -1049,7 +1049,7 @@
 <li>Command: <code>/ask-aws Tell me something inappropriate</code></li>
 <li><strong>Kết quả mong đợi</strong>: Hỏi về nội dung không có trong Knowledge Base của bạn</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/test4.png?width=91pc" alt="test4">
+<p><img src="//localhost:1313/images/8-api_gateway/test4.png?width=91pc" alt="test4"><br>
 <img src="//localhost:1313/images/8-api_gateway/test5.png?width=91pc" alt="test5"></p>
 </li>
 </ol>
@@ -1529,19 +1529,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754904121"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754904121"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754904121"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754904121"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754904121"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754904121"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754904519"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754904519"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754904121"></script>
-    <script src="//localhost:1313/js/learn.js?1754904121"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754904121"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754904519"></script>
+    <script src="//localhost:1313/js/learn.js?1754904519"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754904519"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754904121" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754904121"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754904519" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754904519"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

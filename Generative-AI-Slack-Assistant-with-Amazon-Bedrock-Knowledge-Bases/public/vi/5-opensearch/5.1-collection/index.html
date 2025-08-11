@@ -9,24 +9,24 @@
 
     <link rel="icon" href="//localhost:1313/images/favicon.png" type="image/png">
 
-    <title>OpenSearch Serverless Collection :: Thiết lập AWS Account</title>
+    <title>OpenSearch Serverless Collection :: AWS Serverless</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754897398" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754897398" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754904519" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754904519" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754897398" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754904519" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754897398"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754904519"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754897398"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754897398"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754904519"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754904519"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754897398"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754904519"></script>
 
     
   </div>
@@ -919,17 +919,17 @@
 <p>Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để lưu trữ vector, bao gồm các access và network policies cần thiết.</p>
 <h4 id="truy-cập-opensearch-console">Truy cập OpenSearch Console</h4>
 <ol>
-<li>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/aos/home?region=us-east-1#opensearch">Amazon OpenSearch Service Console</a>
+<li>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/aos/home?region=us-east-1#opensearch">Amazon OpenSearch Service Console</a><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch1.png?width=90pc" alt="opensearch1"></li>
 </ol>
 <h4 id="tạo-data-access-policy">Tạo Data Access Policy</h4>
 <ol start="2">
 <li>
-<p>Cuộn xuống và chọn <strong>Data access policies</strong> → <strong>Create access policy</strong>
+<p>Cuộn xuống và chọn <strong>Data access policies</strong> → <strong>Create access policy</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch8.png?width=90pc" alt="opensearch8"></p>
 </li>
 <li>
-<p>Nhập <strong>Access policy name</strong> → Chọn <strong>JSON</strong>
+<p>Nhập <strong>Access policy name</strong> → Chọn <strong>JSON</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch9.png?width=90pc" alt="opensearch9"></p>
 </li>
 <li>
@@ -961,11 +961,11 @@
 <h4 id="tạo-network-policy">Tạo Network Policy</h4>
 <ol start="5">
 <li>
-<p>Tạo <strong>Network policy</strong> → <strong>Create network policy</strong>
+<p>Tạo <strong>Network policy</strong> → <strong>Create network policy</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch11.png?width=90pc" alt="opensearch11"></p>
 </li>
 <li>
-<p>Nhập <strong>Network policy name</strong> -&gt; chọn <strong>JSON</strong>
+<p>Nhập <strong>Network policy name</strong> -&gt; chọn <strong>JSON</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch12.png?width=90pc" alt="opensearch12"></p>
 </li>
 <li>
@@ -994,20 +994,20 @@
 <p><strong>Tạo collection</strong>:</p>
 <ul>
 <li>
-<p>Chọn <strong>Collections</strong>
+<p>Chọn <strong>Collections</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch2.png?width=90pc" alt="opensearch2"></p>
 </li>
 <li>
-<p>Chọn <strong>Create Collection</strong>
+<p>Chọn <strong>Create Collection</strong><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch3.png?width=90pc" alt="opensearch3"></p>
 </li>
 <li>
 <p>Cấu hình collection settings:</p>
 <ul>
 <li><strong>Collection name</strong>: <code>slack-bedrock-vector-db5</code></li>
-<li><strong>Collection type</strong>: Vector search
+<li><strong>Collection type</strong>: Vector search<br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch4.png?width=91pc" alt="opensearch4"></li>
-<li><strong>Security</strong>: Standard create
+<li><strong>Security</strong>: Standard create<br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch5.png?width=90pc" alt="opensearch5"></li>
 </ul>
 </li>
@@ -1025,10 +1025,10 @@
 <li><strong>Collection ARN</strong>: <code>arn:aws:aoss:us-east-1:account:collection/collection-id</code></li>
 <li><strong>OpenSearch Endpoint</strong>: <code>https://collection-id.us-east-1.aoss.amazonaws.com</code></li>
 </ul>
-<p><img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch14.png?width=91pc" alt="opensearch14">
+<p><img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch14.png?width=91pc" alt="opensearch14"><br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch15.png?width=91pc" alt="opensearch15"></p>
 <ul>
-<li>Bước tiếp theo là tạo index table.
+<li>Bước tiếp theo là tạo index table.<br>
 <img src="//localhost:1313/images/5-opensearch/5.1-collection/opensearch16.png?width=90pc" alt="opensearch16"></li>
 </ul>
 </li>
@@ -1468,19 +1468,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754897398"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754897398"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754897398"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754897398"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754897398"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754897398"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754904519"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754904519"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754904519"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754897398"></script>
-    <script src="//localhost:1313/js/learn.js?1754897398"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754897398"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754904519"></script>
+    <script src="//localhost:1313/js/learn.js?1754904519"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754904519"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754897398" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754897398"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754904519" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754904519"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
