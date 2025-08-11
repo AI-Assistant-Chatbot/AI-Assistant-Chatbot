@@ -25,12 +25,12 @@ Cho workshop này, bạn cần quyền truy cập đến:
 #### Điều hướng đến Model Access
 
 2. Cuộn xuống cuối **navigation sidebar** và chọn **Model access**
-   ![modelAccess1](/images/6-bedrock_setup/6.1-model_access/modelAccess10a.png?width=90pc)
+   ![modelAccess1](/images/6-bedrock_setup/6.1-model_access/modelaccess10a.png?width=90pc)
 
 #### Modify Model Access
 
 3. Nhấp **Modify model access**
-   ![modelAccess2](/images/6-bedrock_setup/6.1-model_access/modelAccess20b.png?width=90pc)
+   ![modelAccess2](/images/6-bedrock_setup/6.1-model_access/modelaccess20b.png?width=90pc)
 
 #### Chọn Models Cần thiết
 
@@ -39,11 +39,11 @@ Cho workshop này, bạn cần quyền truy cập đến:
    - ✅ **Amazon Titan Text Embeddings V2**
    - ✅ **Anthropic Claude 3 Sonnet**
 
-   ![modelAccess3](/images/6-bedrock_setup/6.1-model_access/modelAccess30a.png?width=90pc)
-   ![modelAccess4](/images/6-bedrock_setup/6.1-model_access/modelAccess40a.png?width=90pc)
+   ![modelAccess3](/images/6-bedrock_setup/6.1-model_access/modelaccess30a.png?width=90pc)
+   ![modelAccess4](/images/6-bedrock_setup/6.1-model_access/modelaccess40a.png?width=90pc)
 
    - Nhấp **Next** để tiếp tục
-     ![modelAccess5](/images/6-bedrock_setup/6.1-model_access/modelAccess50a.png?width=90pc)
+     ![modelAccess5](/images/6-bedrock_setup/6.1-model_access/modelaccess50a.png?width=90pc)
 
 #### Submit Access Request
 
@@ -52,7 +52,7 @@ Cho workshop này, bạn cần quyền truy cập đến:
    - Access requests thường được phê duyệt ngay lập tức cho các models này
    - Đợi vài phút để quyền truy cập được cấp
 
-   ![modelAccess6](/images/6-bedrock_setup/6.1-model_access/modelAccess60a.png?width=90pc)
+   ![modelAccess6](/images/6-bedrock_setup/6.1-model_access/modelaccess60a.png?width=90pc)
 
 #### Xác minh Model Access
 
@@ -61,8 +61,8 @@ Cho workshop này, bạn cần quyền truy cập đến:
    - ✅ **Amazon Titan Text Embeddings V2**: Access granted
    - ✅ **Anthropic Claude 3 Sonnet**: Access granted
 
-   ![modelAccess7](/images/6-bedrock_setup/6.1-model_access/modelAccess70a.png?width=90pc)
-   ![modelAccess8](/images/6-bedrock_setup/6.1-model_access/modelAccess80a.png?width=90pc)
+   ![modelAccess7](/images/6-bedrock_setup/6.1-model_access/modelaccess70a.png?width=90pc)
+   ![modelAccess8](/images/6-bedrock_setup/6.1-model_access/modelaccess80a.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Model access thường được cấp ngay lập tức cho Titan và Claude models. Nếu bạn gặp chậm trễ, đảm bảo AWS account của bạn ở trạng thái tốt.
