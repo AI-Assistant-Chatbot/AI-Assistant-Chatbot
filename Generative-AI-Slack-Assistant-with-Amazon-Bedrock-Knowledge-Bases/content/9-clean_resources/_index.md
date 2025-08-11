@@ -1,6 +1,6 @@
 ---
 title: "Clean Resources"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 9
 chapter: false
 pre: " <b> 9. </b> "

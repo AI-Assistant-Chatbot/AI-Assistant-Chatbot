@@ -1,6 +1,6 @@
 ---
 title: "Get OAuth Tokens"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 3
 chapter: false
 pre: " <b> 3.3 </b> "
@@ -13,23 +13,23 @@ pre: " <b> 3.3 </b> "
    - `commands` - Enable slash commands
    - `chat:write` - Send messages as bot
    - `channels:read` - Give the bot access to basic information of public channels in the Slack workspace
-     ![slack_scope](/images/3/slack_scope.png?width=90pc)
+     ![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
 
 #### Install App to Workspace
 
 3. Scroll up and click **Install to Workspace**
 
-![getOAuth1](/images/3/slack_OAuth0.png?width=90pc)
+![getOAuth1](/images/3-slack_app/3.3-Oauth_Permissions/slack_OAuth0.png?width=90pc)
 
 4. Review permissions and click **Allow**
 
-![getOAuth](/images/3/slack_OAuth1.png?width=90pc)
+![getOAuth](/images/3-slack_app/3.3-Oauth_Permissions/slack_OAuth1.png?width=90pc)
 
 #### Copy OAuth Tokens
 
 5. After installation, you'll see the **Bot User OAuth Token** (starts with `xoxb-`)
 
-![getOAuth](/images/4/getOAuth1.png?width=90pc)
+![getOAuth](/images/3-slack_app/3.3-Oauth_Permissions/getOAuth1.png?width=90pc)
 
 6. **Copy and save this token securely** - you'll need it for AWS Lambda configuration
 

@@ -1,6 +1,6 @@
 ---
 title: "Environment Setup"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -38,16 +38,16 @@ By the end of this module, you will have:
 
 - Go to [Slack.com](https://slack.com/) and click **Create a new workspace**.
 
-  ![slackWorkSpace1](/images/2/slackWorkSpace1.png?width=90pc)
+  ![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
 
 **2. Sign Up Process**
 
 - **Enter your email to sign in**
 
-![slackWorkSpace2](/images/2/slackWorkSpace2.png?width=90pc)
+![slackWorkSpace2](/images/2-environment-setup/slackWorkSpace2.png?width=90pc)
 
 **3. Click Create a Workspace**
-![slackWorkSpace3](/images/2/slackWorkSpace3.png?width=90pc)
+![slackWorkSpace3](/images/2-environment-setup/slackWorkSpace3.png?width=90pc)
 
 #### Complete Workspace Setup
 
@@ -57,7 +57,7 @@ By the end of this module, you will have:
 - **Channel name** (e.g., "#ai-assistant")
 - **Team member invitations** (optional for workshop)
 
-![slackWorkSpace4](/images/2/slackWorkSpace4.png?width=91pc)
+![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=91pc)
 
 {{% notice tip %}}
 **Tip:** Keep your workspace name simple and related to the workshop. You'll use this workspace to test your AI assistant.

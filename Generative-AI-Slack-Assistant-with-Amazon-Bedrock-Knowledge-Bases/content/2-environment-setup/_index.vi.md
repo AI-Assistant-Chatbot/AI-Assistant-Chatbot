@@ -1,6 +1,6 @@
 ---
 title: "Thiết lập Môi trường"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -38,16 +38,16 @@ Kết thúc module này, bạn sẽ có:
 
 - Truy cập [Slack.com](https://slack.com/) và nhấp **Create a new workspace**.
 
-  ![slackWorkSpace1](/images/2/slackWorkSpace1.png?width=90pc)
+  ![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
 
 **2. Quy trình Đăng ký**
 
 - **Nhập email để đăng nhập**
 
-![slackWorkSpace2](/images/2/slackWorkSpace2.png?width=90pc)
+![slackWorkSpace2](/images/2-environment-setup/slackWorkSpace2.png?width=90pc)
 
 **3. Nhấp Create a Workspace**
-![slackWorkSpace3](/images/2/slackWorkSpace3.png?width=90pc)
+![slackWorkSpace3](/images/2-environment-setup/slackWorkSpace3.png?width=90pc)
 
 #### Hoàn thành Thiết lập Workspace
 
@@ -57,7 +57,7 @@ Kết thúc module này, bạn sẽ có:
 - **Tên channel** (ví dụ: "#ai-assistant")
 - **Lời mời thành viên nhóm** (tùy chọn cho workshop)
 
-![slackWorkSpace4](/images/2/slackWorkSpace4.png?width=91pc)
+![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=91pc)
 
 {{% notice tip %}}
 **Mẹo:** Giữ tên workspace đơn giản và liên quan đến workshop. Bạn sẽ sử dụng workspace này để kiểm thử trợ lý AI.

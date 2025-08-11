@@ -1,6 +1,6 @@
 ---
 title: "Conclusion"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 10
 chapter: false
 pre: " <b> 10. </b> "

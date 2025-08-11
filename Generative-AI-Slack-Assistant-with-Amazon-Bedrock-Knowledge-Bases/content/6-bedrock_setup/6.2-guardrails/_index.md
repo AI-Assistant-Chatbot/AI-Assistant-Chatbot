@@ -1,6 +1,6 @@
 ---
 title: "Setup Guardrails"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 6.2 </b> "
@@ -30,14 +30,14 @@ Before setting up guardrails, ensure you have:
 - Click **Create guardrail** button
 - This will start the guardrail configuration wizard
 
-![guardrail1](/images/6/guardrail1.png?width=90pc)
+![guardrail1](/images/6-bedrock_setup/6.2-guardrails/guardrail1.png?width=90pc)
 
 **2. Create New Guardrail**
 
 - **Name**: `slack-ai-assistant-guardrail`
 - **Description**: `Guardrail for Slack AI Assistant to filter harmful content and protect sensitive information`
 
-![guardrail2](/images/6/guardrail2.png?width=90pc)
+![guardrail2](/images/6-bedrock_setup/6.2-guardrails/guardrail2.png?width=90pc)
 
 ---
 
@@ -53,14 +53,14 @@ Configure filters for different types of harmful content:
 - **Violence**: `High` - Filter violent content
 - **Misconduct**: `Medium` - Block unethical behavior content
 
-![guardrail3](/images/6/guardrail3.png?width=90pc)
+![guardrail3](/images/6-bedrock_setup/6.2-guardrails/guardrail3.png?width=90pc)
 
 ---
 
 **2. Set Up Prompt Attacks**
 
 - **Prompt Attacks**: `High` - Prevent prompt injection attacks
-  ![guardrail4](/images/6/guardrail4.png?width=90pc)
+  ![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
 
 ---
 
@@ -74,15 +74,15 @@ Add specific words or phrases to block:
 - **Custom Words**: Add company-specific terms to avoid
 - **Sensitive Terms**: Block internal code names or confidential terms
 
-![guardrail5](/images/6/guardrail5.png?width=90pc)
+![guardrail5](/images/6-bedrock_setup/6.2-guardrails/guardrail5.png?width=90pc)
 
-![guardrail6](/images/6/guardrail6.png?width=90pc)
+![guardrail6](/images/6-bedrock_setup/6.2-guardrails/guardrail6.png?width=90pc)
 
 ---
 
 - Save **ARN** and **ID**
 
-![guardrail7](/images/6/guardrail7.png?width=91pc)
+![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=91pc)
 
 ---
 

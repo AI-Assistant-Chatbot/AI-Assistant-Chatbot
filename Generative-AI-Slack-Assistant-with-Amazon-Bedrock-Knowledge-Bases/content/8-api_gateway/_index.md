@@ -1,6 +1,6 @@
 ---
 title: "API Gateway Integration and Complete Testing"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 8
 chapter: false
 pre: " <b> 8. </b> "

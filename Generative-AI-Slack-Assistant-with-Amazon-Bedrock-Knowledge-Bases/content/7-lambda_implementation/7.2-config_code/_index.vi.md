@@ -1,6 +1,6 @@
 ---
 title: "Tạo và Cấu hình Lambda Function"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 7.2 </b> "
@@ -17,12 +17,12 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
    - **Runtime**: Python 3.12
    - **Architecture**: x86_64
 
-   ![lambda5](/images/7/lambda5.png?width=90pc)
+   ![lambda5](/images/7-lambda_implementation/7.2-config_code/lambda5.png?width=90pc)
 
 **Attach IAM Role**
 
 2. Attach IAM role **BedrockExecutionRole8888** (đã tạo trong section 7.1) và nhấp **Create**:
-   ![lambda6](/images/7/lambda6-.png?width=90pc)
+   ![lambda6](/images/7-lambda_implementation/7.2-config_code/lambda6-.png?width=90pc)
 
 #### Upload Function Code
 
@@ -34,12 +34,12 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
    - Truy cập **Code** tab → **Upload from** → **.zip file**
    - Chọn và upload file zip đã tải
 
-   ![lambda7](/images/7/lambda7-.png?width=90pc)
+   ![lambda7](/images/7-lambda_implementation/7.2-config_code/lambda7-.png?width=90pc)
 
    - Chọn **Save**
-     ![lambda8](/images/7/lambda8.png?width=90pc)
+     ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
    - Upload thành công
-     ![lambda9](/images/7/lambda9-.png?width=90pc)
+     ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** File zip chứa Slack Bolt framework và tất cả dependencies cần thiết cho bot functionality.
@@ -53,7 +53,7 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
 
    - **Handler**: `index.handler`
 
-   ![lambda11](/images/7/lambda11-.png?width=91pc)
+   ![lambda11](/images/7-lambda_implementation/7.2-config_code/lambda11-.png?width=91pc)
 
 **Điều chỉnh Performance Settings**
 
@@ -62,7 +62,7 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
    - **Memory**: 512 MB (khuyến nghị cho Bedrock API calls)
    - **Timeout**: 5 phút (cho phép thời gian cho Knowledge Base queries)
 
-   ![lambda13](/images/7/lambda13-.png?width=90pc)
+   ![lambda13](/images/7-lambda_implementation/7.2-config_code/lambda13-.png?width=90pc)
 
 #### Environment Variables
 
@@ -80,8 +80,8 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
    | `GUARDRAIL_ID`                   | `your-guardrail-id `                      | Tham chiếu guardrail của bạn            |
    | `SLACK_SLASH_COMMAND`            | `/ask-ai`                                 | slash command đã tạo lúc đầu            |
 
-   ![lambda14](/images/7/lambda14-.png?width=90pc)
-   ![lambda15](/images/7/lambda15-.png?width=90pc)
+   ![lambda14](/images/7-lambda_implementation/7.2-config_code/lambda14-.png?width=90pc)
+   ![lambda15](/images/7-lambda_implementation/7.2-config_code/lambda15-.png?width=90pc)
 
 **Required Values**
 

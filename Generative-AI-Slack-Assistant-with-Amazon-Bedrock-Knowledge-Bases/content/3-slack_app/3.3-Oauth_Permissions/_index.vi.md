@@ -1,6 +1,6 @@
 ---
 title: "Lấy OAuth Tokens"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 3
 chapter: false
 pre: " <b> 3.3 </b> "
@@ -13,23 +13,23 @@ pre: " <b> 3.3 </b> "
    - `commands` - Kích hoạt slash commands
    - `chat:write` - Gửi tin nhắn như bot
    - `channels:read` - Cấp cho bot quyền truy cập thông tin cơ bản của các kênh công khai trong Slack workspace
-     ![slack_scope](/images/3/slack_scope.png?width=90pc)
+     ![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
 
 #### Cài đặt App vào Workspace
 
 3. Cuộn lên và nhấp **Install to Workspace**
 
-![getOAuth1](/images/3/slack_OAuth0.png?width=90pc)
+![getOAuth1](/images/3-slack_app/3.3-Oauth_Permissions/slack_OAuth0.png?width=90pc)
 
 4. Xem lại quyền và nhấp **Allow**
 
-![getOAuth](/images/3/slack_OAuth1.png?width=90pc)
+![getOAuth](/images/3-slack_app/3.3-Oauth_Permissions/slack_OAuth1.png?width=90pc)
 
 #### Sao chép OAuth Tokens
 
 5. Sau khi cài đặt, bạn sẽ thấy **Bot User OAuth Token** (bắt đầu với `xoxb-`)
 
-![getOAuth](/images/4/getOAuth1.png?width=90pc)
+![getOAuth](/images/3-slack_app/3.3-Oauth_Permissions/getOAuth1.png?width=90pc)
 
 6. **Sao chép và lưu token này một cách an toàn** - bạn sẽ cần nó cho cấu hình AWS Lambda
 

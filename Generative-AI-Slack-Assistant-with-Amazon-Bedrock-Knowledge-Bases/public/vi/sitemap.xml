@@ -2,307 +2,327 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/</loc>
+    <loc>//localhost:1313/vi/4-security/4.1-secret_manager/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/4-security/4.1-secret_manager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/4-security/4.1-secret_manager/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/1-introduction/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/1-introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/1-introduction/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/5-opensearch/5.1-collection/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-opensearch/5.1-collection/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-opensearch/5.1-collection/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/7-lambda_implementation/7.1-lambda_role/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-lambda_implementation/7.1-lambda_role/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/3-slack_app/3.1-create_slack_app/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-slack_app/3.1-create_slack_app/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-slack_app/3.1-create_slack_app/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/6-bedrock_setup/6.1-model_access/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-bedrock_setup/6.1-model_access/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-bedrock_setup/6.1-model_access/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/3-slack_app/3.2-create_slash_commands/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/3-slack_app/3.2-create_slash_commands/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/3-slack_app/3.2-create_slash_commands/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/7-lambda_implementation/7.2-config_code/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/7-lambda_implementation/7.2-config_code/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/7-lambda_implementation/7.2-config_code/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/5-opensearch/5.2-vector_index/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/5-opensearch/5.2-vector_index/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/5-opensearch/5.2-vector_index/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/6-bedrock_setup/6.2-guardrails/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/6-bedrock_setup/6.2-guardrails/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/6-bedrock_setup/6.2-guardrails/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/2-environment-setup/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/2-environment-setup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="//localhost:1313/vi/2-environment-setup/"
+                />
+  </url><url>
+    <loc>//localhost:1313/vi/4-security/4.2-systems_manager/</loc>
     <lastmod>2024-05-14T00:38:32+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/4-security/4.2-systems_manager/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/4-security/4.2-systems_manager/"
                 />
   </url><url>
-    <loc>/vi/4-security/4.1-secret_manager/</loc>
+    <loc>//localhost:1313/vi/3-slack_app/3.3-oauth_permissions/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-security/4.1-secret_manager/"
+                href="//localhost:1313/3-slack_app/3.3-oauth_permissions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-security/4.1-secret_manager/"
+                href="//localhost:1313/vi/3-slack_app/3.3-oauth_permissions/"
                 />
   </url><url>
-    <loc>/vi/1-introduction/</loc>
+    <loc>//localhost:1313/vi/6-bedrock_setup/6.3-knowledge_base/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduction/"
+                href="//localhost:1313/6-bedrock_setup/6.3-knowledge_base/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduction/"
+                href="//localhost:1313/vi/6-bedrock_setup/6.3-knowledge_base/"
                 />
   </url><url>
-    <loc>/vi/5-opensearch/5.1-collection/</loc>
+    <loc>//localhost:1313/vi/3-slack_app/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-opensearch/5.1-collection/"
+                href="//localhost:1313/3-slack_app/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-opensearch/5.1-collection/"
+                href="//localhost:1313/vi/3-slack_app/"
                 />
   </url><url>
-    <loc>/vi/7-lambda_implementation/7.1-lambda_role/</loc>
+    <loc>//localhost:1313/vi/4-security/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-lambda_implementation/7.1-lambda_role/"
+                href="//localhost:1313/4-security/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-lambda_implementation/7.1-lambda_role/"
+                href="//localhost:1313/vi/4-security/"
                 />
   </url><url>
-    <loc>/vi/3-slack_app/3.1-create_slack_app/</loc>
+    <loc>//localhost:1313/vi/5-opensearch/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-slack_app/3.1-create_slack_app/"
+                href="//localhost:1313/5-opensearch/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-slack_app/3.1-create_slack_app/"
+                href="//localhost:1313/vi/5-opensearch/"
                 />
   </url><url>
-    <loc>/vi/6-bedrock_setup/6.1-model_access/</loc>
+    <loc>//localhost:1313/vi/6-bedrock_setup/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-bedrock_setup/6.1-model_access/"
+                href="//localhost:1313/6-bedrock_setup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-bedrock_setup/6.1-model_access/"
+                href="//localhost:1313/vi/6-bedrock_setup/"
                 />
   </url><url>
-    <loc>/vi/4-security/4.2-systems_manager/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
+    <loc>//localhost:1313/vi/7-lambda_implementation/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-security/4.2-systems_manager/"
+                href="//localhost:1313/7-lambda_implementation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-security/4.2-systems_manager/"
+                href="//localhost:1313/vi/7-lambda_implementation/"
                 />
   </url><url>
-    <loc>/vi/3-slack_app/3.2-create_slash_commands/</loc>
+    <loc>//localhost:1313/vi/8-api_gateway/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-slack_app/3.2-create_slash_commands/"
+                href="//localhost:1313/8-api_gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-slack_app/3.2-create_slash_commands/"
+                href="//localhost:1313/vi/8-api_gateway/"
                 />
   </url><url>
-    <loc>/vi/7-lambda_implementation/7.2-config_code/</loc>
+    <loc>//localhost:1313/vi/9-clean_resources/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/7-lambda_implementation/7.2-config_code/"
+                href="//localhost:1313/9-clean_resources/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/7-lambda_implementation/7.2-config_code/"
+                href="//localhost:1313/vi/9-clean_resources/"
                 />
   </url><url>
-    <loc>/vi/5-opensearch/5.2-vector_index/</loc>
+    <loc>//localhost:1313/vi/10-conclusion/</loc>
+    <lastmod>2025-06-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-opensearch/5.2-vector_index/"
+                href="//localhost:1313/10-conclusion/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-opensearch/5.2-vector_index/"
+                href="//localhost:1313/vi/10-conclusion/"
                 />
   </url><url>
-    <loc>/vi/6-bedrock_setup/6.2-guardrails/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-bedrock_setup/6.2-guardrails/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-bedrock_setup/6.2-guardrails/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/2-environment-setup/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-environment-setup/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-environment-setup/"
-                />
-  </url><url>
-    <loc>/vi/3-slack_app/3.3-oauth_permissions/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-slack_app/3.3-oauth_permissions/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-slack_app/3.3-oauth_permissions/"
-                />
-  </url><url>
-    <loc>/vi/6-bedrock_setup/6.3-knowledge_base/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6-bedrock_setup/6.3-knowledge_base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/6-bedrock_setup/6.3-knowledge_base/"
-                />
-  </url><url>
-    <loc>/vi/3-slack_app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-slack_app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-slack_app/"
-                />
-  </url><url>
-    <loc>/vi/4-security/</loc>
-    <lastmod>2024-05-14T00:38:32+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-security/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-security/"
-                />
-  </url><url>
-    <loc>/vi/5-opensearch/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-opensearch/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-opensearch/"
-                />
-  </url><url>
-    <loc>/vi/6-bedrock_setup/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6-bedrock_setup/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/6-bedrock_setup/"
-                />
-  </url><url>
-    <loc>/vi/7-lambda_implementation/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/7-lambda_implementation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/7-lambda_implementation/"
-                />
-  </url><url>
-    <loc>/vi/8-api_gateway/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/8-api_gateway/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/8-api_gateway/"
-                />
-  </url><url>
-    <loc>/vi/9-clean_resources/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/9-clean_resources/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/9-clean_resources/"
-                />
-  </url><url>
-    <loc>/vi/10-conclusion/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/10-conclusion/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/10-conclusion/"
-                />
-  </url><url>
-    <loc>/vi/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/categories/"
-                />
-  </url><url>
-    <loc>/vi/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 ---
 title: "Xây dựng Trợ lý Slackbot AI Tạo sinh với Amazon Bedrock"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
@@ -63,7 +63,7 @@ By completing this workshop, you will achieve the following learning outcomes:
 
 #### SlackBot Architecture
 
-![AI-Assistant](/images/1/AI-Assistant.png?width=90pc)
+![AI-Assistant](/images/1-introduction/AI-Assistant.png?width=90pc)
 
 #### Architecture Flow Diagram
 

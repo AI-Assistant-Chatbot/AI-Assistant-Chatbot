@@ -1,6 +1,6 @@
 ---
 title: "Bedrock Setup"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "

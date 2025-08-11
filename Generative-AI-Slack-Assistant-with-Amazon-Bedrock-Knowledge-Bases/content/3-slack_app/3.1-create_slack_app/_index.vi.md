@@ -1,6 +1,6 @@
 ---
 title: "Tạo slack app"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 3.1 </b> "
@@ -10,7 +10,7 @@ pre: " <b> 3.1 </b> "
 
 1. Truy cập [api.slack.com/apps](https://api.slack.com/apps) và nhấp **Create New App** → **From scratch**
 
-![slackApp1](/images/3/slakcApp1.png?width=90pc)
+![slackApp1](/images/3-slack_app/3.1-create_slack_app/slakcApp1.png?width=90pc)
 
 #### Cấu hình Chi tiết App
 
@@ -20,7 +20,7 @@ pre: " <b> 3.1 </b> "
 - **Pick a workspace**: Chọn workspace workshop của bạn
 - Nhấp **Create App**
 
-![slackApp2](/images/3/slakcApp2.png?width=90pc)
+![slackApp2](/images/3-slack_app/3.1-create_slack_app/slakcApp2.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Sử dụng tên mô tả như "AWS AI Assistant" để dễ dàng nhận diện bot trong workspace.

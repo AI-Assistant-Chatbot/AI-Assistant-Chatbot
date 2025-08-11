@@ -1,6 +1,6 @@
 ---
 title: "Create Vector Index"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 5.2 </b> "
@@ -13,16 +13,16 @@ This section guides you through creating a vector index in OpenSearch Serverless
 #### Create Deployment User
 
 1. Create an IAM user **bedrock-chatbot-deployer** with **AdministratorAccess** policy
-   ![user1](/images/5/user1.png?width=91pc)
+   ![user1](/images/5-opensearch/5.2-vector_index/user1.png?width=91pc)
 
 #### Generate Access Keys
 
 2. Create **Access Keys** for programmatic access:
 
 - Get the access key information of the newly created user
-  ![userAccesskey](/images/5/user2.png?width=91pc)
+  ![userAccesskey](/images/5-opensearch/5.2-vector_index/user2.png?width=91pc)
 - Add a **tag** with **Key** and **Value** as an **access key**
-  ![user2](/images/5/user3.png?width=91pc)
+  ![user2](/images/5-opensearch/5.2-vector_index/user3.png?width=91pc)
 
 {{% notice warning %}}
 **Important:** Save the Access Key ID and Secret Access Key securely - they will be needed for Postman authentication.
@@ -42,18 +42,18 @@ This section guides you through creating a vector index in OpenSearch Serverless
    - **Region**: us-east-1
    - **Service Name**: aoss
 
-   ![postman1](/images/5/postman1.png?width=91pc)
+   ![postman1](/images/5-opensearch/5.2-vector_index/postman1.png?width=91pc)
 
 #### Set Headers
 
 2. Configure request headers:
    - **Content-Type**: application/json
-     ![postman2](/images/5/postman2.png?width=91pc)
+     ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=91pc)
 
 #### Configure Request Body
 
 3. Set body type to **raw** and enter the following JSON:
-   ![postman3](/images/5/postman3.png?width=91pc)
+   ![postman3](/images/5-opensearch/5.2-vector_index5/postman3.png?width=91pc)
 
    ```json
    {
@@ -113,18 +113,18 @@ This section guides you through creating a vector index in OpenSearch Serverless
 
 4. Click **Send** to create the vector index
    - A successful response indicates the index was created
-     ![postman4](/images/5/postman4.png?width=91pc)
+     ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=91pc)
 
 #### Verify Index Creation
 
 5. Verify the index was created successfully in OpenSearch console:
 
    - **Index Name**: slack-bedrock-os-index5
-     ![opensearch17](/images/5/opensearch17.png?width=90pc)
+     ![opensearch17](/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc)
    - **Vector Field**: bedrock-knowledge-base-default-vector
-     ![opensearch18](/images/5/opensearch18.png?width=90pc)
+     ![opensearch18](/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc)
    - **Metadata Fields**: Available for document tracking
-     ![opensearch19](/images/5/opensearch19.png?width=90pc)
+     ![opensearch19](/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The vector index is configured with 1024 dimensions to match Amazon Titan Text Embeddings V2 model output and uses HNSW algorithm for efficient similarity search.

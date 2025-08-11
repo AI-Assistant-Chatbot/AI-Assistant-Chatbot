@@ -1,6 +1,6 @@
 ---
 title: "Tạo Vector Index"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 5.2 </b> "
@@ -13,16 +13,16 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
 #### Tạo Deployment User
 
 1. Tạo IAM user **bedrock-chatbot-deployer** với policy **AdministratorAccess**
-   ![user1](/images/5/user1.png?width=91pc)
+   ![user1](/images/5-opensearch/5.2-vector_index/user1.png?width=91pc)
 
 #### Tạo Access Keys
 
 2. Tạo **Access Keys** cho programmatic access:
 
 - Lấy thông tin access key của user mới tạo
-  ![userAccesskey](/images/5/user2.png?width=91pc)
+  ![userAccesskey](/images/5-opensearch/5.2-vector_index/user2.png?width=91pc)
 - Thêm **tag** với **Key** và **Value** như một **access key**
-  ![user2](/images/5/user3.png?width=91pc)
+  ![user2](/images/5-opensearch/5.2-vector_index/user3.png?width=91pc)
 
 {{% notice warning %}}
 **Quan trọng:** Lưu Access Key ID và Secret Access Key một cách an toàn - chúng sẽ cần thiết cho Postman authentication.
@@ -42,18 +42,18 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
    - **Region**: us-east-1
    - **Service Name**: aoss
 
-   ![postman1](/images/5/postman1.png?width=91pc)
+   ![postman1](/images/5-opensearch/5.2-vector_index/postman1.png?width=91pc)
 
 #### Thiết lập Headers
 
 2. Cấu hình request headers:
    - **Content-Type**: application/json
-     ![postman2](/images/5/postman2.png?width=91pc)
+     ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=91pc)
 
 #### Cấu hình Request Body
 
 3. Đặt body type thành **raw** và nhập JSON sau:
-   ![postman3](/images/5/postman3.png?width=91pc)
+   ![postman3](/images/5-opensearch/5.2-vector_index/postman3.png?width=91pc)
 
    ```json
    {
@@ -113,18 +113,18 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
 
 4. Nhấp **Send** để tạo vector index
    - Phản hồi thành công cho biết index đã được tạo
-     ![postman4](/images/5/postman4.png?width=91pc)
+     ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=91pc)
 
 #### Xác minh Index Creation
 
 5. Xác minh index đã được tạo thành công trong OpenSearch console:
 
    - **Index Name**: slack-bedrock-os-index5
-     ![opensearch17](/images/5/opensearch17.png?width=90pc)
+     ![opensearch17](/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc)
    - **Vector Field**: bedrock-knowledge-base-default-vector
-     ![opensearch18](/images/5/opensearch18.png?width=90pc)
+     ![opensearch18](/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc)
    - **Metadata Fields**: Có sẵn để tracking document
-     ![opensearch19](/images/5/opensearch19.png?width=90pc)
+     ![opensearch19](/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** Vector index được cấu hình với 1024 dimensions để khớp với Amazon Titan Text Embeddings V2 model output và sử dụng thuật toán HNSW cho similarity search hiệu quả.

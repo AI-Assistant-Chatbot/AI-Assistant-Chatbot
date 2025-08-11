@@ -1,6 +1,6 @@
 ---
 title: "Create and Configure Lambda Function"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 7.2 </b> "
@@ -17,12 +17,12 @@ This section guides you through creating the Lambda function and configuring it 
    - **Runtime**: Python 3.12
    - **Architecture**: x86_64
 
-   ![lambda5](/images/7/lambda5.png?width=90pc)
+   ![lambda5](/images/7-lambda_implementation/7.2-config_code/lambda5.png?width=90pc)
 
 **Attach IAM Role**
 
 2. Attach the IAM role **BedrockExecutionRole8888** (created in section 7.1) and click **Create**:
-   ![lambda6](/images/7/lambda6-.png?width=90pc)
+   ![lambda6](/images/7-lambda_implementation/7.2-config_code/lambda6-.png?width=90pc)
 
 #### Upload Function Code
 
@@ -34,12 +34,12 @@ This section guides you through creating the Lambda function and configuring it 
    - Go to **Code** tab → **Upload from** → **.zip file**
    - Select and upload the downloaded zip file
 
-   ![lambda7](/images/7/lambda7-.png?width=90pc)
+   ![lambda7](/images/7-lambda_implementation/7.2-config_code/lambda7-.png?width=90pc)
 
    - Select **Save**
-     ![lambda8](/images/7/lambda8.png?width=90pc)
+     ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
    - Upload successfully
-     ![lambda9](/images/7/lambda9-.png?width=90pc)
+     ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The zip file contains the Slack Bolt framework and all necessary dependencies for the bot functionality.
@@ -53,7 +53,7 @@ This section guides you through creating the Lambda function and configuring it 
 
    - **Handler**: `index.handler`
 
-   ![lambda11](/images/7/lambda11-.png?width=91pc)
+   ![lambda11](/images/7-lambda_implementation/7.2-config_code/lambda11-.png?width=91pc)
 
 **Adjust Performance Settings**
 
@@ -62,7 +62,7 @@ This section guides you through creating the Lambda function and configuring it 
    - **Memory**: 512 MB (recommended for Bedrock API calls)
    - **Timeout**: 5 minutes (allows time for Knowledge Base queries)
 
-   ![lambda13](/images/7/lambda13-.png?width=90pc)
+   ![lambda13](/images/7-lambda_implementation/7.2-config_code/lambda13-.png?width=90pc)
 
 #### Environment Variables
 
@@ -80,8 +80,8 @@ This section guides you through creating the Lambda function and configuring it 
    | `GUARDRAIL_ID`                   | `your-guardrail-id `                      | References your guardrail               |
    | `SLACK_SLASH_COMMAND`            | `/ask-ai`                                 | slash command created at the beginning  |
 
-   ![lambda14](/images/7/lambda14-.png?width=90pc)
-   ![lambda15](/images/7/lambda15-.png?width=90pc)
+   ![lambda14](/images/7-lambda_implementation/7.2-config_code/lambda14-.png?width=90pc)
+   ![lambda15](/images/7-lambda_implementation/7.2-config_code/lambda15-.png?width=90pc)
 
 **Required Values**
 

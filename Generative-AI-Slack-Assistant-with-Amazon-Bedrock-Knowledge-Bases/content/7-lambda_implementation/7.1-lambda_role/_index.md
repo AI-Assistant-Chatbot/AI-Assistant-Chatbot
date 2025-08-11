@@ -1,6 +1,6 @@
 ---
 title: "Create Lambda Execution Role"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 7.1 </b> "
@@ -18,7 +18,7 @@ This section guides you through creating an IAM role with the necessary permissi
    - **Use case**: Lambda
    - Attach **AWSLambdaBasicExecutionRole** managed policy
 
-   ![lambda1](/images/7/lambda1-.png?width=90pc)
+   ![lambda1](/images/7-lambda_implementation/7.1-lambda_role/lambda1-.png?width=90pc)
 
 #### Add Custom Policy
 
@@ -26,7 +26,7 @@ This section guides you through creating an IAM role with the necessary permissi
 
 2. Add a custom inline policy named **BedrockExecutionPolicy**:
 
-   ![lambda2](/images/7/lambda2-.png?width=90pc)
+   ![lambda2](/images/7-lambda_implementation/7.1-lambda_role/lambda2-.png?width=90pc)
 
 **Policy JSON Configuration**
 
@@ -76,8 +76,8 @@ This section guides you through creating an IAM role with the necessary permissi
    }
    ```
 
-   ![lambda3](/images/7/lambda3.png?width=90pc)
-   ![lambda4](/images/7/lambda2.png?width=91pc)
+   ![lambda3](/images/7-lambda_implementation/7.1-lambda_role/lambda3.png?width=90pc)
+   ![lambda4](/images/7-lambda_implementation/7.1-lambda_role/lambda2.png?width=91pc)
 
 #### Policy Permissions Explained
 

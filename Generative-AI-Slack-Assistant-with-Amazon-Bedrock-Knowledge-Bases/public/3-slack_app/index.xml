@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slack App Setup on AWS Account Setup</title>
-    <link>/3-slack_app/</link>
+    <link>//localhost:1313/3-slack_app/</link>
     <description>Recent content in Slack App Setup on AWS Account Setup</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="/3-slack_app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/3-slack_app/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -11,23 +11,23 @@ AWS Systems Manager Parameter Store cung cấp runtime secret resolution bằng 
 #### Truy cập Parameter Store
 
 1. Điều hướng đến [AWS Systems Manager Console](https://console.aws.amazon.com/systems-manager/)
-   ![ssm1](/images/4/ssm1.png?width=90pc)
+   ![ssm1](/images/4-security/4.2-systems_manager/ssm1.png?width=90pc)
 
 #### Tạo Bot Token Parameter
 
 2. Tạo parameter cho **bot-token5**:
 
    - Nhấp **Create parameter**
-     ![ssm2](/images/4/ssm2.png?width=91pc)
+     ![ssm2](/images/4-security/4.2-systems_manager/ssm2.png?width=91pc)
    - **Name**: `/slack/bot-token5/parameter5`
 
-   ![ssm3](/images/4/ssm3.png?width=91pc)
+   ![ssm3](/images/4-security/4.2-systems_manager/ssm3.png?width=91pc)
 
    - **Type**: String
    - **Value**: `slack/bot-token5`
-     ![ssm4](/images/4/ssm4.png?width=91pc)
+     ![ssm4](/images/4-security/4.2-systems_manager/ssm4.png?width=91pc)
    - Tạo thành công
-     ![ssm5](/images/4/ssm5.png?width=91pc)
+     ![ssm5](/images/4-security/4.2-systems_manager/ssm5.png?width=91pc)
 
 #### Tạo Signing Secret Parameter
 
@@ -35,12 +35,12 @@ AWS Systems Manager Parameter Store cung cấp runtime secret resolution bằng 
 
    - Nhấp **Create parameter**
    - **Name**: `/slack/signing-secret5/parameter5`
-     ![ssm6](/images/4/ssm6.png?width=91pc)
+     ![ssm6](/images/4-security/4.2-systems_manager/ssm6.png?width=91pc)
    - **Type**: String
    - **Value**: `slack/signing-secret5`
-     ![ssm7](/images/4/ssm7.png?width=91pc)
+     ![ssm7](/images/4-security/4.2-systems_manager/ssm7.png?width=91pc)
      - Tạo thành công
-     ![ssm8](/images/4/ssm8.png?width=91pc)
+     ![ssm8](/images/4-security/4.2-systems_manager/ssm8.png?width=91pc)
 
 #### Ghi chú Parameter ARNs
 
@@ -48,10 +48,10 @@ AWS Systems Manager Parameter Store cung cấp runtime secret resolution bằng 
 
    - Signing secret ARN: `arn:aws:ssm:region:account:parameter/slack/signing-secret5/parameter5`
 
-   ![ssm9](/images/4/ssm9.png?width=91pc)
+   ![ssm9](/images/4-security/4.2-systems_manager/ssm9.png?width=91pc)
 
    - Bot token ARN: `arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5`
-     ![ssm10](/images/4/ssm10.png?width=91pc)
+     ![ssm10](/images/4-security/4.2-systems_manager/ssm10.png?width=91pc)
 
 #### Tiếp theo là gì
 

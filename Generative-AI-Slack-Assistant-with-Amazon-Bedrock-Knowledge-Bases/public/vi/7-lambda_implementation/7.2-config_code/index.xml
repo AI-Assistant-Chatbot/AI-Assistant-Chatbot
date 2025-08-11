@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tạo và Cấu hình Lambda Function on Thiết lập AWS Account</title>
-    <link>/vi/7-lambda_implementation/7.2-config_code/</link>
+    <link>//localhost:1313/vi/7-lambda_implementation/7.2-config_code/</link>
     <description>Recent content in Tạo và Cấu hình Lambda Function on Thiết lập AWS Account</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/7-lambda_implementation/7.2-config_code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/vi/7-lambda_implementation/7.2-config_code/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 1. </b> "
@@ -63,7 +63,7 @@ Bằng cách hoàn thành workshop này, bạn sẽ đạt được các kết q
 
 #### Kiến trúc SlackBot
 
-![AI-Assistant](/images/1/AI-Assistant.png?width=90pc)
+![AI-Assistant](/images/1-introduction/AI-Assistant.png?width=90pc)
 
 #### Sơ đồ Luồng Kiến trúc
 

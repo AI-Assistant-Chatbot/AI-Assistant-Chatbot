@@ -1,6 +1,6 @@
 ---
 title: "Create slash commands"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 3.2 </b> "
@@ -10,7 +10,7 @@ pre: " <b> 3.2 </b> "
 
 1. In your app settings, click **Slash Commands** → **Create New Command**
 
-![slackCommand1](/images/3/slashCommand1.png?width=90pc)
+![slackCommand1](/images/3-slack_app/3.2-create_slash_commands/slashCommand1.png?width=90pc)
 
 #### Configure Command Details
 
@@ -21,7 +21,7 @@ pre: " <b> 3.2 </b> "
    - **Short Description**:`test bedrock`
    - **Usage Hint**: `[your question about AWS]`
 
-![slackCommand2](/images/3/slashCommand2.png?width=90pc)
+![slackCommand2](/images/3-slack_app/3.2-create_slash_commands/slashCommand2.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The Request URL is temporary. We'll update it with the actual API Gateway URL after deploying our AWS infrastructure.
@@ -31,7 +31,7 @@ pre: " <b> 3.2 </b> "
 
 3. Click **Save** to create the slash command successfully
 
-![slackCommand3](/images/3/slashCommand3.png?width=90pc)
+![slackCommand3](/images/3-slack_app/3.2-create_slash_commands/slashCommand3.png?width=90pc)
 
 #### What's Next
 

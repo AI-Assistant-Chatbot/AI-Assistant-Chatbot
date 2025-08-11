@@ -1,6 +1,6 @@
 ---
 title: "Thiết lập Slack App"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 3
 chapter: false
 pre: " <b> 3. </b> "

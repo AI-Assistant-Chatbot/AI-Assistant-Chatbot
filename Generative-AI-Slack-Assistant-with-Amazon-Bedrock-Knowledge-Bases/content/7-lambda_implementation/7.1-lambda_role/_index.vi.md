@@ -1,6 +1,6 @@
 ---
 title: "Tạo Lambda Execution Role"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 7.1 </b> "
@@ -18,7 +18,7 @@ Phần này hướng dẫn bạn tạo IAM role với các quyền cần thiết
    - **Use case**: Lambda
    - Attach **AWSLambdaBasicExecutionRole** managed policy
 
-   ![lambda1](/images/7/lambda1-.png?width=90pc)
+   ![lambda1](/images/7-lambda_implementation/7.1-lambda_role/lambda1-.png?width=90pc)
 
 #### Thêm Custom Policy
 
@@ -26,7 +26,7 @@ Phần này hướng dẫn bạn tạo IAM role với các quyền cần thiết
 
 2. Thêm custom inline policy tên **BedrockExecutionPolicy**:
 
-   ![lambda2](/images/7/lambda2-.png?width=90pc)
+   ![lambda2](/images/7-lambda_implementation/7.1-lambda_role/lambda2-.png?width=90pc)
 
 **Cấu hình Policy JSON**
 
@@ -76,8 +76,8 @@ Phần này hướng dẫn bạn tạo IAM role với các quyền cần thiết
    }
    ```
 
-   ![lambda3](/images/7/lambda3.png?width=90pc)
-   ![lambda4](/images/7/lambda2.png?width=91pc)
+   ![lambda3](/images/7-lambda_implementation/7.1-lambda_role/lambda3.png?width=90pc)
+   ![lambda4](/images/7-lambda_implementation/7.1-lambda_role/lambda2.png?width=91pc)
 
 #### Giải thích Policy Permissions
 

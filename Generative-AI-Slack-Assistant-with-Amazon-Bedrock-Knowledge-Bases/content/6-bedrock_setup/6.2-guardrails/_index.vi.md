@@ -1,6 +1,6 @@
 ---
 title: "Thiết lập Guardrails"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 6.2 </b> "
@@ -30,14 +30,14 @@ Trước khi thiết lập guardrails, đảm bảo bạn có:
 - Nhấp nút **Create guardrail**
 - Điều này sẽ bắt đầu guardrail configuration wizard
 
-![guardrail1](/images/6/guardrail1.png?width=90pc)
+![guardrail1](/images/6-bedrock_setup/6.2-guardrails/guardrail1.png?width=90pc)
 
 **2. Tạo Guardrail Mới**
 
 - **Name**: `slack-ai-assistant-guardrail`
 - **Description**: `Guardrail for Slack AI Assistant to filter harmful content and protect sensitive information`
 
-![guardrail2](/images/6/guardrail2.png?width=90pc)
+![guardrail2](/images/6-bedrock_setup/6.2-guardrails/guardrail2.png?width=90pc)
 
 ---
 
@@ -53,14 +53,14 @@ Cấu hình filters cho các loại nội dung có hại khác nhau:
 - **Violence**: `High` - Lọc nội dung bạo lực
 - **Misconduct**: `Medium` - Chặn nội dung hành vi phi đạo đức
 
-![guardrail3](/images/6/guardrail3.png?width=90pc)
+![guardrail3](/images/6-bedrock_setup/6.2-guardrails/guardrail3.png?width=90pc)
 
 ---
 
 **2. Thiết lập Prompt Attacks**
 
 - **Prompt Attacks**: `High` - Ngăn chặn prompt injection attacks
-  ![guardrail4](/images/6/guardrail4.png?width=90pc)
+  ![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
 
 ---
 
@@ -74,15 +74,15 @@ Thêm các từ hoặc cụm từ cụ thể để chặn:
 - **Custom Words**: Thêm các thuật ngữ cụ thể của công ty để tránh
 - **Sensitive Terms**: Chặn tên mã nội bộ hoặc thuật ngữ bí mật
 
-![guardrail5](/images/6/guardrail5.png?width=90pc)
+![guardrail5](/images/6-bedrock_setup/6.2-guardrails/guardrail5.png?width=90pc)
 
-![guardrail6](/images/6/guardrail6.png?width=90pc)
+![guardrail6](/images/6-bedrock_setup/6.2-guardrails/guardrail6.png?width=90pc)
 
 ---
 
 - Lưu **ARN** và **ID**
 
-![guardrail7](/images/6/guardrail7.png?width=91pc)
+![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=91pc)
 
 ---
 

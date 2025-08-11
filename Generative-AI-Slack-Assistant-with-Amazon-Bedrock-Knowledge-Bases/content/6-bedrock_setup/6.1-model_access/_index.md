@@ -1,6 +1,6 @@
 ---
 title: "Setup Model Access"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 1
 chapter: false
 pre: " <b> 6.1 </b> "
@@ -20,17 +20,17 @@ For this workshop, you need access to:
 #### Access Bedrock Console
 
 1. Navigate to [Amazon Bedrock Console](https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/overview)
-   ![modelAccess0](/images/6/modelAccess0.png?width=91pc)
+   ![modelAccess0](/images/6-bedrock_setup/6.1-model_access/modelAccess0.png?width=91pc)
 
 #### Navigate to Model Access
 
 2. Scroll down to the bottom of the **navigation sidebar** and choose **Model access**
-   ![modelAccess1](/images/6/modelAccess10a.png?width=90pc)
+   ![modelAccess1](/images/6-bedrock_setup/6.1-model_access/modelAccess10a.png?width=90pc)
 
 #### Modify Model Access
 
 3. Click **Modify model access**
-   ![modelAccess2](/images/6/modelAccess20b.png?width=91pc)
+   ![modelAccess2](/images/6-bedrock_setup/6.1-model_access/modelAccess20b.png?width=91pc)
 
 #### Select Required Models
 
@@ -39,11 +39,11 @@ For this workshop, you need access to:
    - ✅ **Amazon Titan Text Embeddings V2**
    - ✅ **Anthropic Claude 3 Sonnet**
 
-   ![modelAccess3](/images/6/modelAccess30a.png?width=91pc)
-   ![modelAccess4](/images/6/modelAccess40a.png?width=91pc)
+   ![modelAccess3](/images/6-bedrock_setup/6.1-model_access/modelAccess30a.png?width=91pc)
+   ![modelAccess4](/images/6-bedrock_setup/6.1-model_access/modelAccess40a.png?width=91pc)
 
    - Click **Next** to proceed
-     ![modelAccess5](/images/6/modelAccess50a.png?width=91pc)
+     ![modelAccess5](/images/6-bedrock_setup/6.1-model_access/modelAccess50a.png?width=91pc)
 
 #### Submit Access Request
 
@@ -52,7 +52,7 @@ For this workshop, you need access to:
    - Access requests are typically approved instantly for these models
    - Wait a few minutes for the access to be granted
 
-   ![modelAccess6](/images/6/modelAccess60a.png?width=91pc)
+   ![modelAccess6](/images/6-bedrock_setup/6.1-model_access/modelAccess60a.png?width=91pc)
 
 #### Verify Model Access
 
@@ -61,8 +61,8 @@ For this workshop, you need access to:
    - ✅ **Amazon Titan Text Embeddings V2**: Access granted
    - ✅ **Anthropic Claude 3 Sonnet**: Access granted
 
-   ![modelAccess7](/images/6/modelAccess70a.png?width=91pc)
-   ![modelAccess8](/images/6/modelAccess80a.png?width=90pc)
+   ![modelAccess7](/images/6-bedrock_setup/6.1-model_access/modelAccess70a.png?width=91pc)
+   ![modelAccess8](/images/6-bedrock_setup/6.1-model_access/modelAccess80a.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Model access is typically granted immediately for Titan and Claude models. If you encounter delays, ensure your AWS account is in good standing.

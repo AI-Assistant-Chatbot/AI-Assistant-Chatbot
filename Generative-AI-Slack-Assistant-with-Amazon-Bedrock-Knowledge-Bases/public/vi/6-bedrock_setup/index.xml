@@ -2,10 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thiết lập Bedrock on Thiết lập AWS Account</title>
-    <link>/vi/6-bedrock_setup/</link>
+    <link>//localhost:1313/vi/6-bedrock_setup/</link>
     <description>Recent content in Thiết lập Bedrock on Thiết lập AWS Account</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="/vi/6-bedrock_setup/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="//localhost:1313/vi/6-bedrock_setup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

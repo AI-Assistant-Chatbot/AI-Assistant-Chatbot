@@ -1,6 +1,6 @@
 ---
 title: "Tạo slash commands"
-date: "`r Sys.Date()`"
+date: "2025-06-30"
 weight: 2
 chapter: false
 pre: " <b> 3.2 </b> "
@@ -10,7 +10,7 @@ pre: " <b> 3.2 </b> "
 
 1. Trong cài đặt app của bạn, nhấp **Slash Commands** → **Create New Command**
 
-![slackCommand1](/images/3/slashCommand1.png?width=90pc)
+![slackCommand1](/images/3-slack_app/3.2-create_slash_commands/slashCommand1.png?width=90pc)
 
 #### Cấu hình Chi tiết Command
 
@@ -21,7 +21,7 @@ pre: " <b> 3.2 </b> "
    - **Short Description**:`test bedrock`
    - **Usage Hint**: `[câu hỏi của bạn về AWS]`
 
-![slackCommand2](/images/3/slashCommand2.png?width=90pc)
+![slackCommand2](/images/3-slack_app/3.2-create_slash_commands/slashCommand2.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** Request URL là tạm thời. Chúng ta sẽ cập nhật nó với URL API Gateway thực tế sau khi triển khai cơ sở hạ tầng AWS.
@@ -31,7 +31,7 @@ pre: " <b> 3.2 </b> "
 
 3. Nhấp **Save** để tạo slash command thành công
 
-![slackCommand3](/images/3/slashCommand3.png?width=90pc)
+![slackCommand3](/images/3-slack_app/3.2-create_slash_commands/slashCommand3.png?width=90pc)
 
 #### Tiếp theo là gì
 
