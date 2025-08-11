@@ -21,13 +21,13 @@ This final module connects all components together by creating an API Gateway en
 
    - **API Type**: REST API
 
-   ![api1](/images/8-api_gateway/api1.png?width=91pc)
+   ![api1](/images/8-api_gateway/api1.png?width=90pc)
 
    - **API Name**: `slack-bedrock-api5`
    - **Description**: API for Slack AI Assistant
-     ![api2](/images/8-api_gateway/api2.png?width=91pc)
+     ![api2](/images/8-api_gateway/api2.png?width=90pc)
    - Create successfully
-     ![api2](/images/8-api_gateway/api2-.png?width=91pc)
+     ![api2](/images/8-api_gateway/api2-.png?width=90pc)
 
 **Create Resource Structure**
 
@@ -36,7 +36,7 @@ This final module connects all components together by creating an API Gateway en
    - **Resource Name**: slack
    - **Resource Path**: /
 
-   ![api3](/images/8-api_gateway/api3.png?width=91pc)
+   ![api3](/images/8-api_gateway/api3.png?width=90pc)
 
 4. Create a sub-resource named **ask-aws**:
 
@@ -44,12 +44,12 @@ This final module connects all components together by creating an API Gateway en
    - **Resource Name**: ask-ai
    - **Resource Path**: /slack/ask-ai
 
-   ![api4](/images/8-api_gateway/api4.png?width=91pc)
+   ![api4](/images/8-api_gateway/api4.png?width=90pc)
 
 **Configure Method**
 
 5. Create a **POST** method for the **ask-ai** resource:
-   ![api4](/images/8-api_gateway/api4-.png?width=91pc)
+   ![api4](/images/8-api_gateway/api4-.png?width=90pc)
 
 6. Configure method settings:
 
@@ -58,7 +58,7 @@ This final module connects all components together by creating an API Gateway en
    - **Lambda Function**: `BedrockKBSlackbotFunction5`
    - **Use Default Timeout**: ✅ **Enabled**
 
-   ![api5](/images/8-api_gateway/api5.png?width=91pc)
+   ![api5](/images/8-api_gateway/api5.png?width=90pc)
 
    - Method **POST** created successfully
      ![api6](/images/8-api_gateway/api6.png?width=90pc)
@@ -107,18 +107,18 @@ This final module connects all components together by creating an API Gateway en
    - Command: `/ask-ai How do i create an index in PostgreSQL and when should i use one?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
 
-   ![test1](/images/8-api_gateway/test1.png?width=91pc)
+   ![test1](/images/8-api_gateway/test1.png?width=90pc)
 
    - Command: `/ask-aws What are the main data types used in PostgreSQL?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
-     ![test2](/images/8-api_gateway/test2.png?width=91pc)
+     ![test2](/images/8-api_gateway/test2.png?width=90pc)
 
 **Guardrails Protection**
 
 2. **Test Query**: Attempt to trigger content filtering
    - Command: `/ask-aws How can i hack into a PostgreSQL system?`
    - **Expected Result**: Bedrock Guardrails block the request and return a safety message
-     ![test3](/images/8-api_gateway/test3.png?width=91pc)
+     ![test3](/images/8-api_gateway/test3.png?width=90pc)
 
 **Information Not Available**
 
@@ -127,8 +127,8 @@ This final module connects all components together by creating an API Gateway en
    - Command: `/ask-aws Tell me something inappropriate`
    - **Expected Result**: Ask about content not in your Knowledge Base
 
-   ![test4](/images/8-api_gateway/test4.png?width=91pc)
-   ![test5](/images/8-api_gateway/test5.png?width=91pc)
+   ![test4](/images/8-api_gateway/test4.png?width=90pc)
+   ![test5](/images/8-api_gateway/test5.png?width=90pc)
 
 #### Testing Checklist
 

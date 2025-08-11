@@ -27,7 +27,7 @@ Follow this specific order to avoid dependency conflicts:
    - Click **Actions** → **Delete API**
    - Confirm deletion
 
-   ![test13](/images/9-clean_resources/clear13.png?width=91pc)
+   ![test13](/images/9-clean_resources/clear13.png?width=90pc)
 
 **Delete Lambda Function**
 
@@ -38,7 +38,7 @@ Follow this specific order to avoid dependency conflicts:
    - Click **Actions** → **Delete**
    - Confirm deletion
 
-   ![test12](/images/9-clean_resources/clear12.png?width=91pc)
+   ![test12](/images/9-clean_resources/clear12.png?width=90pc)
 
 **Delete Bedrock Knowledge Base**
 
@@ -48,14 +48,14 @@ Follow this specific order to avoid dependency conflicts:
    - **First**: Delete all objects in the bucket
    - **Then**: Delete the bucket itself
    - Confirm deletion
-     ![clear1](/images/9-clean_resources/clear1.png?width=91pc)
-     ![clear2](/images/9-clean_resources/clear2.png?width=91pc)
+     ![clear1](/images/9-clean_resources/clear1.png?width=90pc)
+     ![clear2](/images/9-clean_resources/clear2.png?width=90pc)
    - Navigate to Bedrock Console
    - Go to **Knowledge bases**
    - Select your knowledge base
    - Click **Delete**
    - Confirm deletion
-     ![clear3](/images/9-clean_resources/clear3.png?width=91pc)
+     ![clear3](/images/9-clean_resources/clear3.png?width=90pc)
 
 {{% notice info %}}
 **Note:** Wait for the Knowledge Base deletion to complete before proceeding to OpenSearch cleanup.
@@ -70,7 +70,7 @@ Follow this specific order to avoid dependency conflicts:
    - Use Postman or AWS CLI to delete the index
    - DELETE request to: `https://your-collection-endpoint/slack-bedrock-os-index5`
 
-   ![clear7](/images/9-clean_resources/clear4.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear4.png?width=90pc)
 
    **b) Delete Collection:**
 
@@ -78,21 +78,21 @@ Follow this specific order to avoid dependency conflicts:
    - Select **Collections**
    - Delete `slack-bedrock-vector-db5`
 
-   ![clear7](/images/9-clean_resources/clear5.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear5.png?width=90pc)
 
    **c) Delete Data Access Policy:**
 
    - Go to **Data access policies**
    - Delete your access policy
 
-   ![clear7](/images/9-clean_resources/clear6.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear6.png?width=90pc)
 
    **d) Delete Network Policy:**
 
    - Go to **Network policies**
    - Delete your network policy
 
-   ![clear7](/images/9-clean_resources/clear7.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear7.png?width=90pc)
 
 **Delete Security Resources**
 
@@ -103,8 +103,8 @@ Follow this specific order to avoid dependency conflicts:
    - Delete `slack/signing-secret5`
    - Confirm immediate deletion (skip recovery period)
 
-   ![clear8](/images/9-clean_resources/clear8.png?width=91pc)
-   ![clear9](/images/9-clean_resources/clear9.png?width=91pc)
+   ![clear8](/images/9-clean_resources/clear8.png?width=90pc)
+   ![clear9](/images/9-clean_resources/clear9.png?width=90pc)
 
 6. **Delete Systems Manager Parameters**:
 
@@ -113,8 +113,8 @@ Follow this specific order to avoid dependency conflicts:
    - Delete `/slack/bot-token5/parameter5`
    - Delete `/slack/signing-secret5/parameter5`
 
-   ![clear10](/images/9-clean_resources/clear10.png?width=91pc)
-   ![clear11](/images/9-clean_resources/clear11.png?width=91pc)
+   ![clear10](/images/9-clean_resources/clear10.png?width=90pc)
+   ![clear11](/images/9-clean_resources/clear11.png?width=90pc)
 
 **Clean Up IAM Resources**
 

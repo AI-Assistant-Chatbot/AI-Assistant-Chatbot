@@ -41,10 +41,10 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 #### Create Knowledge Base
 
 2. Navigate to **Knowledge base** in the sidebar
-   ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=91pc)
+   ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=90pc)
 
 3. Click **Create** → **Knowledge Base with vector store**
-   ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=91pc)
+   ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=90pc)
 
 #### Configure Knowledge Base Settings
 
@@ -59,14 +59,14 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
    **Data Source:**
 
    - **Data source type**: Amazon S3
-     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=91pc)
+     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
 
    **S3 Configuration:**
 
    - Select your created S3 bucket
    - Use default chunking strategy
      ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
-     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=91pc)
+     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
 
    **Embeddings Model:**
 
@@ -87,7 +87,7 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
      ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
    - **Text field name**: `AMAZON_BEDROCK_TEXT_CHUNK`
    - **Metadata field name**:`AMAZON_BEDROCK_METADATA`
-     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=91pc)
+     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
 
 #### Complete Creation
 

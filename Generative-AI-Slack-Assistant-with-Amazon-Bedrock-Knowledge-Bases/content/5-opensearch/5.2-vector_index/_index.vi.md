@@ -13,16 +13,16 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
 #### Tạo Deployment User
 
 1. Tạo IAM user **bedrock-chatbot-deployer** với policy **AdministratorAccess**
-   ![user1](/images/5-opensearch/5.2-vector_index/user1.png?width=91pc)
+   ![user1](/images/5-opensearch/5.2-vector_index/user1.png?width=90pc)
 
 #### Tạo Access Keys
 
 2. Tạo **Access Keys** cho programmatic access:
 
 - Lấy thông tin access key của user mới tạo
-  ![userAccesskey](/images/5-opensearch/5.2-vector_index/user2.png?width=91pc)
+  ![userAccesskey](/images/5-opensearch/5.2-vector_index/user2.png?width=90pc)
 - Thêm **tag** với **Key** và **Value** như một **access key**
-  ![user2](/images/5-opensearch/5.2-vector_index/user3.png?width=91pc)
+  ![user2](/images/5-opensearch/5.2-vector_index/user3.png?width=90pc)
 
 {{% notice warning %}}
 **Quan trọng:** Lưu Access Key ID và Secret Access Key một cách an toàn - chúng sẽ cần thiết cho Postman authentication.
@@ -42,18 +42,18 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
    - **Region**: us-east-1
    - **Service Name**: aoss
 
-   ![postman1](/images/5-opensearch/5.2-vector_index/postman1.png?width=91pc)
+   ![postman1](/images/5-opensearch/5.2-vector_index/postman1.png?width=90pc)
 
 #### Thiết lập Headers
 
 2. Cấu hình request headers:
    - **Content-Type**: application/json
-     ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=91pc)
+     ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=90pc)
 
 #### Cấu hình Request Body
 
 3. Đặt body type thành **raw** và nhập JSON sau:
-   ![postman3](/images/5-opensearch/5.2-vector_index/postman3.png?width=91pc)
+   ![postman3](/images/5-opensearch/5.2-vector_index/postman3.png?width=90pc)
 
    ```json
    {
@@ -113,7 +113,7 @@ Phần này hướng dẫn bạn tạo vector index trong OpenSearch Serverless 
 
 4. Nhấp **Send** để tạo vector index
    - Phản hồi thành công cho biết index đã được tạo
-     ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=91pc)
+     ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=90pc)
 
 #### Xác minh Index Creation
 

@@ -82,7 +82,7 @@ Thêm các từ hoặc cụm từ cụ thể để chặn:
 
 - Lưu **ARN** và **ID**
 
-![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=91pc)
+![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=90pc)
 
 ---
 

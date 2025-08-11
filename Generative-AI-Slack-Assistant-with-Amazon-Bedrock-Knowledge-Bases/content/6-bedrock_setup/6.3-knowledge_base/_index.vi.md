@@ -41,10 +41,10 @@ Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data sour
 #### Tạo Knowledge Base
 
 2. Điều hướng đến **Knowledge base** trong sidebar
-   ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=91pc)
+   ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=90pc)
 
 3. Nhấp **Create** → **Knowledge Base with vector store**
-   ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=91pc)
+   ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=90pc)
 
 #### Cấu hình Knowledge Base Settings
 
@@ -59,14 +59,14 @@ Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data sour
    **Data Source:**
 
    - **Data source type**: Amazon S3
-     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=91pc)
+     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
 
    **Cấu hình S3:**
 
    - Chọn S3 bucket đã tạo của bạn
    - Sử dụng chunking strategy mặc định
      ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
-     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=91pc)
+     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
 
    **Embeddings Model:**
 
@@ -87,7 +87,7 @@ Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data sour
      ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
    - **Text field name**: `AMAZON_BEDROCK_TEXT_CHUNK`
    - **Metadata field name**:`AMAZON_BEDROCK_METADATA`
-     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=91pc)
+     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
 
 #### Hoàn thành Creation
 

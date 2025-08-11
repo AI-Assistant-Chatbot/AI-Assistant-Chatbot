@@ -57,7 +57,7 @@ Kết thúc module này, bạn sẽ có:
 - **Tên channel** (ví dụ: "#ai-assistant")
 - **Lời mời thành viên nhóm** (tùy chọn cho workshop)
 
-![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=91pc)
+![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Giữ tên workspace đơn giản và liên quan đến workshop. Bạn sẽ sử dụng workspace này để kiểm thử trợ lý AI.

@@ -82,7 +82,7 @@ Add specific words or phrases to block:
 
 - Save **ARN** and **ID**
 
-![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=91pc)
+![guardrail7](/images/6-bedrock_setup/6.2-guardrails/guardrail7.png?width=90pc)
 
 ---
 

@@ -77,7 +77,7 @@ Phần này hướng dẫn bạn tạo IAM role với các quyền cần thiết
    ```
 
    ![lambda3](/images/7-lambda_implementation/7.1-lambda_role/lambda3.png?width=90pc)
-   ![lambda4](/images/7-lambda_implementation/7.1-lambda_role/lambda2.png?width=91pc)
+   ![lambda4](/images/7-lambda_implementation/7.1-lambda_role/lambda2.png?width=90pc)
 
 #### Giải thích Policy Permissions
 

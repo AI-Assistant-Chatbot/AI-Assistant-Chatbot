@@ -923,13 +923,13 @@
 <ul>
 <li><strong>API Type</strong>: REST API</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/api1.png?width=91pc" alt="api1"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/api1.png?width=90pc" alt="api1"></p>
 <ul>
 <li><strong>API Name</strong>: <code>slack-bedrock-api5</code></li>
 <li><strong>Description</strong>: API for Slack AI Assistant<br>
-<img src="//localhost:1313/images/8-api_gateway/api2.png?width=91pc" alt="api2"></li>
+<img src="//localhost:1313/images/8-api_gateway/api2.png?width=90pc" alt="api2"></li>
 <li>Create successfully<br>
-<img src="//localhost:1313/images/8-api_gateway/api2-.png?width=91pc" alt="api2"></li>
+<img src="//localhost:1313/images/8-api_gateway/api2-.png?width=90pc" alt="api2"></li>
 </ul>
 </li>
 </ol>
@@ -941,7 +941,7 @@
 <li><strong>Resource Name</strong>: slack</li>
 <li><strong>Resource Path</strong>: /</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/api3.png?width=91pc" alt="api3"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/api3.png?width=90pc" alt="api3"></p>
 </li>
 <li>
 <p>Create a sub-resource named <strong>ask-aws</strong>:</p>
@@ -950,14 +950,14 @@
 <li><strong>Resource Name</strong>: ask-ai</li>
 <li><strong>Resource Path</strong>: /slack/ask-ai</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/api4.png?width=91pc" alt="api4"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/api4.png?width=90pc" alt="api4"></p>
 </li>
 </ol>
 <p><strong>Configure Method</strong></p>
 <ol start="5">
 <li>
 <p>Create a <strong>POST</strong> method for the <strong>ask-ai</strong> resource:<br>
-<img src="//localhost:1313/images/8-api_gateway/api4-.png?width=91pc" alt="api4"></p>
+<img src="//localhost:1313/images/8-api_gateway/api4-.png?width=90pc" alt="api4"></p>
 </li>
 <li>
 <p>Configure method settings:</p>
@@ -967,7 +967,7 @@
 <li><strong>Lambda Function</strong>: <code>BedrockKBSlackbotFunction5</code></li>
 <li><strong>Use Default Timeout</strong>: ✅ <strong>Enabled</strong></li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/api5.png?width=91pc" alt="api5"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/api5.png?width=90pc" alt="api5"></p>
 <ul>
 <li>Method <strong>POST</strong> created successfully<br>
 <img src="//localhost:1313/images/8-api_gateway/api6.png?width=90pc" alt="api6"></li>
@@ -1023,11 +1023,11 @@
 <li>Command: <code>/ask-ai How do i create an index in PostgreSQL and when should i use one?</code></li>
 <li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/test1.png?width=91pc" alt="test1"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/test1.png?width=90pc" alt="test1"></p>
 <ul>
 <li>Command: <code>/ask-aws What are the main data types used in PostgreSQL?</code></li>
 <li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer<br>
-<img src="//localhost:1313/images/8-api_gateway/test2.png?width=91pc" alt="test2"></li>
+<img src="//localhost:1313/images/8-api_gateway/test2.png?width=90pc" alt="test2"></li>
 </ul>
 </li>
 </ol>
@@ -1037,7 +1037,7 @@
 <ul>
 <li>Command: <code>/ask-aws How can i hack into a PostgreSQL system?</code></li>
 <li><strong>Expected Result</strong>: Bedrock Guardrails block the request and return a safety message<br>
-<img src="//localhost:1313/images/8-api_gateway/test3.png?width=91pc" alt="test3"></li>
+<img src="//localhost:1313/images/8-api_gateway/test3.png?width=90pc" alt="test3"></li>
 </ul>
 </li>
 </ol>
@@ -1049,8 +1049,8 @@
 <li>Command: <code>/ask-aws Tell me something inappropriate</code></li>
 <li><strong>Expected Result</strong>: Ask about content not in your Knowledge Base</li>
 </ul>
-<p><img src="//localhost:1313/images/8-api_gateway/test4.png?width=91pc" alt="test4"><br>
-<img src="//localhost:1313/images/8-api_gateway/test5.png?width=91pc" alt="test5"></p>
+<p><img src="//localhost:1313/images/8-api_gateway/test4.png?width=90pc" alt="test4"><br>
+<img src="//localhost:1313/images/8-api_gateway/test5.png?width=90pc" alt="test5"></p>
 </li>
 </ol>
 <h4 id="testing-checklist">Testing Checklist</h4>

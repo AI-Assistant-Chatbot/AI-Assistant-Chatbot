@@ -57,7 +57,7 @@ By the end of this module, you will have:
 - **Channel name** (e.g., "#ai-assistant")
 - **Team member invitations** (optional for workshop)
 
-![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=91pc)
+![slackWorkSpace4](/images/2-environment-setup/slackWorkSpace4.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Keep your workspace name simple and related to the workshop. You'll use this workspace to test your AI assistant.

@@ -53,7 +53,7 @@ This section guides you through creating the Lambda function and configuring it 
 
    - **Handler**: `index.handler`
 
-   ![lambda11](/images/7-lambda_implementation/7.2-config_code/lambda11-.png?width=91pc)
+   ![lambda11](/images/7-lambda_implementation/7.2-config_code/lambda11-.png?width=90pc)
 
 **Adjust Performance Settings**
 

@@ -43,7 +43,7 @@ Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để l�
      }
    ]
    ```
-   ![opensearch10](/images/5-opensearch/5.1-collection/opensearch10.png?width=91pc)
+   ![opensearch10](/images/5-opensearch/5.1-collection/opensearch10.png?width=90pc)
 
 {{% notice warning %}}
 **Quan trọng:** Thay thế `<YOUR-ACCOUNT-ID>` bằng AWS account ID thực tế của bạn.
@@ -91,7 +91,7 @@ Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để l�
 
      - **Collection name**: `slack-bedrock-vector-db5`
      - **Collection type**: Vector search
-       ![opensearch4](/images/5-opensearch/5.1-collection/opensearch4.png?width=91pc)
+       ![opensearch4](/images/5-opensearch/5.1-collection/opensearch4.png?width=90pc)
      - **Security**: Standard create
        ![opensearch5](/images/5-opensearch/5.1-collection/opensearch5.png?width=90pc)
 
@@ -104,8 +104,8 @@ Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để l�
    - **Collection ARN**: `arn:aws:aoss:us-east-1:account:collection/collection-id`
    - **OpenSearch Endpoint**: `https://collection-id.us-east-1.aoss.amazonaws.com`
 
-   ![opensearch14](/images/5-opensearch/5.1-collection/opensearch14.png?width=91pc)
-   ![opensearch15](/images/5-opensearch/5.1-collection/opensearch15.png?width=91pc)
+   ![opensearch14](/images/5-opensearch/5.1-collection/opensearch14.png?width=90pc)
+   ![opensearch15](/images/5-opensearch/5.1-collection/opensearch15.png?width=90pc)
 
    - Bước tiếp theo là tạo index table.
      ![opensearch16](/images/5-opensearch/5.1-collection/opensearch16.png?width=90pc)
