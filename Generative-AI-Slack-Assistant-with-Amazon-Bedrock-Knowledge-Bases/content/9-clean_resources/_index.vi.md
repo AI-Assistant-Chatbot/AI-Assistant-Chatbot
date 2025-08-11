@@ -27,7 +27,7 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Nhấp **Actions** → **Delete API**
    - Xác nhận deletion
 
-   ![test13](/images/9/clear13.png?width=91pc)
+   ![test13](/images/9-clean_resources/clear13.png?width=91pc)
 
 **Xóa Lambda Function**
 
@@ -38,7 +38,7 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Nhấp **Actions** → **Delete**
    - Xác nhận deletion
 
-   ![test12](/images/9/clear12.png?width=91pc)
+   ![test12](/images/9-clean_resources/clear12.png?width=91pc)
 
 **Xóa Bedrock Knowledge Base**
 
@@ -48,14 +48,14 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - **Đầu tiên**: Xóa tất cả objects trong bucket
    - **Sau đó**: Xóa chính bucket
    - Xác nhận deletion
-     ![clear1](/images/9/clear1.png?width=91pc)
-     ![clear2](/images/9/clear2.png?width=91pc)
+     ![clear1](/images/9-clean_resources/clear1.png?width=91pc)
+     ![clear2](/images/9-clean_resources/clear2.png?width=91pc)
    - Điều hướng đến Bedrock Console
    - Truy cập **Knowledge bases**
    - Chọn knowledge base của bạn
    - Nhấp **Delete**
    - Xác nhận deletion
-     ![clear3](/images/9/clear3.png?width=91pc)
+     ![clear3](/images/9-clean_resources/clear3.png?width=91pc)
 
 {{% notice info %}}
 **Lưu ý:** Đợi Knowledge Base deletion hoàn thành trước khi tiến hành OpenSearch cleanup.
@@ -70,7 +70,7 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Sử dụng Postman hoặc AWS CLI để xóa index
    - DELETE request đến: `https://your-collection-endpoint/slack-bedrock-os-index5`
 
-   ![clear7](/images/9/clear4.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear4.png?width=91pc)
 
    **b) Xóa Collection:**
 
@@ -78,21 +78,21 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Chọn **Collections**
    - Xóa `slack-bedrock-vector-db5`
 
-   ![clear7](/images/9/clear5.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear5.png?width=91pc)
 
    **c) Xóa Data Access Policy:**
 
    - Truy cập **Data access policies**
    - Xóa access policy của bạn
 
-   ![clear7](/images/9/clear6.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear6.png?width=91pc)
 
    **d) Xóa Network Policy:**
 
    - Truy cập **Network policies**
    - Xóa network policy của bạn
 
-   ![clear7](/images/9/clear7.png?width=91pc)
+   ![clear7](/images/9-clean_resources/clear7.png?width=91pc)
 
 **Xóa Security Resources**
 
@@ -103,8 +103,8 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Xóa `slack/signing-secret5`
    - Xác nhận immediate deletion (bỏ qua recovery period)
 
-   ![clear8](/images/9/clear8.png?width=91pc)
-   ![clear9](/images/9/clear9.png?width=91pc)
+   ![clear8](/images/9-clean_resources/clear8.png?width=91pc)
+   ![clear9](/images/9-clean_resources/clear9.png?width=91pc)
 
 6. **Xóa Systems Manager Parameters**:
 
@@ -113,8 +113,8 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - Xóa `/slack/bot-token5/parameter5`
    - Xóa `/slack/signing-secret5/parameter5`
 
-   ![clear10](/images/9/clear10.png?width=91pc)
-   ![clear11](/images/9/clear11.png?width=91pc)
+   ![clear10](/images/9-clean_resources/clear10.png?width=91pc)
+   ![clear11](/images/9-clean_resources/clear11.png?width=91pc)
 
 **Dọn dẹp IAM Resources**
 

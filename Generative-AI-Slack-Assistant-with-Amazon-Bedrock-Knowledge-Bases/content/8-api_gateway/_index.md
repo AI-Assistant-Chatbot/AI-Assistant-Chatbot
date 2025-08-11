@@ -15,19 +15,19 @@ This final module connects all components together by creating an API Gateway en
 **Create REST API**
 
 1. Navigate to [API Gateway Console](https://us-east-1.console.aws.amazon.com/apigateway)
-   ![api0](/images/8/api00a.png?width=90pc)
+   ![api0](/images/8-api_gateway/api00a.png?width=90pc)
 
 2. Create a new **REST API**:
 
    - **API Type**: REST API
 
-   ![api1](/images/8/api1.png?width=91pc)
+   ![api1](/images/8-api_gateway/api1.png?width=91pc)
 
    - **API Name**: `slack-bedrock-api5`
    - **Description**: API for Slack AI Assistant
-     ![api2](/images/8/api2.png?width=91pc)
+     ![api2](/images/8-api_gateway/api2.png?width=91pc)
    - Create successfully
-     ![api2](/images/8/api2-.png?width=91pc)
+     ![api2](/images/8-api_gateway/api2-.png?width=91pc)
 
 **Create Resource Structure**
 
@@ -36,7 +36,7 @@ This final module connects all components together by creating an API Gateway en
    - **Resource Name**: slack
    - **Resource Path**: /
 
-   ![api3](/images/8/api3.png?width=91pc)
+   ![api3](/images/8-api_gateway/api3.png?width=91pc)
 
 4. Create a sub-resource named **ask-aws**:
 
@@ -44,12 +44,12 @@ This final module connects all components together by creating an API Gateway en
    - **Resource Name**: ask-ai
    - **Resource Path**: /slack/ask-ai
 
-   ![api4](/images/8/api4.png?width=91pc)
+   ![api4](/images/8-api_gateway/api4.png?width=91pc)
 
 **Configure Method**
 
 5. Create a **POST** method for the **ask-ai** resource:
-   ![api4](/images/8/api4-.png?width=91pc)
+   ![api4](/images/8-api_gateway/api4-.png?width=91pc)
 
 6. Configure method settings:
 
@@ -58,10 +58,10 @@ This final module connects all components together by creating an API Gateway en
    - **Lambda Function**: `BedrockKBSlackbotFunction5`
    - **Use Default Timeout**: ✅ **Enabled**
 
-   ![api5](/images/8/api5.png?width=91pc)
+   ![api5](/images/8-api_gateway/api5.png?width=91pc)
 
    - Method **POST** created successfully
-     ![api6](/images/8/api6.png?width=90pc)
+     ![api6](/images/8-api_gateway/api6.png?width=90pc)
 
 {{% notice info %}}
 **Note:** Lambda Proxy Integration passes the entire request to Lambda and expects a properly formatted response.
@@ -75,7 +75,7 @@ This final module connects all components together by creating an API Gateway en
    - **Stage Name**: `prod`
    - **Stage Description**: Production deployment
 
-   ![api7](/images/8/api7.png?width=90pc)
+   ![api7](/images/8-api_gateway/api7.png?width=90pc)
 
 **Update Slack Configuration**
 
@@ -83,7 +83,7 @@ This final module connects all components together by creating an API Gateway en
 
    - Format: `https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/slack/ask-ai`
 
-   ![api8](/images/8/api8.png?width=90pc)
+   ![api8](/images/8-api_gateway/api8.png?width=90pc)
 
 9. Update your Slack app's **Slash Commands** configuration:
 
@@ -92,7 +92,7 @@ This final module connects all components together by creating an API Gateway en
    - Update **Request URL** with the API Gateway invoke URL
    - Click **Save Changes**
 
-   ![api9](/images/8/api9.png?width=90pc)
+   ![api9](/images/8-api_gateway/api9.png?width=90pc)
 
 {{% notice warning %}}
 **Important:** The Request URL must exactly match your API Gateway endpoint including the `/slack/ask-aws` path.
@@ -107,18 +107,18 @@ This final module connects all components together by creating an API Gateway en
    - Command: `/ask-ai How do i create an index in PostgreSQL and when should i use one?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
 
-   ![test1](/images/8/test1.png?width=91pc)
+   ![test1](/images/8-api_gateway/test1.png?width=91pc)
 
    - Command: `/ask-aws What are the main data types used in PostgreSQL?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
-     ![test2](/images/8/test2.png?width=91pc)
+     ![test2](/images/8-api_gateway/test2.png?width=91pc)
 
 **Guardrails Protection**
 
 2. **Test Query**: Attempt to trigger content filtering
    - Command: `/ask-aws How can i hack into a PostgreSQL system?`
    - **Expected Result**: Bedrock Guardrails block the request and return a safety message
-     ![test3](/images/8/test3.png?width=91pc)
+     ![test3](/images/8-api_gateway/test3.png?width=91pc)
 
 **Information Not Available**
 
@@ -127,8 +127,8 @@ This final module connects all components together by creating an API Gateway en
    - Command: `/ask-aws Tell me something inappropriate`
    - **Expected Result**: Ask about content not in your Knowledge Base
 
-   ![test4](/images/8/test4.png?width=91pc)
-   ![test5](/images/8/test5.png?width=91pc)
+   ![test4](/images/8-api_gateway/test4.png?width=91pc)
+   ![test5](/images/8-api_gateway/test5.png?width=91pc)
 
 #### Testing Checklist
 
