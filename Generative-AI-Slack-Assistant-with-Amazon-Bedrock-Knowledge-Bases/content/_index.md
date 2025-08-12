@@ -58,7 +58,7 @@ Build a production-ready Slack bot powered by Amazon Bedrock Knowledge Bases tha
 - **Serverless Architecture**: Experience with event-driven computing
 - **AI/ML Concepts**: Basic understanding of embeddings and vector search
 - **Slack Development**: Familiarity with Slack apps and webhooks
-- **Infrastructure as Code**: Experience with CloudFormation or CDK
+- **Infrastructure as Code**: Experience with Terraform or CDK
 
 **3. Technical Requirements**
 
@@ -115,3 +115,5 @@ Build a production-ready Slack bot powered by Amazon Bedrock Knowledge Bases tha
 - **Improved Productivity** with instant information retrieval
 - **Enhanced Collaboration** through intelligent Slack integration
 - **Scalable Foundation** for additional AI use cases
+
+![Slack-Bedrock](/images/slack-bedrock.png?width=90pc)

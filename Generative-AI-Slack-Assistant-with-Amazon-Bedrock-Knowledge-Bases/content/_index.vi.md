@@ -58,7 +58,7 @@ Xây dựng một Slack bot sẵn sàng cho production được hỗ trợ bởi
 - **Serverless Architecture**: Kinh nghiệm với event-driven computing
 - **AI/ML Concepts**: Hiểu biết cơ bản về embeddings và vector search
 - **Slack Development**: Quen thuộc với Slack apps và webhooks
-- **Infrastructure as Code**: Kinh nghiệm với CloudFormation hoặc CDK
+- **Infrastructure as Code**: Kinh nghiệm với Terraform hoặc CDK
 
 **3. Yêu cầu kỹ thuật**
 
@@ -115,3 +115,5 @@ Xây dựng một Slack bot sẵn sàng cho production được hỗ trợ bởi
 - **Cải thiện Năng suất** với truy xuất thông tin tức thì
 - **Tăng cường Hợp tác** thông qua tích hợp Slack thông minh
 - **Nền tảng có thể mở rộng** cho các use case AI bổ sung
+
+![Slack-Bedrock](/images/slack-bedrock.png?width=90pc)

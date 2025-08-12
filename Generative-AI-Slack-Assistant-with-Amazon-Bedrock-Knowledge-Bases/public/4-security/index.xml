@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configure Security on AWS Serverless</title>
-    <link>/4-security/</link>
+    <link>//localhost:1313/4-security/</link>
     <description>Recent content in Configure Security on AWS Serverless</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="/4-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/4-security/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

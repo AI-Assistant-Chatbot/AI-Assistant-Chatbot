@@ -41,7 +41,7 @@ By completing this workshop, you will achieve the following learning outcomes:
    - Implement proper error handling and monitoring
    - Configure auto-scaling and cost optimization
 
-3. **Integrate Enterprise Security**
+3. **Integrate Security**
 
    - Configure Amazon Bedrock Guardrails
    - Implement PII detection and anonymization

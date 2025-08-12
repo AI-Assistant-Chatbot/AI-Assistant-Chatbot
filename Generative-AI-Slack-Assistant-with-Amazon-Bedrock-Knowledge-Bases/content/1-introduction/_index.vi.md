@@ -41,7 +41,7 @@ Bằng cách hoàn thành workshop này, bạn sẽ đạt được các kết q
    - Triển khai xử lý lỗi và giám sát phù hợp
    - Cấu hình auto-scaling và tối ưu hóa chi phí
 
-3. **Tích hợp Bảo mật Doanh nghiệp**
+3. **Tích hợp Bảo mật**
 
    - Cấu hình Amazon Bedrock Guardrails
    - Triển khai phát hiện và ẩn danh hóa PII
@@ -64,6 +64,7 @@ Bằng cách hoàn thành workshop này, bạn sẽ đạt được các kết q
 #### Kiến trúc SlackBot
 
 ![AI-Assistant](/images/1-introduction/AI-Assistant.png?width=90pc)
+   _Hình 1: Kiến trúc Slackbot_
 
 #### Sơ đồ Luồng Kiến trúc
 
@@ -83,7 +84,8 @@ graph TB
     style F fill:#fff3e0
     style H fill:#ffebee
 ```
-
+   _Hình 2: Sơ đồ Luồng Kiến trúc_
+   
 #### Giải thích các Thành phần Chính
 
 | Thành phần                 | Mục đích                   | Lợi ích                                     |

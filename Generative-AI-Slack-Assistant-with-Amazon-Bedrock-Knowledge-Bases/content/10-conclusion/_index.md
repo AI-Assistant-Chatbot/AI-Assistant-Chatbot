@@ -14,13 +14,13 @@ Congratulations on successfully completing the **Generative AI Slack Assistant w
 
 Throughout this comprehensive workshop, you have:
 
-**1. Built Enterprise Architecture**
+**1. Built Architecture**
 
 - Deployed a complete serverless AI solution using AWS managed services
 - Implemented Retrieval-Augmented Generation (RAG) with Amazon Bedrock Knowledge Bases
 - Created a scalable, cost-effective architecture that handles varying workloads
 
-**2. Implemented Enterprise Security**
+**2. Implemented Security**
 
 - Configured secure credential management with AWS Secrets Manager and Parameter Store
 - Set up content filtering and safety measures using Amazon Bedrock Guardrails
@@ -45,15 +45,6 @@ Throughout this comprehensive workshop, you have:
 - **AWS Lambda**: Serverless function development and event-driven architecture
 - **API Gateway**: RESTful API design and Slack webhook integration
 - **Security Management**: Secrets handling and enterprise-grade access control
-
-#### Business Impact
-
-Your AI assistant delivers measurable business value:
-
-- **Improved Productivity**: Instant access to organizational knowledge
-- **Reduced Support Load**: Self-service capabilities for common questions
-- **Enhanced Collaboration**: Shared knowledge accessible to all team members
-- **Scalable Solution**: Grows with your organization's needs
 
 #### Architecture Highlights
 
@@ -89,35 +80,13 @@ Consider these next steps to expand your AI assistant:
 - Voice interfaces with Amazon Alexa for Business
 - Mobile applications with direct API access
 - Integration with existing enterprise systems
-
-#### Learning Resources
-
-Continue your AI and AWS journey with these resources:
-
-- **AWS Documentation**: [Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/)
-- **AWS Training**: [Machine Learning on AWS](https://aws.amazon.com/training/learn-about/machine-learning/)
-- **Community**: [AWS AI/ML Community](https://aws.amazon.com/developer/community/ai-ml/)
-- **Certification**: [AWS Certified Machine Learning - Specialty](https://aws.amazon.com/certification/certified-machine-learning-specialty/)
-
-#### Final Thoughts
-
-You've successfully transformed static organizational knowledge into an intelligent, conversational assistant that employees can interact with naturally. This workshop has equipped you with the skills to build, deploy, and maintain enterprise-grade AI solutions using AWS managed services.
-
-The future of workplace productivity lies in making information instantly accessible through natural language interfaces. You're now prepared to lead this transformation in your organization.
-
 ---
 
 #### Credits
 
-This workshop was developed and maintained by:
+**Le Hong Anh:** [LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
 
-**Le Hong Anh**  
-_AI Solutions Architect_  
-[LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
-
-**Tran Doan Cong Ly**  
-_Cloud Solutions Engineer_  
-[LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
+**Tran Doan Cong Ly:** [LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
 
 #### References
 
@@ -131,14 +100,14 @@ _Cloud Solutions Engineer_
 
 **2. Slack Development**
 
-- [Slack Bolt for Python](https://slack.dev/bolt-python/tutorial/getting-started)
+- [Slack Bolt for Python](https://docs.slack.dev/tools/bolt-python/)
 - [Slack API Documentation](https://api.slack.com/)
 - [Slack App Development](https://api.slack.com/start/overview)
 
 **3. AI and Machine Learning**
 
 - [Retrieval-Augmented Generation (RAG) Overview](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
-- [Foundation Models on Amazon Bedrock](https://aws.amazon.com/bedrock/foundation-models/)
+- [Foundation Models on Amazon Bedrock](https://aws.amazon.com/bedrock/)
 - [Vector Databases and Semantic Search](https://aws.amazon.com/what-is/vector-databases/)
 
 **4. Security Best Practices**
@@ -150,13 +119,12 @@ _Cloud Solutions Engineer_
 **5. Blog Posts and Articles**
 
 - [Create a generative AI assistant with Slack and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/create-a-generative-ai-assistant-with-slack-and-amazon-bedrock/)
-- [Building RAG Applications with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-rag-applications-with-amazon-bedrock/)
-- [Serverless AI Applications on AWS](https://aws.amazon.com/blogs/compute/building-serverless-ai-applications/)
+- [Building RAG Applications with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rag-solution-using-knowledge-bases-for-amazon-bedrock-and-aws-cloudformation/)
+- [Serverless AI Applications on AWS](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/)
 
 ---
 
+![AI-Assistant](/images/10-conclusion/image-conclusion.png?width=90pc)
 **Thank you for participating in this workshop!**
 
-We hope this experience has inspired you to continue exploring the possibilities of generative AI and AWS cloud services. Your feedback and success stories help us improve future workshops and support the growing AI community.
 
-_Happy building!_ 🚀

@@ -14,13 +14,13 @@ Chúc mừng bạn đã hoàn thành thành công workshop **Generative AI Slack
 
 Trong suốt workshop toàn diện này, bạn đã:
 
-**1. Xây dựng Enterprise Architecture**
+**1. Xây dựng Architecture**
 
 - Deploy giải pháp AI serverless hoàn chỉnh sử dụng AWS managed services
 - Triển khai Retrieval-Augmented Generation (RAG) với Amazon Bedrock Knowledge Bases
 - Tạo kiến trúc scalable, cost-effective xử lý varying workloads
 
-**2. Triển khai Enterprise Security**
+**2. Triển khai Security**
 
 - Cấu hình secure credential management với AWS Secrets Manager và Parameter Store
 - Thiết lập content filtering và safety measures sử dụng Amazon Bedrock Guardrails
@@ -38,22 +38,13 @@ Trong suốt workshop toàn diện này, bạn đã:
 - Xử lý asynchronous processing với proper acknowledgment patterns
 - Cung cấp real-time responses cho users trong Slack environment quen thuộc
 
-#### Kỹ năng Kỹ thuật Chính đã có được
+#### Kỹ năng Kỹ thuật Chính đạt được
 
 - **Amazon Bedrock**: Foundation model integration và Knowledge Base management
 - **OpenSearch Serverless**: Vector database operations và semantic search
 - **AWS Lambda**: Serverless function development và event-driven architecture
 - **API Gateway**: RESTful API design và Slack webhook integration
 - **Security Management**: Secrets handling và enterprise-grade access control
-
-#### Tác động Kinh doanh
-
-AI assistant của bạn mang lại business value có thể đo lường:
-
-- **Cải thiện Năng suất**: Truy cập tức thì đến organizational knowledge
-- **Giảm Support Load**: Self-service capabilities cho common questions
-- **Tăng cường Hợp tác**: Shared knowledge accessible cho tất cả team members
-- **Giải pháp Scalable**: Phát triển cùng với nhu cầu tổ chức
 
 #### Điểm nổi bật Kiến trúc
 
@@ -65,7 +56,7 @@ Giải pháp bạn đã xây dựng thể hiện modern cloud architecture princ
 - **Cost-Optimized**: Pay-per-use pricing model
 - **Highly Available**: Built-in redundancy và fault tolerance
 
-#### Cải tiến Tương lai
+#### Cải tiến
 
 Xem xét các bước tiếp theo để mở rộng AI assistant:
 
@@ -89,35 +80,13 @@ Xem xét các bước tiếp theo để mở rộng AI assistant:
 - Voice interfaces với Amazon Alexa for Business
 - Mobile applications với direct API access
 - Integration với existing enterprise systems
-
-#### Learning Resources
-
-Tiếp tục AI và AWS journey với các resources này:
-
-- **AWS Documentation**: [Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/)
-- **AWS Training**: [Machine Learning on AWS](https://aws.amazon.com/training/learn-about/machine-learning/)
-- **Community**: [AWS AI/ML Community](https://aws.amazon.com/developer/community/ai-ml/)
-- **Certification**: [AWS Certified Machine Learning - Specialty](https://aws.amazon.com/certification/certified-machine-learning-specialty/)
-
-#### Suy nghĩ Cuối cùng
-
-Bạn đã thành công biến đổi static organizational knowledge thành intelligent, conversational assistant mà employees có thể tương tác naturally. Workshop này đã trang bị cho bạn skills để build, deploy và maintain enterprise-grade AI solutions sử dụng AWS managed services.
-
-Tương lai của workplace productivity nằm ở việc làm cho information instantly accessible thông qua natural language interfaces. Bạn hiện đã chuẩn bị để lead transformation này trong tổ chức.
-
 ---
 
 #### Credits
 
-Workshop này được phát triển và maintain bởi:
+**Le Hong Anh:** [LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
 
-**Le Hong Anh**  
-_AI Solutions Architect_  
-[LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
-
-**Tran Doan Cong Ly**  
-_Cloud Solutions Engineer_  
-[LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
+**Tran Doan Cong Ly:** [LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
 
 #### References
 
@@ -131,14 +100,14 @@ _Cloud Solutions Engineer_
 
 **2. Slack Development**
 
-- [Slack Bolt for Python](https://slack.dev/bolt-python/tutorial/getting-started)
+- [Slack Bolt for Python](https://docs.slack.dev/tools/bolt-python/)
 - [Slack API Documentation](https://api.slack.com/)
 - [Slack App Development](https://api.slack.com/start/overview)
 
 **3. AI and Machine Learning**
 
 - [Retrieval-Augmented Generation (RAG) Overview](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
-- [Foundation Models on Amazon Bedrock](https://aws.amazon.com/bedrock/foundation-models/)
+- [Foundation Models on Amazon Bedrock](https://aws.amazon.com/bedrock/)
 - [Vector Databases and Semantic Search](https://aws.amazon.com/what-is/vector-databases/)
 
 **4. Security Best Practices**
@@ -150,13 +119,10 @@ _Cloud Solutions Engineer_
 **5. Blog Posts and Articles**
 
 - [Create a generative AI assistant with Slack and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/create-a-generative-ai-assistant-with-slack-and-amazon-bedrock/)
-- [Building RAG Applications with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-rag-applications-with-amazon-bedrock/)
-- [Serverless AI Applications on AWS](https://aws.amazon.com/blogs/compute/building-serverless-ai-applications/)
+- [Building RAG Applications with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-an-end-to-end-rag-solution-using-knowledge-bases-for-amazon-bedrock-and-aws-cloudformation/)
+- [Serverless AI Applications on AWS](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/)
 
 ---
 
+![AI-Assistant](/images/10-conclusion/image-conclusion.png?width=90pc)
 **Cảm ơn bạn đã tham gia workshop này!**
-
-Chúng tôi hy vọng trải nghiệm này đã truyền cảm hứng cho bạn tiếp tục khám phá possibilities của generative AI và AWS cloud services. Feedback và success stories của bạn giúp chúng tôi cải thiện future workshops và support growing AI community.
-
-_Happy building!_ 🚀
