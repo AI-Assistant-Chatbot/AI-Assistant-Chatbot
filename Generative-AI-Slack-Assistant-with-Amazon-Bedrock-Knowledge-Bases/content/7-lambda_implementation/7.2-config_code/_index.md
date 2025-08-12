@@ -37,9 +37,11 @@ This section guides you through creating the Lambda function and configuring it 
    ![lambda7](/images/7-lambda_implementation/7.2-config_code/lambda7-.png?width=90pc)
 
    - Select **Save**
-     ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
+     
+   ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
    - Upload successfully
-     ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
+     
+   ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The zip file contains the Slack Bolt framework and all necessary dependencies for the bot functionality.

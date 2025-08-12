@@ -48,14 +48,17 @@ Follow this specific order to avoid dependency conflicts:
    - **First**: Delete all objects in the bucket
    - **Then**: Delete the bucket itself
    - Confirm deletion
-     ![clear1](/images/9-clean_resources/clear1.png?width=90pc)
-     ![clear2](/images/9-clean_resources/clear2.png?width=90pc)
+
+   ![clear1](/images/9-clean_resources/clear1.png?width=90pc)
+   ![clear2](/images/9-clean_resources/clear2.png?width=90pc)
+
    - Navigate to Bedrock Console
    - Go to **Knowledge bases**
    - Select your knowledge base
    - Click **Delete**
    - Confirm deletion
-     ![clear3](/images/9-clean_resources/clear3.png?width=90pc)
+
+   ![clear3](/images/9-clean_resources/clear3.png?width=90pc)
 
 {{% notice info %}}
 **Note:** Wait for the Knowledge Base deletion to complete before proceeding to OpenSearch cleanup.
@@ -65,14 +68,14 @@ Follow this specific order to avoid dependency conflicts:
 
 4. **Delete OpenSearch Components** (in this order):
 
-   **a) Delete Vector Index:**
+   **a. Delete Vector Index:**
 
    - Use Postman or AWS CLI to delete the index
    - DELETE request to: `https://your-collection-endpoint/slack-bedrock-os-index5`
 
    ![clear7](/images/9-clean_resources/clear4.png?width=90pc)
 
-   **b) Delete Collection:**
+   **b. Delete Collection:**
 
    - Navigate to OpenSearch Console
    - Select **Collections**
@@ -80,14 +83,14 @@ Follow this specific order to avoid dependency conflicts:
 
    ![clear7](/images/9-clean_resources/clear5.png?width=90pc)
 
-   **c) Delete Data Access Policy:**
+   **c. Delete Data Access Policy:**
 
    - Go to **Data access policies**
    - Delete your access policy
 
    ![clear7](/images/9-clean_resources/clear6.png?width=90pc)
 
-   **d) Delete Network Policy:**
+   **d. Delete Network Policy:**
 
    - Go to **Network policies**
    - Delete your network policy

@@ -60,7 +60,8 @@ Cấu hình filters cho các loại nội dung có hại khác nhau:
 **2. Thiết lập Prompt Attacks**
 
 - **Prompt Attacks**: `High` - Ngăn chặn prompt injection attacks
-  ![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
+  
+![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
 
 ---
 

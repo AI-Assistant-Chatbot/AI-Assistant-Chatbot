@@ -10,8 +10,6 @@ pre: " <b> 6.3 </b> "
 
 This section guides you through creating a Bedrock Knowledge Base with S3 data source and OpenSearch Serverless integration for your AI assistant.
 
-#### S3 Configuration
-
 #### Create S3 Bucket
 
 1. Create a new S3 bucket for storing your documents:
@@ -22,29 +20,30 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
   ![s3_1](/images/6-bedrock_setup/6.3-knowledge_base/s3_1.png?width=90pc)
 
-  - **Bucket name**: `bucket-bedrock-document868686`
-    ![s3_2](/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc)
-  - Note **ARN**
-    ![s3_3](/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc)
+- **Bucket name**: `bucket-bedrock-document868686`
+
+  ![s3_2](/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc)
+
+- Note **ARN**
+
+  ![s3_3](/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Use a unique bucket name by including your account ID to avoid naming conflicts.
 {{% /notice %}}
 
-#### Configure Knowledge Base
-
 #### Access Bedrock Console
 
 1. Navigate to [Amazon Bedrock Console](https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/overview)
-   ![modelAccess0](/images/6-bedrock_setup/6.3-knowledge_base/modelAccess0.png?width=90pc)
+  ![modelAccess0](/images/6-bedrock_setup/6.3-knowledge_base/modelAccess0.png?width=90pc)
 
 #### Create Knowledge Base
 
 2. Navigate to **Knowledge base** in the sidebar
-   ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=90pc)
+  ![kb1](/images/6-bedrock_setup/6.3-knowledge_base/kb1.png?width=90pc)
 
 3. Click **Create** → **Knowledge Base with vector store**
-   ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=90pc)
+  ![kb2](/images/6-bedrock_setup/6.3-knowledge_base/kb2.png?width=90pc)
 
 #### Configure Knowledge Base Settings
 
@@ -54,40 +53,48 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
    - **Knowledge base name**: `slack-bedrock-kb5`
    - **IAM Role**: Create a new service role name `BedrockKnowledgeBaseRole5`
-     ![kb3](/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc)
+
+    ![kb3](/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc)
 
    **Data Source:**
 
    - **Data source type**: Amazon S3
-     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
+  
+    ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
 
    **S3 Configuration:**
 
    - Select your created S3 bucket
    - Use default chunking strategy
-     ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
-     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
+  
+    ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
+    ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
 
    **Embeddings Model:**
 
    - Select **Amazon Titan Text Embeddings V2**
-     ![kb7](/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc)
-     ![kb8](/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc)
+  
+    ![kb7](/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc)
+    ![kb8](/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc)
 
    **Vector Store:**
 
    - Choose **Amazon OpenSearch Serverless**
-     ![kb9](/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc)
+  
+    ![kb9](/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc)
 
    **OpenSearch Configuration:**
 
    - **Collection**: `slack-bedrock-vector-db5` (created in Module 5)
    - **Vector index name**: `slack-bedrock-os-index5`
    - **Vector field name**: `bedrock-knowledge-base-default-vector`
-     ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
+  
+    ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
+   
    - **Text field name**: `AMAZON_BEDROCK_TEXT_CHUNK`
    - **Metadata field name**:`AMAZON_BEDROCK_METADATA`
-     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
+  
+    ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
 
 #### Complete Creation
 
@@ -96,8 +103,6 @@ This section guides you through creating a Bedrock Knowledge Base with S3 data s
 
 6. Verify the automatically created IAM role has the necessary policies:
    ![kb13](/images/6-bedrock_setup/6.3-knowledge_base/kb13.png?width=90pc)
-
-#### Upload and Sync Documents
 
 #### Upload Sample Document
 

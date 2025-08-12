@@ -18,16 +18,21 @@ AWS Systems Manager Parameter Store provides runtime secret resolution by creati
 2. Create a parameter for **bot-token5**:
 
    - Click **Create parameter**
-     ![ssm2](/images/4-security/4.2-systems_manager/ssm2.png?width=90pc)
+
+    ![ssm2](/images/4-security/4.2-systems_manager/ssm2.png?width=90pc)
+
    - **Name**: `/slack/bot-token5/parameter5`
 
-   ![ssm3](/images/4-security/4.2-systems_manager/ssm3.png?width=90pc)
+    ![ssm3](/images/4-security/4.2-systems_manager/ssm3.png?width=90pc)
 
    - **Type**: String
    - **Value**: `slack/bot-token5`
-     ![ssm4](/images/4-security/4.2-systems_manager/ssm4.png?width=90pc)
+
+    ![ssm4](/images/4-security/4.2-systems_manager/ssm4.png?width=90pc)
+
    - Create successfully
-     ![ssm5](/images/4-security/4.2-systems_manager/ssm5.png?width=90pc)
+
+    ![ssm5](/images/4-security/4.2-systems_manager/ssm5.png?width=90pc)
 
 #### Create Signing Secret Parameter
 
@@ -35,12 +40,17 @@ AWS Systems Manager Parameter Store provides runtime secret resolution by creati
 
    - Click **Create parameter**
    - **Name**: `/slack/signing-secret5/parameter5`
-     ![ssm6](/images/4-security/4.2-systems_manager/ssm6.png?width=90pc)
+
+    ![ssm6](/images/4-security/4.2-systems_manager/ssm6.png?width=90pc)
+
    - **Type**: String
    - **Value**: `slack/signing-secret5`
-     ![ssm7](/images/4-security/4.2-systems_manager/ssm7.png?width=90pc)
-     -Create successfully
-     ![ssm8](/images/4-security/4.2-systems_manager/ssm8.png?width=90pc)
+
+    ![ssm7](/images/4-security/4.2-systems_manager/ssm7.png?width=90pc)
+
+  - Create successfully
+     
+    ![ssm8](/images/4-security/4.2-systems_manager/ssm8.png?width=90pc)
 
 #### Note Parameter ARNs
 
@@ -51,7 +61,8 @@ AWS Systems Manager Parameter Store provides runtime secret resolution by creati
    ![ssm9](/images/4-security/4.2-systems_manager/ssm9.png?width=90pc)
 
    - Bot token ARN: `arn:aws:ssm:region:account:parameter/slack/bot-token5/parameter5`
-     ![ssm10](/images/4-security/4.2-systems_manager/ssm10.png?width=90pc)
+
+    ![ssm10](/images/4-security/4.2-systems_manager/ssm10.png?width=90pc)
 
 #### What's Next
 

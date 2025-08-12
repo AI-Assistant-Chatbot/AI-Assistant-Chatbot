@@ -12,21 +12,21 @@
     <title>Thiết lập knowledge base :: Bedrock-Slackbot-AI-Workshop</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754982746" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754987892" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754987892" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754982746" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754987892" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754982746"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754987892"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754982746"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754982746"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754987892"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754987892"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754982746"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754987892"></script>
 
     
   </div>
@@ -917,31 +917,29 @@
 
 	<h4 id="tạo-bedrock-knowledge-base">Tạo Bedrock Knowledge Base</h4>
 <p>Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data source và tích hợp OpenSearch Serverless cho trợ lý AI của bạn.</p>
-<h4 id="cấu-hình-s3">Cấu hình S3</h4>
 <h4 id="tạo-s3-bucket">Tạo S3 Bucket</h4>
 <p><strong>Tạo S3 bucket mới để lưu trữ documents của bạn:</strong></p>
 <ul>
 <li>
 <p><strong>Region</strong>: us-east-1</p>
+<ul>
+<li>Sử dụng cài đặt mặc định cho các cấu hình khác</li>
+</ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3_1.png?width=90pc" alt="s3_1"></p>
 </li>
 <li>
-<p>Sử dụng cài đặt mặc định cho các cấu hình khác<br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3_1.png?width=90pc" alt="s3_1"></p>
+<p><strong>Bucket name</strong>: <code>bucket-bedrock-document868686</code></p>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc" alt="s3_2"></p>
 </li>
 <li>
-<p><strong>Bucket name</strong>: <code>bucket-bedrock-document868686</code><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc" alt="s3_2"></p>
-</li>
-<li>
-<p>Ghi chú <strong>ARN</strong><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc" alt="s3_3"></p>
+<p>Ghi chú <strong>ARN</strong></p>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc" alt="s3_3"></p>
 </li>
 </ul>
 
 <div class="notices tip" ><p><strong>Mẹo:</strong> Sử dụng tên bucket duy nhất bằng cách bao gồm account ID của bạn để tránh xung đột tên.</p>
 </div>
 
-<h4 id="cấu-hình-knowledge-base">Cấu hình Knowledge Base</h4>
 <h4 id="truy-cập-bedrock-console">Truy cập Bedrock Console</h4>
 <ol>
 <li>Điều hướng đến <a href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/overview">Amazon Bedrock Console</a><br>
@@ -965,42 +963,44 @@
 <p><strong>Thông tin Cơ bản:</strong></p>
 <ul>
 <li><strong>Knowledge base name</strong>: <code>slack-bedrock-kb5</code></li>
-<li><strong>IAM Role</strong>: Tạo service role mới tên <code>BedrockKnowledgeBaseRole5</code><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc" alt="kb3"></li>
+<li><strong>IAM Role</strong>: Tạo service role mới tên <code>BedrockKnowledgeBaseRole5</code></li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc" alt="kb3"></p>
 <p><strong>Data Source:</strong></p>
 <ul>
-<li><strong>Data source type</strong>: Amazon S3<br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc" alt="kb4"></li>
+<li><strong>Data source type</strong>: Amazon S3</li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc" alt="kb4"></p>
 <p><strong>Cấu hình S3:</strong></p>
 <ul>
 <li>Chọn S3 bucket đã tạo của bạn</li>
-<li>Sử dụng chunking strategy mặc định<br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc" alt="kb5"><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc" alt="kb6"></li>
+<li>Sử dụng chunking strategy mặc định</li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc" alt="kb5"><br>
+<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc" alt="kb6"></p>
 <p><strong>Embeddings Model:</strong></p>
 <ul>
-<li>Chọn <strong>Amazon Titan Text Embeddings V2</strong><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc" alt="kb7"><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc" alt="kb8"></li>
+<li>Chọn <strong>Amazon Titan Text Embeddings V2</strong></li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc" alt="kb7"><br>
+<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc" alt="kb8"></p>
 <p><strong>Vector Store:</strong></p>
 <ul>
-<li>Chọn <strong>Amazon OpenSearch Serverless</strong><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc" alt="kb9"></li>
+<li>Chọn <strong>Amazon OpenSearch Serverless</strong></li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc" alt="kb9"></p>
 <p><strong>Cấu hình OpenSearch:</strong></p>
 <ul>
 <li><strong>Collection</strong>: <code>slack-bedrock-vector-db5</code> (đã tạo trong Module 5)</li>
 <li><strong>Vector index name</strong>: <code>slack-bedrock-os-index5</code></li>
-<li><strong>Vector field name</strong>: <code>bedrock-knowledge-base-default-vector</code><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc" alt="kb10"></li>
-<li><strong>Text field name</strong>: <code>AMAZON_BEDROCK_TEXT_CHUNK</code></li>
-<li><strong>Metadata field name</strong>:<code>AMAZON_BEDROCK_METADATA</code><br>
-<img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc" alt="kb11"></li>
+<li><strong>Vector field name</strong>: <code>bedrock-knowledge-base-default-vector</code></li>
 </ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc" alt="kb10"></p>
+<ul>
+<li><strong>Text field name</strong>: <code>AMAZON_BEDROCK_TEXT_CHUNK</code></li>
+<li><strong>Metadata field name</strong>:<code>AMAZON_BEDROCK_METADATA</code></li>
+</ul>
+<p><img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc" alt="kb11"></p>
 </li>
 </ol>
 <h4 id="hoàn-thành-creation">Hoàn thành Creation</h4>
@@ -1014,7 +1014,6 @@
 <img src="//localhost:1313/images/6-bedrock_setup/6.3-knowledge_base/kb13.png?width=90pc" alt="kb13"></p>
 </li>
 </ol>
-<h4 id="upload-và-sync-documents">Upload và Sync Documents</h4>
 <h4 id="upload-sample-document">Upload Sample Document</h4>
 <ol>
 <li>
@@ -1478,19 +1477,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754982746"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754982746"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754987892"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754987892"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754987892"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754987892"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754987892"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754987892"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754982746"></script>
-    <script src="//localhost:1313/js/learn.js?1754982746"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754982746"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754987892"></script>
+    <script src="//localhost:1313/js/learn.js?1754987892"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754987892"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754982746" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754982746"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754987892" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754987892"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

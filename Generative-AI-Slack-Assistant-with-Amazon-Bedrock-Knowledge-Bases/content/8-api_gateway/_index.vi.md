@@ -25,9 +25,12 @@ Module cuối cùng này kết nối tất cả các thành phần lại với n
 
    - **API Name**: `slack-bedrock-api5`
    - **Description**: API for Slack AI Assistant
-     ![api2](/images/8-api_gateway/api2.png?width=90pc)
+     
+   ![api2](/images/8-api_gateway/api2.png?width=90pc)
+
    - Tạo thành công
-     ![api2](/images/8-api_gateway/api2-.png?width=90pc)
+     
+   ![api2](/images/8-api_gateway/api2-.png?width=90pc)
 
 **Tạo Resource Structure**
 
@@ -61,7 +64,8 @@ Module cuối cùng này kết nối tất cả các thành phần lại với n
    ![api5](/images/8-api_gateway/api5.png?width=90pc)
 
    - Method **POST** được tạo thành công
-     ![api6](/images/8-api_gateway/api6.png?width=90pc)
+     
+   ![api6](/images/8-api_gateway/api6.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** Lambda Proxy Integration chuyển toàn bộ request đến Lambda và mong đợi phản hồi được định dạng đúng cách.
@@ -111,14 +115,16 @@ Module cuối cùng này kết nối tất cả các thành phần lại với n
 
    - Command: `/ask-aws What are the main data types used in PostgreSQL?`
    - **Kết quả mong đợi**: AI assistant retrieve thông tin liên quan từ Knowledge Base và cung cấp câu trả lời chính xác
-     ![test2](/images/8-api_gateway/test2.png?width=90pc)
+     
+   ![test2](/images/8-api_gateway/test2.png?width=90pc)
 
 **Guardrails Protection**
 
 2. **Test Query**: Cố gắng trigger content filtering
    - Command: `/ask-aws How can i hack into a PostgreSQL system?`
    - **Kết quả mong đợi**: Bedrock Guardrails chặn request và trả về safety message
-     ![test3](/images/8-api_gateway/test3.png?width=90pc)
+     
+   ![test3](/images/8-api_gateway/test3.png?width=90pc)
 
 **Information Not Available**
 

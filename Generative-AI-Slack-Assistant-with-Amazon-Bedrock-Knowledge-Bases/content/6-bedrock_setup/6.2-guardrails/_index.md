@@ -60,7 +60,8 @@ Configure filters for different types of harmful content:
 **2. Set Up Prompt Attacks**
 
 - **Prompt Attacks**: `High` - Prevent prompt injection attacks
-  ![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
+  
+![guardrail4](/images/6-bedrock_setup/6.2-guardrails/guardrail4.png?width=90pc)
 
 ---
 

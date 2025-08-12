@@ -38,7 +38,7 @@ Kết thúc module này, bạn sẽ có:
 
 - Truy cập [Slack.com](https://slack.com/) và nhấp **Create a new workspace**.
 
-  ![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
+![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
 
 **2. Quy trình Đăng ký**
 
@@ -47,6 +47,7 @@ Kết thúc module này, bạn sẽ có:
 ![slackWorkSpace2](/images/2-environment-setup/slackWorkSpace2.png?width=90pc)
 
 **3. Nhấp Create a Workspace**
+
 ![slackWorkSpace3](/images/2-environment-setup/slackWorkSpace3.png?width=90pc)
 
 #### Hoàn thành Thiết lập Workspace

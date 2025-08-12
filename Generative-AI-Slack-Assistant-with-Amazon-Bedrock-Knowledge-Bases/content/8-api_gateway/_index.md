@@ -25,9 +25,12 @@ This final module connects all components together by creating an API Gateway en
 
    - **API Name**: `slack-bedrock-api5`
    - **Description**: API for Slack AI Assistant
-     ![api2](/images/8-api_gateway/api2.png?width=90pc)
+     
+   ![api2](/images/8-api_gateway/api2.png?width=90pc)
+
    - Create successfully
-     ![api2](/images/8-api_gateway/api2-.png?width=90pc)
+     
+   ![api2](/images/8-api_gateway/api2-.png?width=90pc)
 
 **Create Resource Structure**
 
@@ -61,7 +64,8 @@ This final module connects all components together by creating an API Gateway en
    ![api5](/images/8-api_gateway/api5.png?width=90pc)
 
    - Method **POST** created successfully
-     ![api6](/images/8-api_gateway/api6.png?width=90pc)
+     
+   ![api6](/images/8-api_gateway/api6.png?width=90pc)
 
 {{% notice info %}}
 **Note:** Lambda Proxy Integration passes the entire request to Lambda and expects a properly formatted response.
@@ -111,14 +115,16 @@ This final module connects all components together by creating an API Gateway en
 
    - Command: `/ask-aws What are the main data types used in PostgreSQL?`
    - **Expected Result**: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer
-     ![test2](/images/8-api_gateway/test2.png?width=90pc)
+     
+   ![test2](/images/8-api_gateway/test2.png?width=90pc)
 
 **Guardrails Protection**
 
 2. **Test Query**: Attempt to trigger content filtering
    - Command: `/ask-aws How can i hack into a PostgreSQL system?`
    - **Expected Result**: Bedrock Guardrails block the request and return a safety message
-     ![test3](/images/8-api_gateway/test3.png?width=90pc)
+     
+   ![test3](/images/8-api_gateway/test3.png?width=90pc)
 
 **Information Not Available**
 

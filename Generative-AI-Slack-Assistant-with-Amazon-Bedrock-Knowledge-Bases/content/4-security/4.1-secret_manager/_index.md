@@ -11,12 +11,14 @@ AWS Secrets Manager securely stores and manages your Slack bot credentials with 
 #### Access Secrets Manager Console
 
 1. Navigate to [AWS Secrets Manager Console](https://console.aws.amazon.com/secretsmanager/)
-   ![secret0](/images/4-security/4.1-secret_manager/secret1.png?width=90pc)
+   
+  ![secret0](/images/4-security/4.1-secret_manager/secret1.png?width=90pc)
 
 #### Prepare Slack Credentials
 
 2. Copy your **Bot User OAuth Token** from Slack (from Module 3.3):
-   ![slack_OAuth](/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc)
+   
+  ![slack_OAuth](/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc)
 
 #### Create Bot Token Secret
 
@@ -26,19 +28,25 @@ AWS Secrets Manager securely stores and manages your Slack bot credentials with 
    - Select **Other type of secret**
    - Enter key-value pair: `SLACK_BOT_TOKEN` = `your-bot-token-value`
 
-   ![secret1](/images/4-security/4.1-secret_manager/secret2.png?width=90pc)
+  ![secret1](/images/4-security/4.1-secret_manager/secret2.png?width=90pc)
 
    - Name: `bot-token5`
-     ![secret2](/images/4-security/4.1-secret_manager/secret3.png?width=90pc)
+
+  ![secret2](/images/4-security/4.1-secret_manager/secret3.png?width=90pc)
+
    - Created successfully
-     ![secret3](/images/4-security/4.1-secret_manager/secret3-.png?width=90pc)
+
+  ![secret3](/images/4-security/4.1-secret_manager/secret3-.png?width=90pc)
+
    - Save the **ARN**
-     ![secret8](/images/4-security/4.1-secret_manager/secret4.png?width=90pc)
+
+  ![secret8](/images/4-security/4.1-secret_manager/secret4.png?width=90pc)
 
 #### Get Signing Secret
 
 4. Copy your **Signing Secret** from Slack app settings:
-   ![slack_secret](/images/4-security/4.1-secret_manager/secret5-.png?width=90pc)
+   
+  ![slack_secret](/images/4-security/4.1-secret_manager/secret5-.png?width=90pc)
 
 #### Create Signing Secret
 
@@ -48,13 +56,16 @@ AWS Secrets Manager securely stores and manages your Slack bot credentials with 
    - Select **Other type of secret**
    - Enter key-value pair: `SLACK_SIGNING_SECRET` = `your-signing-secret-value`
 
-   ![secret4](/images/4-security/4.1-secret_manager/secret6-.png?width=90pc)
+  ![secret4](/images/4-security/4.1-secret_manager/secret6-.png?width=90pc)
 
    - Name: `signing-secret5`
    - Created successfully
-     ![secret6](/images/4-security/4.1-secret_manager/secret6.png?width=90pc)
+
+  ![secret6](/images/4-security/4.1-secret_manager/secret6.png?width=90pc)
+
    - Save the **ARN**
-     ![secret7](/images/4-security/4.1-secret_manager/secret7-.png?width=90pc)
+
+  ![secret7](/images/4-security/4.1-secret_manager/secret7-.png?width=90pc)
 
 {{% notice tip %}}
 **Tip:** Keep the secret names consistent (`bot-token5` and `signing-secret5`) as they will be referenced in Parameter Store configuration.

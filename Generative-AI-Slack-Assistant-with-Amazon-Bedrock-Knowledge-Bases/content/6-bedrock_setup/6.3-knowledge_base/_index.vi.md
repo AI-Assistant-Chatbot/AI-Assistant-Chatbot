@@ -10,28 +10,27 @@ pre: " <b> 6.3 </b> "
 
 Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data source và tích hợp OpenSearch Serverless cho trợ lý AI của bạn.
 
-#### Cấu hình S3
-
 #### Tạo S3 Bucket
 
 **Tạo S3 bucket mới để lưu trữ documents của bạn:**
 
 - **Region**: us-east-1
 
-- Sử dụng cài đặt mặc định cho các cấu hình khác
-    ![s3_1](/images/6-bedrock_setup/6.3-knowledge_base/s3_1.png?width=90pc)
+   - Sử dụng cài đặt mặc định cho các cấu hình khác
+    
+   ![s3_1](/images/6-bedrock_setup/6.3-knowledge_base/s3_1.png?width=90pc)
   
 - **Bucket name**: `bucket-bedrock-document868686`
-    ![s3_2](/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc)
+    
+   ![s3_2](/images/6-bedrock_setup/6.3-knowledge_base/s3_2.png?width=90pc)
   
 - Ghi chú **ARN**
-    ![s3_3](/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc)
+    
+   ![s3_3](/images/6-bedrock_setup/6.3-knowledge_base/s3-3.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Sử dụng tên bucket duy nhất bằng cách bao gồm account ID của bạn để tránh xung đột tên.
 {{% /notice %}}
-
-#### Cấu hình Knowledge Base
 
 #### Truy cập Bedrock Console
 
@@ -54,40 +53,48 @@ Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data sour
 
    - **Knowledge base name**: `slack-bedrock-kb5`
    - **IAM Role**: Tạo service role mới tên `BedrockKnowledgeBaseRole5`
-     ![kb3](/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc)
+     
+   ![kb3](/images/6-bedrock_setup/6.3-knowledge_base/kb3.png?width=90pc)
 
    **Data Source:**
 
    - **Data source type**: Amazon S3
-     ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
+     
+   ![kb4](/images/6-bedrock_setup/6.3-knowledge_base/kb4.png?width=90pc)
 
    **Cấu hình S3:**
 
    - Chọn S3 bucket đã tạo của bạn
    - Sử dụng chunking strategy mặc định
-     ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
-     ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
+     
+   ![kb5](/images/6-bedrock_setup/6.3-knowledge_base/kb5.png?width=90pc)
+   ![kb6](/images/6-bedrock_setup/6.3-knowledge_base/kb6.png?width=90pc)
 
    **Embeddings Model:**
 
    - Chọn **Amazon Titan Text Embeddings V2**
-     ![kb7](/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc)
-     ![kb8](/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc)
+     
+   ![kb7](/images/6-bedrock_setup/6.3-knowledge_base/kb7.png?width=90pc)
+   ![kb8](/images/6-bedrock_setup/6.3-knowledge_base/kb8.png?width=90pc)
 
    **Vector Store:**
 
    - Chọn **Amazon OpenSearch Serverless**
-     ![kb9](/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc)
+     
+   ![kb9](/images/6-bedrock_setup/6.3-knowledge_base/kb9.png?width=90pc)
 
    **Cấu hình OpenSearch:**
 
    - **Collection**: `slack-bedrock-vector-db5` (đã tạo trong Module 5)
    - **Vector index name**: `slack-bedrock-os-index5`
    - **Vector field name**: `bedrock-knowledge-base-default-vector`
-     ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
+     
+   ![kb10](/images/6-bedrock_setup/6.3-knowledge_base/kb10.png?width=90pc)
+
    - **Text field name**: `AMAZON_BEDROCK_TEXT_CHUNK`
    - **Metadata field name**:`AMAZON_BEDROCK_METADATA`
-     ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
+     
+   ![kb11](/images/6-bedrock_setup/6.3-knowledge_base/kb11.png?width=90pc)
 
 #### Hoàn thành Creation
 
@@ -96,8 +103,6 @@ Phần này hướng dẫn bạn tạo Bedrock Knowledge Base với S3 data sour
 
 6. Xác minh IAM role được tạo tự động có các policies cần thiết:
    ![kb13](/images/6-bedrock_setup/6.3-knowledge_base/kb13.png?width=90pc)
-
-#### Upload và Sync Documents
 
 #### Upload Sample Document
 

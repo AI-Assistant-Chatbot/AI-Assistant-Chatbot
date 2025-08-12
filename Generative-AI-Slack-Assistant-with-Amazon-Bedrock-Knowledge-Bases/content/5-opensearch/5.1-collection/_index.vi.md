@@ -82,20 +82,25 @@ Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để l�
 8. **Tạo collection**:
 
    - Chọn **Collections**
-     ![opensearch2](/images/5-opensearch/5.1-collection/opensearch2.png?width=90pc)
+     
+    ![opensearch2](/images/5-opensearch/5.1-collection/opensearch2.png?width=90pc)
 
    - Chọn **Create Collection**
-     ![opensearch3](/images/5-opensearch/5.1-collection/opensearch3.png?width=90pc)
+     
+    ![opensearch3](/images/5-opensearch/5.1-collection/opensearch3.png?width=90pc)
 
    - Cấu hình collection settings:
 
      - **Collection name**: `slack-bedrock-vector-db5`
      - **Collection type**: Vector search
-       ![opensearch4](/images/5-opensearch/5.1-collection/opensearch4.png?width=90pc)
-     - **Security**: Standard create
-       ![opensearch5](/images/5-opensearch/5.1-collection/opensearch5.png?width=90pc)
 
-   - Sử dụng cài đặt mặc định và nhấp **Create**
+    ![opensearch4](/images/5-opensearch/5.1-collection/opensearch4.png?width=90pc)
+
+    - **Security**: Standard create
+
+    ![opensearch5](/images/5-opensearch/5.1-collection/opensearch5.png?width=90pc)
+
+    - Sử dụng cài đặt mặc định và nhấp **Create**
 
 #### Ghi chú Thông tin Quan trọng
 
@@ -108,7 +113,8 @@ Phần này hướng dẫn bạn tạo OpenSearch Serverless collection để l�
    ![opensearch15](/images/5-opensearch/5.1-collection/opensearch15.png?width=90pc)
 
    - Bước tiếp theo là tạo index table.
-     ![opensearch16](/images/5-opensearch/5.1-collection/opensearch16.png?width=90pc)
+     
+    ![opensearch16](/images/5-opensearch/5.1-collection/opensearch16.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Sao chép và lưu Collection ARN và OpenSearch Endpoint vì chúng sẽ cần thiết cho cấu hình Bedrock Knowledge Base.

@@ -48,12 +48,13 @@ This section guides you through creating a vector index in OpenSearch Serverless
 
 2. Configure request headers:
    - **Content-Type**: application/json
-     ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=90pc)
+     
+    ![postman2](/images/5-opensearch/5.2-vector_index/postman2.png?width=90pc)
 
 #### Configure Request Body
 
 3. Set body type to **raw** and enter the following JSON:
-   ![postman3](/images/5-opensearch/5.2-vector_index5/postman3.png?width=90pc)
+   ![postman3](/images/5-opensearch/5.2-vector_index/postman3.png?width=90pc)
 
    ```json
    {
@@ -113,18 +114,24 @@ This section guides you through creating a vector index in OpenSearch Serverless
 
 4. Click **Send** to create the vector index
    - A successful response indicates the index was created
-     ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=90pc)
+     
+    ![postman4](/images/5-opensearch/5.2-vector_index/postman4.png?width=90pc)
 
 #### Verify Index Creation
 
 5. Verify the index was created successfully in OpenSearch console:
 
    - **Index Name**: slack-bedrock-os-index5
-     ![opensearch17](/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc)
+
+    ![opensearch17](/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc)
+
    - **Vector Field**: bedrock-knowledge-base-default-vector
-     ![opensearch18](/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc)
+
+    ![opensearch18](/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc)
+
    - **Metadata Fields**: Available for document tracking
-     ![opensearch19](/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc)
+
+    ![opensearch19](/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc)
 
 {{% notice info %}}
 **Note:** The vector index is configured with 1024 dimensions to match Amazon Titan Text Embeddings V2 model output and uses HNSW algorithm for efficient similarity search.

@@ -38,7 +38,7 @@ By the end of this module, you will have:
 
 - Go to [Slack.com](https://slack.com/) and click **Create a new workspace**.
 
-  ![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
+![slackWorkSpace1](/images/2-environment-setup/slackWorkSpace1.png?width=90pc)
 
 **2. Sign Up Process**
 
@@ -47,6 +47,7 @@ By the end of this module, you will have:
 ![slackWorkSpace2](/images/2-environment-setup/slackWorkSpace2.png?width=90pc)
 
 **3. Click Create a Workspace**
+
 ![slackWorkSpace3](/images/2-environment-setup/slackWorkSpace3.png?width=90pc)
 
 #### Complete Workspace Setup

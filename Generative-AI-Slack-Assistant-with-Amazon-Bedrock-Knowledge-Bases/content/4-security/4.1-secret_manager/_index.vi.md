@@ -11,12 +11,14 @@ AWS Secrets Manager lưu trữ và quản lý an toàn thông tin đăng nhập 
 #### Truy cập Secrets Manager Console
 
 1. Điều hướng đến [AWS Secrets Manager Console](https://console.aws.amazon.com/secretsmanager/)
-   ![secret0](/images/4-security/4.1-secret_manager/secret1.png?width=90pc)
+
+  ![secret0](/images/4-security/4.1-secret_manager/secret1.png?width=90pc)
 
 #### Chuẩn bị Slack Credentials
 
 2. Sao chép **Bot User OAuth Token** từ Slack (từ Module 3.3):
-   ![slack_OAuth](/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc)
+
+  ![slack_OAuth](/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc)
 
 #### Tạo Bot Token Secret
 
@@ -26,19 +28,25 @@ AWS Secrets Manager lưu trữ và quản lý an toàn thông tin đăng nhập 
    - Chọn **Other type of secret**
    - Nhập key-value pair: `SLACK_BOT_TOKEN` = `giá-trị-bot-token-của-bạn`
 
-   ![secret1](/images/4-security/4.1-secret_manager/secret2.png?width=90pc)
+  ![secret1](/images/4-security/4.1-secret_manager/secret2.png?width=90pc)
 
    - Tên: `bot-token5`
-     ![secret2](/images/4-security/4.1-secret_manager/secret3.png?width=90pc)
+
+  ![secret2](/images/4-security/4.1-secret_manager/secret3.png?width=90pc)
+
    - Tạo thành công
-     ![secret3](/images/4-security/4.1-secret_manager/secret3-.png?width=90pc)
+
+  ![secret3](/images/4-security/4.1-secret_manager/secret3-.png?width=90pc)
+
    - Lưu **ARN**
-     ![secret8](/images/4-security/4.1-secret_manager/secret4.png?width=90pc)
+   
+  ![secret8](/images/4-security/4.1-secret_manager/secret4.png?width=90pc)
 
 #### Lấy Signing Secret
 
 4. Sao chép **Signing Secret** từ cài đặt Slack app:
-   ![slack_secret](/images/4-security/4.1-secret_manager/secret5-.png?width=90pc)
+   
+  ![slack_secret](/images/4-security/4.1-secret_manager/secret5-.png?width=90pc)
 
 #### Tạo Signing Secret
 
@@ -48,13 +56,16 @@ AWS Secrets Manager lưu trữ và quản lý an toàn thông tin đăng nhập 
    - Chọn **Other type of secret**
    - Nhập key-value pair: `SLACK_SIGNING_SECRET` = `giá-trị-signing-secret-của-bạn`
 
-   ![secret4](/images/4-security/4.1-secret_manager/secret6-.png?width=90pc)
+  ![secret4](/images/4-security/4.1-secret_manager/secret6-.png?width=90pc)
 
    - Tên: `signing-secret5`
    - Tạo thành công
-     ![secret6](/images/4-security/4.1-secret_manager/secret6.png?width=90pc)
+
+  ![secret6](/images/4-security/4.1-secret_manager/secret6.png?width=90pc)
+
    - Lưu **ARN**
-     ![secret7](/images/4-security/4.1-secret_manager/secret7-.png?width=90pc)
+   
+  ![secret7](/images/4-security/4.1-secret_manager/secret7-.png?width=90pc)
 
 {{% notice tip %}}
 **Mẹo:** Giữ tên secret nhất quán (`bot-token5` và `signing-secret5`) vì chúng sẽ được tham chiếu trong cấu hình Parameter Store.

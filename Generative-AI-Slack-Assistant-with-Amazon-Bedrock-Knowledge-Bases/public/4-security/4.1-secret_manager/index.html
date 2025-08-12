@@ -12,21 +12,21 @@
     <title>Configure AWS Secrets Manager :: Bedrock-Slackbot-AI-Workshop</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754982745" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754988281" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754988281" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754982745" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754988281" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754982745"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754988281"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754982745"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754982745"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754988281"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754988281"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754982745"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754988281"></script>
 
     
   </div>
@@ -918,14 +918,14 @@
 	<p>AWS Secrets Manager securely stores and manages your Slack bot credentials with encryption at rest and automatic rotation capabilities.</p>
 <h4 id="access-secrets-manager-console">Access Secrets Manager Console</h4>
 <ol>
-<li>Navigate to <a href="https://console.aws.amazon.com/secretsmanager/">AWS Secrets Manager Console</a><br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret1.png?width=90pc" alt="secret0"></li>
+<li>Navigate to <a href="https://console.aws.amazon.com/secretsmanager/">AWS Secrets Manager Console</a></li>
 </ol>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret1.png?width=90pc" alt="secret0"></p>
 <h4 id="prepare-slack-credentials">Prepare Slack Credentials</h4>
 <ol start="2">
-<li>Copy your <strong>Bot User OAuth Token</strong> from Slack (from Module 3.3):<br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc" alt="slack_OAuth"></li>
+<li>Copy your <strong>Bot User OAuth Token</strong> from Slack (from Module 3.3):</li>
 </ol>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/getOAuth1.png?width=90pc" alt="slack_OAuth"></p>
 <h4 id="create-bot-token-secret">Create Bot Token Secret</h4>
 <ol start="3">
 <li>
@@ -935,22 +935,26 @@
 <li>Select <strong>Other type of secret</strong></li>
 <li>Enter key-value pair: <code>SLACK_BOT_TOKEN</code> = <code>your-bot-token-value</code></li>
 </ul>
-<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret2.png?width=90pc" alt="secret1"></p>
-<ul>
-<li>Name: <code>bot-token5</code><br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3.png?width=90pc" alt="secret2"></li>
-<li>Created successfully<br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3-.png?width=90pc" alt="secret3"></li>
-<li>Save the <strong>ARN</strong><br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret4.png?width=90pc" alt="secret8"></li>
-</ul>
 </li>
 </ol>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret2.png?width=90pc" alt="secret1"></p>
+<ul>
+<li>Name: <code>bot-token5</code></li>
+</ul>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3.png?width=90pc" alt="secret2"></p>
+<ul>
+<li>Created successfully</li>
+</ul>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret3-.png?width=90pc" alt="secret3"></p>
+<ul>
+<li>Save the <strong>ARN</strong></li>
+</ul>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret4.png?width=90pc" alt="secret8"></p>
 <h4 id="get-signing-secret">Get Signing Secret</h4>
 <ol start="4">
-<li>Copy your <strong>Signing Secret</strong> from Slack app settings:<br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret5-.png?width=90pc" alt="slack_secret"></li>
+<li>Copy your <strong>Signing Secret</strong> from Slack app settings:</li>
 </ol>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret5-.png?width=90pc" alt="slack_secret"></p>
 <h4 id="create-signing-secret">Create Signing Secret</h4>
 <ol start="5">
 <li>
@@ -960,16 +964,18 @@
 <li>Select <strong>Other type of secret</strong></li>
 <li>Enter key-value pair: <code>SLACK_SIGNING_SECRET</code> = <code>your-signing-secret-value</code></li>
 </ul>
+</li>
+</ol>
 <p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret6-.png?width=90pc" alt="secret4"></p>
 <ul>
 <li>Name: <code>signing-secret5</code></li>
-<li>Created successfully<br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret6.png?width=90pc" alt="secret6"></li>
-<li>Save the <strong>ARN</strong><br>
-<img src="//localhost:1313/images/4-security/4.1-secret_manager/secret7-.png?width=90pc" alt="secret7"></li>
+<li>Created successfully</li>
 </ul>
-</li>
-</ol>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret6.png?width=90pc" alt="secret6"></p>
+<ul>
+<li>Save the <strong>ARN</strong></li>
+</ul>
+<p><img src="//localhost:1313/images/4-security/4.1-secret_manager/secret7-.png?width=90pc" alt="secret7"></p>
 
 <div class="notices tip" ><p><strong>Tip:</strong> Keep the secret names consistent (<code>bot-token5</code> and <code>signing-secret5</code>) as they will be referenced in Parameter Store configuration.</p>
 </div>
@@ -1405,19 +1411,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754982745"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754982745"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754988281"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754988281"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754988281"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754988281"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754988281"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754988281"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754982745"></script>
-    <script src="//localhost:1313/js/learn.js?1754982745"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754982745"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754988281"></script>
+    <script src="//localhost:1313/js/learn.js?1754988281"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754988281"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754982745" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754982745"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754988281" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754988281"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

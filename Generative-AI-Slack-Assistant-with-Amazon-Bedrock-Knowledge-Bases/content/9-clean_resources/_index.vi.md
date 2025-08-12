@@ -48,14 +48,17 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
    - **Đầu tiên**: Xóa tất cả objects trong bucket
    - **Sau đó**: Xóa chính bucket
    - Xác nhận deletion
-     ![clear1](/images/9-clean_resources/clear1.png?width=90pc)
-     ![clear2](/images/9-clean_resources/clear2.png?width=90pc)
+
+   ![clear1](/images/9-clean_resources/clear1.png?width=90pc)
+   ![clear2](/images/9-clean_resources/clear2.png?width=90pc)
+
    - Điều hướng đến Bedrock Console
    - Truy cập **Knowledge bases**
    - Chọn knowledge base của bạn
    - Nhấp **Delete**
    - Xác nhận deletion
-     ![clear3](/images/9-clean_resources/clear3.png?width=90pc)
+     
+   ![clear3](/images/9-clean_resources/clear3.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** Đợi Knowledge Base deletion hoàn thành trước khi tiến hành OpenSearch cleanup.
@@ -65,14 +68,14 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
 
 4. **Xóa OpenSearch Components** (theo thứ tự này):
 
-   **a) Xóa Vector Index:**
+   **a. Xóa Vector Index:**
 
    - Sử dụng Postman hoặc AWS CLI để xóa index
    - DELETE request đến: `https://your-collection-endpoint/slack-bedrock-os-index5`
 
    ![clear7](/images/9-clean_resources/clear4.png?width=90pc)
 
-   **b) Xóa Collection:**
+   **b. Xóa Collection:**
 
    - Điều hướng đến OpenSearch Console
    - Chọn **Collections**
@@ -80,14 +83,14 @@ Tuân theo thứ tự cụ thể này để tránh dependency conflicts:
 
    ![clear7](/images/9-clean_resources/clear5.png?width=90pc)
 
-   **c) Xóa Data Access Policy:**
+   **c. Xóa Data Access Policy:**
 
    - Truy cập **Data access policies**
    - Xóa access policy của bạn
 
    ![clear7](/images/9-clean_resources/clear6.png?width=90pc)
 
-   **d) Xóa Network Policy:**
+   **d. Xóa Network Policy:**
 
    - Truy cập **Network policies**
    - Xóa network policy của bạn

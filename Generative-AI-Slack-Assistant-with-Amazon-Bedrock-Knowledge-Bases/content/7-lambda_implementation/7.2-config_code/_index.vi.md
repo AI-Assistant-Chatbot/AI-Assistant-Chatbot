@@ -37,9 +37,11 @@ Phần này hướng dẫn bạn tạo Lambda function và cấu hình nó với
    ![lambda7](/images/7-lambda_implementation/7.2-config_code/lambda7-.png?width=90pc)
 
    - Chọn **Save**
-     ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
+     
+   ![lambda8](/images/7-lambda_implementation/7.2-config_code/lambda8.png?width=90pc)
    - Upload thành công
-     ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
+     
+   ![lambda9](/images/7-lambda_implementation/7.2-config_code/lambda9-.png?width=90pc)
 
 {{% notice info %}}
 **Lưu ý:** File zip chứa Slack Bolt framework và tất cả dependencies cần thiết cho bot functionality.

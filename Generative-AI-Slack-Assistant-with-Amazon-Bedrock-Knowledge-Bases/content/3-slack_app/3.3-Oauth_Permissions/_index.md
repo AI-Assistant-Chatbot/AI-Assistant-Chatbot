@@ -13,7 +13,8 @@ pre: " <b> 3.3 </b> "
    - `commands` - Enable slash commands
    - `chat:write` - Send messages as bot
    - `channels:read` - Give the bot access to basic information of public channels in the Slack workspace
-     ![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
+     
+![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
 
 #### Install App to Workspace
 

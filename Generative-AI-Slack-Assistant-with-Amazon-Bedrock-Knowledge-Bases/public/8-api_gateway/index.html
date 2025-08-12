@@ -12,21 +12,21 @@
     <title>API Gateway Integration and Complete Testing :: Bedrock-Slackbot-AI-Workshop</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754982745" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754982745" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754988282" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754982745" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754988282" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754982745"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754988282"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754982745"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754982745"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754988282"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754988282"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754982745"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754988282"></script>
 
     
   </div>
@@ -926,11 +926,13 @@
 <p><img src="//localhost:1313/images/8-api_gateway/api1.png?width=90pc" alt="api1"></p>
 <ul>
 <li><strong>API Name</strong>: <code>slack-bedrock-api5</code></li>
-<li><strong>Description</strong>: API for Slack AI Assistant<br>
-<img src="//localhost:1313/images/8-api_gateway/api2.png?width=90pc" alt="api2"></li>
-<li>Create successfully<br>
-<img src="//localhost:1313/images/8-api_gateway/api2-.png?width=90pc" alt="api2"></li>
+<li><strong>Description</strong>: API for Slack AI Assistant</li>
 </ul>
+<p><img src="//localhost:1313/images/8-api_gateway/api2.png?width=90pc" alt="api2"></p>
+<ul>
+<li>Create successfully</li>
+</ul>
+<p><img src="//localhost:1313/images/8-api_gateway/api2-.png?width=90pc" alt="api2"></p>
 </li>
 </ol>
 <p><strong>Create Resource Structure</strong></p>
@@ -969,9 +971,9 @@
 </ul>
 <p><img src="//localhost:1313/images/8-api_gateway/api5.png?width=90pc" alt="api5"></p>
 <ul>
-<li>Method <strong>POST</strong> created successfully<br>
-<img src="//localhost:1313/images/8-api_gateway/api6.png?width=90pc" alt="api6"></li>
+<li>Method <strong>POST</strong> created successfully</li>
 </ul>
+<p><img src="//localhost:1313/images/8-api_gateway/api6.png?width=90pc" alt="api6"></p>
 </li>
 </ol>
 
@@ -1026,19 +1028,20 @@
 <p><img src="//localhost:1313/images/8-api_gateway/test1.png?width=90pc" alt="test1"></p>
 <ul>
 <li>Command: <code>/ask-aws What are the main data types used in PostgreSQL?</code></li>
-<li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer<br>
-<img src="//localhost:1313/images/8-api_gateway/test2.png?width=90pc" alt="test2"></li>
+<li><strong>Expected Result</strong>: AI assistant retrieves relevant information from the Knowledge Base and provides an accurate answer</li>
 </ul>
+<p><img src="//localhost:1313/images/8-api_gateway/test2.png?width=90pc" alt="test2"></p>
 </li>
 </ol>
 <p><strong>Guardrails Protection</strong></p>
 <ol start="2">
-<li><strong>Test Query</strong>: Attempt to trigger content filtering
+<li>
+<p><strong>Test Query</strong>: Attempt to trigger content filtering</p>
 <ul>
 <li>Command: <code>/ask-aws How can i hack into a PostgreSQL system?</code></li>
-<li><strong>Expected Result</strong>: Bedrock Guardrails block the request and return a safety message<br>
-<img src="//localhost:1313/images/8-api_gateway/test3.png?width=90pc" alt="test3"></li>
+<li><strong>Expected Result</strong>: Bedrock Guardrails block the request and return a safety message</li>
 </ul>
+<p><img src="//localhost:1313/images/8-api_gateway/test3.png?width=90pc" alt="test3"></p>
 </li>
 </ol>
 <p><strong>Information Not Available</strong></p>
@@ -1529,19 +1532,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754982745"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754982745"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754982745"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754988282"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754988282"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754982745"></script>
-    <script src="//localhost:1313/js/learn.js?1754982745"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754982745"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754988282"></script>
+    <script src="//localhost:1313/js/learn.js?1754988282"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754988282"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754982745" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754982745"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754988282" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754988282"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

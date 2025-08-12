@@ -12,21 +12,21 @@
     <title>Tạo Vector Index :: Bedrock-Slackbot-AI-Workshop</title>
 
     
-    <link href="//localhost:1313/css/nucleus.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/fontawesome-all.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/hybrid.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/featherlight.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/auto-complete.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/theme.css?1754982746" rel="stylesheet">
-    <link href="//localhost:1313/css/hugo-theme.css?1754982746" rel="stylesheet">
+    <link href="//localhost:1313/css/nucleus.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/fontawesome-all.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/hybrid.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/featherlight.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/perfect-scrollbar.min.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/auto-complete.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/atom-one-dark-reasonable.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/theme.css?1754988282" rel="stylesheet">
+    <link href="//localhost:1313/css/hugo-theme.css?1754988282" rel="stylesheet">
     
-    <link href="//localhost:1313/css/theme-workshop.css?1754982746" rel="stylesheet">
+    <link href="//localhost:1313/css/theme-workshop.css?1754988282" rel="stylesheet">
     
     
 
-    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754982746"></script>
+    <script src="//localhost:1313/js/jquery-3.3.1.min.js?1754988282"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754982746"></script>
-<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754982746"></script>
+<script type="text/javascript" src="//localhost:1313/js/lunr.min.js?1754988282"></script>
+<script type="text/javascript" src="//localhost:1313/js/auto-complete.js?1754988282"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/\/vi";
     
 </script>
-<script type="text/javascript" src="//localhost:1313/js/search.js?1754982746"></script>
+<script type="text/javascript" src="//localhost:1313/js/search.js?1754988282"></script>
 
     
   </div>
@@ -927,14 +927,18 @@
 </ol>
 <h4 id="tạo-access-keys">Tạo Access Keys</h4>
 <ol start="2">
-<li>Tạo <strong>Access Keys</strong> cho programmatic access:</li>
-</ol>
+<li>
+<p>Tạo <strong>Access Keys</strong> cho programmatic access:</p>
 <ul>
-<li>Lấy thông tin access key của user mới tạo<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/user2.png?width=90pc" alt="userAccesskey"></li>
-<li>Thêm <strong>tag</strong> với <strong>Key</strong> và <strong>Value</strong> như một <strong>access key</strong><br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/user3.png?width=90pc" alt="user2"></li>
+<li>Lấy thông tin access key của user mới tạo</li>
 </ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/user2.png?width=90pc" alt="userAccesskey"></p>
+<ul>
+<li>Thêm <strong>tag</strong> với <strong>Key</strong> và <strong>Value</strong> như một <strong>access key</strong></li>
+</ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/user3.png?width=90pc" alt="user2"></p>
+</li>
+</ol>
 
 <div class="notices warning" ><p><strong>Quan trọng:</strong> Lưu Access Key ID và Secret Access Key một cách an toàn - chúng sẽ cần thiết cho Postman authentication.</p>
 </div>
@@ -958,11 +962,12 @@
 </ol>
 <h4 id="thiết-lập-headers">Thiết lập Headers</h4>
 <ol start="2">
-<li>Cấu hình request headers:
+<li>
+<p>Cấu hình request headers:</p>
 <ul>
-<li><strong>Content-Type</strong>: application/json<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/postman2.png?width=90pc" alt="postman2"></li>
+<li><strong>Content-Type</strong>: application/json</li>
 </ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/postman2.png?width=90pc" alt="postman2"></p>
 </li>
 </ol>
 <h4 id="cấu-hình-request-body">Cấu hình Request Body</h4>
@@ -1024,11 +1029,12 @@
 <h3 id="tạo-index">Tạo Index</h3>
 <h4 id="gửi-request">Gửi Request</h4>
 <ol start="4">
-<li>Nhấp <strong>Send</strong> để tạo vector index
+<li>
+<p>Nhấp <strong>Send</strong> để tạo vector index</p>
 <ul>
-<li>Phản hồi thành công cho biết index đã được tạo<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/postman4.png?width=90pc" alt="postman4"></li>
+<li>Phản hồi thành công cho biết index đã được tạo</li>
 </ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/postman4.png?width=90pc" alt="postman4"></p>
 </li>
 </ol>
 <h4 id="xác-minh-index-creation">Xác minh Index Creation</h4>
@@ -1036,13 +1042,17 @@
 <li>
 <p>Xác minh index đã được tạo thành công trong OpenSearch console:</p>
 <ul>
-<li><strong>Index Name</strong>: slack-bedrock-os-index5<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc" alt="opensearch17"></li>
-<li><strong>Vector Field</strong>: bedrock-knowledge-base-default-vector<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc" alt="opensearch18"></li>
-<li><strong>Metadata Fields</strong>: Có sẵn để tracking document<br>
-<img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc" alt="opensearch19"></li>
+<li><strong>Index Name</strong>: slack-bedrock-os-index5</li>
 </ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch17.png?width=90pc" alt="opensearch17"></p>
+<ul>
+<li><strong>Vector Field</strong>: bedrock-knowledge-base-default-vector</li>
+</ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch18.png?width=90pc" alt="opensearch18"></p>
+<ul>
+<li><strong>Metadata Fields</strong>: Có sẵn để tracking document</li>
+</ul>
+<p><img src="//localhost:1313/images/5-opensearch/5.2-vector_index/opensearch19.png?width=90pc" alt="opensearch19"></p>
 </li>
 </ol>
 
@@ -1498,19 +1508,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="//localhost:1313/js/clipboard.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/jquery.sticky.js?1754982746"></script>
-    <script src="//localhost:1313/js/featherlight.min.js?1754982746"></script>
-    <script src="//localhost:1313/js/highlight.pack.js?1754982746"></script>
+    <script src="//localhost:1313/js/clipboard.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/perfect-scrollbar.jquery.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/jquery.sticky.js?1754988282"></script>
+    <script src="//localhost:1313/js/featherlight.min.js?1754988282"></script>
+    <script src="//localhost:1313/js/highlight.pack.js?1754988282"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754982746"></script>
-    <script src="//localhost:1313/js/learn.js?1754982746"></script>
-    <script src="//localhost:1313/js/hugo-learn.js?1754982746"></script>
+    <script src="//localhost:1313/js/modernizr.custom-3.6.0.js?1754988282"></script>
+    <script src="//localhost:1313/js/learn.js?1754988282"></script>
+    <script src="//localhost:1313/js/hugo-learn.js?1754988282"></script>
 
-    <link href="//localhost:1313/mermaid/mermaid.css?1754982746" rel="stylesheet" />
-    <script src="//localhost:1313/mermaid/mermaid.js?1754982746"></script>
+    <link href="//localhost:1313/mermaid/mermaid.css?1754988282" rel="stylesheet" />
+    <script src="//localhost:1313/mermaid/mermaid.js?1754988282"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

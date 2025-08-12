@@ -13,7 +13,8 @@ pre: " <b> 3.3 </b> "
    - `commands` - Kích hoạt slash commands
    - `chat:write` - Gửi tin nhắn như bot
    - `channels:read` - Cấp cho bot quyền truy cập thông tin cơ bản của các kênh công khai trong Slack workspace
-     ![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
+     
+![slack_scope](/images/3-slack_app/3.3-Oauth_Permissions/slack_scope.png?width=90pc)
 
 #### Cài đặt App vào Workspace
 
