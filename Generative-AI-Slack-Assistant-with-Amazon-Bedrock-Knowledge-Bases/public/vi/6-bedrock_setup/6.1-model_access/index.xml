@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thiết lập Model Access on AWS Serverless</title>
-    <link>//localhost:1313/vi/6-bedrock_setup/6.1-model_access/</link>
+    <link>/vi/6-bedrock_setup/6.1-model_access/</link>
     <description>Recent content in Thiết lập Model Access on AWS Serverless</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/vi/6-bedrock_setup/6.1-model_access/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/vi/6-bedrock_setup/6.1-model_access/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create Lambda Execution Role on AWS Serverless</title>
-    <link>//localhost:1313/7-lambda_implementation/7.1-lambda_role/</link>
+    <link>/7-lambda_implementation/7.1-lambda_role/</link>
     <description>Recent content in Create Lambda Execution Role on AWS Serverless</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/7-lambda_implementation/7.1-lambda_role/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/7-lambda_implementation/7.1-lambda_role/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
