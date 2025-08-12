@@ -272,14 +272,10 @@ This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) fil
 
 ## 👥 Credits
 
-This workshop was developed and maintained by:
-
 **Le Hong Anh**  
-*AI Solutions Architect*  
 [LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
 
 **Tran Doan Cong Ly**  
-*Cloud Solutions Engineer*  
 [LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
 
 ## 🔄 Updates & Changelog
