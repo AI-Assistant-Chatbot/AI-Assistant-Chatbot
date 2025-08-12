@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tạo slack app on AWS Serverless</title>
+    <title>Tạo slack app on Bedrock-Slackbot-AI-Workshop</title>
     <link>//localhost:1313/vi/3-slack_app/3.1-create_slack_app/</link>
-    <description>Recent content in Tạo slack app on AWS Serverless</description>
+    <description>Recent content in Tạo slack app on Bedrock-Slackbot-AI-Workshop</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>

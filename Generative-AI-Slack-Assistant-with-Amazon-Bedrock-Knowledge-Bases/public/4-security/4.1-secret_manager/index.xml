@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Configure AWS Secrets Manager on AWS Serverless</title>
+    <title>Configure AWS Secrets Manager on Bedrock-Slackbot-AI-Workshop</title>
     <link>//localhost:1313/4-security/4.1-secret_manager/</link>
-    <description>Recent content in Configure AWS Secrets Manager on AWS Serverless</description>
+    <description>Recent content in Configure AWS Secrets Manager on Bedrock-Slackbot-AI-Workshop</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>

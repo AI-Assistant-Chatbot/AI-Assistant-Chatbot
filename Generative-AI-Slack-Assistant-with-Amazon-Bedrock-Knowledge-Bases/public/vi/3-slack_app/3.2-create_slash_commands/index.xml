@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tạo slash commands on AWS Serverless</title>
+    <title>Tạo slash commands on Bedrock-Slackbot-AI-Workshop</title>
     <link>//localhost:1313/vi/3-slack_app/3.2-create_slash_commands/</link>
-    <description>Recent content in Tạo slash commands on AWS Serverless</description>
+    <description>Recent content in Tạo slash commands on Bedrock-Slackbot-AI-Workshop</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>

@@ -311,4 +311,77 @@ This workshop was developed and maintained by:
 
 [🌟 Star this repo](https://github.com/your-repo/bedrock-slack-bot-workshop) | [🍴 Fork it](https://github.com/your-repo/bedrock-slack-bot-workshop/fork) | [📢 Share it](https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20AWS%20Bedrock%20Slack%20Bot%20workshop!)
 
+</div>ion
+- 🧪 Add test cases
+- 🌟 Share your use cases and success stories
+
+## 📄 License
+
+This project is licensed under the MIT-0 License. See the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+### Getting Help
+- 📖 Check the workshop modules for detailed instructions
+- 🎫 Open an [Issue](https://github.com/your-repo/bedrock-slack-bot-workshop/issues)
+- 📧 Contact the workshop team
+
+### Common Issues
+- **Bedrock Model Access**: Ensure models are enabled in your region
+- **Slack Permissions**: Verify OAuth scopes and workspace installation
+- **API Limits**: Check service quotas and rate limits
+- **Cost Management**: Monitor usage and set up billing alerts
+
+## 🏆 Success Stories
+
+> *"This workshop helped us build an internal knowledge assistant that reduced support tickets by 40% and improved employee productivity."*  
+> — **Enterprise Customer**
+
+> *"The step-by-step approach made it easy to understand RAG architecture and implement it in our organization."*  
+> — **Solutions Architect**
+
+> *"Great hands-on experience with Amazon Bedrock. The security features are exactly what we needed for enterprise deployment."*  
+> — **DevOps Engineer**
+
+## 👥 Credits
+
+This workshop was developed and maintained by:
+
+**Le Hong Anh**  
+*AI Solutions Architect*  
+[LinkedIn Profile](https://www.linkedin.com/in/hong-anh-le-29208a304/)
+
+**Tran Doan Cong Ly**  
+*Cloud Solutions Engineer*  
+[LinkedIn Profile](https://www.linkedin.com/in/trandoancongly/)
+
+## 🔄 Updates & Changelog
+
+### Latest Version: v1.0.0
+- ✨ Initial workshop release
+- 🤖 Support for Claude 3 Sonnet and Titan Embeddings V2
+- 🛡️ Bedrock Guardrails integration
+- 📊 Comprehensive security setup
+- 🔧 Complete resource cleanup guide
+
+### Upcoming Features
+- 🌐 Multi-language support
+- 🔄 Automated CI/CD pipeline
+- 📱 Mobile-optimized Slack interface
+- 🎯 Advanced analytics dashboard
+
+---
+
+**Ready to build your AI-powered Slack assistant?** 🚀
+
+[**Start the Workshop →**](content/1-introduction/)
+
+---
+
+<div align="center">
+
+**Built with ❤️ by the AWS Community**
+
+[🌟 Star this repo](https://github.com/your-repo/bedrock-slack-bot-workshop) | [🍴 Fork it](https://github.com/your-repo/bedrock-slack-bot-workshop/fork) | [📢 Share it](https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20AWS%20Bedrock%20Slack%20Bot%20workshop!)
+
 </div>

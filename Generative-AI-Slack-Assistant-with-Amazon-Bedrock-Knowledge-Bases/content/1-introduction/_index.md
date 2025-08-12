@@ -64,6 +64,7 @@ By completing this workshop, you will achieve the following learning outcomes:
 #### SlackBot Architecture
 
 ![AI-Assistant](/images/1-introduction/AI-Assistant.png?width=90pc)
+   _Figure 1: SlackBot Architecture_
 
 #### Architecture Flow Diagram
 
@@ -83,6 +84,7 @@ graph TB
     style F fill:#fff3e0
     style H fill:#ffebee
 ```
+   _Figure 2: Architecture Flow Diagram_
 
 #### Key Components Explained
 
